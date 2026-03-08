@@ -68,7 +68,7 @@ def train_phase1_text():
     logger.info(f"Starting Phase 1 Loop on {len(real_data)} samples...")
     margin = 0.5 
 
-    for epoch in range(1, 11): 
+    for epoch in range(1, 6): 
         total_loss = 0.0
         
         for batch_idx, batch in enumerate(dataloader):

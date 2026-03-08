@@ -80,7 +80,7 @@ def train_phase3_stabilization():
     logger.info(f"Starting Phase 3 Loop on {len(real_data)} samples...")
     margin = 0.5 
 
-    for epoch in range(1, 21): 
+    for epoch in range(1, 11): 
         total_loss = 0.0
         alpha_tracker = []
         
