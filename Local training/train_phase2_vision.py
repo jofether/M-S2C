@@ -1,13 +1,7 @@
 """
 M-S2C Phase 2: Visual Alignment (ViT & MLP Awake)
 =================================================
-In this phase, we freeze CodeBERT so it retains its textual knowledge.
-We wake up ViT and the MLP Projection head, and apply an Alpha Override 
-of 0.0. This forces the visual screenshot features to map directly into 
-the established CodeBERT semantic space.
-Includes GPU acceleration for significantly faster training.
 """
-
 import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
@@ -22,12 +16,11 @@ from dataset import MS2CTripletDataset
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_DIR = os.path.join(BASE_DIR, "Seed-and-Mutate", "ms2c-local")
 
-# --- LOGGING SETUP ---
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | Phase 2 | %(message)s",
     handlers=[
-        logging.FileHandler("logs_phase2.txt", mode='a', encoding='utf-8'),
+        logging.FileHandler("logs_phase2.txt", mode='w', encoding='utf-8'),
         logging.StreamHandler(sys.stdout)
     ]
 )
@@ -35,15 +28,13 @@ logger = logging.getLogger(__name__)
 
 def train_phase2_vision():
     logger.info("Initializing M-S2C Engine for Phase 2: Visual Alignment...")
-    
-    # --- GPU SETUP ---
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     logger.info(f"🚀 Pushing model to: {device.type.upper()}")
     
     model = MS2CFusionEngine()
 
-    # Load Phase 1 Brain
-    checkpoint = "ms2c_phase1_epoch_10.pt" # Change this to your best Phase 1 epoch
+    # Load Phase 1 BEST Brain
+    checkpoint = "ms2c_phase1_BEST.pt" 
     if os.path.exists(checkpoint):
         model.load_state_dict(torch.load(checkpoint, map_location="cpu"))
         logger.info(f"✅ Loaded Phase 1 weights from {checkpoint}")
@@ -52,7 +43,6 @@ def train_phase2_vision():
 
     model = model.to(device)
 
-    # --- PHASE 2 FREEZING LOGIC ---
     logger.info("-> Freezing CodeBERT and Gating Network...")
     for param in model.codebert.parameters():
         param.requires_grad = False
@@ -78,13 +68,18 @@ def train_phase2_vision():
     logger.info(f"Starting Phase 2 Loop on {len(real_data)} samples...")
     margin = 0.5 
 
-    for epoch in range(1, 6): 
+    # --- EARLY STOPPING SETUP ---
+    best_loss = float('inf')
+    patience_counter = 0
+    patience_limit = 3
+    max_epochs = 50
+
+    for epoch in range(1, max_epochs + 1): 
         total_loss = 0.0
         
         for batch_idx, batch in enumerate(dataloader):
             optimizer.zero_grad()
 
-            # --- MOVE INPUTS TO GPU ---
             anchor_ids = batch['anchor_input_ids'].to(device)
             anchor_mask = batch['anchor_attention_mask'].to(device)
             pixel_vals = batch['pixel_values'].to(device)
@@ -95,14 +90,11 @@ def train_phase2_vision():
                 pixel_values=pixel_vals
             )
             
-            # PHASE 2 ALPHA OVERRIDE: 0.0 (0% Text, 100% Vision)
             alpha_override = 0.0 
             v_anchor = (alpha_override * v_text) + ((1.0 - alpha_override) * v_visual_aligned)
             v_anchor = F.normalize(v_anchor, p=2, dim=1)
 
-            # CodeBERT is frozen, so we use no_grad to save memory
             with torch.no_grad():
-                # --- MOVE POSITIVE/NEGATIVE INPUTS TO GPU ---
                 pos_ids = batch['pos_input_ids'].to(device)
                 pos_mask = batch['pos_attention_mask'].to(device)
                 neg_ids = batch['neg_input_ids'].to(device)
@@ -129,7 +121,19 @@ def train_phase2_vision():
 
         avg_loss = total_loss / len(dataloader)
         logger.info(f"✅ END OF EPOCH {epoch} | Avg Loss: {avg_loss:.4f}")
-        torch.save(model.state_dict(), f"ms2c_phase2_epoch_{epoch}.pt")
+
+        # --- EARLY STOPPING LOGIC ---
+        if avg_loss < best_loss:
+            best_loss = avg_loss
+            patience_counter = 0
+            torch.save(model.state_dict(), "ms2c_phase2_BEST.pt")
+            logger.info(f"🌟 New best model saved with loss {best_loss:.4f}")
+        else:
+            patience_counter += 1
+            logger.info(f"⚠️ No improvement. Patience: {patience_counter}/{patience_limit}")
+            if patience_counter >= patience_limit:
+                logger.info("🛑 EARLY STOPPING TRIGGERED! The model has stopped learning.")
+                break
 
 if __name__ == "__main__":
     train_phase2_vision()
