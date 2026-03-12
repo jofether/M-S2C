@@ -92,6 +92,15 @@ def build_faiss_index():
     faiss.write_index(index, "ms2c_codebase.index")
     with open("node_mapping.json", "w", encoding='utf-8') as map_file:
         json.dump(node_mapping, map_file)
+
+        # --- DEMO VISUALIZATION EXPORT ---
+    with open("node_library_visualization.txt", "w", encoding="utf-8") as txt_file:
+        txt_file.write("=== M-S2C SEARCHABLE NODE LIBRARY ===\n")
+        txt_file.write(f"Total AST Nodes Indexed: {len(node_mapping)}\n\n")
+        for node_id, code_text in node_mapping.items():
+            txt_file.write(f"--- AST NODE ID: {node_id} ---\n")
+            txt_file.write(f"{code_text}\n")
+            txt_file.write("="*50 + "\n\n")
         
     logger.info("SUCCESS: Saved 'ms2c_codebase.index' and 'node_mapping.json' to disk.")
 
