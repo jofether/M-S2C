@@ -107,9 +107,13 @@ def simulate_bug_localization(k=3):
 
     logger.info("\n✅ TOP-K RETRIEVAL RESULTS:")
     for rank, (score, node_id) in enumerate(zip(scores[0], indices[0])):
-        retrieved_code = node_mapping[str(node_id)] 
+        # result_data is now a dictionary containing code, file_path, and line_number
+        result_data = node_mapping[str(node_id)] 
+        
         logger.info(f"Rank {rank + 1} (Score: {score:.4f})")
-        logger.info(f"Code Snippet: {retrieved_code[:100]}... [TRUNCATED]")
+        # --- NEW: DISPLAY THE FILE PATH AND LINE ---
+        logger.info(f"📍 Location: {result_data['file_path']} (Line: {result_data['line_number']})")
+        logger.info(f"Code Snippet: {result_data['code'][:100]}... [TRUNCATED]")
         logger.info("-" * 50)
 
 if __name__ == "__main__":

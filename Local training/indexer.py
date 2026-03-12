@@ -66,8 +66,15 @@ def build_faiss_index():
     logger.info(f"Encoding {len(test_subset)} AST nodes into the TRAINED Semantic Space...")
     
     for idx, item in enumerate(test_subset):
+        # 1. Define the code snippet first so the tokenizer can use it!
         code_snippet = item['positive_node']
-        node_mapping[idx] = code_snippet
+        
+        # 2. Indent this block correctly inside the loop
+        node_mapping[idx] = {
+            "code": code_snippet,
+            "file_path": item.get('file_path', 'unknown_path.js'), # Tracks the file
+            "line_number": item.get('line_start', 'N/A')         # Tracks the line
+        }
         
         inputs = tokenizer(
             code_snippet, padding='max_length', truncation=True, max_length=128, return_tensors="pt"
@@ -92,17 +99,20 @@ def build_faiss_index():
     faiss.write_index(index, "ms2c_codebase.index")
     with open("node_mapping.json", "w", encoding='utf-8') as map_file:
         json.dump(node_mapping, map_file)
-
-        # --- DEMO VISUALIZATION EXPORT ---
+        
+    # --- DEMO VISUALIZATION EXPORT ---
+    logger.info("Generating Demo Visualization text file...")
     with open("node_library_visualization.txt", "w", encoding="utf-8") as txt_file:
         txt_file.write("=== M-S2C SEARCHABLE NODE LIBRARY ===\n")
         txt_file.write(f"Total AST Nodes Indexed: {len(node_mapping)}\n\n")
-        for node_id, code_text in node_mapping.items():
+        for node_id, data in node_mapping.items():
             txt_file.write(f"--- AST NODE ID: {node_id} ---\n")
-            txt_file.write(f"{code_text}\n")
-            txt_file.write("="*50 + "\n\n")
+            txt_file.write(f"FILE PATH: {data['file_path']}\n")
+            txt_file.write(f"LINE NO:   {data['line_number']}\n")
+            txt_file.write(f"SOURCE:\n{data['code']}\n")
+            txt_file.write("="*60 + "\n\n")
         
-    logger.info("SUCCESS: Saved 'ms2c_codebase.index' and 'node_mapping.json' to disk.")
+    logger.info("SUCCESS: Saved 'ms2c_codebase.index', 'node_mapping.json', and 'node_library_visualization.txt' to disk.")
 
 if __name__ == "__main__":
     build_faiss_index()
