@@ -1,0 +1,74 @@
+# Python and Virtual Environment
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Large Model Files (Already pushed once, don't need to push again)
+*.pt
+ms2c_*.pt
+*.pth
+
+# Large Dataset Files (Optional - adjust based on your needs)
+*.json
+!package.json
+!mutated_dataset_25k.json
+!requirements.txt
+
+# FAISS Index (Generated, not needed in repo)
+*.index
+ms2c_codebase.index
+
+# Logs (Generated at runtime)
+*.txt
+!README.txt
+logs/
+*.log
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+.history/
+
+# Temporary Files
+*.tmp
+temp/
+tmp/
+
+# Data/Screenshots (if too large)
+# screenshots/ (optional, remove if uploading screenshots)
