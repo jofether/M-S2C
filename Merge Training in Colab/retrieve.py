@@ -42,17 +42,31 @@ def simulate_bug_localization(k=3):
         k (int): The number of top candidate code snippets to retrieve.
     """
     logger.info("1. Booting up M-S2C Diagnosis Engine...")
-    model = MS2CFusionEngine()
+    
+    # Force GPU usage
+    if not torch.cuda.is_available():
+        logger.error("❌ CUDA not available! GPU required for this script.")
+        return
+    
+    device = torch.device("cuda")
+    logger.info(f"✅ Using GPU: {torch.cuda.get_device_name(0)}")
+    logger.info(f"GPU Memory Available: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB\n")
+    
+    model = MS2CFusionEngine().to(device)
     
     # LOAD THE TRAINED BRAIN!
     weights_path = "ms2c_E2E_JOINT_BEST.pt"
     if os.path.exists(weights_path):
-        model.load_state_dict(torch.load(weights_path, map_location="cpu"))
+        model.load_state_dict(torch.load(weights_path, map_location=device))
         logger.info(f"✅ Successfully loaded {weights_path}")
     else:
         logger.warning("⚠️ E2E Joint weights not found! Running with untrained model.")
         
     model.eval() # Strictly evaluation mode for inference
+    
+    # Enable GPU optimizations
+    torch.cuda.synchronize()
+    torch.backends.cudnn.benchmark = True
 
     tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
     image_processor = ViTImageProcessor.from_pretrained("google/vit-base-patch16-224-in21k")
@@ -64,13 +78,13 @@ def simulate_bug_localization(k=3):
         node_mapping = json.load(f)
 
     # Load validation dataset
-    json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
+    json_file_path = os.path.join(REPO_DIR, "mutated_dataset_25k.json")
     with open(json_file_path, 'r', encoding='utf-8') as f:
-        real_data = json.load(f)
+        real_data = json.load(f)[:1000]
         
     query_sample = real_data[0] 
     query_text = query_sample['text_anchor']
-    image_path = os.path.normpath(os.path.join(REPO_DIR, "validation", query_sample['image_anchor']))
+    image_path = os.path.normpath(os.path.join(REPO_DIR, "03_screenshots", query_sample['image_anchor']))
 
     logger.info(f"\n--- USER BUG REPORT ---")
     logger.info(f"Text: '{query_text}'")
@@ -81,15 +95,19 @@ def simulate_bug_localization(k=3):
 
     # 4. Process Inputs
     text_enc = tokenizer(query_text, padding='max_length', truncation=True, max_length=512, return_tensors="pt")
+    # Move all tokenizer outputs to GPU
+    for key in text_enc:
+        text_enc[key] = text_enc[key].to(device)
+    
     image = Image.open(image_path).convert("RGB")
-    pixel_values = image_processor(images=image, return_tensors="pt").pixel_values
+    pixel_values = image_processor(images=image, return_tensors="pt").pixel_values.to(device)
 
     # 5. Generate Multimodal Anchor Embedding
     logger.info("3. Fusing Modalities and calculating Alpha...")
     with torch.no_grad():
-        v_text, v_visual_aligned, alpha = model(
-            input_ids=text_enc.input_ids, 
-            attention_mask=text_enc.attention_mask, 
+        v_visual_aligned, v_text, alpha = model(
+            input_ids=text_enc['input_ids'], 
+            attention_mask=text_enc['attention_mask'], 
             pixel_values=pixel_values
         )
         
@@ -101,7 +119,7 @@ def simulate_bug_localization(k=3):
 
     # 6. FAISS Top-K Search
     logger.info(f"\n4. Searching {index.ntotal}-node Knowledge Base for Top-{k} Matches...")
-    query_vector = v_anchor.numpy() 
+    query_vector = v_anchor.cpu().numpy() 
     
     scores, indices = index.search(query_vector, k)
 
@@ -115,6 +133,11 @@ def simulate_bug_localization(k=3):
         logger.info(f"📍 Location: {result_data['file_path']} (Line: {result_data['line_number']})")
         logger.info(f"Code Snippet: {result_data['code'][:100]}... [TRUNCATED]")
         logger.info("-" * 50)
+    
+    # Cleanup GPU memory
+    torch.cuda.empty_cache()
+    torch.cuda.synchronize()
+    logger.info("\n✅ GPU memory cleaned up.")
 
 if __name__ == "__main__":
     simulate_bug_localization(k=3)

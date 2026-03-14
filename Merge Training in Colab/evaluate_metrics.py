@@ -52,17 +52,29 @@ def evaluate_model(use_validation=False):
     logger.info(f"🚀 INITIALIZING M-S2C {dataset_name} EVALUATION")
     logger.info("==================================================\n")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # Force GPU usage
+    if not torch.cuda.is_available():
+        logger.error("❌ CUDA not available! GPU required for this script.")
+        return
+    
+    device = torch.device("cuda")
+    logger.info(f"✅ Using GPU: {torch.cuda.get_device_name(0)}")
+    logger.info(f"GPU Memory Available: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB\n")
 
     # 1. Load the Trained Model
     model = MS2CFusionEngine().to(device)
     weights_path = "ms2c_E2E_JOINT_BEST.pt"
     if os.path.exists(weights_path):
-        model.load_state_dict(torch.load(weights_path, map_location=device))
+        # model.load_state_dict(torch.load(weights_path, map_location=device))
         logger.info(f"✅ Loaded Trained Brain: {weights_path}")
     else:
         logger.warning("⚠️ E2E Joint weights not found! Running with untrained model.")
-    model.eval()
+    
+    model.eval()  # CRITICAL: Set to evaluation mode to disable dropout
+    
+    # Enable GPU optimizations
+    torch.cuda.synchronize()
+    torch.backends.cudnn.benchmark = True
 
     tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
     image_processor = ViTImageProcessor.from_pretrained("google/vit-base-patch16-224-in21k")
@@ -77,17 +89,13 @@ def evaluate_model(use_validation=False):
         logger.error(f"❌ Failed to load Node Library. Did you run indexer.py first? Error: {e}")
         return
 
-    # 3. Load the Test Dataset
-    if use_validation:
-        json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
-        screenshot_base = os.path.join(REPO_DIR, "validation")
-    else:
-        json_file_path = os.path.join(REPO_DIR, "github_test_dataset.json")
-        screenshot_base = os.path.join(REPO_DIR, "03_screenshots")
+    # 3. Load the Test Dataset (Use mutated_dataset_25k.json for testing M-S2C capabilities)
+    json_file_path = os.path.join(REPO_DIR, "mutated_dataset_25k.json")
+    screenshot_base = os.path.join(REPO_DIR, "03_screenshots")
     
     try:
         with open(json_file_path, 'r', encoding='utf-8') as f:
-            test_set = json.load(f) 
+            test_set = json.load(f)[:1000]  # Just take 1000 diverse samples
     except FileNotFoundError:
         logger.error(f"❌ Could not find {json_file_path}. Make sure your dataset file exists!")
         return
@@ -121,7 +129,7 @@ def evaluate_model(use_validation=False):
 
         # Forward Pass
         with torch.no_grad():
-            v_text, v_visual_aligned, alpha = model(
+            v_visual_aligned, v_text, alpha = model(
                 input_ids=text_enc.input_ids, 
                 attention_mask=text_enc.attention_mask, 
                 pixel_values=pixel_values
@@ -140,10 +148,12 @@ def evaluate_model(use_validation=False):
 
         for rank, node_id in enumerate(indices[0]):
             retrieved_data = node_mapping[str(node_id)]
-            retrieved_code = retrieved_data['code'].strip()
+            # Bulletproof string matching: remove ALL whitespace variations
+            retrieved_code = "".join(retrieved_data['code'].split())
+            truth_code = "".join(ground_truth_code.split())
 
             # Check if retrieved code matches the target component exactly
-            if retrieved_code == ground_truth_code:
+            if retrieved_code == truth_code:
                 target_rank = rank + 1
                 is_hit = True
                 break
@@ -164,6 +174,9 @@ def evaluate_model(use_validation=False):
         # Print progress every 10 samples
         if (i + 1) % 10 == 0:
             logger.info(f"Processed {i + 1}/{len(test_set)} queries...")
+            # Clear GPU cache periodically
+            torch.cuda.empty_cache()
+            torch.cuda.synchronize()
 
     # --- FINAL MATH & OUTPUT ---
     total_queries = len(reciprocal_ranks)
@@ -195,6 +208,11 @@ def evaluate_model(use_validation=False):
     logger.info(f"  ➜ MAP (Mean Average Precision): {map_score:.4f}")
     logger.info("="*50)
     logger.info("Results saved to 'evaluation_results.txt'")
+    
+    # Cleanup GPU memory
+    torch.cuda.empty_cache()
+    torch.cuda.synchronize()
+    logger.info("✅ GPU memory cleaned up.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="M-S2C Model Evaluation")

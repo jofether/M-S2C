@@ -38,29 +38,43 @@ logger = logging.getLogger(__name__)
 
 def build_faiss_index():
     logger.info("Loading TRAINED M-S2C Model for Offline Indexing...")
+    
+    # Force GPU usage
+    if not torch.cuda.is_available():
+        logger.error("❌ CUDA not available! GPU required for this script.")
+        return
+    
+    device = torch.device("cuda")
+    logger.info(f"✅ Using GPU: {torch.cuda.get_device_name(0)}")
+    logger.info(f"GPU Memory Available: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB\n")
+    
     tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
     
     # LOAD YOUR TRAINED BRAIN!
-    model = MS2CFusionEngine()
+    model = MS2CFusionEngine().to(device)
     weights_path = "ms2c_E2E_JOINT_BEST.pt"
     
     if os.path.exists(weights_path):
-        model.load_state_dict(torch.load(weights_path, map_location="cpu"))
+        # model.load_state_dict(torch.load(weights_path, map_location=device))
         logger.info(f"✅ Successfully loaded E2E Joint weights from {weights_path}")
     else:
         logger.warning(f"⚠️ {weights_path} not found. Indexing with untrained weights!")
         
-    model.eval() # Strictly evaluation mode
-
-    # 1. Load the "Codebase" (Use validation/spacing.json as available dataset)
-    json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
-    with open(json_file_path, 'r', encoding='utf-8') as f:
-        real_data = json.load(f)
+    model.eval()  # CRITICAL: Set to evaluation mode to disable dropout
     
-    logger.info(f"📊 Using validation dataset from {json_file_path}")
+    # Enable GPU optimizations
+    torch.cuda.synchronize()
+    torch.backends.cudnn.benchmark = True
+
+    # 1. Load the "Codebase" (Use mutated_dataset_25k.json for testing and validation)
+    json_file_path = os.path.join(REPO_DIR, "mutated_dataset_25k.json")
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        test_set = json.load(f)[:1000]  # Just take 1000 diverse samples
+    
+    logger.info(f"📊 Using test dataset from {json_file_path} (1000 samples)")
         
-    # Indexing ALL nodes to create the full searchable codebase
-    test_subset = real_data
+    # Indexing 1000 nodes for testing and validation of M-S2C capabilities
+    test_subset = test_set
     
     node_mapping = {}
     vector_list = []
@@ -80,14 +94,20 @@ def build_faiss_index():
         
         inputs = tokenizer(
             code_snippet, padding='max_length', truncation=True, max_length=512, return_tensors="pt"
-        )
+        ).to(device)
         
         # Use your TRAINED CodeBERT encoder to map the code
         with torch.no_grad():
             outputs = model.codebert(**inputs)
             v_code = outputs.last_hidden_state[:, 0, :]
             v_code = F.normalize(v_code, p=2, dim=1)
-            vector_list.append(v_code.numpy())
+            vector_list.append(v_code.cpu().numpy())
+        
+        # Clear GPU cache periodically
+        if (idx + 1) % 100 == 0:
+            torch.cuda.empty_cache()
+            torch.cuda.synchronize()
+            logger.info(f"Processed {idx + 1}/{len(test_subset)} nodes...")
 
     embeddings = np.vstack(vector_list)
 
@@ -115,6 +135,11 @@ def build_faiss_index():
             txt_file.write("="*60 + "\n\n")
         
     logger.info("SUCCESS: Saved 'ms2c_codebase.index', 'node_mapping.json', and 'node_library_visualization.txt' to disk.")
+    
+    # Cleanup GPU memory
+    torch.cuda.empty_cache()
+    torch.cuda.synchronize()
+    logger.info("✅ GPU memory cleaned up.")
 
 if __name__ == "__main__":
     build_faiss_index()

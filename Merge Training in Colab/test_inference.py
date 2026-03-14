@@ -4,10 +4,24 @@ from transformers import AutoTokenizer, ViTImageProcessor
 from PIL import Image
 import json
 import os
+import logging
+import sys
 from pathlib import Path
 
 # Import your custom model class
 from ms2c_model import MS2CFusionEngine
+
+# --- LOGGING SETUP ---
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | Test Inference | %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[
+        logging.FileHandler("test_inference_logs.txt", mode='w', encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+logger = logging.getLogger(__name__)
 
 # Try to import FAISS if available; fall back to similarity search
 try:
@@ -15,7 +29,7 @@ try:
     FAISS_AVAILABLE = True
 except ImportError:
     FAISS_AVAILABLE = False
-    print("⚠️  FAISS not installed. Using cosine similarity fallback instead.")
+    logger.warning("FAISS not installed. Using cosine similarity fallback instead.")
 
 
 def load_model(weights_path, device='cpu'):
@@ -29,11 +43,11 @@ def load_model(weights_path, device='cpu'):
     Returns:
         model, tokenizer, image_processor
     """
-    print("🤖 Loading CodeBERT Tokenizer and ViT Processor...")
+    logger.info("Loading CodeBERT Tokenizer and ViT Processor...")
     tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
     image_processor = ViTImageProcessor.from_pretrained("google/vit-base-patch16-224-in21k")
     
-    print(f"🧠 Initializing MS2CFusionEngine Model Architecture...")
+    logger.info(f"Initializing MS2CFusionEngine Model Architecture...")
     model = MS2CFusionEngine(
         text_model_name="microsoft/codebert-base",
         vision_model_name="google/vit-base-patch16-224-in21k",
@@ -41,17 +55,17 @@ def load_model(weights_path, device='cpu'):
         vision_dim=768
     )
     
-    print(f"📥 Loading trained weights from {weights_path}...")
+    logger.info(f"Loading trained weights from {weights_path}...")
     if os.path.exists(weights_path):
         try:
             model.load_state_dict(torch.load(weights_path, map_location=device))
-            print("✅ Successfully loaded model weights!")
+            logger.info("Successfully loaded model weights!")
         except Exception as e:
-            print(f"❌ Error loading weights: {e}")
-            print("⚠️  Proceeding with untrained initialization.")
+            logger.error(f"Error loading weights: {e}")
+            logger.warning("Proceeding with untrained initialization.")
     else:
-        print(f"⚠️  Weight file not found at {weights_path}")
-        print("   Proceeding with untrained model (good for testing)")
+        logger.warning(f"Weight file not found at {weights_path}")
+        logger.info("Proceeding with untrained model (good for testing)")
     
     model = model.to(device)
     model.eval()  # Set to evaluation mode
@@ -82,10 +96,10 @@ def infer_code_fix(model, tokenizer, image_processor, bug_description, image_pat
             'bug_description': input description
         }
     """
-    print("\n🔍 Analyzing Input...")
+    logger.info("Analyzing Input...")
     
     # 1. Process Text (CodeBERT)
-    print(f"   📝 Tokenizing bug description: '{bug_description[:60]}...'")
+    logger.info(f"Tokenizing bug description: '{bug_description[:60]}...'")
     text_inputs = tokenizer(
         bug_description,
         return_tensors="pt",
@@ -95,13 +109,13 @@ def infer_code_fix(model, tokenizer, image_processor, bug_description, image_pat
     ).to(device)
     
     # 2. Process Image (ViT)
-    print(f"   🖼️  Loading screenshot from {os.path.basename(image_path)}...")
+    logger.info(f"Loading screenshot from {os.path.basename(image_path)}...")
     try:
         raw_image = Image.open(image_path).convert("RGB")
         
         # Optional: Crop to bounding box region for focused analysis
         if bounding_box and all(k in bounding_box for k in ['x', 'y', 'width', 'height']):
-            print(f"   ✂️  Cropping to bounding box region: x={bounding_box['x']}, y={bounding_box['y']}, " 
+            logger.info(f"Cropping to bounding box region: x={bounding_box['x']}, y={bounding_box['y']}, "
                   f"w={bounding_box['width']}, h={bounding_box['height']}")
             x1 = bounding_box['x']
             y1 = bounding_box['y']
@@ -111,10 +125,10 @@ def infer_code_fix(model, tokenizer, image_processor, bug_description, image_pat
         
         image_inputs = image_processor(images=raw_image, return_tensors="pt").to(device)
     except Exception as e:
-        print(f"❌ Error loading image: {e}")
+        logger.error(f"Error loading image: {e}")
         return None
 
-    print("⚙️  Running forward pass (CodeBERT + ViT -> Adaptive Gating)...")
+    logger.info("Running forward pass (CodeBERT + ViT -> Adaptive Gating)...")
     
     # 3. Forward Pass
     with torch.no_grad():
@@ -155,7 +169,7 @@ def retrieve_top_k_fixes(embedding_result, code_fixes_db, k=3):
     
     # Compute code embeddings (simplified: using CodeBERT)
     # In practice, you'd pre-compute these and store in FAISS
-    print(f"\n🔎 Searching for Top-{k} Similar Code Fixes...")
+    logger.info(f"Searching for Top-{k} Similar Code Fixes...")
     
     top_matches = []
     
@@ -178,32 +192,32 @@ def retrieve_top_k_fixes(embedding_result, code_fixes_db, k=3):
 
 
 def print_inference_results(bug_input, embedding_result, top_matches):
-    """Pretty-print the inference results."""
-    print("\n" + "="*70)
-    print("✅ MULTIMODAL BUG-FIX INFERENCE RESULTS")
-    print("="*70)
+    """Log the inference results."""
+    logger.info("=" * 70)
+    logger.info("MULTIMODAL BUG-FIX INFERENCE RESULTS")
+    logger.info("=" * 70)
     
-    print("\n📋 INPUT BUG REPORT:")
-    print(f"   Description: {bug_input['description']}")
-    print(f"   Screenshot:  {os.path.basename(bug_input['image_path'])}")
+    logger.info("INPUT BUG REPORT:")
+    logger.info(f"   Description: {bug_input['description']}")
+    logger.info(f"   Screenshot:  {os.path.basename(bug_input['image_path'])}")
     if bug_input.get('bounding_box'):
         bb = bug_input['bounding_box']
-        print(f"   ROI: ({bb['x']}, {bb['y']}) -> {bb['width']}x{bb['height']}")
+        logger.info(f"   ROI: ({bb['x']}, {bb['y']}) -> {bb['width']}x{bb['height']}")
     
-    print(f"\n🧠 MODEL ANALYSIS:")
-    print(f"   Alpha (Text-Visual Balance): {embedding_result['alpha']:.4f}")
-    print(f"   (0.0 = Pure Visual, 1.0 = Pure Text)")
-    print(f"   Text Embedding Norm:   {embedding_result['v_text'].norm().item():.4f}")
-    print(f"   Visual Embedding Norm: {embedding_result['v_visual'].norm().item():.4f}")
-    print(f"   Fused Embedding Norm:  {embedding_result['v_fused'].norm().item():.4f}")
+    logger.info(f"MODEL ANALYSIS:")
+    logger.info(f"   Alpha (Text-Visual Balance): {embedding_result['alpha']:.4f}")
+    logger.info(f"   (0.0 = Pure Visual, 1.0 = Pure Text)")
+    logger.info(f"   Text Embedding Norm:   {embedding_result['v_text'].norm().item():.4f}")
+    logger.info(f"   Visual Embedding Norm: {embedding_result['v_visual'].norm().item():.4f}")
+    logger.info(f"   Fused Embedding Norm:  {embedding_result['v_fused'].norm().item():.4f}")
     
-    print(f"\n🎯 TOP-{len(top_matches)} PREDICTED CODE FIXES:")
+    logger.info(f"TOP-{len(top_matches)} PREDICTED CODE FIXES:")
     for match in top_matches:
-        print(f"\n   Rank {match['rank']} (Similarity: {match['similarity']:.4f})")
-        print(f"   ├─ Fixed Code: {match['code']}")
-        print(f"   └─ Note: {match['description']}")
+        logger.info(f"   Rank {match['rank']} (Similarity: {match['similarity']:.4f})")
+        logger.info(f"   ├─ Fixed Code: {match['code']}")
+        logger.info(f"   └─ Note: {match['description']}")
     
-    print("\n" + "="*70 + "\n")
+    logger.info("=" * 70)
 
 
 if __name__ == "__main__":
@@ -211,22 +225,22 @@ if __name__ == "__main__":
     WEIGHTS_PATH = "ms2c_E2E_JOINT_BEST.pt"  # Use your trained E2E weights
     DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
     
-    print(f"🚀 Initializing Inference Pipeline on {DEVICE.upper()}...\n")
+    logger.info(f"Initializing Inference Pipeline on {DEVICE.upper()}...")
     
     # Load model
     model, tokenizer, image_processor = load_model(WEIGHTS_PATH, device=DEVICE)
     
     # --- DUMMY TEST CASE (Spacing Bug Example) ---
-    print("\n" + "="*70)
-    print("📌 RUNNING DUMMY TEST: Spacing Bug Detection")
-    print("="*70)
+    logger.info("=" * 70)
+    logger.info("RUNNING DUMMY TEST: Spacing Bug Detection")
+    logger.info("=" * 70)
     
     # Create dummy test image for demonstration
     TEST_IMAGE_PATH = "test_screenshot.png"
     
     # Create a simple test screenshot if it doesn't exist
     if not os.path.exists(TEST_IMAGE_PATH):
-        print(f"📸 Creating test screenshot at {TEST_IMAGE_PATH}...")
+        logger.info(f"Creating test screenshot at {TEST_IMAGE_PATH}...")
         test_img = Image.new('RGB', (224, 224), color='white')
         # Add some simple graphics to represent a UI
         from PIL import ImageDraw
@@ -281,7 +295,7 @@ if __name__ == "__main__":
             top_matches=top_matches
         )
         
-        print("\n💡 NEXT STEPS:")
-        print("   1. Replace SAMPLE_FIXES with your actual pre-computed code embeddings")
-        print("   2. Use FAISS index for efficient large-scale retrieval (see retrieve.py)")
-        print("   3. Fine-tune similarity matching based on your specific domain")
+        logger.info("NEXT STEPS:")
+        logger.info("   1. Replace SAMPLE_FIXES with your actual pre-computed code embeddings")
+        logger.info("   2. Use FAISS index for efficient large-scale retrieval (see retrieve.py)")
+        logger.info("   3. Fine-tune similarity matching based on your specific domain")

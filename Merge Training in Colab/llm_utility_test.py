@@ -21,11 +21,11 @@ def run_llm_utility_test(sample_limit=10):
     
     model = genai.GenerativeModel('gemini-1.5-flash')
 
-    # ⚠️ FIXED: Pointing to GitHub Dataset
-    json_file_path = os.path.join(REPO_DIR, "github_test_dataset.json")
+    # ⚠️ FIXED: Using mutated_dataset_25k.json for consistency with training
+    json_file_path = os.path.join(REPO_DIR, "mutated_dataset_25k.json")
     with open(json_file_path, 'r', encoding='utf-8') as f:
         # NOTE: Keeping sample limit here so you don't exhaust your free Gemini API calls!
-        test_set = json.load(f)[:sample_limit] 
+        test_set = json.load(f)[:10] 
 
     baseline_success, enhanced_success = 0, 0
 

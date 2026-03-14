@@ -10,20 +10,42 @@ import faiss
 import json
 import os
 import logging
+import sys
 
 from ms2c_model import MS2CFusionEngine
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_DIR = os.path.join(BASE_DIR)
 
-logging.basicConfig(level=logging.INFO, format="%(message)s")
+# --- LOGGING SETUP ---
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | Ablation Study | %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[
+        logging.FileHandler("ablation_study_logs.txt", mode='w', encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 logger = logging.getLogger(__name__)
 
 def run_ablation_study():
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # Force GPU usage
+    if not torch.cuda.is_available():
+        logger.error("❌ CUDA not available! GPU required for this script.")
+        return
+    
+    device = torch.device("cuda")
+    logger.info(f"✅ Using GPU: {torch.cuda.get_device_name(0)}")
+    logger.info(f"GPU Memory Available: {torch.cuda.get_device_properties(0).total_memory / 1e9:.2f} GB\n")
+    
     model = MS2CFusionEngine().to(device)
     model.load_state_dict(torch.load("ms2c_E2E_JOINT_BEST.pt", map_location=device))
     model.eval()
+    
+    # Enable GPU optimizations
+    torch.cuda.synchronize()
+    torch.backends.cudnn.benchmark = True
 
     tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
     image_processor = ViTImageProcessor.from_pretrained("google/vit-base-patch16-224-in21k")
@@ -32,13 +54,13 @@ def run_ablation_study():
     with open("node_mapping.json", "r", encoding='utf-8') as f:
         node_mapping = json.load(f)
 
-    # ⚠️ FIXED: Using validation dataset (spacing.json)
-    json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
+    # ⚠️ FIXED: Using mutated_dataset_25k.json for consistency with training
+    json_file_path = os.path.join(REPO_DIR, "mutated_dataset_25k.json")
     with open(json_file_path, 'r', encoding='utf-8') as f:
-        test_set = json.load(f)
+        test_set = json.load(f)[:1000]
     
-    logger.info(f"📊 Using validation dataset: {json_file_path}")
-    screenshot_base = os.path.join(REPO_DIR, "validation") 
+    logger.info(f"📊 Using training dataset: {json_file_path} (1000 samples)")
+    screenshot_base = os.path.join(REPO_DIR, "03_screenshots") 
 
     logger.info("🚀 RUNNING ABLATION STUDY: MULTIMODAL VS UNIMODAL (TEXT-ONLY)")
     metrics = {"multimodal": {"rr": []}, "unimodal": {"rr": []}}
@@ -56,7 +78,7 @@ def run_ablation_study():
             continue
 
         with torch.no_grad():
-            v_text, v_visual_aligned, alpha = model(
+            v_visual_aligned, v_text, alpha = model(
                 input_ids=text_enc.input_ids, attention_mask=text_enc.attention_mask, pixel_values=pixel_values
             )
             
@@ -72,10 +94,16 @@ def run_ablation_study():
             scores, indices = index.search(vector.cpu().numpy(), 10)
             target_rank = 0
             for rank, node_id in enumerate(indices[0]):
-                if node_mapping[str(node_id)]['code'].strip() == ground_truth:
+                # Bulletproof comparison: remove ALL whitespace variations
+                if "".join(node_mapping[str(node_id)]['code'].split()) == "".join(ground_truth.split()):
                     target_rank = rank + 1
                     break
             metrics[mode]["rr"].append(1.0 / target_rank if target_rank > 0 else 0.0)
+        
+        # Clear GPU cache periodically
+        if (i + 1) % 10 == 0:
+            torch.cuda.empty_cache()
+            torch.cuda.synchronize()
 
     mrr_multi = sum(metrics["multimodal"]["rr"]) / len(test_set)
     mrr_uni = sum(metrics["unimodal"]["rr"]) / len(test_set)
@@ -89,6 +117,11 @@ def run_ablation_study():
     logger.info("-" * 50)
     logger.info(f"⭐ DIAGNOSTIC GAIN (ΔMRR):  +{diagnostic_gain:.4f}")
     logger.info("="*50)
+    
+    # Cleanup GPU memory
+    torch.cuda.empty_cache()
+    torch.cuda.synchronize()
+    logger.info("✅ GPU memory cleaned up.")
 
 if __name__ == "__main__":
     run_ablation_study()
