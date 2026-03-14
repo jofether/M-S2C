@@ -52,10 +52,12 @@ def build_faiss_index():
         
     model.eval() # Strictly evaluation mode
 
-    # 1. Load the "Codebase" (⚠️ FIXED to point to GitHub data)
-    json_file_path = os.path.join(REPO_DIR, "github_test_dataset.json")
+    # 1. Load the "Codebase" (Use validation/spacing.json as available dataset)
+    json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
     with open(json_file_path, 'r', encoding='utf-8') as f:
         real_data = json.load(f)
+    
+    logger.info(f"📊 Using validation dataset from {json_file_path}")
         
     # Indexing ALL nodes to create the full searchable codebase
     test_subset = real_data

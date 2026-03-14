@@ -25,10 +25,11 @@ def run_bm25_benchmark():
     logger.info(f"Indexing {len(corpus)} AST nodes with BM25...")
     bm25 = BM25Okapi(tokenized_corpus)
 
-    # ⚠️ FIXED: Pointing to GitHub Dataset, full evaluation
-    json_file_path = os.path.join(REPO_DIR, "github_test_dataset.json")
+    # ⚠️ FIXED: Using validation dataset (spacing.json)
+    json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
     with open(json_file_path, 'r', encoding='utf-8') as f:
         test_set = json.load(f)
+    logger.info(f"📊 Using validation dataset: {json_file_path}")
 
     reciprocal_ranks = []
     hits_at_1 = 0

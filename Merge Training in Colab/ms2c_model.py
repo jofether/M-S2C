@@ -67,7 +67,7 @@ class MS2CFusionEngine(nn.Module):
         print("Loading CodeBERT and ViT models...")
         self.codebert = AutoModel.from_pretrained(text_model_name)
         self.vit = ViTModel.from_pretrained(vision_model_name)
-        print("✅ Encoders loaded (trainability controlled by optimizer setup)")
+        print("[OK] Encoders loaded (trainability controlled by optimizer setup)")
             
         # --- MLP PROJECTION HEAD ---
         # Maps 768-D vision embeddings to 768-D code semantic space

@@ -32,17 +32,20 @@ def run_ablation_study():
     with open("node_mapping.json", "r", encoding='utf-8') as f:
         node_mapping = json.load(f)
 
-    # ⚠️ FIXED: Pointing to GitHub dataset, full evaluation
-    json_file_path = os.path.join(REPO_DIR, "github_test_dataset.json")
+    # ⚠️ FIXED: Using validation dataset (spacing.json)
+    json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
     with open(json_file_path, 'r', encoding='utf-8') as f:
-        test_set = json.load(f) 
+        test_set = json.load(f)
+    
+    logger.info(f"📊 Using validation dataset: {json_file_path}")
+    screenshot_base = os.path.join(REPO_DIR, "validation") 
 
     logger.info("🚀 RUNNING ABLATION STUDY: MULTIMODAL VS UNIMODAL (TEXT-ONLY)")
     metrics = {"multimodal": {"rr": []}, "unimodal": {"rr": []}}
 
     for i, sample in enumerate(test_set):
         query_text = sample['text_anchor']
-        image_path = os.path.normpath(os.path.join(REPO_DIR, "data", "screenshots", sample['image_anchor']))
+        image_path = os.path.normpath(os.path.join(screenshot_base, sample['image_anchor']))
         ground_truth = sample['positive_node'].strip()
 
         text_enc = tokenizer(query_text, padding='max_length', truncation=True, max_length=512, return_tensors="pt").to(device)

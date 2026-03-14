@@ -63,14 +63,14 @@ def simulate_bug_localization(k=3):
     with open("node_mapping.json", "r", encoding='utf-8') as f:
         node_mapping = json.load(f)
 
-    # ⚠️ Pointing to the GitHub Real-World Dataset
-    json_file_path = os.path.join(REPO_DIR, "github_test_dataset.json")
+    # Load validation dataset
+    json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
     with open(json_file_path, 'r', encoding='utf-8') as f:
         real_data = json.load(f)
         
     query_sample = real_data[0] 
     query_text = query_sample['text_anchor']
-    image_path = os.path.normpath(os.path.join(REPO_DIR, "03_screenshots", query_sample['image_anchor']))
+    image_path = os.path.normpath(os.path.join(REPO_DIR, "validation", query_sample['image_anchor']))
 
     logger.info(f"\n--- USER BUG REPORT ---")
     logger.info(f"Text: '{query_text}'")

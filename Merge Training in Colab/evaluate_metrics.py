@@ -6,6 +6,10 @@ the official performance metrics defined in the thesis:
 - Top-K Accuracy (Hit@1, Hit@5, Hit@10)
 - Mean Reciprocal Rank (MRR)
 - Mean Average Precision (MAP)
+
+Usage:
+  python evaluate_metrics.py                    # Uses github_test_dataset.json
+  python evaluate_metrics.py --validation       # Uses validation/spacing.json
 """
 
 import torch
@@ -17,6 +21,7 @@ import json
 import os
 import logging
 import sys
+import argparse
 
 from ms2c_model import MS2CFusionEngine
 
@@ -35,12 +40,16 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def evaluate_model():
+def evaluate_model(use_validation=False):
     """
-    Evaluates the model on the full GitHub dataset and calculates Top-K, MRR, and MAP.
+    Evaluates the model on the test dataset and calculates Top-K, MRR, and MAP.
+    
+    Args:
+        use_validation (bool): If True, uses validation/spacing.json. Otherwise uses github_test_dataset.json
     """
+    dataset_name = "VALIDATION (Spacing)" if use_validation else "GITHUB REAL-WORLD"
     logger.info("==================================================")
-    logger.info("🚀 INITIALIZING M-S2C GITHUB REAL-WORLD VALIDATION")
+    logger.info(f"🚀 INITIALIZING M-S2C {dataset_name} EVALUATION")
     logger.info("==================================================\n")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -68,16 +77,22 @@ def evaluate_model():
         logger.error(f"❌ Failed to load Node Library. Did you run indexer.py first? Error: {e}")
         return
 
-    # 3. Load the GitHub Real-World Dataset
-    json_file_path = os.path.join(REPO_DIR, "github_test_dataset.json")
+    # 3. Load the Test Dataset
+    if use_validation:
+        json_file_path = os.path.join(REPO_DIR, "validation", "spacing.json")
+        screenshot_base = os.path.join(REPO_DIR, "validation")
+    else:
+        json_file_path = os.path.join(REPO_DIR, "github_test_dataset.json")
+        screenshot_base = os.path.join(REPO_DIR, "03_screenshots")
+    
     try:
         with open(json_file_path, 'r', encoding='utf-8') as f:
             test_set = json.load(f) 
     except FileNotFoundError:
-        logger.error(f"❌ Could not find {json_file_path}. Make sure your GitHub dataset is named correctly!")
+        logger.error(f"❌ Could not find {json_file_path}. Make sure your dataset file exists!")
         return
     
-    logger.info(f"✅ Loaded {len(test_set)} real-world test samples for validation.\n")
+    logger.info(f"✅ Loaded {len(test_set)} test samples for validation.\n")
     logger.info("⏳ Running Batch Inference... This may take a few minutes depending on GPU.\n")
 
     # Metric Trackers
@@ -91,7 +106,7 @@ def evaluate_model():
 
     for i, sample in enumerate(test_set):
         query_text = sample['text_anchor']
-        image_path = os.path.normpath(os.path.join(REPO_DIR, "03_screenshots", sample['image_anchor']))
+        image_path = os.path.normpath(os.path.join(screenshot_base, sample['image_anchor']))
         ground_truth_code = sample['positive_node'].strip()
 
         # Process Modalities
@@ -182,4 +197,8 @@ def evaluate_model():
     logger.info("Results saved to 'evaluation_results.txt'")
 
 if __name__ == "__main__":
-    evaluate_model()
+    parser = argparse.ArgumentParser(description="M-S2C Model Evaluation")
+    parser.add_argument("--validation", action="store_true", help="Use validation/spacing.json instead of github_test_dataset.json")
+    args = parser.parse_args()
+    
+    evaluate_model(use_validation=args.validation)
