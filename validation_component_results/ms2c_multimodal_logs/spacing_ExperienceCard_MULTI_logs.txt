@@ -1,0 +1,72 @@
+=== MULTI RESULTS: spacing_ExperienceCard ===
+
+Query: The Container Box is literally colliding with the border of the webpage.
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 4
+Gating Alpha: 0.4996
+--- Top 10 ---
+1. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+2. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+3. <h3 className="text-base font-medium text-gray-800">
+4. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+5. <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+6. <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2">
+
+==================================================
+
+Query: I can't figure out why this Container Box isn't showing up properly!
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 5
+Gating Alpha: 0.4998
+--- Top 10 ---
+1. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+2. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+3. <h3 className="text-base font-medium text-gray-800">
+4. <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+5. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+6. <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2">
+
+==================================================
+
+Query: There is a noticeable absence of content in the Container Box, which contrasts sharply with the surrounding elements on the page.
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 5
+Gating Alpha: 0.4997
+--- Top 10 ---
+1. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+2. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+3. <h3 className="text-base font-medium text-gray-800">
+4. <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+5. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+6. <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2">
+
+==================================================
+
+Query: It seems that all other UI elements are perfectly aligned except for this one Container Box which disrupts the layout.
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 5
+Gating Alpha: 0.4997
+--- Top 10 ---
+1. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+2. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+3. <h3 className="text-base font-medium text-gray-800">
+4. <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+5. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+6. <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2">
+
+==================================================
+
+Query: The Container Box is causing issues and needs immediate attention.
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 4
+Gating Alpha: 0.4997
+--- Top 10 ---
+1. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+2. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+3. <h3 className="text-base font-medium text-gray-800">
+4. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+5. <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+6. <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2">
+
+==================================================
+

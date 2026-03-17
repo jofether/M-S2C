@@ -1,0 +1,40 @@
+=== UNI REPOSITORY RESULTS: kanban-board ===
+
+Image / ID: Kanban Board_bug-3.png
+Query: The Done column appears faded and semi-transparent, significantly reducing its visual prominence and readability compared to other columns.
+Target File: src/components/Column.jsx
+Target Node: <div className="flex-shrink-0 w-96 flex flex-col bg-gradient-to-b from-slate-700 to-slate-800 rounded-xl shadow-xl overflow-hidden border border-slate-600 opacity-50">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <main className="flex-1 overflow-x-auto overflow-y-hidden p-12">
+2. [src/components/Column.jsx] <p className="text-white/70 text-xs">
+3. [src/App.jsx] <h1 className="text-3xl font-bold text-white">
+4. [src/App.jsx] <p className="text-slate-400 text-sm mt-1">
+5. [src/components/TaskCard.jsx] <span className="text-lg">
+6. [src/components/Column.jsx] <h2 className="text-white font-bold text-lg">
+7. [src/components/Column.jsx] <span className="text-2xl">
+8. [src/App.jsx] <span className="px-3 py-1 rounded-full bg-slate-700 text-xs font-medium">
+9. [src/components/Column.jsx] <p className="text-center text-sm">
+10. [src/components/Column.jsx] <span className="block text-2xl mb-2">
+
+======================================================================
+
+Image / ID: Kanban Board_bug-8.png
+Query: Task title text is too dark and difficult to read against the dark card background, severely impacting legibility.
+Target File: src/components/TaskCard.jsx
+Target Node: <p className="text-slate-600 font-semibold text-sm flex-1 line-clamp-2 group-hover:text-blue-200">
+Rank Achieved: 9
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <main className="flex-1 overflow-x-auto overflow-y-hidden p-12">
+2. [src/components/Column.jsx] <p className="text-white/70 text-xs">
+3. [src/App.jsx] <p className="text-slate-400 text-sm mt-1">
+4. [src/App.jsx] <h1 className="text-3xl font-bold text-white">
+5. [src/components/TaskCard.jsx] <span className="text-lg">
+6. [src/App.jsx] <span className="px-3 py-1 rounded-full bg-slate-700 text-xs font-medium">
+7. [src/components/Column.jsx] <span className="text-2xl">
+8. [src/components/Column.jsx] <h2 className="text-white font-bold text-lg">
+9. [src/components/TaskCard.jsx] <p className="text-slate-600 font-semibold text-sm flex-1 line-clamp-2 group-hover:text-blue-200">  <--- [GROUND TRUTH HIT]
+10. [src/components/Column.jsx] <p className="text-center text-sm">
+
+======================================================================
+

@@ -1,0 +1,78 @@
+=== BM25 REPOSITORY RESULTS: code-snippet-repository ===
+
+Image / ID: Code Snippet Repository_bug-2.png
+Query: The code editor panel is consuming the entire layout width instead of sharing proportional space with adjacent components.
+Target File: src/components/CodeEditor.jsx
+Target Node: <div className="lg:col-span-100">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/CodeEditor.jsx] <div className="code-editor p-8 overflow-x-auto max-h-[650px] overflow-y-auto" style={{ fontFamily: "'Fira Code', 'Courier New', monospace", fontSize: '14px', lineHeight: '1.8' }}>
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <SearchAndFilter searchTerm={searchTerm} onSearchChange={(value) =>
+4. [src/App.jsx] <CodeEditor currentSnippet={currentSnippet} copied={copied} onCopy={handleCopy} />
+5. [src/App.jsx] <div style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #1e1b4b 60%, #0f172a 100%)' }} className="min-h-screen py-8 px-4 relative overflow-hidden">
+6. [src/App.jsx] <style>
+7. [src/App.jsx] <div className="absolute inset-0 overflow-hidden pointer-events-none">
+8. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+9. [src/App.jsx] <Footer />
+10. [src/App.jsx] <StatsBar snippets={snippetsData} />
+
+======================================================================
+
+Image / ID: Code Snippet Repository_bug-4.png
+Query: The featured snippet cards are stacking vertically in a single column instead of displaying in a responsive multi-column grid layout.
+Target File: src/components/FeaturedSection.jsx
+Target Node: <div className="grid grid-rows-1 md:grid-rows-3 gap-6">
+Rank Achieved: 4
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+2. [src/components/CodeEditor.jsx] <div className="grid grid-cols-3 gap-4 mt-6">
+3. [src/components/CodeEditor.jsx] <div className="grid grid-cols-3 gap-3 mt-6">
+4. [src/components/FeaturedSection.jsx] <div className="grid grid-rows-1 md:grid-rows-3 gap-6">  <--- [GROUND TRUTH HIT]
+5. [src/components/StatsBar.jsx] <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+6. [src/main.jsx] <App />
+7. [src/App.jsx] <SearchAndFilter searchTerm={searchTerm} onSearchChange={(value) =>
+8. [src/App.jsx] <CodeEditor currentSnippet={currentSnippet} copied={copied} onCopy={handleCopy} />
+9. [src/App.jsx] <div style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #1e1b4b 60%, #0f172a 100%)' }} className="min-h-screen py-8 px-4 relative overflow-hidden">
+10. [src/App.jsx] <style>
+
+======================================================================
+
+Image / ID: Code Snippet Repository_bug-7.png
+Query: The header content is left-aligned on the page instead of centered, creating asymmetrical visual balance.
+Target File: src/components/Header.jsx
+Target Node: <div className="mb-16 text-cente">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Header snippetsCount={snippetsData.length} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <SearchAndFilter searchTerm={searchTerm} onSearchChange={(value) =>
+4. [src/App.jsx] <CodeEditor currentSnippet={currentSnippet} copied={copied} onCopy={handleCopy} />
+5. [src/App.jsx] <div style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #1e1b4b 60%, #0f172a 100%)' }} className="min-h-screen py-8 px-4 relative overflow-hidden">
+6. [src/App.jsx] <style>
+7. [src/App.jsx] <div className="absolute inset-0 overflow-hidden pointer-events-none">
+8. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+9. [src/App.jsx] <Footer />
+10. [src/App.jsx] <StatsBar snippets={snippetsData} />
+
+======================================================================
+
+Image / ID: Code Snippet Repository_bug-10.png
+Query: The snippets list panel is consuming the entire layout width, forcing adjacent content off-screen on desktop views.
+Target File: src/components/SnippetsList.jsx
+Target Node: <div className="lg:col-span-99">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <StatsBar snippets={snippetsData} />
+2. [src/App.jsx] <FeaturedSection snippets={snippetsData} filteredSnippets={filteredSnippets} onSelectSnippet={setSelectedSnippet} onSelectCategory={setSelectedCategory} />
+3. [src/components/SearchAndFilter.jsx] <input type="text" placeholder="🔍 Search snippets by name, language, or tags..." value={searchTerm} onChange={(e) =>
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <SearchAndFilter searchTerm={searchTerm} onSearchChange={(value) =>
+6. [src/App.jsx] <CodeEditor currentSnippet={currentSnippet} copied={copied} onCopy={handleCopy} />
+7. [src/App.jsx] <div style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #1e1b4b 60%, #0f172a 100%)' }} className="min-h-screen py-8 px-4 relative overflow-hidden">
+8. [src/App.jsx] <style>
+9. [src/App.jsx] <div className="absolute inset-0 overflow-hidden pointer-events-none">
+10. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+
+======================================================================
+

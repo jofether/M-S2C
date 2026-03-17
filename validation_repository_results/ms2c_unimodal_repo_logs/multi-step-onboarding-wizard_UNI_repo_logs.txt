@@ -1,0 +1,40 @@
+=== UNI REPOSITORY RESULTS: multi-step-onboarding-wizard ===
+
+Image / ID: Multi-Step Onboarding Wizard_bug-5.png
+Query: The field description text is too light and difficult to read against the background.
+Target File: src/components/FormInput.jsx
+Target Node: <p className="text-gray-400 mt-1">
+Rank Achieved: 8
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/steps/Step6.jsx] <p className="font-semibold text-gray-900 capitalize">
+2. [src/components/steps/Step6.jsx] <p className="font-semibold text-gray-900">
+3. [src/components/steps/Step6.jsx] <p className="text-xs uppercase font-bold text-emerald-700 mb-2">
+4. [src/components/steps/Step6.jsx] <p className="text-xs uppercase font-bold text-gray-500 mb-1">
+5. [src/components/steps/Step6.jsx] <p className="text-gray-600">
+6. [src/App.jsx] <p className="text-gray-600 text-lg">
+7. [src/components/steps/Step1.jsx] <p className="text-xs text-gray-500">
+8. [src/components/FormInput.jsx] <p className="text-gray-400 mt-1">  <--- [GROUND TRUTH HIT]
+9. [src/components/steps/Step6.jsx] <h3 className="text-xl font-bold text-gray-900 mb-2">
+10. [src/components/steps/Step5.jsx] <h3 className="font-semibold text-gray-900 mb-4">
+
+======================================================================
+
+Image / ID: Multi-Step Onboarding Wizard_bug-9_bug-9-NavigateToStep5.png
+Query: The success message box has collapsed with insufficient internal spacing, causing the content to overflow.
+Target File: src/components/steps/Step5.jsx
+Target Node: <div className="bg-green-50 border-2 border-green-200 rounded-xl -p-8">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/FormInput.jsx] <div className={colSpan >
+2. [src/App.jsx] <div className="px-8 pb-12 min-h-[420px]">
+3. [src/App.jsx] <div className="bg-white rounded-3xl shadow-2xl overflow-hidden -z-10">
+4. [src/App.jsx] <div className="px-8 py-8 border-t border-gray-200 bg-gray-50 flex items-center justify-between">
+5. [src/App.jsx] <div className="mt-8 text-center text-gray-60 text-sm">
+6. [src/App.jsx] <div className="w-full max-w-4xl">
+7. [src/App.jsx] <div className="w-full bg-gray-200 rounded-full h-1.5">
+8. [src/App.jsx] <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-4 shadow-xl">
+9. [src/components/steps/Step6.jsx] <div className="grid grid-cols-2 gap-4">
+10. [src/App.jsx] <div className="px-8 pb-8">
+
+======================================================================
+

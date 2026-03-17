@@ -1,0 +1,116 @@
+=== UNI REPOSITORY RESULTS: delete-confirmation-modal ===
+
+Image / ID: Delete Confirmation Modal_bug-4.png
+Query: The card component creates an abnormally large gap below it, pushing subsequent content far down the page.
+Target File: src/components/Card.jsx
+Target Node: <div className="bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200 mb-999">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Modal.jsx] <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse">
+2. [src/components/Modal.jsx] <svg className="animate-spin -ml-1 mr-3 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+3. [src/components/Modal.jsx] <button onClick={onCancel} disabled={isLoading} className="w-full sm:w-auto inline-flex justify-center rounded-lg border border-gray-300 shadow-sm px-5 py-2.5 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 active:scale-95 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm disabled:opacity-50 disabled:cursor-not-allowed" >
+4. [src/components/Modal.jsx] <button onClick={onConfirm} disabled={isLoading} className={`w-full sm:w-auto inline-flex justify-center items-center rounded-lg border border-transparent shadow-sm px-5 py-2.5 text-base font-medium text-white transition-all ${ isLoading ? 'bg-red-500 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700 active:scale-95' } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:text-sm`} >
+5. [src/components/Modal.jsx] <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4">
+6. [src/components/Modal.jsx] <svg className="h-8 w-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+7. [src/components/Modal.jsx] <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+8. [src/components/SettingsSection.jsx] <button className="px-6 py-3 bg-slate-700 text-white rounded-lg font-medium hover:bg-slate-600 transition-colors shadow-lg active:scale-95">
+9. [src/components/Modal.jsx] <div className={`relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${ isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0' }`} onClick={(e) =>
+10. [src/App.jsx] <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-5.png
+Query: The navigation items are stacked in reverse order instead of in their intended left-to-right sequence.
+Target File: src/components/Header.jsx
+Target Node: <nav className="flex flex-row-reverse justify-between items-center mb-12">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Modal.jsx] <div className="bg-gray-50 px-8 py-6 flex flex-col sm:flex-row-reverse gap-3 border-t border-gray-200">
+2. [src/App.jsx] <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+3. [src/components/Modal.jsx] <div className={`relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${ isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0' }`} onClick={(e) =>
+4. [src/components/Card.jsx] <div className="bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200 mb-999">
+5. [src/components/Header.jsx] <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform">
+6. [src/components/Modal.jsx] <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4">
+7. [src/components/Header.jsx] <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform">
+8. [src/components/Modal.jsx] <div className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300 p-4 ${ isOpen ? 'opacity-100 visible' : 'opacity-0 invisible' }`} style={{ backgroundColor: isOpen ? 'rgba(0, 0, 0, 0.6)' : 'rgba(0, 0, 0, 0)', backdropFilter: isOpen ? 'blur(8px)' : 'blur(0px)', }} onClick={onCancel} >
+9. [src/components/Modal.jsx] <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse">
+10. [src/components/Modal.jsx] <svg className="h-8 w-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-6.png
+Query: The navigation icons are repositioned to the top of the page and overlap with the main header, obscuring content.
+Target File: src/components/Header.jsx
+Target Node: <div className="flex space-x-3 absolute -top-4 text-white">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Card.jsx] <p className="text-2xl font-bold text-white mt-2">
+2. [src/components/Card.jsx] <p className="text-xs text-slate-400 mt-1">
+3. [src/components/SettingsSection.jsx] <h2 className="text-2xl font-bold text-white mb-4">
+4. [src/components/Card.jsx] <div className="text-3xl mb-2">
+5. [src/components/Header.jsx] <div className="font-bold text-3xl text-white">
+6. [src/components/Card.jsx] <p className="text-slate-400 text-sm font-medium">
+7. [src/components/Modal.jsx] <p className="text-xs text-red-600 font-semibold">
+8. [src/components/Modal.jsx] <h3 className="text-2xl font-bold text-gray-900 mb-2">
+9. [src/components/Modal.jsx] <p className="text-sm text-gray-600 leading-relaxed mb-2">
+10. [src/components/SettingsSection.jsx] <div className="mb-12 p-48">
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-9.png
+Query: The settings section has excessive internal padding that breaks the page layout and pushes content beyond visible boundaries.
+Target File: src/components/SettingsSection.jsx
+Target Node: <div className="mb-12 p-48">
+Rank Achieved: 7
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Header.jsx] <nav className="flex flex-row-reverse justify-between items-center mb-12">
+2. [src/components/SettingsSection.jsx] <div className="flex flex-col sm:flex-row gap-4">
+3. [src/components/StatsGrid.jsx] <div className="grid grid-cols-none gap-6">
+4. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+5. [src/components/Header.jsx] <div className="flex space-x-3 absolute -top-4 text-white">
+6. [src/App.jsx] <div className="relative z-40">
+7. [src/components/SettingsSection.jsx] <div className="mb-12 p-48">  <--- [GROUND TRUTH HIT]
+8. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 font-sans">
+9. [src/components/Toast.jsx] <div className={`fixed bottom-6 right-6 ${bgColor} text-white px-6 py-4 rounded-lg shadow-lg animate-slide-in z-50`}>
+10. [src/components/Header.jsx] <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform">
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-10.png
+Query: The stats items collapse and fail to display in a proper multi-column grid layout, appearing as a broken single column.
+Target File: src/components/StatsGrid.jsx
+Target Node: <div className="grid grid-cols-none gap-6">
+Rank Achieved: 1
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/StatsGrid.jsx] <div className="grid grid-cols-none gap-6">  <--- [GROUND TRUTH HIT]
+2. [src/components/SettingsSection.jsx] <div className="flex flex-col sm:flex-row gap-4">
+3. [src/components/Header.jsx] <nav className="flex flex-row-reverse justify-between items-center mb-12">
+4. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+5. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 font-sans">
+6. [src/components/Toast.jsx] <div className={`fixed bottom-6 right-6 ${bgColor} text-white px-6 py-4 rounded-lg shadow-lg animate-slide-in z-50`}>
+7. [src/components/Header.jsx] <div className="flex space-x-3 absolute -top-4 text-white">
+8. [src/App.jsx] <div className="relative z-40">
+9. [src/components/Header.jsx] <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform">
+10. [src/components/SettingsSection.jsx] <div className="mb-12 p-48">
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-8_bug-8-OpenModal.png
+Query: The alert icon background becomes invisible or displays an unintended neutral color instead of the proper warning tone.
+Target File: src/components/Modal.jsx
+Target Node: <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SettingsSection.jsx] <div className="flex flex-col sm:flex-row gap-4">
+2. [src/components/Header.jsx] <nav className="flex flex-row-reverse justify-between items-center mb-12">
+3. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+4. [src/components/Header.jsx] <div className="flex space-x-3 absolute -top-4 text-white">
+5. [src/components/StatsGrid.jsx] <div className="grid grid-cols-none gap-6">
+6. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 font-sans">
+7. [src/components/SettingsSection.jsx] <div className="mb-12 p-48">
+8. [src/App.jsx] <div className="relative z-40">
+9. [src/components/Toast.jsx] <div className={`fixed bottom-6 right-6 ${bgColor} text-white px-6 py-4 rounded-lg shadow-lg animate-slide-in z-50`}>
+10. [src/components/Header.jsx] <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform">
+
+======================================================================
+

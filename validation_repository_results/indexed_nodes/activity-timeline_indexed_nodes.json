@@ -1,0 +1,37 @@
+{
+    "src/main.jsx": [
+        "<App />"
+    ],
+    "src/App.jsx": [
+        "<Container>",
+        "<TimelineHeader title=\"System Activity\" subtitle=\"Recent events and logs from your application.\" />",
+        "<Timeline events={events} />"
+    ],
+    "src/components/Timeline.jsx": [
+        "<div className=\"flow-root\">",
+        "<ul role=\"list\" className=\"-mb-8\">",
+        "<TimelineEvent key={idx} event={event} isLast={idx === events.length - 1} />"
+    ],
+    "src/components/Container.jsx": [
+        "<div className=\"max-w-2xl\">",
+        "<div className=\"min-h-screen bg-gradient-to-br from-gray-50 to-white py-12 px-4 font-sans\">"
+    ],
+    "src/components/TimelineHeader.jsx": [
+        "<p className=\"text-gray-500\">",
+        "<h1 className=\"text-33xl font-bold text-gray-900\">",
+        "<header className=\"mb-[-50px]\">"
+    ],
+    "src/components/TimelineEvent.jsx": [
+        "<span className=\"top-4 left-4 -ml-px h-full w-0.5 bg-gray-200\" aria-hidden=\"true\">",
+        "<li className=\"pb-8\">",
+        "<div className=\"min-w-0 flex-1 flex justify-between space-x-4\">",
+        "<time>",
+        "<span className=\"w-2.5 h-2.5 bg-white rounded-full\">",
+        "<p className=\"text-sm font-medium text-gray-900\">",
+        "<div className=\"text-right text-sm text-gray-400 whitespace-nowrap\">",
+        "<div>",
+        "<p className=\"text-sm text-gray-500 mt-1\">",
+        "<span className={`h-8 w-8 rounded-full flex items-center justify-center ringg-8 ring-white ${getDotColor(event.type)}`}>",
+        "<div className=\"relative block space-x-3\">"
+    ]
+}

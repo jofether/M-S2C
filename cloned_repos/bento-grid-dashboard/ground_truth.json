@@ -1,0 +1,175 @@
+{
+  "repository": "Bento Grid Dashboard",
+  "bugs": [
+    {
+      "comment": "Bug #1 - margin",
+      "report_text": "The header section is collapsing upward and overlapping with the content below due to excessive negative spacing at the bottom.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/App.jsx",
+      "line_number": 96,
+      "neg_code": "<div className=\"mb-8 flex items-center justify-between\">",
+      "pos_code": "<div className=\"mb-[-50px] flex items-center justify-between\">",
+      "css_selector": ".flex.items-center.justify-between",
+      "bounding_box": {
+        "x": 32,
+        "y": 32,
+        "width": 1216,
+        "height": 200
+      }
+    },
+    {
+      "comment": "Bug #2 - grid-layout",
+      "report_text": "The dashboard content is displayed in a single column on medium and large screens instead of being distributed across multiple columns, causing unnecessary scrolling.",
+      "bug_category": "Layout",
+      "bug_type": "grid-layout",
+      "file_modified": "src/App.jsx",
+      "line_number": 197,
+      "neg_code": "<div className=\"w-full grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-max\">",
+      "pos_code": "<div className=\"w-full grid grid-cols-1 gap-4 auto-rows-max\">",
+      "css_selector": ".grid.gap-4.auto-rows-max",
+      "bounding_box": {
+        "x": 32,
+        "y": 230,
+        "width": 1216,
+        "height": 490
+      }
+    },
+    {
+      "comment": "Bug #3 - destructuring",
+      "report_text": "The activity feed cannot be updated dynamically because the state update function is missing, leaving the component frozen and unresponsive to new data.",
+      "bug_category": "Typo",
+      "bug_type": "destructuring",
+      "file_modified": "src/components/ActivityFeed.jsx",
+      "line_number": 4,
+      "neg_code": "const [activities, setActivities] = useState([",
+      "pos_code": "const [activities] = useState([",
+      "css_selector": ".backdrop-blur-xl.rounded-3xl.p-6.border",
+      "bounding_box": {
+        "x": 32,
+        "y": 584,
+        "width": 904,
+        "height": 202
+      }
+    },
+    {
+      "comment": "Bug #4 - gap",
+      "report_text": "Activity feed items are crowded together without any horizontal spacing, making the list cramped and difficult to read.",
+      "bug_category": "Spacing",
+      "bug_type": "gap",
+      "file_modified": "src/components/ActivityFeed.jsx",
+      "line_number": 14,
+      "neg_code": "<div key={activity.id} className=\"flex items-center gap-3 pb-3 border-b border-neutral-700/30 last:border-0\">",
+      "pos_code": "<div key={activity.id} className=\"flex items-center gap-0 pb-3 border-b border-neutral-700/30 last:border-0\">",
+      "css_selector": "div:has(> h3) div.flex.items-center.pb-3.border-b",
+      "bounding_box": {
+        "x": 32,
+        "y": 640,
+        "width": 900,
+        "height": 140
+      }
+    },
+    {
+      "comment": "Bug #5 - background-gradient",
+      "report_text": "Selected calendar dates are visually indistinguishable from unselected dates because they lack a prominent accent color, making the calendar confusing to use.",
+      "bug_category": "Color",
+      "bug_type": "background-gradient",
+      "file_modified": "src/components/Calendar.jsx",
+      "line_number": 39,
+      "neg_code": "? 'bg-gradient-to-br from-purple-500 to-pink-500 font-bold'",
+      "pos_code": "? 'bg-neutral-800 font-bold'",
+      "css_selector": "div:has(> .grid.grid-cols-7) div.py-2.rounded-lg.text-sm.font-bold",
+      "bounding_box": {
+        "x": 1080,
+        "y": 750,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "comment": "Bug #6 - flexbox",
+      "report_text": "Chart bars are stacking vertically down the page instead of displaying horizontally side by side, completely breaking the bar chart visualization.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Chart.jsx",
+      "line_number": 9,
+      "neg_code": "<div className=\"h-40 flex items-end space-x-2\">",
+      "pos_code": "<div className=\"h-40 flex flex-col space-x-2\">",
+      "css_selector": "div.h-40.flex.space-x-2",
+      "bounding_box": {
+        "x": 952,
+        "y": 1191,
+        "width": 296,
+        "height": 254
+      }
+    },
+    {
+      "comment": "Bug #7 - text-size",
+      "report_text": "The stat card icon is abnormally oversized and breaks the card layout, overflowing its designated container.",
+      "bug_category": "Typo",
+      "bug_type": "text-size",
+      "file_modified": "src/components/StatCard.jsx",
+      "line_number": 9,
+      "neg_code": "<div className={`text-3xl w-12 h-12 bg-gradient-to-br ${gradient} rounded-2xl flex items-center justify-center`}>",
+      "pos_code": "<div className={`text-33xl w-12 h-12 bg-gradient-to-br ${gradient} rounded-2xl flex items-center justify-center`}>",
+      "css_selector": "div.w-12.h-12.rounded-2xl.flex.items-center",
+      "bounding_box": {
+        "x": 32,
+        "y": 28,
+        "width": 182,
+        "height": 120
+      }
+    },
+    {
+      "comment": "Bug #8 - z-index",
+      "report_text": "The storage widget bar loses proper visual layering and becomes misaligned with the rest of the widget presentation.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/StorageWidget.jsx",
+      "line_number": 14,
+      "neg_code": "<div className=\"flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30\">",
+      "pos_code": "<div className=\"flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0\">",
+      "css_selector": "div.flex.h-6.gap-1.rounded-full.overflow-hidden",
+      "bounding_box": {
+        "x": 952,
+        "y": 901,
+        "width": 274,
+        "height": 134
+      }
+    },
+    {
+      "comment": "Bug #9 - z-index",
+      "report_text": "Storage bar segments disappear or become invisible because they are positioned behind the background layer, removing the progress bar visualization.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/StorageWidget.jsx",
+      "line_number": 18,
+      "neg_code": "className={item.color}",
+      "pos_code": "className={`${item.color} relative z-[-1]`}",
+      "css_selector": "div.flex.h-6.gap-1.rounded-full.overflow-hidden",
+      "bounding_box": {
+        "x": 952,
+        "y": 901,
+        "width": 274,
+        "height": 134
+      }
+    },
+    {
+      "comment": "Bug #10 - flexbox-class",
+      "report_text": "Task list items lose their alignment and proper spacing, causing the list layout to break and appear disorganized.",
+      "bug_category": "Typo",
+      "bug_type": "flexbox-class",
+      "file_modified": "src/components/TaskList.jsx",
+      "line_number": 24,
+      "neg_code": "<label key={task.id} className=\"flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg\">",
+      "pos_code": "<label key={task.id} className=\"flexx items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg\">",
+      "css_selector": "label.items-center.gap-3.cursor-pointer.p-2.rounded-lg",
+      "bounding_box": {
+        "x": 32,
+        "y": 1191,
+        "width": 904,
+        "height": 74
+      }
+    }
+  ]
+}

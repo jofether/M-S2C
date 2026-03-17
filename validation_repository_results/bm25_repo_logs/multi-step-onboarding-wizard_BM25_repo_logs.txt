@@ -1,0 +1,40 @@
+=== BM25 REPOSITORY RESULTS: multi-step-onboarding-wizard ===
+
+Image / ID: Multi-Step Onboarding Wizard_bug-5.png
+Query: The field description text is too light and difficult to read against the background.
+Target File: src/components/FormInput.jsx
+Target Node: <p className="text-gray-400 mt-1">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/steps/Step4.jsx] <StepHeader icon={planIcon} title="Select Your Plan" description="Choose the perfect plan for your needs" />
+2. [src/components/steps/Step3.jsx] <StepHeader icon={companyIcon} title="Company Information" description="Details about your organization" />
+3. [src/components/steps/Step5.jsx] <StepHeader icon={preferencesIcon} title="Customize Preferences" description="Set up your communication preferences" />
+4. [src/components/steps/Step6.jsx] <StepHeader icon={reviewIcon} title="Review Your Information" description="Make sure everything looks correct" />
+5. [src/components/steps/Step1.jsx] <StepHeader icon={accountIcon} title="Create Your Account" description="Set up your login credentials securely" />
+6. [src/components/steps/Step2.jsx] <StepHeader icon={personalIcon} title="Tell Us About You" description="Help us personalize your experience" />
+7. [src/main.jsx] <App />
+8. [src/App.jsx] <p>
+9. [src/App.jsx] <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+10. [src/App.jsx] <p className="text-gray-600 text-lg">
+
+======================================================================
+
+Image / ID: Multi-Step Onboarding Wizard_bug-9_bug-9-NavigateToStep5.png
+Query: The success message box has collapsed with insufficient internal spacing, causing the content to overflow.
+Target File: src/components/steps/Step5.jsx
+Target Node: <div className="bg-green-50 border-2 border-green-200 rounded-xl -p-8">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/steps/Step4.jsx] <StepHeader icon={planIcon} title="Select Your Plan" description="Choose the perfect plan for your needs" />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <p>
+4. [src/App.jsx] <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+5. [src/App.jsx] <p className="text-gray-600 text-lg">
+6. [src/App.jsx] <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-1.5 rounded-full transition-all duration-500 ease-out" style={{ width: `${(step / totalSteps) * 100}%` }} >
+7. [src/App.jsx] <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+8. [src/App.jsx] <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+9. [src/App.jsx] <div className="text-sm font-semibold text-gray-600">
+10. [src/App.jsx] <div className="bg-white rounded-3xl shadow-2xl overflow-hidden -z-10">
+
+======================================================================
+

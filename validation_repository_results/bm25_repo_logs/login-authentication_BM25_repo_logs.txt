@@ -1,0 +1,40 @@
+=== BM25 REPOSITORY RESULTS: login-authentication ===
+
+Image / ID: Login Authentication_bug-1.png
+Query: The welcome heading text is barely visible and appears extremely faded, severely reducing readability.
+Target File: src/pages/LoginPage.jsx
+Target Node: <h1 className="text-3xl font-bold text-white opacity-10 mb-2">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/pages/LoginPage.jsx] <input type={showPassword ? 'text' : 'password'} value={password} onChange={(e) =>
+2. [src/pages/ProfilePage.jsx] <input type="text" name="name" value={formData.name} onChange={handleEditChange} className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition" />
+3. [src/pages/RegisterPage.jsx] <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} placeholder="John Doe" className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition" />
+4. [src/pages/RegisterPage.jsx] <input type={showConfirm ? 'text' : 'password'} name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} placeholder="•••••••••" className="w-full pl-10 pr-12 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition" />
+5. [src/pages/RegisterPage.jsx] <input type={showPassword ? 'text' : 'password'} name="password" value={formData.password} onChange={handleChange} placeholder="•••••••••" className="w-full pl-10 pr-12 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition" />
+6. [src/main.jsx] <App />
+7. [src/App.jsx] <LoginPage onLogin={handleLogin} onNavigate={handleNavigate} />
+8. [src/App.jsx] <ProfilePage user={user} onNavigate={handleNavigate} onLogout={handleLogout} onUpdateUser={setUser} />
+9. [src/App.jsx] <DashboardPage user={user} onNavigate={handleNavigate} onLogout={handleLogout} />
+10. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+
+======================================================================
+
+Image / ID: Login Authentication_bug-8.png
+Query: The password confirmation field and its associated label are displayed in reverse order, confusing the form layout.
+Target File: src/pages/RegisterPage.jsx
+Target Node: <div className="group flex flex-col-reverse">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/pages/LoginPage.jsx] <form onSubmit={handleSubmit} className="space-y-5">
+2. [src/pages/RegisterPage.jsx] <form onSubmit={handleSubmit} className="space-y-5">
+3. [src/pages/LoginPage.jsx] <input type={showPassword ? 'text' : 'password'} value={password} onChange={(e) =>
+4. [src/pages/LoginPage.jsx] <label className="block text-sm font-medium text-gray-200 mb-2">
+5. [src/pages/LoginPage.jsx] <label className="flex items-center text-gray-300 hover:text-white cursor-pointer">
+6. [src/pages/RegisterPage.jsx] <label className="block text-sm font-medium text-gray-200 mb-2">
+7. [src/pages/ProfilePage.jsx] <label className="block text-sm font-medium text-gray-200 mb-2">
+8. [src/pages/ProfilePage.jsx] <input type="password" value={newPassword} onChange={(e) =>
+9. [src/pages/RegisterPage.jsx] <label className="flex items-start text-gray-300 hover:text-white cursor-pointer text-sm -mt-32">
+10. [src/pages/ProfilePage.jsx] <input type="password" placeholder="Enter current password" className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition" />
+
+======================================================================
+

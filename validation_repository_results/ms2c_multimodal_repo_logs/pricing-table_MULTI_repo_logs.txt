@@ -1,0 +1,182 @@
+=== MULTI REPOSITORY RESULTS: pricing-table ===
+
+Image / ID: Pricing Table_bug-4.png
+Query: The footer content is positioned over the top of the page, creating a visual overlap that obscures the header and other content.
+Target File: src/components/Footer.jsx
+Target Node: <div className="grid md:grid-cols-5 gap-8 mb-12 absolute top-0 left-0">
+Rank Achieved: 5
+Gating Alpha: 0.4951 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Hero.jsx] <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+2. [src/components/Footer.jsx] <div className="max-w-6xl mx-auto">
+3. [src/components/Hero.jsx] <div className="absolute inset-0 overflow-hidden">
+4. [src/components/Hero.jsx] <div className="relative max-w-4xl mx-auto text-center">
+5. [src/components/Footer.jsx] <div className="grid md:grid-cols-5 gap-8 mb-12 absolute top-0 left-0">  <--- [GROUND TRUTH HIT]
+6. [src/components/Footer.jsx] <div className="flex items-center gap-2 mb-4">
+7. [src/components/Footer.jsx] <div className="flex gap-4 mt-4">
+8. [src/components/Footer.jsx] <div className="flex gap-6 mt-4 md:mt-0">
+9. [src/components/FAQ.jsx] <div className="space-y-4 flex flex-row">
+10. [src/components/PricingSection.jsx] <div className="flex justify-center items-center gap-6 mb-12 p-20">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-1_bug-1-RemoveFooterOverlay.png
+Query: The call-to-action text appears in an incorrect color shade that doesn't match the intended design, creating visual inconsistency.
+Target File: src/components/CTA.jsx
+Target Node: <p className="text-xl text-blue-90 mb-8">
+Rank Achieved: 1
+Gating Alpha: 0.4961 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/CTA.jsx] <p className="text-xl text-blue-90 mb-8">  <--- [GROUND TRUTH HIT]
+2. [src/components/CTA.jsx] <h2 className="text-4xl md:text-5xl font-bold mb-4">
+3. [src/components/FAQ.jsx] <h2 className="text-4xl md:text-5xl font-bold mb-4">
+4. [src/components/Testimonials.jsx] <p className="font-bold">
+5. [src/components/FAQ.jsx] <p className="text-slate-400 text-lg">
+6. [src/components/FAQ.jsx] <h3 className="font-bold text-lg">
+7. [src/components/Features.jsx] <h2 className="text-4xl md:text-5xl font-bold mb-4">
+8. [src/components/Testimonials.jsx] <h2 className="text-4xl md:text-5xl font-bold mb-4">
+9. [src/components/Features.jsx] <span className="text-2xl">
+10. [src/components/FAQ.jsx] <div className="text-center mb-12">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-2_bug-2-RemoveFooterOverlay.png
+Query: The FAQ items are displaying horizontally in a single row instead of being vertically stacked, breaking the expected question-and-answer layout structure.
+Target File: src/components/FAQ.jsx
+Target Node: <div className="space-y-4 flex flex-row">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5262 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Footer.jsx] <div className="grid md:grid-cols-5 gap-8 mb-12 absolute top-0 left-0">
+2. [src/components/PricingSection.jsx] <div className="flex justify-center items-center gap-6 mb-12 p-20">
+3. [src/components/PricingSection.jsx] <div className="text-center mb-12">
+4. [src/components/Footer.jsx] <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between text-slate-400 text-sm">
+5. [src/components/PricingSection.jsx] <div className="grid md:grid-cols-5 gap-8 items-center">
+6. [src/components/Footer.jsx] <div className="flex gap-4 mt-4">
+7. [src/components/PricingSection.jsx] <div className="max-w-6xl mx-auto">
+8. [src/components/Footer.jsx] <div className="flex items-center gap-2 mb-4">
+9. [src/components/PricingSection.jsx] <li key={fidx} className="flex items-start gap-3">
+10. [src/components/Testimonials.jsx] <div className="grid md:grid-cols-2 gap-8">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-3_bug-3-RemoveFooterOverlay.png
+Query: The feature cards are arranged in reverse order and displayed in a single column instead of a proper multi-column grid layout.
+Target File: src/components/Features.jsx
+Target Node: <div className="flex flex-col-reverse gap-8">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5655 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/PricingSection.jsx] <li key={fidx} className="flex items-start gap-3">
+2. [src/components/PricingSection.jsx] <div className="grid md:grid-cols-5 gap-8 items-center">
+3. [src/components/PricingSection.jsx] <section id="pricing" className="px-6 py-20 bg-gradient-to-b from-transparent via-slate-800/30 to-transparent">
+4. [src/components/PricingSection.jsx] <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+5. [src/components/PricingSection.jsx] <div className="max-w-6xl mx-auto">
+6. [src/components/PricingSection.jsx] <div className="mb-6">
+7. [src/components/PricingSection.jsx] <div className="flex justify-center items-center gap-6 mb-12 p-20">
+8. [src/components/Footer.jsx] <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between text-slate-400 text-sm">
+9. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+10. [src/components/PricingSection.jsx] <span className={billingCycle === 'monthly' ? 'text-white' : 'text-slate-400'}>
+
+======================================================================
+
+Image / ID: Pricing Table_bug-5_bug-5-RemoveFooterOverlay.png
+Query: The badge element pulls content below it too close, collapsing the vertical gaps and disrupting the natural flow of the page.
+Target File: src/components/Hero.jsx
+Target Node: <div className="inline-block mb-6 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full -mb-16">
+Rank Achieved: 10
+Gating Alpha: 0.5772 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Testimonials.jsx] <div key={idx} className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700 hover:border-slate-600 transition hover:shadow-xl">
+2. [src/components/Testimonials.jsx] <section id="testimonials" className="px-6 py-20 max-w-6xl mx-auto">
+3. [src/components/Footer.jsx] <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold">
+4. [src/components/Features.jsx] <section id="features" className="px-6 py-16 max-w-6xl mx-auto">
+5. [src/components/PricingSection.jsx] <ul className="space-y-4">
+6. [src/components/PricingSection.jsx] <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+7. [src/components/PricingSection.jsx] <span className="text-5xl font-black">
+8. [src/components/PricingSection.jsx] <p className="text-sm text-slate-400 mt-2">
+9. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+10. [src/components/Hero.jsx] <div className="inline-block mb-6 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full -mb-16">  <--- [GROUND TRUTH HIT]
+
+======================================================================
+
+Image / ID: Pricing Table_bug-6_bug-6-RemoveFooterOverlay.png
+Query: The navigation bar is hidden behind other page elements and not staying on top where it should be visible and interactive.
+Target File: src/components/Navigation.jsx
+Target Node: <nav className="sticky top-0 z-5 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+Rank Achieved: 4
+Gating Alpha: 0.5649 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Navigation.jsx] <a href="#pricing" className="text-slate-300 hover:text-white transition">
+2. [src/components/Navigation.jsx] <button className="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition">
+3. [src/components/PricingSection.jsx] <button className={`w-full py-3 rounded-xl font-bold mb-8 transition ${ plan.highlighted ? 'bg-white text-purple-600 hover:bg-slate-100 shadow-lg' : 'border-2 border-slate-600 text-white hover:border-slate-400' }`}>
+4. [src/components/Navigation.jsx] <nav className="sticky top-0 z-5 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">  <--- [GROUND TRUTH HIT]
+5. [src/components/Hero.jsx] <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-blue-500/50 transition transform hover:scale-105">
+6. [src/components/Navigation.jsx] <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-lg">
+7. [src/components/FAQ.jsx] <div key={idx} className="border border-slate-700 rounded-xl overflow-hidden hover:border-slate-600 transition">
+8. [src/components/Navigation.jsx] <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+9. [src/components/Hero.jsx] <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+10. [src/components/Navigation.jsx] <a href="#features" className="text-slate-300 hover:text-white transition">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-7_bug-7-RemoveFooterOverlay.png
+Query: The pricing toggle section is surrounded by excessive white space, distorting the layout and visual proportions of the page.
+Target File: src/components/PricingSection.jsx
+Target Node: <div className="flex justify-center items-center gap-6 mb-12 p-20">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.6073 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Navigation.jsx] <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+2. [src/components/Navigation.jsx] <div className="flex items-center gap-2">
+3. [src/components/Navigation.jsx] <div className="flex items-center gap-8">
+4. [src/components/Features.jsx] <div key={idx} className="p-8 rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-700/50 border border-slate-700 hover:border-slate-600 transition group">
+5. [src/components/PricingSection.jsx] <div key={idx} className={`relative rounded-3xl p-8 transition transform hover:scale-105 ${ plan.highlighted ? 'bg-gradient-to-br from-blue-600 to-purple-700 border-2 border-blue-400 shadow-2xl shadow-blue-500/30 md:scale-105' : 'bg-slate-800/50 border border-slate-700 hover:border-slate-600' }`} >
+6. [src/components/PricingSection.jsx] <span className={`${ billingCycle === 'annual' ? 'translate-x-8' : 'translate-x-1' } inline-block h-6 w-6 transform rounded-full bg-white transition`} />
+7. [src/components/PricingSection.jsx] <span className="bg-gradient-to-r from-yellow-400 to-orange-400 text-slate-900 text-xs font-bold px-4 py-1 rounded-full">
+8. [src/components/FAQ.jsx] <span className={`text-xl transition ${ openFAQ === idx ? 'rotate-180 inline-block' : '' }`}>
+9. [src/components/Testimonials.jsx] <div key={idx} className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700 hover:border-slate-600 transition hover:shadow-xl">
+10. [src/components/Features.jsx] <div className="mb-4 w-14 h-14 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-8_bug-8-RemoveFooterOverlay.png
+Query: The pricing plan cards are arranged in too many columns, appearing cramped and misaligned instead of displaying in the correct three-column layout.
+Target File: src/components/PricingSection.jsx
+Target Node: <div className="grid md:grid-cols-5 gap-8 items-center">
+Rank Achieved: 2
+Gating Alpha: 0.5337 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/PricingSection.jsx] <div className="flex justify-center items-center gap-6 mb-12 p-20">
+2. [src/components/PricingSection.jsx] <div className="grid md:grid-cols-5 gap-8 items-center">  <--- [GROUND TRUTH HIT]
+3. [src/components/Footer.jsx] <div className="grid md:grid-cols-5 gap-8 mb-12 absolute top-0 left-0">
+4. [src/components/PricingSection.jsx] <div className="text-center mb-12">
+5. [src/components/PricingSection.jsx] <div className="max-w-6xl mx-auto">
+6. [src/components/Footer.jsx] <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between text-slate-400 text-sm">
+7. [src/components/PricingSection.jsx] <li key={fidx} className="flex items-start gap-3">
+8. [src/components/Testimonials.jsx] <div className="grid md:grid-cols-2 gap-8">
+9. [src/components/PricingSection.jsx] <div className="mb-6">
+10. [src/components/PricingSection.jsx] <section id="pricing" className="px-6 py-20 bg-gradient-to-b from-transparent via-slate-800/30 to-transparent">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-9_bug-9-RemoveFooterOverlay.png
+Query: The testimonial text is barely visible because the text color is too dark and blends into the dark background, making it unreadable.
+Target File: src/components/Testimonials.jsx
+Target Node: <p className="text-slate-900 mb-6 leading-relaxed text-lg">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5029 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/FAQ.jsx] <div className="text-center mb-12">
+2. [src/components/FAQ.jsx] <h3 className="font-bold text-lg">
+3. [src/components/Testimonials.jsx] <p className="font-bold">
+4. [src/components/Footer.jsx] <h4 className="font-bold mb-4">
+5. [src/components/FAQ.jsx] <h2 className="text-4xl md:text-5xl font-bold mb-4">
+6. [src/components/Footer.jsx] <span className="font-bold">
+7. [src/components/CTA.jsx] <h2 className="text-4xl md:text-5xl font-bold mb-4">
+8. [src/components/Testimonials.jsx] <h2 className="text-4xl md:text-5xl font-bold mb-4">
+9. [src/components/Testimonials.jsx] <div className="text-4xl">
+10. [src/components/Hero.jsx] <h1 className="text-6xl md:text-7xl font-black mb-6 leading-tight">
+
+======================================================================
+

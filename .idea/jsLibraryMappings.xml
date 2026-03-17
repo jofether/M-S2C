@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/cloned_repos/code-snippet-repository" libraries="{benchmarking/cloned_repos/code-snippet-repository/node_modules}" />
+    <file url="file://$PROJECT_DIR$/cloned_repos/cookie-consent-banner" libraries="{benchmarking/cloned_repos/cookie-consent-banner/node_modules}" />
+    <file url="file://$PROJECT_DIR$/cloned_repos/delete-confirmation-modal" libraries="{benchmarking/cloned_repos/delete-confirmation-modal/node_modules}" />
+    <file url="file://$PROJECT_DIR$/cloned_repos/flight-booking-search" libraries="{benchmarking/cloned_repos/flight-booking-search/node_modules}" />
+    <file url="file://$PROJECT_DIR$/cloned_repos/kanban-board" libraries="{benchmarking/cloned_repos/kanban-board/node_modules}" />
+    <file url="file://$PROJECT_DIR$/cloned_repos/podcast-player" libraries="{benchmarking/cloned_repos/podcast-player/node_modules}" />
+    <file url="file://$PROJECT_DIR$/cloned_repos/video-conference-grid" libraries="{benchmarking/cloned_repos/video-conference-grid/node_modules}" />
+  </component>
+</project>

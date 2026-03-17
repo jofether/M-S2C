@@ -1,0 +1,135 @@
+=== BM25 REPOSITORY RESULTS: cinema-seat-selection ===
+
+Image / ID: Cinema Seat Selection_bug-2.png
+Query: The booking summary card corners are not rounded and appear with sharp edges instead of smooth curves.
+Target File: src/components/BookingSummary.jsx
+Target Node: <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-gray-700 rounded-xx p-6 sticky top-8 shadow-2xl">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/BookingSummary.jsx] <div key={seat.id} className="flex justify-between items-center bg-gray-700/50 p-2 rounded border border-gray-600/50">
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <SeatingLegend />
+4. [src/App.jsx] <div className="max-w-6xl mx-auto">
+5. [src/App.jsx] <SeatingGrid rows={rows} cols={cols} selected={selected} taken={taken} getSeatCategory={getSeatCategory} onToggle={toggleSeat} />
+6. [src/App.jsx] <div className="lg:col-span-1">
+7. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse">
+8. [src/App.jsx] <p className="text-gray-400">
+9. [src/App.jsx] <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+10. [src/App.jsx] <div className="mb-8 text-center">
+
+======================================================================
+
+Image / ID: Cinema Seat Selection_bug-3.png
+Query: The booking summary section has excessive spacing pushing its content away from the container boundaries.
+Target File: src/components/BookingSummary.jsx
+Target Node: <div className="space-y-4 mb-6 border-b border-gray-700 pb-4 m-10">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <SeatingLegend />
+3. [src/App.jsx] <div className="max-w-6xl mx-auto">
+4. [src/App.jsx] <SeatingGrid rows={rows} cols={cols} selected={selected} taken={taken} getSeatCategory={getSeatCategory} onToggle={toggleSeat} />
+5. [src/App.jsx] <div className="lg:col-span-1">
+6. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse">
+7. [src/App.jsx] <p className="text-gray-400">
+8. [src/App.jsx] <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+9. [src/App.jsx] <div className="mb-8 text-center">
+10. [src/App.jsx] <div className="lg:col-span-2">
+
+======================================================================
+
+Image / ID: Cinema Seat Selection_bug-4.png
+Query: The seat information text is displayed in a color that blends into the dark background and is difficult to read.
+Target File: src/components/BookingSummary.jsx
+Target Node: <span className="text-sm text-gray-900">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SeatingGrid.jsx] <Seat id={id + 1} category={getSeatCategory(id + 1)} status={taken.includes(id + 1) ? 'taken' : selected.includes(id + 1) ? 'selected' : 'available'} onToggle={onToggle} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <SeatingLegend />
+4. [src/App.jsx] <div className="max-w-6xl mx-auto">
+5. [src/App.jsx] <SeatingGrid rows={rows} cols={cols} selected={selected} taken={taken} getSeatCategory={getSeatCategory} onToggle={toggleSeat} />
+6. [src/App.jsx] <div className="lg:col-span-1">
+7. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse">
+8. [src/App.jsx] <p className="text-gray-400">
+9. [src/App.jsx] <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+10. [src/App.jsx] <div className="mb-8 text-center">
+
+======================================================================
+
+Image / ID: Cinema Seat Selection_bug-6.png
+Query: The form fields are positioned too close together with no proper spacing between them.
+Target File: src/components/MovieShowtimeSelector.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-2 gap- mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <SeatingLegend />
+3. [src/App.jsx] <div className="max-w-6xl mx-auto">
+4. [src/App.jsx] <SeatingGrid rows={rows} cols={cols} selected={selected} taken={taken} getSeatCategory={getSeatCategory} onToggle={toggleSeat} />
+5. [src/App.jsx] <div className="lg:col-span-1">
+6. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse">
+7. [src/App.jsx] <p className="text-gray-400">
+8. [src/App.jsx] <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+9. [src/App.jsx] <div className="mb-8 text-center">
+10. [src/App.jsx] <div className="lg:col-span-2">
+
+======================================================================
+
+Image / ID: Cinema Seat Selection_bug-9.png
+Query: The seating grid rows are not properly aligned and content is spanning across multiple columns incorrectly.
+Target File: src/components/SeatingGrid.jsx
+Target Node: <div className="grid grid-cols-4 items-center gap-4 bg-gray-800/30 p-8 rounded-xl border border-gray-700/50">
+Rank Achieved: 4
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <SeatingGrid rows={rows} cols={cols} selected={selected} taken={taken} getSeatCategory={getSeatCategory} onToggle={toggleSeat} />
+2. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse">
+3. [src/components/SeatingLegend.jsx] <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+4. [src/components/SeatingGrid.jsx] <div className="grid grid-cols-4 items-center gap-4 bg-gray-800/30 p-8 rounded-xl border border-gray-700/50">  <--- [GROUND TRUTH HIT]
+5. [src/components/MovieShowtimeSelector.jsx] <div className="grid grid-cols-1 md:grid-cols-2 gap- mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+6. [src/main.jsx] <App />
+7. [src/App.jsx] <SeatingLegend />
+8. [src/App.jsx] <div className="max-w-6xl mx-auto">
+9. [src/App.jsx] <div className="lg:col-span-1">
+10. [src/App.jsx] <p className="text-gray-400">
+
+======================================================================
+
+Image / ID: Cinema Seat Selection_bug-10.png
+Query: The legend labels are displayed in a very dark color that is barely visible against the background.
+Target File: src/components/SeatingLegend.jsx
+Target Node: <span className="text-gray-900">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <SeatingLegend />
+3. [src/App.jsx] <div className="max-w-6xl mx-auto">
+4. [src/App.jsx] <SeatingGrid rows={rows} cols={cols} selected={selected} taken={taken} getSeatCategory={getSeatCategory} onToggle={toggleSeat} />
+5. [src/App.jsx] <div className="lg:col-span-1">
+6. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse">
+7. [src/App.jsx] <p className="text-gray-400">
+8. [src/App.jsx] <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+9. [src/App.jsx] <div className="mb-8 text-center">
+10. [src/App.jsx] <div className="lg:col-span-2">
+
+======================================================================
+
+Image / ID: Cinema Seat Selection_bug-5_bug-5-Checkout.png
+Query: The checkout modal is hidden behind other page elements and cannot be interacted with.
+Target File: src/components/CheckoutModal.jsx
+Target Node: <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-0">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <SeatingLegend />
+3. [src/App.jsx] <div className="max-w-6xl mx-auto">
+4. [src/App.jsx] <SeatingGrid rows={rows} cols={cols} selected={selected} taken={taken} getSeatCategory={getSeatCategory} onToggle={toggleSeat} />
+5. [src/App.jsx] <div className="lg:col-span-1">
+6. [src/App.jsx] <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse">
+7. [src/App.jsx] <p className="text-gray-400">
+8. [src/App.jsx] <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+9. [src/App.jsx] <div className="mb-8 text-center">
+10. [src/App.jsx] <div className="lg:col-span-2">
+
+======================================================================
+

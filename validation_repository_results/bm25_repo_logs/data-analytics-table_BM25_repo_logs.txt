@@ -1,0 +1,135 @@
+=== BM25 REPOSITORY RESULTS: data-analytics-table ===
+
+Image / ID: Data Analytics Table_bug-3.png
+Query: The navigation bar is hidden behind other page elements and appears inaccessible.
+Target File: src/components/Navbar.jsx
+Target Node: <nav className="bg-white shadow-sm h-16 -z-10 relative">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Navbar.jsx] <div className="text-right hidden sm:block">
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <p className="text-gray-500 mt-1">
+4. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidde">
+5. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
+6. [src/App.jsx] <h1 className="text-3xl font-bold text-gray-800">
+7. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+8. [src/App.jsx] <div className="flex flex-col h-screen bg-gray-100 font-sans">
+9. [src/App.jsx] <StatCard title="Total Users" value="12,345" change="+12%" icon="👥" color="blue" />
+10. [src/App.jsx] <StatCard title="Revenue" value="$45,678" change="+8%" icon="💰" color="green" />
+
+======================================================================
+
+Image / ID: Data Analytics Table_bug-4.png
+Query: The user name text is invisible as it blends into the background with insufficient contrast.
+Target File: src/components/Navbar.jsx
+Target Node: <p className="text-sm font-semibold text-white">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Header.jsx] <input type="text" placeholder="Search..." value={searchValue} onChange={(e) =>
+2. [src/pages/SettingsPage.jsx] <Input label="Company Name" value={formData.companyName} onChange={(e) =>
+3. [src/components/Avatar.jsx] <img src={src} alt={name} className="w-full h-full rounded-full object-cover" />
+4. [src/pages/SettingsPage.jsx] <input type="radio" name="theme" value={theme} checked={formData.theme === theme} onChange={(e) =>
+5. [src/components/Navbar.jsx] <input type="text" placeholder="Search..." className="pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+6. [src/main.jsx] <App />
+7. [src/App.jsx] <p className="text-gray-500 mt-1">
+8. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidde">
+9. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
+10. [src/App.jsx] <h1 className="text-3xl font-bold text-gray-800">
+
+======================================================================
+
+Image / ID: Data Analytics Table_bug-5.png
+Query: The navigation menu items are misaligned and overlapping with negative spacing disrupting the layout.
+Target File: src/components/Sidebar.jsx
+Target Node: <nav className="flex-1 p-4 -mt-20 flex flex-row flex-wrap space-y-1 overflow-y-auto">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <p className="text-gray-500 mt-1">
+3. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidde">
+4. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
+5. [src/App.jsx] <h1 className="text-3xl font-bold text-gray-800">
+6. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+7. [src/App.jsx] <div className="flex flex-col h-screen bg-gray-100 font-sans">
+8. [src/App.jsx] <StatCard title="Total Users" value="12,345" change="+12%" icon="👥" color="blue" />
+9. [src/App.jsx] <StatCard title="Revenue" value="$45,678" change="+8%" icon="💰" color="green" />
+10. [src/App.jsx] <StatCard title="Active Now" value="573" change="+5%" icon="⚡" color="yellow" />
+
+======================================================================
+
+Image / ID: Data Analytics Table_bug-6.png
+Query: The card content is touching the edges without any internal spacing, making it visually cramped.
+Target File: src/components/StatCard.jsx
+Target Node: <div className="bg-white p-0 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/pages/SettingsPage.jsx] <Card>
+2. [src/pages/ReportsPage.jsx] <Card>
+3. [src/pages/SettingsPage.jsx] <Card title="Preferences">
+4. [src/pages/SettingsPage.jsx] <Card title="Appearance">
+5. [src/pages/SettingsPage.jsx] <Card title="Profile Settings">
+6. [src/main.jsx] <App />
+7. [src/App.jsx] <p className="text-gray-500 mt-1">
+8. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidde">
+9. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
+10. [src/App.jsx] <h1 className="text-3xl font-bold text-gray-800">
+
+======================================================================
+
+Image / ID: Data Analytics Table_bug-8.png
+Query: The table cell borders are doubled and overlapping, creating visual clutter in the table grid.
+Target File: src/components/UserTable.jsx
+Target Node: <table className="w-full text-left border-collaps">
+Rank Achieved: 1
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/UserTable.jsx] <table className="w-full text-left border-collaps">  <--- [GROUND TRUTH HIT]
+2. [src/pages/ReportsPage.jsx] <table className="min-w-full divide-y divide-gray-200">
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <p className="text-gray-500 mt-1">
+5. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidde">
+6. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
+7. [src/App.jsx] <h1 className="text-3xl font-bold text-gray-800">
+8. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+9. [src/App.jsx] <div className="flex flex-col h-screen bg-gray-100 font-sans">
+10. [src/App.jsx] <StatCard title="Total Users" value="12,345" change="+12%" icon="👥" color="blue" />
+
+======================================================================
+
+Image / ID: Data Analytics Table_bug-9.png
+Query: The user name text appears faded and lacks sufficient contrast against the table background.
+Target File: src/components/UserTable.jsx
+Target Node: <div className="font-medium text-gray-100">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/UserTable.jsx] <table className="w-full text-left border-collaps">
+2. [src/pages/ReportsPage.jsx] <table className="min-w-full divide-y divide-gray-200">
+3. [src/components/Header.jsx] <input type="text" placeholder="Search..." value={searchValue} onChange={(e) =>
+4. [src/pages/SettingsPage.jsx] <Input label="Company Name" value={formData.companyName} onChange={(e) =>
+5. [src/components/Avatar.jsx] <img src={src} alt={name} className="w-full h-full rounded-full object-cover" />
+6. [src/pages/SettingsPage.jsx] <input type="radio" name="theme" value={theme} checked={formData.theme === theme} onChange={(e) =>
+7. [src/components/Navbar.jsx] <input type="text" placeholder="Search..." className="pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+8. [src/main.jsx] <App />
+9. [src/App.jsx] <p className="text-gray-500 mt-1">
+10. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidde">
+
+======================================================================
+
+Image / ID: Data Analytics Table_bug-10.png
+Query: The email text appears faded and lacks sufficient contrast for comfortable readability.
+Target File: src/components/UserTable.jsx
+Target Node: <div className="text-sm text-gray-100">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/pages/SettingsPage.jsx] <Input label="Email Address" type="email" value={formData.email} onChange={(e) =>
+2. [src/components/Header.jsx] <input type="text" placeholder="Search..." value={searchValue} onChange={(e) =>
+3. [src/components/Navbar.jsx] <input type="text" placeholder="Search..." className="pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <p className="text-gray-500 mt-1">
+6. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidde">
+7. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
+8. [src/App.jsx] <h1 className="text-3xl font-bold text-gray-800">
+9. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+10. [src/App.jsx] <div className="flex flex-col h-screen bg-gray-100 font-sans">
+
+======================================================================
+

@@ -1,0 +1,165 @@
+{
+  "repository": "Admin Dashboard",
+  "bugs": [
+    {
+      "comment": "Bug #1 - display",
+      "report_text": "The sidebar and main content are stacking vertically instead of appearing side-by-side on the screen.",
+      "bug_category": "Layout",
+      "bug_type": "display",
+      "file_modified": "src/App.jsx",
+      "line_number": 36,
+      "neg_code": "<div className=\"flex h-screen bg-gray-50\">",
+      "pos_code": "<div className=\"block h-screen bg-gray-50\">",
+      "css_selector": "div.block.h-screen.bg-gray-50",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #2 - padding",
+      "report_text": "The main content area is touching the edges of the window without any breathing room around it.",
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/App.jsx",
+      "line_number": 42,
+      "neg_code": "<main className=\"flex-1 overflow-x-hidden overflow-y-auto p-6\">",
+      "pos_code": "<main className=\"flex-1 overflow-x-hidden overflow-y-auto\">",
+      "css_selector": "main.flex-1.overflow-x-hidden.overflow-y-auto",
+      "bounding_box": {
+        "x": 256,
+        "y": 64,
+        "width": 1024,
+        "height": 656
+      }
+    },
+    {
+      "comment": "Bug #3 - gap",
+      "report_text": "The header elements are cramped together with no space separating them from each other.",
+      "bug_category": "Spacing",
+      "bug_type": "gap",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 26,
+      "neg_code": "<div className=\"flex items-center gap-4\">",
+      "pos_code": "<div className=\"flex items-center gap-0\">",
+      "css_selector": "header > div:nth-child(2)",
+      "bounding_box": { "x": 256, "y": 0, "width": 1024, "height": 64 }
+    },
+    {
+      "comment": "Bug #4 - z-index",
+      "report_text": "The sidebar is hidden behind other elements and is not accessible or visible to the user.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Sidebar.jsx",
+      "line_number": 15,
+      "neg_code": "<aside className=\"w-64 bg-slate-800 text-white flex flex-col\">",
+      "pos_code": "<aside className=\"w-64 bg-slate-800 text-white flex flex-col z-[-10] relative\">",
+      "css_selector": "aside.w-64.bg-slate-800.flex.flex-col",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #5 - hover",
+      "report_text": "The navigation buttons do not highlight when the user hovers over them, providing no visual feedback.",
+      "bug_category": "Typo",
+      "bug_type": "hover",
+      "file_modified": "src/components/Sidebar.jsx",
+      "line_number": 27,
+      "neg_code": ": 'hover:bg-slate-700 text-gray-200'",
+      "pos_code": ": 'hoover:bg-slate-700 text-gray-200'",
+      "css_selector": "nav button.block.py-2\\.5.px-4.text-gray-200",
+      "bounding_box": {
+        "x": 16,
+        "y": 100,
+        "width": 224,
+        "height": 48
+      }
+    },
+    {
+      "comment": "Bug #6 - flexbox",
+      "report_text": "The stat card elements are stacking vertically instead of being distributed horizontally across the container.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/StatCard.jsx",
+      "line_number": 8,
+      "neg_code": "<div className=\"flex justify-between items-start mb-4\">",
+      "pos_code": "<div className=\"block items-start mb-4\">",
+      "css_selector": "div.bg-white.p-6.rounded-lg div.block.items-start.mb-4",
+      "bounding_box": { "x": 300, "y": 100, "width": 300, "height": 120 }
+    },
+    {
+      "comment": "Bug #7 - text-color",
+      "report_text": "The trend indicators are using inverted color schemes, showing red for positive trends and green for negative trends.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/StatCard.jsx",
+      "line_number": 16,
+      "neg_code": "<div className={`text-sm font-medium mt-2 ${isPositive ? 'text-green-600' : 'text-red-600'}`}>",
+      "pos_code": "<div className={`text-sm font-medium mt-2 ${isPositive ? 'text-red-600' : 'text-green-600'}`}>",
+      "css_selector": "div.bg-white.p-6.rounded-lg div.text-sm.font-medium.mt-2",
+      "bounding_box": {
+        "x": 300,
+        "y": 150,
+        "width": 200,
+        "height": 40
+      }
+    },
+    {
+      "comment": "Bug #8 - width",
+      "report_text": "The table does not expand to fill the available width of its container.",
+      "bug_category": "Typo",
+      "bug_type": "width",
+      "file_modified": "src/components/Table.jsx",
+      "line_number": 31,
+      "neg_code": "<table className=\"w-full\">",
+      "pos_code": "<table className=\"w-fulll\">",
+      "css_selector": "table.w-fulll",
+      "bounding_box": {
+        "x": 300,
+        "y": 300,
+        "width": 900,
+        "height": 350
+      }
+    },
+    {
+      "comment": "Bug #9 - z-index",
+      "report_text": "The table header is hidden beneath the table rows and is not visible to the user.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Table.jsx",
+      "line_number": 33,
+      "neg_code": "<thead>",
+      "pos_code": "<thead className=\"relative z-[-1]\">",
+      "css_selector": "div.bg-white.rounded-lg table thead",
+      "bounding_box": {
+        "x": 300,
+        "y": 300,
+        "width": 900,
+        "height": 50
+      }
+    },
+    {
+      "comment": "Bug #10 - color",
+      "report_text": "The text color is too light and blends into the background, making content difficult to read.",
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/index.css",
+      "line_number": 2,
+      "neg_code": "  color: #0f172a;",
+      "pos_code": "  color: #e2e8f0;",
+      "css_selector": ":root",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ]
+}

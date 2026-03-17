@@ -1,0 +1,82 @@
+=== BM25 RESULTS: spacing_BasicCookieAlert ===
+
+Query: The Content Area is literally colliding with the border, as evidenced by the absence of visible content.
+Target: <div className="flex items-center justify-start w-full gap-2 pb-21">
+Rank: 8
+--- Top 10 ---
+1. <p>
+2. <a className="underline text-xs" href="#">
+3. <a href="#" className="font-medium underline">
+4. <div className="flex items-center justify-between mt-6 gap-3 w-full">
+5. <h2 className="text-gray-800 text-xl font-medium">
+6. <img className="h-6 w-6" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/cookies/cookieImage1.svg" alt="cookieImage1"/>
+7. <div className="flex flex-col items-center w-80 bg-white text-gray-500 p-4 md:p-6 rounded-lg border border-gray-500/30 text-sm">
+8. <div className="flex items-center justify-start w-full gap-2 pb-21"> <--- [HIT]
+9. <button type="button" className="bg-indigo-600 px-6 py-2 rounded text-white font-medium active:scale-95 transition">
+
+==================================================
+
+Query: I hate how this Content Area is shoved into the corner with no spacing on its right side. It's unprofessional and visually off-putting!
+Target: <div className="flex items-center justify-start w-full gap-2 pb-21">
+Rank: 8
+--- Top 10 ---
+1. <p>
+2. <a className="underline text-xs" href="#">
+3. <a href="#" className="font-medium underline">
+4. <div className="flex items-center justify-between mt-6 gap-3 w-full">
+5. <h2 className="text-gray-800 text-xl font-medium">
+6. <img className="h-6 w-6" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/cookies/cookieImage1.svg" alt="cookieImage1"/>
+7. <div className="flex flex-col items-center w-80 bg-white text-gray-500 p-4 md:p-6 rounded-lg border border-gray-500/30 text-sm">
+8. <div className="flex items-center justify-start w-full gap-2 pb-21"> <--- [HIT]
+9. <button type="button" className="bg-indigo-600 px-6 py-2 rounded text-white font-medium active:scale-95 transition">
+
+==================================================
+
+Query: A significant void is present to the left of the Content Area, which creates a sense of imbalance and disorganization in the design.
+Target: <div className="flex items-center justify-start w-full gap-2 pb-21">
+Rank: 8
+--- Top 10 ---
+1. <a className="underline text-xs" href="#">
+2. <a href="#" className="font-medium underline">
+3. <p>
+4. <div className="flex items-center justify-between mt-6 gap-3 w-full">
+5. <h2 className="text-gray-800 text-xl font-medium">
+6. <img className="h-6 w-6" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/cookies/cookieImage1.svg" alt="cookieImage1"/>
+7. <div className="flex flex-col items-center w-80 bg-white text-gray-500 p-4 md:p-6 rounded-lg border border-gray-500/30 text-sm">
+8. <div className="flex items-center justify-start w-full gap-2 pb-21"> <--- [HIT]
+9. <button type="button" className="bg-indigo-600 px-6 py-2 rounded text-white font-medium active:scale-95 transition">
+
+==================================================
+
+Query: The spacing error in the Content Area stands out starkly when compared to the surrounding elements that are neatly aligned and properly spaced.
+Target: <div className="flex items-center justify-start w-full gap-2 pb-21">
+Rank: 8
+--- Top 10 ---
+1. <p>
+2. <a className="underline text-xs" href="#">
+3. <a href="#" className="font-medium underline">
+4. <div className="flex items-center justify-between mt-6 gap-3 w-full">
+5. <h2 className="text-gray-800 text-xl font-medium">
+6. <img className="h-6 w-6" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/cookies/cookieImage1.svg" alt="cookieImage1"/>
+7. <div className="flex flex-col items-center w-80 bg-white text-gray-500 p-4 md:p-6 rounded-lg border border-gray-500/30 text-sm">
+8. <div className="flex items-center justify-start w-full gap-2 pb-21"> <--- [HIT]
+9. <button type="button" className="bg-indigo-600 px-6 py-2 rounded text-white font-medium active:scale-95 transition">
+
+==================================================
+
+Query: The layout is broken due to the lack of spacing within the Content Area, which detracts from the overall aesthetic appeal.
+Target: <div className="flex items-center justify-start w-full gap-2 pb-21">
+Rank: 8
+--- Top 10 ---
+1. <p>
+2. <a className="underline text-xs" href="#">
+3. <a href="#" className="font-medium underline">
+4. <div className="flex items-center justify-between mt-6 gap-3 w-full">
+5. <h2 className="text-gray-800 text-xl font-medium">
+6. <img className="h-6 w-6" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/cookies/cookieImage1.svg" alt="cookieImage1"/>
+7. <div className="flex flex-col items-center w-80 bg-white text-gray-500 p-4 md:p-6 rounded-lg border border-gray-500/30 text-sm">
+8. <div className="flex items-center justify-start w-full gap-2 pb-21"> <--- [HIT]
+9. <button type="button" className="bg-indigo-600 px-6 py-2 rounded text-white font-medium active:scale-95 transition">
+
+==================================================
+

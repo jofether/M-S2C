@@ -1,0 +1,97 @@
+=== BM25 REPOSITORY RESULTS: admin-dashboard ===
+
+Image / ID: Admin Dashboard_bug-3.png
+Query: The header elements are cramped together with no space separating them from each other.
+Target File: src/components/Header.jsx
+Target Node: <div className="flex items-center gap-0">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Header activeTab={activeTab} />
+2. [src/components/Header.jsx] <header className="flex justify-between items-center p-6 bg-white shadow-sm border-b">
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <Reports />
+5. [src/App.jsx] <Dashboard />
+6. [src/App.jsx] <div className="block h-screen bg-gray-50">
+7. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidden">
+8. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto">
+9. [src/App.jsx] <Users />
+10. [src/App.jsx] <Products />
+
+======================================================================
+
+Image / ID: Admin Dashboard_bug-4.png
+Query: The sidebar is hidden behind other elements and is not accessible or visible to the user.
+Target File: src/components/Sidebar.jsx
+Target Node: <aside className="w-64 bg-slate-800 text-white flex flex-col z-[-10] relative">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <Reports />
+4. [src/App.jsx] <Dashboard />
+5. [src/App.jsx] <div className="block h-screen bg-gray-50">
+6. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidden">
+7. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto">
+8. [src/App.jsx] <Users />
+9. [src/App.jsx] <Products />
+10. [src/App.jsx] <Settings />
+
+======================================================================
+
+Image / ID: Admin Dashboard_bug-6.png
+Query: The stat card elements are stacking vertically instead of being distributed horizontally across the container.
+Target File: src/components/StatCard.jsx
+Target Node: <div className="block items-start mb-4">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/pages/Products.jsx] <StatCard title="Out of Stock" value="19" change={-4} icon="❌" />
+2. [src/components/pages/Help.jsx] <Card title="Documentation">
+3. [src/components/pages/Settings.jsx] <Card title="Preferences">
+4. [src/components/pages/Settings.jsx] <Card title="Security">
+5. [src/components/pages/Help.jsx] <Card title="Contact Support">
+6. [src/components/pages/Users.jsx] <Card title="User Demographics">
+7. [src/components/pages/Users.jsx] <Card title="User Status">
+8. [src/components/pages/Analytics.jsx] <Card title="Traffic Breakdown">
+9. [src/components/pages/Dashboard.jsx] <Card title="Quick Stats">
+10. [src/components/pages/Dashboard.jsx] <Card title="Recent Activity">
+
+======================================================================
+
+Image / ID: Admin Dashboard_bug-8.png
+Query: The table does not expand to fill the available width of its container.
+Target File: src/components/Table.jsx
+Target Node: <table className="w-fulll">
+Rank Achieved: 3
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/pages/Users.jsx] <Table />
+2. [src/components/pages/Dashboard.jsx] <Table />
+3. [src/components/Table.jsx] <table className="w-fulll">  <--- [GROUND TRUTH HIT]
+4. [src/components/pages/Products.jsx] <StatCard title="Out of Stock" value="19" change={-4} icon="❌" />
+5. [src/main.jsx] <App />
+6. [src/App.jsx] <Reports />
+7. [src/App.jsx] <Dashboard />
+8. [src/App.jsx] <div className="block h-screen bg-gray-50">
+9. [src/App.jsx] <div className="flex-1 flex flex-col overflow-hidden">
+10. [src/App.jsx] <main className="flex-1 overflow-x-hidden overflow-y-auto">
+
+======================================================================
+
+Image / ID: Admin Dashboard_bug-9.png
+Query: The table header is hidden beneath the table rows and is not visible to the user.
+Target File: src/components/Table.jsx
+Target Node: <thead className="relative z-[-1]">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/pages/Users.jsx] <Table />
+2. [src/components/pages/Dashboard.jsx] <Table />
+3. [src/components/Table.jsx] <table className="w-fulll">
+4. [src/App.jsx] <Header activeTab={activeTab} />
+5. [src/components/Header.jsx] <header className="flex justify-between items-center p-6 bg-white shadow-sm border-b">
+6. [src/components/pages/Help.jsx] <textarea rows="5" placeholder="Please provide details..." className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+7. [src/main.jsx] <App />
+8. [src/App.jsx] <Reports />
+9. [src/App.jsx] <Dashboard />
+10. [src/App.jsx] <div className="block h-screen bg-gray-50">
+
+======================================================================
+

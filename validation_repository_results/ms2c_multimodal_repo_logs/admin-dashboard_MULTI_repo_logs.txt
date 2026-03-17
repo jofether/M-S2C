@@ -1,0 +1,102 @@
+=== MULTI REPOSITORY RESULTS: admin-dashboard ===
+
+Image / ID: Admin Dashboard_bug-3.png
+Query: The header elements are cramped together with no space separating them from each other.
+Target File: src/components/Header.jsx
+Target Node: <div className="flex items-center gap-0">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5003 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Chart.jsx] <p className="text-xs text-gray-500 mt-2">
+2. [src/components/pages/Products.jsx] <p className="text-gray-600">
+3. [src/components/pages/Help.jsx] <p className="font-semibold text-gray-800 mb-2">
+4. [src/components/pages/Help.jsx] <p className="text-gray-600">
+5. [src/components/pages/Help.jsx] <p className="text-gray-700">
+6. [src/components/pages/Products.jsx] <h1 className="text-3xl font-bold text-gray-800 mb-2">
+7. [src/components/Chart.jsx] <h3 className="text-lg font-semibold text-gray-800 mb-6">
+8. [src/components/pages/Products.jsx] <span className="font-semibold text-gray-800">
+9. [src/components/pages/Help.jsx] <h1 className="text-3xl font-bold text-gray-800 mb-2">
+10. [src/components/pages/Users.jsx] <span className="font-semibold text-yellow-600">
+
+======================================================================
+
+Image / ID: Admin Dashboard_bug-4.png
+Query: The sidebar is hidden behind other elements and is not accessible or visible to the user.
+Target File: src/components/Sidebar.jsx
+Target Node: <aside className="w-64 bg-slate-800 text-white flex flex-col z-[-10] relative">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5692 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Table.jsx] <tr className="bg-gray-50 border-b">
+2. [src/components/Table.jsx] <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+3. [src/components/Table.jsx] <div className="p-6 border-b">
+4. [src/components/Table.jsx] <td className="px-6 py-4 text-sm">
+5. [src/components/pages/Products.jsx] <div key={product} className="flex justify-between items-center pb-3 border-b last:border-b-0">
+6. [src/components/Table.jsx] <td className="px-6 py-4 text-sm text-gray-600">
+7. [src/components/Table.jsx] <td className="px-6 py-4 text-sm text-gray-900">
+8. [src/components/pages/Reports.jsx] <div key={report.name} className="flex justify-between items-center pb-3 border-b last:border-b-0">
+9. [src/components/pages/Settings.jsx] <div className="flex items-center justify-between pb-4 border-b">
+10. [src/App.jsx] <div className="block h-screen bg-gray-50">
+
+======================================================================
+
+Image / ID: Admin Dashboard_bug-6.png
+Query: The stat card elements are stacking vertically instead of being distributed horizontally across the container.
+Target File: src/components/StatCard.jsx
+Target Node: <div className="block items-start mb-4">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5657 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Table.jsx] <tr key={row.id} className="border-b hover:bg-gray-50 transition">
+2. [src/components/pages/Dashboard.jsx] <div className="flex justify-between items-center">
+3. [src/components/pages/Dashboard.jsx] <div className="pb-3 border-b">
+4. [src/components/pages/Dashboard.jsx] <div className="grid grid-cols-4 gap-6 mb-8">
+5. [src/components/pages/Dashboard.jsx] <div className="grid grid-cols-2 gap-6 mb-8">
+6. [src/components/pages/Analytics.jsx] <div className="flex items-center justify-between">
+7. [src/components/pages/Analytics.jsx] <div className="flex items-center justify-between pb-4 border-b">
+8. [src/components/pages/Analytics.jsx] <div className="grid grid-cols-3 gap-6 mb-8">
+9. [src/components/Table.jsx] <div className="overflow-x-auto">
+10. [src/components/pages/Analytics.jsx] <div className="grid grid-cols-2 gap-6 mb-8">
+
+======================================================================
+
+Image / ID: Admin Dashboard_bug-8.png
+Query: The table does not expand to fill the available width of its container.
+Target File: src/components/Table.jsx
+Target Node: <table className="w-fulll">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5135 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Table.jsx] <tr className="bg-gray-50 border-b">
+2. [src/components/Table.jsx] <div className="p-6 border-b">
+3. [src/components/Table.jsx] <td className="px-6 py-4 text-sm">
+4. [src/components/Table.jsx] <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+5. [src/components/Table.jsx] <td className="px-6 py-4 text-sm text-gray-900">
+6. [src/components/pages/Dashboard.jsx] <div className="flex justify-between items-center">
+7. [src/components/pages/Reports.jsx] <div key={report.name} className="flex justify-between items-center pb-3 border-b last:border-b-0">
+8. [src/components/pages/Reports.jsx] <div className="grid grid-cols-2 gap-6 mb-8">
+9. [src/components/pages/Reports.jsx] <div className="grid grid-cols-3 gap-6 mb-8">
+10. [src/components/Table.jsx] <div className="overflow-x-auto">
+
+======================================================================
+
+Image / ID: Admin Dashboard_bug-9.png
+Query: The table header is hidden beneath the table rows and is not visible to the user.
+Target File: src/components/Table.jsx
+Target Node: <thead className="relative z-[-1]">
+Rank Achieved: 8
+Gating Alpha: 0.4983 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Table.jsx] <table className="w-fulll">
+2. [src/components/pages/Products.jsx] <div className="mb-8">
+3. [src/components/Chart.jsx] <h3 className="text-lg font-semibold text-gray-800 mb-6">
+4. [src/components/Table.jsx] <tr className="bg-gray-50 border-b">
+5. [src/components/pages/Products.jsx] <p className="text-gray-600">
+6. [src/components/Chart.jsx] <p className="text-xs text-gray-500 mt-2">
+7. [src/components/Table.jsx] <td className="px-6 py-4 text-sm">
+8. [src/components/Table.jsx] <thead className="relative z-[-1]">  <--- [GROUND TRUTH HIT]
+9. [src/components/Table.jsx] <div className="p-6 border-b">
+10. [src/components/pages/Products.jsx] <span className="font-semibold text-gray-800">
+
+======================================================================
+

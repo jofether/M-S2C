@@ -1,0 +1,135 @@
+=== BM25 REPOSITORY RESULTS: podcast-player ===
+
+Image / ID: Podcast Player_bug-1.png
+Query: The control buttons are stacking vertically in a column instead of displaying horizontally in a row.
+Target File: src/components/Controls.jsx
+Target Node: <div className="flex flex-col items-center justify-center gap-6 mb-8">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [dist/assets/index-pcxSjKJK.js] <anonymous>
+2. [dist/assets/index-pcxSjKJK.js] <script>
+3. [dist/assets/index-pcxSjKJK.js] <svg>
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 text-white font-sans overflow-hidden">
+6. [src/App.jsx] <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl">
+7. [src/App.jsx] <div className="space-y-6">
+8. [src/App.jsx] <Player podcast={currentPodcast} episode={currentEpisode} isPlaying={isPlaying} onPlayToggle={handlePlayToggle} onPrevious={handlePrevious} onNext={handleNext} onProgressChange={handleProgressChange} volume={volume} onVolumeChange={handleVolumeChange} playbackSpeed={playbackSpeed} onSpeedChange={handleSpeedChange} quality={quality} onQualityChange={handleQualityChange} />
+9. [src/App.jsx] <StatsCard episodes={allEpisodes} currentPodcasts={podcasts.length} />
+10. [src/App.jsx] <Footer />
+
+======================================================================
+
+Image / ID: Podcast Player_bug-3.png
+Query: The header is hidden behind other page content when scrolling, making it inaccessible.
+Target File: src/components/Header.jsx
+Target Node: <header className="border-b border-gray-800 bg-gray-900/50 backdrop-blur-md sticky top-0 z-0">
+Rank Achieved: 2
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Header />
+2. [src/components/Header.jsx] <header className="border-b border-gray-800 bg-gray-900/50 backdrop-blur-md sticky top-0 z-0">  <--- [GROUND TRUTH HIT]
+3. [dist/assets/index-pcxSjKJK.js] <anonymous>
+4. [dist/assets/index-pcxSjKJK.js] <script>
+5. [dist/assets/index-pcxSjKJK.js] <svg>
+6. [src/main.jsx] <App />
+7. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 text-white font-sans overflow-hidden">
+8. [src/App.jsx] <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl">
+9. [src/App.jsx] <div className="space-y-6">
+10. [src/App.jsx] <Player podcast={currentPodcast} episode={currentEpisode} isPlaying={isPlaying} onPlayToggle={handlePlayToggle} onPrevious={handlePrevious} onNext={handleNext} onProgressChange={handleProgressChange} volume={volume} onVolumeChange={handleVolumeChange} playbackSpeed={playbackSpeed} onSpeedChange={handleSpeedChange} quality={quality} onQualityChange={handleQualityChange} />
+
+======================================================================
+
+Image / ID: Podcast Player_bug-4.png
+Query: The app logo text is rendered in plain white instead of displaying the intended gradient color effect.
+Target File: src/components/Header.jsx
+Target Node: <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-white">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [dist/assets/index-pcxSjKJK.js] <anonymous>
+3. [dist/assets/index-pcxSjKJK.js] <script>
+4. [dist/assets/index-pcxSjKJK.js] <svg>
+5. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 text-white font-sans overflow-hidden">
+6. [src/App.jsx] <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl">
+7. [src/App.jsx] <div className="space-y-6">
+8. [src/App.jsx] <Player podcast={currentPodcast} episode={currentEpisode} isPlaying={isPlaying} onPlayToggle={handlePlayToggle} onPrevious={handlePrevious} onNext={handleNext} onProgressChange={handleProgressChange} volume={volume} onVolumeChange={handleVolumeChange} playbackSpeed={playbackSpeed} onSpeedChange={handleSpeedChange} quality={quality} onQualityChange={handleQualityChange} />
+9. [src/App.jsx] <StatsCard episodes={allEpisodes} currentPodcasts={podcasts.length} />
+10. [src/App.jsx] <Footer />
+
+======================================================================
+
+Image / ID: Podcast Player_bug-5.png
+Query: The album artwork is offset from its intended position and overlaps the surrounding UI elements.
+Target File: src/components/Player.jsx
+Target Node: <div className="flex justify-center mb-8 relative -m-16">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [dist/assets/index-pcxSjKJK.js] <anonymous>
+2. [dist/assets/index-pcxSjKJK.js] <script>
+3. [dist/assets/index-pcxSjKJK.js] <svg>
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 text-white font-sans overflow-hidden">
+6. [src/App.jsx] <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl">
+7. [src/App.jsx] <div className="space-y-6">
+8. [src/App.jsx] <Player podcast={currentPodcast} episode={currentEpisode} isPlaying={isPlaying} onPlayToggle={handlePlayToggle} onPrevious={handlePrevious} onNext={handleNext} onProgressChange={handleProgressChange} volume={volume} onVolumeChange={handleVolumeChange} playbackSpeed={playbackSpeed} onSpeedChange={handleSpeedChange} quality={quality} onQualityChange={handleQualityChange} />
+9. [src/App.jsx] <StatsCard episodes={allEpisodes} currentPodcasts={podcasts.length} />
+10. [src/App.jsx] <Footer />
+
+======================================================================
+
+Image / ID: Podcast Player_bug-6.png
+Query: The LIVE indicator badge stretches to cover the entire album artwork instead of appearing as a small badge.
+Target File: src/components/Player.jsx
+Target Node: <div className="absolute inset-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Controls.jsx] <button className="text-gray-400 hover:text-white transition transform hover:scale-110" title="Add to queue">
+2. [dist/assets/index-pcxSjKJK.js] <anonymous>
+3. [dist/assets/index-pcxSjKJK.js] <script>
+4. [dist/assets/index-pcxSjKJK.js] <svg>
+5. [src/main.jsx] <App />
+6. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 text-white font-sans overflow-hidden">
+7. [src/App.jsx] <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl">
+8. [src/App.jsx] <div className="space-y-6">
+9. [src/App.jsx] <Player podcast={currentPodcast} episode={currentEpisode} isPlaying={isPlaying} onPlayToggle={handlePlayToggle} onPrevious={handlePrevious} onNext={handleNext} onProgressChange={handleProgressChange} volume={volume} onVolumeChange={handleVolumeChange} playbackSpeed={playbackSpeed} onSpeedChange={handleSpeedChange} quality={quality} onQualityChange={handleQualityChange} />
+10. [src/App.jsx] <StatsCard episodes={allEpisodes} currentPodcasts={podcasts.length} />
+
+======================================================================
+
+Image / ID: Podcast Player_bug-9.png
+Query: The secondary control sliders are arranged in two columns instead of three, causing misalignment and poor visual balance.
+Target File: src/components/SecondaryControls.jsx
+Target Node: <div className="grid grid-cols-2 gap-4">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [dist/assets/index-pcxSjKJK.js] <anonymous>
+2. [dist/assets/index-pcxSjKJK.js] <script>
+3. [dist/assets/index-pcxSjKJK.js] <svg>
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 text-white font-sans overflow-hidden">
+6. [src/App.jsx] <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl">
+7. [src/App.jsx] <div className="space-y-6">
+8. [src/App.jsx] <Player podcast={currentPodcast} episode={currentEpisode} isPlaying={isPlaying} onPlayToggle={handlePlayToggle} onPrevious={handlePrevious} onNext={handleNext} onProgressChange={handleProgressChange} volume={volume} onVolumeChange={handleVolumeChange} playbackSpeed={playbackSpeed} onSpeedChange={handleSpeedChange} quality={quality} onQualityChange={handleQualityChange} />
+9. [src/App.jsx] <StatsCard episodes={allEpisodes} currentPodcasts={podcasts.length} />
+10. [src/App.jsx] <Footer />
+
+======================================================================
+
+Image / ID: Podcast Player_bug-10.png
+Query: The stats card labels are rendered in a near-black color and are nearly invisible against the dark background.
+Target File: src/components/StatsCard.jsx
+Target Node: <div className="text-sm font-bold text-gray-900 mb-4 flex items-center gap-2">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [dist/assets/index-pcxSjKJK.js] <anonymous>
+2. [dist/assets/index-pcxSjKJK.js] <script>
+3. [dist/assets/index-pcxSjKJK.js] <svg>
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 text-white font-sans overflow-hidden">
+6. [src/App.jsx] <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl">
+7. [src/App.jsx] <div className="space-y-6">
+8. [src/App.jsx] <Player podcast={currentPodcast} episode={currentEpisode} isPlaying={isPlaying} onPlayToggle={handlePlayToggle} onPrevious={handlePrevious} onNext={handleNext} onProgressChange={handleProgressChange} volume={volume} onVolumeChange={handleVolumeChange} playbackSpeed={playbackSpeed} onSpeedChange={handleSpeedChange} quality={quality} onQualityChange={handleQualityChange} />
+9. [src/App.jsx] <StatsCard episodes={allEpisodes} currentPodcasts={podcasts.length} />
+10. [src/App.jsx] <Footer />
+
+======================================================================
+

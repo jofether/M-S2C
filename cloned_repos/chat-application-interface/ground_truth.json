@@ -1,0 +1,175 @@
+{
+  "repository": "Chat Application Interface",
+  "bugs": [
+    {
+      "comment": "Bug #1 - flexbox",
+      "report_text": "The main container layout is stacking elements vertically instead of displaying them side-by-side, causing the interface to collapse into a linear arrangement.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/App.jsx",
+      "line_number": 35,
+      "neg_code": "<div className=\"flex h-screen bg-white font-sans overflow-hidden\">",
+      "pos_code": "<div className=\"block h-screen bg-gray-100 font-sans overflow-hidden\">",
+      "css_selector": "div.h-screen.font-sans.overflow-hidden",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #2 - z-index",
+      "report_text": "The chat window appears hidden or stuck behind other interface elements, rendering it completely inaccessible to user interactions.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 43,
+      "neg_code": "<div className=\"flex-1 flex flex-col h-screen overflow-hidden\">",
+      "pos_code": "<div className=\"flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden\">",
+      "css_selector": "div.flex-1.flex-col",
+      "bounding_box": {
+        "x": 320,
+        "y": 0,
+        "width": 960,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #3 - overflow",
+      "report_text": "Content inside the container is not properly constrained and scrolls horizontally beyond its intended boundaries.",
+      "bug_category": "Typo",
+      "bug_type": "overflow",
+      "file_modified": "src/App.jsx",
+      "line_number": 43,
+      "neg_code": "<div className=\"flex-1 flex flex-col h-screen overflow-hidden\">",
+      "pos_code": "<div className=\"flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden\">",
+      "css_selector": "div.flex-1.flex-col",
+      "bounding_box": {
+        "x": 320,
+        "y": 0,
+        "width": 960,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #4 - z-index",
+      "report_text": "The header bar is rendered behind the messages panel, making it invisible and unreachable for user interaction.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/ChatHeader.jsx",
+      "line_number": 5,
+      "neg_code": "<header className=\"h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 flex-shrink-0 z-10\">",
+      "pos_code": "<div className=\"h-16 px-6 flex items-center justify-between bg-white border-b border-gray-200 shadow-sm -z-10 relative\">",
+      "css_selector": "div.flex-1 > div.border-b:first-child",
+      "bounding_box": {
+        "x": 320,
+        "y": 0,
+        "width": 960,
+        "height": 64
+      }
+    },
+    {
+      "comment": "Bug #5 - text-color",
+      "report_text": "The contact name text is invisible or blends seamlessly into the header background, making it completely unreadable.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/ChatHeader.jsx",
+      "line_number": 21,
+      "neg_code": "<h2 className=\"font-bold text-gray-800\">{contact.name}</h2>",
+      "pos_code": "<h2 className=\"text-lg font-bold text-white leading-tight\">{contact.name}</h2>",
+      "css_selector": "div.flex-1 h2",
+      "bounding_box": {
+        "x": 400,
+        "y": 16,
+        "width": 200,
+        "height": 32
+      }
+    },
+    {
+      "comment": "Bug #6 - width",
+      "report_text": "The sidebar is excessively wide, consuming too much horizontal screen space and leaving insufficient room for the message area.",
+      "bug_category": "Layout",
+      "bug_type": "width",
+      "file_modified": "src/components/ChatSidebar.jsx",
+      "line_number": 5,
+      "neg_code": "<aside className=\"w-64 bg-white border-r border-gray-200 flex flex-col h-screen overflow-hidden\">",
+      "pos_code": "<div className=\"w-80 bg-white border-r border-gray-200 flex flex-col h-full z-20 relative\">",
+      "css_selector": "div.border-r.flex-col.h-full, aside",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #7 - padding",
+      "report_text": "The search bar and input elements have no spacing around them, causing text and UI components to collide directly with the section borders.",
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/ChatSidebar.jsx",
+      "line_number": 6,
+      "neg_code": "<div className=\"p-4 border-b border-gray-200 flex-shrink-0\">",
+      "pos_code": "<div className=\"p-0 border-b border-gray-200 bg-gray-50\">",
+      "css_selector": "div.border-r > div:first-child",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 319,
+        "height": 86
+      }
+    },
+    {
+      "comment": "Bug #8 - margin",
+      "report_text": "The contact list is shifted abnormally upward, causing contact entries to overlap with the header section and creating visual clutter.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/ChatSidebar.jsx",
+      "line_number": 19,
+      "neg_code": "<div className=\"flex-1 overflow-y-auto\">",
+      "pos_code": "<div className=\"flex-1 overflow-y-auto custom-scrollbar -mt-10\">",
+      "css_selector": "div.border-r > div.overflow-y-auto",
+      "bounding_box": {
+        "x": 0,
+        "y": 86,
+        "width": 320,
+        "height": 634
+      }
+    },
+    {
+      "comment": "Bug #9 - flexbox",
+      "report_text": "Messages are arranged in a multi-column grid layout instead of a linear sequence, disrupting the natural conversational flow.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/MessageBubble.jsx",
+      "line_number": 5,
+      "neg_code": "<div className={`flex ${alignment}`}>",
+      "pos_code": "<div className={`grid ${isMe ? 'justify-end' : 'justify-start'} mb-4 group`}>",
+      "css_selector": "div[class*=\"mb-4\"][class*=\"group\"]",
+      "bounding_box": {
+        "x": 340,
+        "y": 100,
+        "width": 900,
+        "height": 100
+      }
+    },
+    {
+      "comment": "Bug #10 - background-color",
+      "report_text": "The message bubbles display with an incorrect color scheme, using a bright yellow tone instead of the intended dark blue, creating visual inconsistency.",
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/MessageBubble.jsx",
+      "line_number": 11,
+      "neg_code": "const bgColor = isOwn ? 'bg-indigo-600 text-white' : 'bg-white border border-gray-200 text-gray-800';",
+      "pos_code": "            ? 'bg-yellow-100 text-white rounded-br-sm'",
+      "css_selector": "div[class*=\"px-5\"][class*=\"py-3\"][class*=\"rounded-2xl\"]",
+      "bounding_box": {
+        "x": 340,
+        "y": 100,
+        "width": 900,
+        "height": 100
+      }
+    }
+  ]
+}

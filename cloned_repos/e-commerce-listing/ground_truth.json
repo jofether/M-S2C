@@ -1,0 +1,175 @@
+{
+  "repository": "E-Commerce Listing",
+  "bugs": [
+    {
+      "comment": "Bug #1 - z-index",
+      "report_text": "The header is hidden behind other page content instead of appearing on top.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 7,
+      "neg_code": "<header className=\"border-b bg-white sticky top-0 z-50 shadow-sm\">",
+      "pos_code": "<header className=\"border-b bg-white sticky top-0 -z-50 shadow-sm\">",
+      "css_selector": "header.border-b.bg-white.sticky.shadow-sm",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 400
+      }
+    },
+    {
+      "comment": "Bug #2 - background-color",
+      "report_text": "The logo background is displaying as a solid dark color instead of the intended gradient.",
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 10,
+      "neg_code": "<div className=\"h-10 w-10 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center\">",
+      "pos_code": "<div className=\"h-10 w-10 rounded-lg bg-slate-900 flex items-center justify-center\">",
+      "css_selector": "header div.rounded-lg",
+      "bounding_box": {
+        "x": 88,
+        "y": 20,
+        "width": 40,
+        "height": 40
+      }
+    },
+    {
+      "comment": "Bug #3 - color",
+      "report_text": "The logo text is not visible against its background due to poor contrast.",
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 11,
+      "neg_code": "<span className=\"text-white font-bold\">TS</span>",
+      "pos_code": "<span className=\"text-slate-900 font-bold text-2xl\">TS</span>",
+      "css_selector": "header div.rounded-lg span",
+      "bounding_box": {
+        "x": 94,
+        "y": 24,
+        "width": 28,
+        "height": 32
+      }
+    },
+    {
+      "comment": "Bug #4 - flexbox",
+      "report_text": "The filter buttons are overflowing the container horizontally instead of wrapping to multiple lines.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/FilterBar.jsx",
+      "line_number": 25,
+      "neg_code": "<div className=\"flex flex-wrap gap-3\">",
+      "pos_code": "<div className=\"flex flex-nowrap gap-0 overflow-visible\">",
+      "css_selector": "div.flex.flex-col > div.flex",
+      "bounding_box": {
+        "x": 0,
+        "y": 81,
+        "width": 1280,
+        "height": 40
+      }
+    },
+    {
+      "comment": "Bug #5 - background-color",
+      "report_text": "The active filter button is not displaying the correct background styling.",
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/FilterBar.jsx",
+      "line_number": 32,
+      "neg_code": "? 'bg-blue-600 text-white'",
+      "pos_code": "? 'bg-blue-99 text-white'",
+      "css_selector": "div.flex button:first-child",
+      "bounding_box": {
+        "x": 88,
+        "y": 85,
+        "width": 120,
+        "height": 32
+      }
+    },
+    {
+      "comment": "Bug #6 - z-index",
+      "report_text": "The overlay is permanently blocking interaction with the product card instead of being dismissible.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 12,
+      "neg_code": "<article className=\"group relative overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-100 transition duration-200 hover:-translate-y-1 hover:shadow-lg\"><div className={`relative flex h-48 items-center justify-center ${product.color} overflow-hidden`}>",
+      "pos_code": "<article className=\"group relative overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-100 transition duration-200 hover:-translate-y-1 hover:shadow-lg\"><div className=\"absolute inset-0 z-50 bg-black/70 opacity-70 pointer-events-auto\" /><div className={`relative flex h-48 items-center justify-center ${product.color} overflow-hidden`}>",
+      "css_selector": "article.group.relative:first-of-type",
+      "bounding_box": {
+        "x": 88,
+        "y": 834,
+        "width": 352,
+        "height": 244
+      }
+    },
+    {
+      "comment": "Bug #7 - margin",
+      "report_text": "The product title is positioned abnormally with excessive negative spacing that collapses the layout.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 19,
+      "neg_code": "<h3 className=\"text-lg font-semibold text-slate-900\">{product.name}</h3>",
+      "pos_code": "<h3 className=\"text-lg font-semibold text-slate-900 -mt-32 -mb-16\">{product.name}</h3>",
+      "css_selector": "article.group.relative:first-of-type h3.text-lg.font-semibold",
+      "bounding_box": {
+        "x": 112,
+        "y": 850,
+        "width": 304,
+        "height": 150
+      }
+    },
+    {
+      "comment": "Bug #8 - grid",
+      "report_text": "The hero section content is cramped into too many columns with insufficient spacing between elements.",
+      "bug_category": "Layout",
+      "bug_type": "grid",
+      "file_modified": "src/components/Hero.jsx",
+      "line_number": 7,
+      "neg_code": "<div className=\"grid grid-cols-1 gap-8 md:grid-cols-2 items-center\">",
+      "pos_code": "<div className=\"grid grid-cols-3 gap-2 items-center\">",
+      "css_selector": "section div.grid.items-center",
+      "bounding_box": {
+        "x": 88,
+        "y": 177,
+        "width": 1104,
+        "height": 414
+      }
+    },
+    {
+      "comment": "Bug #9 - margin",
+      "report_text": "The badge element is positioned outside its intended container due to excessive negative spacing.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Hero.jsx",
+      "line_number": 11,
+      "neg_code": "<span className=\"inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4\">",
+      "pos_code": "<span className=\"inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 -my-20 -ml-12\">",
+      "css_selector": "div.grid span.inline-block.px-4.py-1.rounded-full.bg-white\\/20",
+      "bounding_box": {
+        "x": 40,
+        "y": 175,
+        "width": 163,
+        "height": 28
+      }
+    },
+    {
+      "comment": "Bug #10 - color",
+      "report_text": "The footer description text is too bold and dark, creating poor visual hierarchy and readability.",
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 11,
+      "neg_code": "<p className=\"text-sm\">Your trusted source for premium tech equipment and accessories.</p>",
+      "pos_code": "<p className=\"text-sm text-slate-950 font-bold\">Your trusted source for premium tech equipment and accessories.</p>",
+      "css_selector": "footer p.text-sm",
+      "bounding_box": {
+        "x": 88,
+        "y": 2279,
+        "width": 252,
+        "height": 40
+      }
+    }
+  ]
+}

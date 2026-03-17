@@ -1,0 +1,87 @@
+=== BM25 RESULTS: spacing_ExperienceCard ===
+
+Query: The Container Box is literally colliding with the border of the webpage.
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 2
+--- Top 10 ---
+1. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+2. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+3. <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+4. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+5. <div>
+6. <li>
+7. <path d="M12.36 4.778c2.32 0 3.885 1.002 4.778 1.84l3.487-3.405C18.483 1.222 15.695 0 12.359 0 7.526 0 3.352 2.773 1.32 6.81l3.996 3.103c1.002-2.98 3.776-5.135 7.043-5.135" fill="#eb4335"/>
+8. <path d="M24.222 12.632c0-1.016-.082-1.758-.26-2.527H12.358v4.586h6.81c-.137 1.14-.878 2.856-2.526 4.01l-.023.153 3.668 2.842.255.025c2.334-2.155 3.68-5.327 3.68-9.09" fill="#4285f4"/>
+9. <path d="M5.327 14.801a7.6 7.6 0 0 1-.412-2.444c0-.851.151-1.675.399-2.444l-.007-.164L1.444 6.75l-.126.06A12.4 12.4 0 0 0 0 12.357c0 1.991.48 3.872 1.318 5.547z" fill="#fbbc05"/>
+10. <path d="M12.36 24.714c3.336 0 6.137-1.098 8.183-2.993l-3.9-3.02c-1.043.727-2.444 1.235-4.284 1.235-3.267 0-6.04-2.156-7.03-5.135l-.144.012-3.815 2.952-.05.139c2.032 4.036 6.206 6.81 11.04 6.81" fill="#34a853"/>
+
+==================================================
+
+Query: I can't figure out why this Container Box isn't showing up properly!
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 9
+--- Top 10 ---
+1. <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+2. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+3. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+4. <div>
+5. <li>
+6. <path d="M12.36 4.778c2.32 0 3.885 1.002 4.778 1.84l3.487-3.405C18.483 1.222 15.695 0 12.359 0 7.526 0 3.352 2.773 1.32 6.81l3.996 3.103c1.002-2.98 3.776-5.135 7.043-5.135" fill="#eb4335"/>
+7. <path d="M24.222 12.632c0-1.016-.082-1.758-.26-2.527H12.358v4.586h6.81c-.137 1.14-.878 2.856-2.526 4.01l-.023.153 3.668 2.842.255.025c2.334-2.155 3.68-5.327 3.68-9.09" fill="#4285f4"/>
+8. <path d="M5.327 14.801a7.6 7.6 0 0 1-.412-2.444c0-.851.151-1.675.399-2.444l-.007-.164L1.444 6.75l-.126.06A12.4 12.4 0 0 0 0 12.357c0 1.991.48 3.872 1.318 5.547z" fill="#fbbc05"/>
+9. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+10. <path d="M12.36 24.714c3.336 0 6.137-1.098 8.183-2.993l-3.9-3.02c-1.043.727-2.444 1.235-4.284 1.235-3.267 0-6.04-2.156-7.03-5.135l-.144.012-3.815 2.952-.05.139c2.032 4.036 6.206 6.81 11.04 6.81" fill="#34a853"/>
+
+==================================================
+
+Query: There is a noticeable absence of content in the Container Box, which contrasts sharply with the surrounding elements on the page.
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 9
+--- Top 10 ---
+1. <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+2. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+3. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+4. <div>
+5. <li>
+6. <path d="M12.36 4.778c2.32 0 3.885 1.002 4.778 1.84l3.487-3.405C18.483 1.222 15.695 0 12.359 0 7.526 0 3.352 2.773 1.32 6.81l3.996 3.103c1.002-2.98 3.776-5.135 7.043-5.135" fill="#eb4335"/>
+7. <path d="M24.222 12.632c0-1.016-.082-1.758-.26-2.527H12.358v4.586h6.81c-.137 1.14-.878 2.856-2.526 4.01l-.023.153 3.668 2.842.255.025c2.334-2.155 3.68-5.327 3.68-9.09" fill="#4285f4"/>
+8. <path d="M5.327 14.801a7.6 7.6 0 0 1-.412-2.444c0-.851.151-1.675.399-2.444l-.007-.164L1.444 6.75l-.126.06A12.4 12.4 0 0 0 0 12.357c0 1.991.48 3.872 1.318 5.547z" fill="#fbbc05"/>
+9. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+10. <path d="M12.36 24.714c3.336 0 6.137-1.098 8.183-2.993l-3.9-3.02c-1.043.727-2.444 1.235-4.284 1.235-3.267 0-6.04-2.156-7.03-5.135l-.144.012-3.815 2.952-.05.139c2.032 4.036 6.206 6.81 11.04 6.81" fill="#34a853"/>
+
+==================================================
+
+Query: It seems that all other UI elements are perfectly aligned except for this one Container Box which disrupts the layout.
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 9
+--- Top 10 ---
+1. <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+2. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+3. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+4. <div>
+5. <li>
+6. <path d="M12.36 4.778c2.32 0 3.885 1.002 4.778 1.84l3.487-3.405C18.483 1.222 15.695 0 12.359 0 7.526 0 3.352 2.773 1.32 6.81l3.996 3.103c1.002-2.98 3.776-5.135 7.043-5.135" fill="#eb4335"/>
+7. <path d="M24.222 12.632c0-1.016-.082-1.758-.26-2.527H12.358v4.586h6.81c-.137 1.14-.878 2.856-2.526 4.01l-.023.153 3.668 2.842.255.025c2.334-2.155 3.68-5.327 3.68-9.09" fill="#4285f4"/>
+8. <path d="M5.327 14.801a7.6 7.6 0 0 1-.412-2.444c0-.851.151-1.675.399-2.444l-.007-.164L1.444 6.75l-.126.06A12.4 12.4 0 0 0 0 12.357c0 1.991.48 3.872 1.318 5.547z" fill="#fbbc05"/>
+9. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+10. <path d="M12.36 24.714c3.336 0 6.137-1.098 8.183-2.993l-3.9-3.02c-1.043.727-2.444 1.235-4.284 1.235-3.267 0-6.04-2.156-7.03-5.135l-.144.012-3.815 2.952-.05.139c2.032 4.036 6.206 6.81 11.04 6.81" fill="#34a853"/>
+
+==================================================
+
+Query: The Container Box is causing issues and needs immediate attention.
+Target: <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl">
+Rank: 9
+--- Top 10 ---
+1. <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+2. <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+3. <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+4. <div>
+5. <li>
+6. <path d="M12.36 4.778c2.32 0 3.885 1.002 4.778 1.84l3.487-3.405C18.483 1.222 15.695 0 12.359 0 7.526 0 3.352 2.773 1.32 6.81l3.996 3.103c1.002-2.98 3.776-5.135 7.043-5.135" fill="#eb4335"/>
+7. <path d="M24.222 12.632c0-1.016-.082-1.758-.26-2.527H12.358v4.586h6.81c-.137 1.14-.878 2.856-2.526 4.01l-.023.153 3.668 2.842.255.025c2.334-2.155 3.68-5.327 3.68-9.09" fill="#4285f4"/>
+8. <path d="M5.327 14.801a7.6 7.6 0 0 1-.412-2.444c0-.851.151-1.675.399-2.444l-.007-.164L1.444 6.75l-.126.06A12.4 12.4 0 0 0 0 12.357c0 1.991.48 3.872 1.318 5.547z" fill="#fbbc05"/>
+9. <div className="w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl"> <--- [HIT]
+10. <path d="M12.36 24.714c3.336 0 6.137-1.098 8.183-2.993l-3.9-3.02c-1.043.727-2.444 1.235-4.284 1.235-3.267 0-6.04-2.156-7.03-5.135l-.144.012-3.815 2.952-.05.139c2.032 4.036 6.206 6.81 11.04 6.81" fill="#34a853"/>
+
+==================================================
+

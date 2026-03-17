@@ -1,0 +1,175 @@
+{
+  "repository": "Delete Confirmation Modal",
+  "bugs": [
+    {
+      "comment": "Bug #1 - margin",
+      "report_text": "The main content area is being pushed far off-screen, leaving only a blank white space visible.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/App.jsx",
+      "line_number": 37,
+      "neg_code": "<div className={`p-8 transition-all duration-300 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>",
+      "pos_code": "<div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>",
+      "css_selector": "div.p-8.transition-all.duration-300",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #2 - z-index",
+      "report_text": "The modal dialog is appearing behind other page elements instead of appearing on top and taking user focus.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 42,
+      "neg_code": "      <Modal\n        isOpen={isModalOpen}\n        title=\"Delete Account?\"\n        message=\"Are you sure you want to delete your account? All of your data will be permanently removed.\"\n        warning=\"This action cannot be undone.\"\n        onConfirm={handleDelete}\n        onCancel={handleCancel}\n        confirmText=\"Delete Forever\"\n        cancelText=\"Cancel\"\n        isLoading={isDeleting}\n      />",
+      "pos_code": "      <div className=\"relative z-40\">\n        <Modal\n          isOpen={isModalOpen}\n          title=\"Delete Account?\"\n          message=\"Are you sure you want to delete your account? All of your data will be permanently removed.\"\n          warning=\"This action cannot be undone.\"\n          onConfirm={handleDelete}\n          onCancel={handleCancel}\n          confirmText=\"Delete Forever\"\n          cancelText=\"Cancel\"\n          isLoading={isDeleting}\n        />\n      </div>",
+      "css_selector": "div.fixed.inset-0.z-50",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #3 - position",
+      "report_text": "The notification toast is hidden completely off the bottom edge of the viewport and cannot be seen.",
+      "bug_category": "Spacing",
+      "bug_type": "position",
+      "file_modified": "src/App.jsx",
+      "line_number": 51,
+      "neg_code": "      {toast && (\n        <Toast \n          message={toast.message} \n          type={toast.type}\n          onClose={() => setToast(null)}\n        />\n      )}",
+      "pos_code": "      <div className=\"fixed -bottom-32 z-40\">\n        {toast && (\n          <Toast \n            message={toast.message} \n            type={toast.type}\n            onClose={() => setToast(null)}\n          />\n        )}\n      </div>",
+      "css_selector": "div.fixed.bottom-6.right-6",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #4 - margin-bottom",
+      "report_text": "The card component creates an abnormally large gap below it, pushing subsequent content far down the page.",
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/components/Card.jsx",
+      "line_number": 5,
+      "neg_code": "    <div className=\"bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200\">",
+      "pos_code": "    <div className=\"bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200 mb-999\">",
+      "css_selector": "div.bg-slate-700\\/50.rounded-lg.shadow-sm.p-6",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #5 - flexbox",
+      "report_text": "The navigation items are stacked in reverse order instead of in their intended left-to-right sequence.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 5,
+      "neg_code": "    <nav className=\"flex justify-between items-center mb-12\">",
+      "pos_code": "    <nav className=\"flex flex-row-reverse justify-between items-center mb-12\">",
+      "css_selector": "nav.flex.justify-between.items-center.mb-12",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 100
+      }
+    },
+    {
+      "comment": "Bug #6 - position",
+      "report_text": "The navigation icons are repositioned to the top of the page and overlap with the main header, obscuring content.",
+      "bug_category": "Spacing",
+      "bug_type": "position",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 7,
+      "neg_code": "      <div className=\"flex space-x-3\">",
+      "pos_code": "      <div className=\"flex space-x-3 absolute -top-4 text-white\">",
+      "css_selector": "nav div.flex.space-x-3",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 100
+      }
+    },
+    {
+      "comment": "Bug #7 - position",
+      "report_text": "The modal dialog appears misaligned and does not maintain its proper centered position on the screen.",
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/Modal.jsx",
+      "line_number": 16,
+      "neg_code": "      <div \n        className={`bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${",
+      "pos_code": "      <div \n        className={`relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all ${",
+      "css_selector": "div.bg-white.rounded-2xl.shadow-2xl.max-w-sm",
+      "bounding_box": {
+        "x": 522,
+        "y": 229,
+        "width": 365,
+        "height": 334
+      }
+    },
+    {
+      "comment": "Bug #8 - background-color",
+      "report_text": "The alert icon background becomes invisible or displays an unintended neutral color instead of the proper warning tone.",
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/Modal.jsx",
+      "line_number": 21,
+      "neg_code": "          <div className=\"mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-6 animate-pulse\">",
+      "pos_code": "          <div className=\"mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse\">",
+      "css_selector": ".h-16.w-16.rounded-full.animate-pulse",
+      "bounding_box": {
+        "x": 674,
+        "y": 259,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "comment": "Bug #9 - padding",
+      "report_text": "The settings section has excessive internal padding that breaks the page layout and pushes content beyond visible boundaries.",
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/SettingsSection.jsx",
+      "line_number": 5,
+      "neg_code": "    <div className=\"mb-12\">",
+      "pos_code": "    <div className=\"mb-12 p-48\">",
+      "css_selector": "div.mb-12",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #10 - grid-template-columns",
+      "report_text": "The stats items collapse and fail to display in a proper multi-column grid layout, appearing as a broken single column.",
+      "bug_category": "Layout",
+      "bug_type": "grid-template-columns",
+      "file_modified": "src/components/StatsGrid.jsx",
+      "line_number": 15,
+      "neg_code": "    <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6\">",
+      "pos_code": "    <div className=\"grid grid-cols-none gap-6\">",
+      "css_selector": "div.grid.gap-6",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ]
+}

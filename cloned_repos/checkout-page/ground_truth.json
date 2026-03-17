@@ -1,0 +1,175 @@
+{
+  "repository": "Checkout Page",
+  "bugs": [
+    {
+      "comment": "Bug #1 - min-h-screen",
+      "report_text": "The page container does not extend to fill the entire viewport height.",
+      "bug_category": "Typo",
+      "bug_type": "min-h-screen",
+      "file_modified": "src/App.jsx",
+      "line_number": 26,
+      "neg_code": "<div className=\"min-h-screen bg-gray-50 font-sans text-gray-900\">",
+      "pos_code": "<div className=\"min-h-scren bg-gray-50 font-sans text-gray-900\">",
+      "css_selector": ".bg-gray-50.font-sans.text-gray-900",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #2 - flexbox",
+      "report_text": "The checkout items stack vertically on large screens instead of displaying side-by-side.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/App.jsx",
+      "line_number": 35,
+      "neg_code": "<div className=\"flex flex-col lg:flex-row gap-8 items-start\">",
+      "pos_code": "<div className=\"flex flex-col lg:flex-col gap-8 items-start\">",
+      "css_selector": ".flex.flex-col.gap-8.items-start",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #3 - position",
+      "report_text": "The delete button is stuck in the top-left corner of the screen instead of staying within the product item.",
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/CartItem.jsx",
+      "line_number": 19,
+      "neg_code": "className=\"p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-full transition-colors\"",
+      "pos_code": "className=\"fixed top-0 left-0 p-2 text-white hover:bg-red-50 rounded-full transition-colors\"",
+      "css_selector": "button.p-2",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #4 - z-index",
+      "report_text": "The header is hidden behind other page content and not interactive.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 6,
+      "neg_code": "<header className=\"sticky top-0 bg-white border-b border-gray-200 z-50 shadow-sm\">",
+      "pos_code": "<header className=\"sticky top-0 bg-white border-b border-gray-200 -z-50 shadow-sm\">",
+      "css_selector": "header.sticky.top-0",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 65
+      }
+    },
+    {
+      "comment": "Bug #5 - text-color (Home)",
+      "report_text": "The 'Home' navigation link text is invisible against the white header background.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 18,
+      "neg_code": "<a href=\"#\" className=\"text-gray-600 hover:text-blue-600 font-medium\">Home</a>",
+      "pos_code": "<a href=\"#\" className=\"text-white hover:text-blue-600 font-medium\">Home</a>",
+      "css_selector": "a:has-text(\"Home\")",
+      "bounding_box": {
+        "x": 576,
+        "y": 20,
+        "width": 44,
+        "height": 24
+      }
+    },
+    {
+      "comment": "Bug #6 - text-color (Products)",
+      "report_text": "The 'Products' navigation link text is invisible against the white header background.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 19,
+      "neg_code": "<a href=\"#\" className=\"text-gray-600 hover:text-blue-600 font-medium\">Products</a>",
+      "pos_code": "<a href=\"#\" className=\"text-white hover:text-blue-600 font-medium\">Products</a>",
+      "css_selector": "a:has-text(\"Products\")",
+      "bounding_box": {
+        "x": 644,
+        "y": 20,
+        "width": 64,
+        "height": 24
+      }
+    },
+    {
+      "comment": "Bug #7 - text-color (About)",
+      "report_text": "The 'About' navigation link text is invisible against the white header background.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 20,
+      "neg_code": "<a href=\"#\" className=\"text-gray-600 hover:text-blue-600 font-medium\">About</a>",
+      "pos_code": "<a href=\"#\" className=\"text-white hover:text-blue-600 font-medium\">About</a>",
+      "css_selector": "a:has-text(\"About\")",
+      "bounding_box": {
+        "x": 732,
+        "y": 20,
+        "width": 45,
+        "height": 24
+      }
+    },
+    {
+      "comment": "Bug #8 - margin-top",
+      "report_text": "The order summary section heavily overlaps with the cart items above it, obscuring the product list.",
+      "bug_category": "Spacing",
+      "bug_type": "margin-top",
+      "file_modified": "src/components/OrderSummary.jsx",
+      "line_number": 27,
+      "neg_code": "<div className=\"p-6 bg-gray-50 border-t border-gray-200 space-y-4\">",
+      "pos_code": "<div className=\"p-6 bg-gray-50 -mt-20 border-t border-gray-200 space-y-4\">",
+      "css_selector": ".bg-gray-50.border-t",
+      "bounding_box": {
+        "x": 33,
+        "y": 430,
+        "width": 382,
+        "height": 273
+      }
+    },
+    {
+      "comment": "Bug #9 - border-t",
+      "report_text": "The visual dividing line between summary line items is missing.",
+      "bug_category": "Typo",
+      "bug_type": "border-t",
+      "file_modified": "src/components/OrderSummary.jsx",
+      "line_number": 29,
+      "neg_code": "<div className=\"flex justify-between items-center pt-4 border-t border-gray-200\">",
+      "pos_code": "<div className=\"flex justify-between items-center pt-4 bordr-t border-gray-200\">",
+      "css_selector": ".flex.justify-between.items-center.pt-4",
+      "bounding_box": {
+        "x": 57,
+        "y": 525,
+        "width": 334,
+        "height": 60
+      }
+    },
+    {
+      "comment": "Bug #10 - padding",
+      "report_text": "The product card content text is cramped against the card edges without proper internal spacing.",
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 15,
+      "neg_code": "<div className=\"p-4 flex-1 flex flex-col\">",
+      "pos_code": "<div className=\"p-0 flex-1 flex flex-col\">",
+      "css_selector": ".flex-1.flex.flex-col",
+      "bounding_box": {
+        "x": 33,
+        "y": 120,
+        "width": 598,
+        "height": 132
+      }
+    }
+  ]
+}

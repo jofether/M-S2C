@@ -1,0 +1,116 @@
+=== BM25 REPOSITORY RESULTS: user-profile-settings ===
+
+Image / ID: User Profile Settings_bug-4.png
+Query: The user avatar symbol appears white and invisible on a white background instead of displaying with the intended gradient colors.
+Target File: src/components/GeneralTab.jsx
+Target Node: <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg text-white">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/GeneralTab.jsx] <textarea rows={4} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" defaultValue="Full-stack developer passionate about creating beautiful and functional user interfaces. Coffee enthusiast and open-source contributor." />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
+4. [src/App.jsx] <BillingTab onSave={handleSave} />
+5. [src/App.jsx] <SecurityTab onSave={handleSave} />
+6. [src/App.jsx] <p className="text-gray-500 mb-8">
+7. [src/App.jsx] <h2 className="text-3xl font-bold text-gray-900 mb-2">
+8. [src/App.jsx] <GeneralTab onSave={handleSave} />
+9. [src/App.jsx] <div className="max-w-3xl">
+10. [src/App.jsx] <SuccessMessage visible={savedMessage} />
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-6.png
+Query: The account settings heading text is not applying the intended large font size and appears in regular size.
+Target File: src/components/Header.jsx
+Target Node: <h1 className="txt-5xl font-black text-white mb-2">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/GeneralTab.jsx] <textarea rows={4} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" defaultValue="Full-stack developer passionate about creating beautiful and functional user interfaces. Coffee enthusiast and open-source contributor." />
+2. [src/components/GeneralTab.jsx] <input type="text" defaultValue="jofether_dev" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" />
+3. [src/components/GeneralTab.jsx] <input type="text" defaultValue="Mendoza" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" />
+4. [src/components/GeneralTab.jsx] <input type="text" defaultValue="Jofether" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" />
+5. [src/components/GeneralTab.jsx] <input type="text" defaultValue="San Francisco, USA" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" />
+6. [src/main.jsx] <App />
+7. [src/App.jsx] <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
+8. [src/App.jsx] <BillingTab onSave={handleSave} />
+9. [src/App.jsx] <SecurityTab onSave={handleSave} />
+10. [src/App.jsx] <p className="text-gray-500 mb-8">
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-9.png
+Query: The sidebar is not displaying at the correct width and appears to collapse or misalign.
+Target File: src/components/Sidebar.jsx
+Target Node: <aside className="w-fll lg:w-72 bg-gradient-to-b from-slate-50 to-slate-100 border-r border-gray-200 p-6">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
+2. [src/components/GeneralTab.jsx] <textarea rows={4} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" defaultValue="Full-stack developer passionate about creating beautiful and functional user interfaces. Coffee enthusiast and open-source contributor." />
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
+5. [src/App.jsx] <BillingTab onSave={handleSave} />
+6. [src/App.jsx] <SecurityTab onSave={handleSave} />
+7. [src/App.jsx] <p className="text-gray-500 mb-8">
+8. [src/App.jsx] <h2 className="text-3xl font-bold text-gray-900 mb-2">
+9. [src/App.jsx] <GeneralTab onSave={handleSave} />
+10. [src/App.jsx] <div className="max-w-3xl">
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-3_bug-3-OpenBillingTab.png
+Query: The plan features section is displaying as a single column instead of wrapping into multiple columns on larger screens.
+Target File: src/components/BillingTab.jsx
+Target Node: <div className="grid grid-cols-99 gap-4">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
+3. [src/App.jsx] <BillingTab onSave={handleSave} />
+4. [src/App.jsx] <SecurityTab onSave={handleSave} />
+5. [src/App.jsx] <p className="text-gray-500 mb-8">
+6. [src/App.jsx] <h2 className="text-3xl font-bold text-gray-900 mb-2">
+7. [src/App.jsx] <GeneralTab onSave={handleSave} />
+8. [src/App.jsx] <div className="max-w-3xl">
+9. [src/App.jsx] <SuccessMessage visible={savedMessage} />
+10. [src/App.jsx] <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-7_bug-7-OpenNotificationsTab.png
+Query: The push notification settings card is positioned absolutely and overlaps other content instead of flowing naturally in the page.
+Target File: src/components/NotificationsTab.jsx
+Target Node: <div className="flex items-center justify-between bg-purple-50 p-4 rounded-lg border border-purple-200 absolute">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/GeneralTab.jsx] <textarea rows={4} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" defaultValue="Full-stack developer passionate about creating beautiful and functional user interfaces. Coffee enthusiast and open-source contributor." />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
+4. [src/App.jsx] <BillingTab onSave={handleSave} />
+5. [src/App.jsx] <SecurityTab onSave={handleSave} />
+6. [src/App.jsx] <p className="text-gray-500 mb-8">
+7. [src/App.jsx] <h2 className="text-3xl font-bold text-gray-900 mb-2">
+8. [src/App.jsx] <GeneralTab onSave={handleSave} />
+9. [src/App.jsx] <div className="max-w-3xl">
+10. [src/App.jsx] <SuccessMessage visible={savedMessage} />
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-8_bug-8-OpenSecurityTab.png
+Query: The active sessions items have excessive side padding, causing the content to be compressed into a narrow strip.
+Target File: src/components/SecurityTab.jsx
+Target Node: <div className="flex items-center justify-between px-40 border border-gray-200 rounded-lg hover:bg-gray-50 transition">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
+3. [src/App.jsx] <BillingTab onSave={handleSave} />
+4. [src/App.jsx] <SecurityTab onSave={handleSave} />
+5. [src/App.jsx] <p className="text-gray-500 mb-8">
+6. [src/App.jsx] <h2 className="text-3xl font-bold text-gray-900 mb-2">
+7. [src/App.jsx] <GeneralTab onSave={handleSave} />
+8. [src/App.jsx] <div className="max-w-3xl">
+9. [src/App.jsx] <SuccessMessage visible={savedMessage} />
+10. [src/App.jsx] <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
+
+======================================================================
+

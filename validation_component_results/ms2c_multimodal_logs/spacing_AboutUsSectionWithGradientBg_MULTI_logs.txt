@@ -1,0 +1,92 @@
+=== MULTI RESULTS: spacing_AboutUsSectionWithGradientBg ===
+
+Query: The Content Area is pushed too far to the right, with no text within its bounds, creating a stark contrast between it and the rest of the layout.
+Target: <div className="flex flex-col gap-10 mr-6">
+Rank: 2
+Gating Alpha: 0.4997
+--- Top 10 ---
+1. <div className="flex items-center gap-4">
+2. <div className="flex flex-col gap-10 mr-6"> <--- [HIT]
+3. <h1 className="text-3xl font-semibold">
+4. <h3 className="text-base font-medium text-slate-600">
+5. <p className="text-sm text-slate-500">
+6. <h1 className="text-3xl font-semibold text-center mx-auto">
+7. <p className="text-sm text-slate-500 mt-2">
+8. <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
+9. <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded">
+10. <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
+
+==================================================
+
+Query: This layout's design doesn't align well with the content—it's like they didn't think through the text placement.
+Target: <div className="flex flex-col gap-10 mr-6">
+Rank: 7
+Gating Alpha: 0.4967
+--- Top 10 ---
+1. <h1 className="text-3xl font-semibold">
+2. <h1 className="text-3xl font-semibold text-center mx-auto">
+3. <p className="text-sm text-slate-500 mt-2">
+4. <h3 className="text-base font-medium text-slate-600">
+5. <div className="flex items-center gap-4">
+6. <p className="text-sm text-slate-500">
+7. <div className="flex flex-col gap-10 mr-6"> <--- [HIT]
+8. <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
+9. <img className="max-w-sm w-full rounded-xl h-auto" src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=830&h=844&auto=format&fit=crop" alt=""/>
+10. <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
+
+==================================================
+
+Query: The Content Area is located at the far right edge of the screenshot, with a considerable amount of empty space on both sides.
+Target: <div className="flex flex-col gap-10 mr-6">
+Rank: 3
+Gating Alpha: 0.4997
+--- Top 10 ---
+1. <h1 className="text-3xl font-semibold">
+2. <div className="flex items-center gap-4">
+3. <div className="flex flex-col gap-10 mr-6"> <--- [HIT]
+4. <h3 className="text-base font-medium text-slate-600">
+5. <p className="text-sm text-slate-500">
+6. <h1 className="text-3xl font-semibold text-center mx-auto">
+7. <p className="text-sm text-slate-500 mt-2">
+8. <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
+9. <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded">
+10. <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
+
+==================================================
+
+Query: While the rest of the website features well-defined content blocks and clear spacing, this Content Area stands out due to its awkward placement.
+Target: <div className="flex flex-col gap-10 mr-6">
+Rank: 2
+Gating Alpha: 0.4996
+--- Top 10 ---
+1. <div className="flex items-center gap-4">
+2. <div className="flex flex-col gap-10 mr-6"> <--- [HIT]
+3. <h1 className="text-3xl font-semibold">
+4. <h3 className="text-base font-medium text-slate-600">
+5. <p className="text-sm text-slate-500">
+6. <h1 className="text-3xl font-semibold text-center mx-auto">
+7. <p className="text-sm text-slate-500 mt-2">
+8. <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
+9. <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded">
+10. <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
+
+==================================================
+
+Query: The layout's design is incomplete—the Content Area should be centered or aligned with other elements for better readability.
+Target: <div className="flex flex-col gap-10 mr-6">
+Rank: 2
+Gating Alpha: 0.4996
+--- Top 10 ---
+1. <div className="flex items-center gap-4">
+2. <div className="flex flex-col gap-10 mr-6"> <--- [HIT]
+3. <h1 className="text-3xl font-semibold">
+4. <h3 className="text-base font-medium text-slate-600">
+5. <p className="text-sm text-slate-500">
+6. <h1 className="text-3xl font-semibold text-center mx-auto">
+7. <p className="text-sm text-slate-500 mt-2">
+8. <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
+9. <div className="size-9 p-2 bg-indigo-50 border border-indigo-200 rounded">
+10. <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
+
+==================================================
+

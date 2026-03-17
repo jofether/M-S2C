@@ -1,0 +1,40 @@
+=== BM25 REPOSITORY RESULTS: bento-grid-dashboard ===
+
+Image / ID: Bento Grid Dashboard_bug-6.png
+Query: Chart bars are stacking vertically down the page instead of displaying horizontally side by side, completely breaking the bar chart visualization.
+Target File: src/components/Chart.jsx
+Target Node: <div className="h-40 flex flex-col space-x-2">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Chart darkMode={darkMode} title="Performance Metrics" data={chartData} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <h2 className="text-xl font-bold">
+4. [src/App.jsx] <div className="grid grid-cols-2 gap-4">
+5. [src/App.jsx] <StatCard darkMode={darkMode} label="Avg Response Time" value="245ms" change={-3.1} icon="⚡" gradient="from-cyan-500 to-blue-500" />
+6. [src/App.jsx] <StorageWidget darkMode={darkMode} />
+7. [src/App.jsx] <ActivityFeed darkMode={darkMode} />
+8. [src/App.jsx] <div key={notif.id} className={`flex items-center justify-between gap-4 rounded-2xl p-4 backdrop-blur-xl border animate-in fade-in slide-in-from-top-2 ${ notif.type === 'success' ? `${darkMode ? 'bg-emerald-500/20 border-emerald-500/50' : 'bg-emerald-50 border-emerald-200'} text-emerald-700` : notif.type === 'warning' ? `${darkMode ? 'bg-yellow-500/20 border-yellow-500/50' : 'bg-yellow-50 border-yellow-200'} text-yellow-700` : `${darkMode ? 'bg-blue-500/20 border-blue-500/50' : 'bg-blue-50 border-blue-200'} text-blue-700` }`} >
+9. [src/App.jsx] <div className={`mb-6 rounded-2xl p-6 backdrop-blur-xl border ${darkMode ? 'bg-neutral-800/50 border-neutral-700/50' : 'bg-white border-gray-200/50'}`}>
+10. [src/App.jsx] <div className="w-full grid grid-cols-1 gap-4 auto-rows-max">
+
+======================================================================
+
+Image / ID: Bento Grid Dashboard_bug-8.png
+Query: The storage widget bar loses proper visual layering and becomes misaligned with the rest of the widget presentation.
+Target File: src/components/StorageWidget.jsx
+Target Node: <div className="flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <h2 className="text-xl font-bold">
+3. [src/App.jsx] <div className="grid grid-cols-2 gap-4">
+4. [src/App.jsx] <StatCard darkMode={darkMode} label="Avg Response Time" value="245ms" change={-3.1} icon="⚡" gradient="from-cyan-500 to-blue-500" />
+5. [src/App.jsx] <StorageWidget darkMode={darkMode} />
+6. [src/App.jsx] <ActivityFeed darkMode={darkMode} />
+7. [src/App.jsx] <div key={notif.id} className={`flex items-center justify-between gap-4 rounded-2xl p-4 backdrop-blur-xl border animate-in fade-in slide-in-from-top-2 ${ notif.type === 'success' ? `${darkMode ? 'bg-emerald-500/20 border-emerald-500/50' : 'bg-emerald-50 border-emerald-200'} text-emerald-700` : notif.type === 'warning' ? `${darkMode ? 'bg-yellow-500/20 border-yellow-500/50' : 'bg-yellow-50 border-yellow-200'} text-yellow-700` : `${darkMode ? 'bg-blue-500/20 border-blue-500/50' : 'bg-blue-50 border-blue-200'} text-blue-700` }`} >
+8. [src/App.jsx] <div className={`mb-6 rounded-2xl p-6 backdrop-blur-xl border ${darkMode ? 'bg-neutral-800/50 border-neutral-700/50' : 'bg-white border-gray-200/50'}`}>
+9. [src/App.jsx] <div className="w-full grid grid-cols-1 gap-4 auto-rows-max">
+10. [src/App.jsx] <div className="flex items-center justify-between mb-4">
+
+======================================================================
+

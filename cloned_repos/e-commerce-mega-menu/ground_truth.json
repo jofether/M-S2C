@@ -1,0 +1,175 @@
+{
+  "repository": "E-Commerce Mega Menu",
+  "bugs": [
+    {
+      "comment": "Bug #1 - grid-cols",
+      "report_text": "Products are displaying in a single column layout instead of spreading across multiple columns on larger screens.",
+      "bug_category": "Layout",
+      "bug_type": "grid-cols",
+      "file_modified": "src/App.jsx",
+      "line_number": 74,
+      "neg_code": "          <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8\">",
+      "pos_code": "          <div className=\"grid grid-cols-1 gap-8\">",
+      "css_selector": "section.bg-gray-50 .grid.gap-8",
+      "bounding_box": {
+        "x": 32,
+        "y": 788,
+        "width": 1216,
+        "height": 1200
+      }
+    },
+    {
+      "comment": "Bug #2 - z-index",
+      "report_text": "The cart panel is being hidden behind other page elements when opened.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/CartPanel.jsx",
+      "line_number": 9,
+      "neg_code": "    <div className=\"absolute top-16 right-0 z-40 w-96 bg-white shadow-2xl p-6 max-h-96 overflow-y-auto border-l-4 border-yellow-400\">",
+      "pos_code": "    <div className=\"absolute top-16 right-0 z-10 w-96 bg-white shadow-2xl p-6 max-h-96 overflow-y-auto border-l-4 border-yellow-400\">",
+      "css_selector": "div.absolute.right-0.w-96.bg-white",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 400
+      }
+    },
+    {
+      "comment": "Bug #3 - text-yellow",
+      "report_text": "The footer heading is not displaying the intended color and appears invisible.",
+      "bug_category": "Color",
+      "bug_type": "text-yellow",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 13,
+      "neg_code": "            <h4 className=\"font-bold text-lg mb-4 text-yellow-400\">LUXE.</h4>",
+      "pos_code": "            <h4 className=\"font-bold text-lg mb-4 text-yellow-5\">LUXE.</h4>",
+      "css_selector": "footer h4:first-of-type",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #4 - text-gray",
+      "report_text": "The footer list text is too dark and difficult to read against the dark footer background.",
+      "bug_category": "Color",
+      "bug_type": "text-gray",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 33,
+      "neg_code": "            <ul className=\"space-y-2 text-sm text-gray-400\">",
+      "pos_code": "            <ul className=\"space-y-2 text-sm text-gray-800\">",
+      "css_selector": "footer .grid > div:nth-child(3) ul",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #5 - margin-bottom",
+      "report_text": "The hero section is overlapping with content below it, causing misalignment and visual collision on the page.",
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/components/Hero.jsx",
+      "line_number": 5,
+      "neg_code": "    <header className=\"relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 h-[600px] flex items-center justify-center overflow-hidden\">",
+      "pos_code": "    <header className=\"relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 h-[600px] flex items-center justify-center overflow-hidden -mb-40\">",
+      "css_selector": "header.bg-gradient-to-r.overflow-hidden",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 800
+      }
+    },
+    {
+      "comment": "Bug #6 - z-index",
+      "report_text": "The navigation bar is appearing behind page content instead of floating on top of the page.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Navbar.jsx",
+      "line_number": 6,
+      "neg_code": "    <nav className=\"relative bg-gray-900 text-white z-50 shadow-lg\">",
+      "pos_code": "    <nav className=\"relative bg-gray-900 text-white z-0 shadow-lg\">",
+      "css_selector": "nav.bg-gray-900.text-white.shadow-lg",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 400
+      }
+    },
+    {
+      "comment": "Bug #7 - flexbox",
+      "report_text": "The navigation items are stacking vertically down the page instead of displaying horizontally across the navigation bar.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Navbar.jsx",
+      "line_number": 8,
+      "neg_code": "        <div className=\"flex items-center justify-between h-16\">",
+      "pos_code": "        <div className=\"flex-col items-center justify-between h-16\">",
+      "css_selector": "nav .max-w-7xl > div:is(.flex, .flex-col)",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 64
+      }
+    },
+    {
+      "comment": "Bug #8 - padding",
+      "report_text": "The product cards are abnormally large with excessive internal spacing, causing them to overflow outside the container.",
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 5,
+      "neg_code": "    <div className=\"group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105\">",
+      "pos_code": "    <div className=\"group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 p-64\">",
+      "css_selector": "section.bg-gray-50 div.group:first-of-type",
+      "bounding_box": {
+        "x": 32,
+        "y": 788,
+        "width": 816,
+        "height": 900
+      }
+    },
+    {
+      "comment": "Bug #9 - text-gray",
+      "report_text": "The product placeholder text is not displaying the correct color and appears invisible.",
+      "bug_category": "Color",
+      "bug_type": "text-gray",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 8,
+      "neg_code": "        <div className=\"w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-500 font-bold text-2xl\">",
+      "pos_code": "        <div className=\"w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-99 font-bold text-2xl\">",
+      "css_selector": "section.bg-gray-50 div.group:first-of-type .bg-gradient-to-br",
+      "bounding_box": {
+        "x": 288,
+        "y": 1044,
+        "width": 704,
+        "height": 256
+      }
+    },
+    {
+      "comment": "Bug #10 - background-color",
+      "report_text": "The search input text becomes completely invisible when typed because the text color blends into the input background.",
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/SearchPanel.jsx",
+      "line_number": 31,
+      "neg_code": "          className=\"w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition\"",
+      "pos_code": "          className=\"w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition bg-white text-white\"",
+      "css_selector": "input[type=\"text\"].px-4.py-3",
+      "bounding_box": {
+        "x": 340,
+        "y": 200,
+        "width": 600,
+        "height": 48
+      }
+    }
+  ]
+}

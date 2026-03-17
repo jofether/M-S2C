@@ -1,0 +1,87 @@
+=== BM25 RESULTS: spacing_HotelBookingSearchForm ===
+
+Query: The Data Entry Module is physically broken with an unexpected spacing error, causing it to overlap with its immediate neighbors, creating a visual confusion.
+Target: <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/>
+Rank: 9
+--- Top 10 ---
+1. <label htmlFor="destinationInput">
+2. <form className='bg-white text-gray-500 rounded-lg px-6 py-4 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
+3. <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+4. <span>
+5. <label htmlFor="checkOut">
+6. <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+7. <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+8. <label htmlFor="guests">
+9. <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/> <--- [HIT]
+10. <button className='flex items-center justify-center gap-1 rounded-md bg-black py-3 px-4 text-white my-auto cursor-pointer max-md:w-full max-md:py-1'>
+
+==================================================
+
+Query: This layout is extremely frustrating as the Data Entry Module appears to be smashed into the left corner of the screen, blocking visibility and accessibility.
+Target: <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/>
+Rank: 9
+--- Top 10 ---
+1. <label htmlFor="destinationInput">
+2. <form className='bg-white text-gray-500 rounded-lg px-6 py-4 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
+3. <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+4. <span>
+5. <label htmlFor="checkOut">
+6. <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+7. <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+8. <label htmlFor="guests">
+9. <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/> <--- [HIT]
+10. <button className='flex items-center justify-center gap-1 rounded-md bg-black py-3 px-4 text-white my-auto cursor-pointer max-md:w-full max-md:py-1'>
+
+==================================================
+
+Query: There is a massive void on the right side of the Data Entry Module, leaving the overall design feeling unbalanced and incomplete.
+Target: <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/>
+Rank: 9
+--- Top 10 ---
+1. <label htmlFor="destinationInput">
+2. <form className='bg-white text-gray-500 rounded-lg px-6 py-4 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
+3. <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+4. <span>
+5. <label htmlFor="checkOut">
+6. <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+7. <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+8. <label htmlFor="guests">
+9. <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/> <--- [HIT]
+10. <button className='flex items-center justify-center gap-1 rounded-md bg-black py-3 px-4 text-white my-auto cursor-pointer max-md:w-full max-md:py-1'>
+
+==================================================
+
+Query: In contrast to the stable elements surrounding it, the Data Entry Module stands out as the only element without any content or proper alignment within its designated space.
+Target: <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/>
+Rank: 9
+--- Top 10 ---
+1. <label htmlFor="destinationInput">
+2. <form className='bg-white text-gray-500 rounded-lg px-6 py-4 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
+3. <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+4. <span>
+5. <label htmlFor="checkOut">
+6. <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+7. <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+8. <label htmlFor="guests">
+9. <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/> <--- [HIT]
+10. <button className='flex items-center justify-center gap-1 rounded-md bg-black py-3 px-4 text-white my-auto cursor-pointer max-md:w-full max-md:py-1'>
+
+==================================================
+
+Query: The broken spacing in the Data Entry Module is a clear visual error that detracts from the overall usability and aesthetic of the interface.
+Target: <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/>
+Rank: 9
+--- Top 10 ---
+1. <label htmlFor="destinationInput">
+2. <form className='bg-white text-gray-500 rounded-lg px-6 py-4 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
+3. <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+4. <span>
+5. <label htmlFor="checkOut">
+6. <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+7. <svg className="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+8. <label htmlFor="guests">
+9. <input min={1} max={4} id="guests" type="number" className=" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16" placeholder="0"/> <--- [HIT]
+10. <button className='flex items-center justify-center gap-1 rounded-md bg-black py-3 px-4 text-white my-auto cursor-pointer max-md:w-full max-md:py-1'>
+
+==================================================
+

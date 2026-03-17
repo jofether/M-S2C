@@ -1,0 +1,42 @@
+=== MULTI REPOSITORY RESULTS: bento-grid-dashboard ===
+
+Image / ID: Bento Grid Dashboard_bug-6.png
+Query: Chart bars are stacking vertically down the page instead of displaying horizontally side by side, completely breaking the bar chart visualization.
+Target File: src/components/Chart.jsx
+Target Node: <div className="h-40 flex flex-col space-x-2">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5291 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Calendar.jsx] <div className="grid grid-cols-7 gap-2 text-center text-xs">
+2. [src/components/StorageWidget.jsx] <div className="flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0">
+3. [src/App.jsx] <div className="flex items-start justify-between">
+4. [src/App.jsx] <div className="w-full grid grid-cols-1 gap-4 auto-rows-max">
+5. [src/App.jsx] <div className="grid grid-cols-2 gap-4">
+6. [src/App.jsx] <div className="mb-[-50px] flex items-center justify-between">
+7. [src/components/StorageWidget.jsx] <div key={i} className={`${item.color} relative z-[-1]`} style={{ width: `${(item.size / totalSize) * 100}%` }} title={`${item.name}: ${item.size}%`} />
+8. [src/components/TaskList.jsx] <div className="space-y-2">
+9. [src/App.jsx] <div className={`min-h-screen ${darkMode ? 'bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950' : 'bg-gradient-to-br from-gray-50 to-gray-100'} ${darkMode ? 'text-white' : 'text-gray-900'} p-8 font-sans flex flex-col`}>
+10. [src/components/TeamMembers.jsx] <div key={member.id} className="flex items-center gap-3">
+
+======================================================================
+
+Image / ID: Bento Grid Dashboard_bug-8.png
+Query: The storage widget bar loses proper visual layering and becomes misaligned with the rest of the widget presentation.
+Target File: src/components/StorageWidget.jsx
+Target Node: <div className="flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0">
+Rank Achieved: 1
+Gating Alpha: 0.5951 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/StorageWidget.jsx] <div className="flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0">  <--- [GROUND TRUTH HIT]
+2. [src/components/StorageWidget.jsx] <div key={i} className={`${item.color} relative z-[-1]`} style={{ width: `${(item.size / totalSize) * 100}%` }} title={`${item.name}: ${item.size}%`} />
+3. [src/App.jsx] <div className="mb-[-50px] flex items-center justify-between">
+4. [src/App.jsx] <div className="flex items-start justify-between">
+5. [src/components/Calendar.jsx] <div className="grid grid-cols-7 gap-2 text-center text-xs">
+6. [src/components/TeamMembers.jsx] <div key={member.id} className="flex items-center gap-3">
+7. [src/components/StorageWidget.jsx] <div className="mb-4">
+8. [src/App.jsx] <div className="w-full grid grid-cols-1 gap-4 auto-rows-max">
+9. [src/App.jsx] <div className={`min-h-screen ${darkMode ? 'bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950' : 'bg-gradient-to-br from-gray-50 to-gray-100'} ${darkMode ? 'text-white' : 'text-gray-900'} p-8 font-sans flex flex-col`}>
+10. [src/components/ActivityFeed.jsx] <div className="flex-1 min-w-0">
+
+======================================================================
+

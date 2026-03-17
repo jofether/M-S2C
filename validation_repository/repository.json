@@ -1,0 +1,1052 @@
+[
+    {
+        "github_repo": "https://github.com/jofether/activity-timeline",
+        "image_anchor": "Activity Timeline_bug-1.png",
+        "file_path": "src/components/Container.jsx",
+        "text_anchor": "The container content is left-aligned instead of being centered horizontally on the page.",
+        "positive_node": "<div className=\"max-w-2xl\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/activity-timeline",
+        "image_anchor": "Activity Timeline_bug-3.png",
+        "file_path": "src/components/TimelineEvent.jsx",
+        "text_anchor": "The timeline connecting line is not properly aligned with its corresponding event markers.",
+        "positive_node": "<li className=\"pb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/activity-timeline",
+        "image_anchor": "Activity Timeline_bug-4.png",
+        "file_path": "src/components/TimelineEvent.jsx",
+        "text_anchor": "The vertical timeline line is offset and not correctly positioned relative to the event markers.",
+        "positive_node": "<span className=\"top-4 left-4 -ml-px h-full w-0.5 bg-gray-200\" aria-hidden=\"true\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/activity-timeline",
+        "image_anchor": "Activity Timeline_bug-5.png",
+        "file_path": "src/components/TimelineEvent.jsx",
+        "text_anchor": "The event content is stacking vertically instead of displaying horizontally beside the timeline marker.",
+        "positive_node": "<div className=\"relative block space-x-3\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/activity-timeline",
+        "image_anchor": "Activity Timeline_bug-7.png",
+        "file_path": "src/components/TimelineEvent.jsx",
+        "text_anchor": "The event description text is touching the marker circle without sufficient vertical spacing above it.",
+        "positive_node": "<div className=\"min-w-0 flex-1 flex justify-between space-x-4\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/activity-timeline",
+        "image_anchor": "Activity Timeline_bug-8.png",
+        "file_path": "src/components/TimelineHeader.jsx",
+        "text_anchor": "The header is overlapping with the timeline content below it, creating a visual collision.",
+        "positive_node": "<header className=\"mb-[-50px]\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/activity-timeline",
+        "image_anchor": "Activity Timeline_bug-9.png",
+        "file_path": "src/components/TimelineHeader.jsx",
+        "text_anchor": "The title text is displaying at an abnormally large size and breaking the entire page layout.",
+        "positive_node": "<h1 className=\"text-33xl font-bold text-gray-900\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/admin-dashboard",
+        "image_anchor": "Admin Dashboard_bug-3.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header elements are cramped together with no space separating them from each other.",
+        "positive_node": "<div className=\"flex items-center gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/admin-dashboard",
+        "image_anchor": "Admin Dashboard_bug-4.png",
+        "file_path": "src/components/Sidebar.jsx",
+        "text_anchor": "The sidebar is hidden behind other elements and is not accessible or visible to the user.",
+        "positive_node": "<aside className=\"w-64 bg-slate-800 text-white flex flex-col z-[-10] relative\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/admin-dashboard",
+        "image_anchor": "Admin Dashboard_bug-6.png",
+        "file_path": "src/components/StatCard.jsx",
+        "text_anchor": "The stat card elements are stacking vertically instead of being distributed horizontally across the container.",
+        "positive_node": "<div className=\"block items-start mb-4\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/admin-dashboard",
+        "image_anchor": "Admin Dashboard_bug-8.png",
+        "file_path": "src/components/Table.jsx",
+        "text_anchor": "The table does not expand to fill the available width of its container.",
+        "positive_node": "<table className=\"w-fulll\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/admin-dashboard",
+        "image_anchor": "Admin Dashboard_bug-9.png",
+        "file_path": "src/components/Table.jsx",
+        "text_anchor": "The table header is hidden beneath the table rows and is not visible to the user.",
+        "positive_node": "<thead className=\"relative z-[-1]\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/audio-waveform-visualizer",
+        "image_anchor": "Audio Waveform Visualizer_bug-3.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header is hidden behind other interface elements and remains completely invisible.",
+        "positive_node": "<div className=\"absolute top-8 left-8 right-8 flex items-center justify-between z-[-1]\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/audio-waveform-visualizer",
+        "image_anchor": "Audio Waveform Visualizer_bug-4.png",
+        "file_path": "src/components/MainControls.jsx",
+        "text_anchor": "The buttons are stacking vertically instead of being horizontally distributed, causing layout collapse.",
+        "positive_node": "<div className=\"block items-center justify-between px-4 mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/audio-waveform-visualizer",
+        "image_anchor": "Audio Waveform Visualizer_bug-7.png",
+        "file_path": "src/components/SecondaryControls.jsx",
+        "text_anchor": "The buttons are bunched together on one side instead of being spread across the available space.",
+        "positive_node": "<div className=\"flex items-center mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/audio-waveform-visualizer",
+        "image_anchor": "Audio Waveform Visualizer_bug-8.png",
+        "file_path": "src/components/SongInfo.jsx",
+        "text_anchor": "The song information is overlapping with other elements below due to incorrect spacing.",
+        "positive_node": "<div className=\"text-center mb-[-50px]\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/bento-grid-dashboard",
+        "image_anchor": "Bento Grid Dashboard_bug-6.png",
+        "file_path": "src/components/Chart.jsx",
+        "text_anchor": "Chart bars are stacking vertically down the page instead of displaying horizontally side by side, completely breaking the bar chart visualization.",
+        "positive_node": "<div className=\"h-40 flex flex-col space-x-2\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/bento-grid-dashboard",
+        "image_anchor": "Bento Grid Dashboard_bug-8.png",
+        "file_path": "src/components/StorageWidget.jsx",
+        "text_anchor": "The storage widget bar loses proper visual layering and becomes misaligned with the rest of the widget presentation.",
+        "positive_node": "<div className=\"flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/chat-application-interface",
+        "image_anchor": "Chat Application Interface_bug-4.png",
+        "file_path": "src/components/ChatHeader.jsx",
+        "text_anchor": "The header bar is rendered behind the messages panel, making it invisible and unreachable for user interaction.",
+        "positive_node": "<div className=\"h-16 px-6 flex items-center justify-between bg-white border-b border-gray-200 shadow-sm -z-10 relative\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/chat-application-interface",
+        "image_anchor": "Chat Application Interface_bug-5.png",
+        "file_path": "src/components/ChatHeader.jsx",
+        "text_anchor": "The contact name text is invisible or blends seamlessly into the header background, making it completely unreadable.",
+        "positive_node": "<h2 className=\"text-lg font-bold text-white leading-tight\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/chat-application-interface",
+        "image_anchor": "Chat Application Interface_bug-6.png",
+        "file_path": "src/components/ChatSidebar.jsx",
+        "text_anchor": "The sidebar is excessively wide, consuming too much horizontal screen space and leaving insufficient room for the message area.",
+        "positive_node": "<div className=\"w-80 bg-white border-r border-gray-200 flex flex-col h-full z-20 relative\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/chat-application-interface",
+        "image_anchor": "Chat Application Interface_bug-7.png",
+        "file_path": "src/components/ChatSidebar.jsx",
+        "text_anchor": "The search bar and input elements have no spacing around them, causing text and UI components to collide directly with the section borders.",
+        "positive_node": "<div className=\"p-0 border-b border-gray-200 bg-gray-50\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/chat-application-interface",
+        "image_anchor": "Chat Application Interface_bug-8.png",
+        "file_path": "src/components/ChatSidebar.jsx",
+        "text_anchor": "The contact list is shifted abnormally upward, causing contact entries to overlap with the header section and creating visual clutter.",
+        "positive_node": "<div className=\"flex-1 overflow-y-auto custom-scrollbar -mt-10\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/checkout-page",
+        "image_anchor": "Checkout Page_bug-4.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header is hidden behind other page content and not interactive.",
+        "positive_node": "<header className=\"sticky top-0 bg-white border-b border-gray-200 -z-50 shadow-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/checkout-page",
+        "image_anchor": "Checkout Page_bug-5.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The 'Home' navigation link text is invisible against the white header background.",
+        "positive_node": "<a href=\"#\" className=\"text-white hover:text-blue-600 font-medium\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/checkout-page",
+        "image_anchor": "Checkout Page_bug-6.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The 'Products' navigation link text is invisible against the white header background.",
+        "positive_node": "<a href=\"#\" className=\"text-white hover:text-blue-600 font-medium\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/checkout-page",
+        "image_anchor": "Checkout Page_bug-7.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The 'About' navigation link text is invisible against the white header background.",
+        "positive_node": "<a href=\"#\" className=\"text-white hover:text-blue-600 font-medium\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/checkout-page",
+        "image_anchor": "Checkout Page_bug-8.png",
+        "file_path": "src/components/OrderSummary.jsx",
+        "text_anchor": "The order summary section heavily overlaps with the cart items above it, obscuring the product list.",
+        "positive_node": "<div className=\"p-6 bg-gray-50 -mt-20 border-t border-gray-200 space-y-4\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/checkout-page",
+        "image_anchor": "Checkout Page_bug-9.png",
+        "file_path": "src/components/OrderSummary.jsx",
+        "text_anchor": "The visual dividing line between summary line items is missing.",
+        "positive_node": "<div className=\"flex justify-between items-center pt-4 bordr-t border-gray-200\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/checkout-page",
+        "image_anchor": "Checkout Page_bug-10.png",
+        "file_path": "src/components/ProductCard.jsx",
+        "text_anchor": "The product card content text is cramped against the card edges without proper internal spacing.",
+        "positive_node": "<div className=\"p-0 flex-1 flex flex-col\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cinema-seat-selection",
+        "image_anchor": "Cinema Seat Selection_bug-2.png",
+        "file_path": "src/components/BookingSummary.jsx",
+        "text_anchor": "The booking summary card corners are not rounded and appear with sharp edges instead of smooth curves.",
+        "positive_node": "<div className=\"bg-gradient-to-b from-gray-800 to-gray-900 border border-gray-700 rounded-xx p-6 sticky top-8 shadow-2xl\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cinema-seat-selection",
+        "image_anchor": "Cinema Seat Selection_bug-3.png",
+        "file_path": "src/components/BookingSummary.jsx",
+        "text_anchor": "The booking summary section has excessive spacing pushing its content away from the container boundaries.",
+        "positive_node": "<div className=\"space-y-4 mb-6 border-b border-gray-700 pb-4 m-10\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cinema-seat-selection",
+        "image_anchor": "Cinema Seat Selection_bug-4.png",
+        "file_path": "src/components/BookingSummary.jsx",
+        "text_anchor": "The seat information text is displayed in a color that blends into the dark background and is difficult to read.",
+        "positive_node": "<span className=\"text-sm text-gray-900\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cinema-seat-selection",
+        "image_anchor": "Cinema Seat Selection_bug-6.png",
+        "file_path": "src/components/MovieShowtimeSelector.jsx",
+        "text_anchor": "The form fields are positioned too close together with no proper spacing between them.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap- mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cinema-seat-selection",
+        "image_anchor": "Cinema Seat Selection_bug-9.png",
+        "file_path": "src/components/SeatingGrid.jsx",
+        "text_anchor": "The seating grid rows are not properly aligned and content is spanning across multiple columns incorrectly.",
+        "positive_node": "<div className=\"grid grid-cols-4 items-center gap-4 bg-gray-800/30 p-8 rounded-xl border border-gray-700/50\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cinema-seat-selection",
+        "image_anchor": "Cinema Seat Selection_bug-10.png",
+        "file_path": "src/components/SeatingLegend.jsx",
+        "text_anchor": "The legend labels are displayed in a very dark color that is barely visible against the background.",
+        "positive_node": "<span className=\"text-gray-900\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cinema-seat-selection",
+        "image_anchor": "Cinema Seat Selection_bug-5_bug-5-Checkout.png",
+        "file_path": "src/components/CheckoutModal.jsx",
+        "text_anchor": "The checkout modal is hidden behind other page elements and cannot be interacted with.",
+        "positive_node": "<div className=\"fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/code-snippet-repository",
+        "image_anchor": "Code Snippet Repository_bug-2.png",
+        "file_path": "src/components/CodeEditor.jsx",
+        "text_anchor": "The code editor panel is consuming the entire layout width instead of sharing proportional space with adjacent components.",
+        "positive_node": "<div className=\"lg:col-span-100\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/code-snippet-repository",
+        "image_anchor": "Code Snippet Repository_bug-4.png",
+        "file_path": "src/components/FeaturedSection.jsx",
+        "text_anchor": "The featured snippet cards are stacking vertically in a single column instead of displaying in a responsive multi-column grid layout.",
+        "positive_node": "<div className=\"grid grid-rows-1 md:grid-rows-3 gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/code-snippet-repository",
+        "image_anchor": "Code Snippet Repository_bug-7.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header content is left-aligned on the page instead of centered, creating asymmetrical visual balance.",
+        "positive_node": "<div className=\"mb-16 text-cente\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/code-snippet-repository",
+        "image_anchor": "Code Snippet Repository_bug-10.png",
+        "file_path": "src/components/SnippetsList.jsx",
+        "text_anchor": "The snippets list panel is consuming the entire layout width, forcing adjacent content off-screen on desktop views.",
+        "positive_node": "<div className=\"lg:col-span-99\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-2.png",
+        "file_path": "src/components/CookieBanner.jsx",
+        "text_anchor": "The banner text is too light against the background, making it difficult to read.",
+        "positive_node": "<p className=\"text-gray-300 text-center mb-2 leading-relaxed\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-1_bug-1-AcceptCookies.png",
+        "file_path": "src/components/ArticlesSection.jsx",
+        "text_anchor": "The grid items are displaying with no spacing between them, making the layout feel cramped and crowded.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-3_bug-3-AcceptCookies.png",
+        "file_path": "src/components/FeaturedArticle.jsx",
+        "text_anchor": "The featured article background is positioned incorrectly and extends beyond the container bounds.",
+        "positive_node": "<div className=\"h-96 md:h-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 absolute -top-20 overflow-hidden\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-4_bug-4-AcceptCookies.png",
+        "file_path": "src/components/Features.jsx",
+        "text_anchor": "The feature icons are not displaying at the intended size, appearing too small or failing to scale properly.",
+        "positive_node": "<div className=\"text-4xll mb-4 group-hover:scale-125 transition-transform duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-5_bug-5-AcceptCookies.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer section has an invalid background color applied that fails to render or creates a visual inconsistency.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 bg-gray-90\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-7_bug-7-AcceptCookies.png",
+        "file_path": "src/components/Hero.jsx",
+        "text_anchor": "The call-to-action buttons are displayed in reverse order, with the secondary button appearing before the primary.",
+        "positive_node": "<div className=\"flex flex-col-reverse sm:flex-row gap-4 justify-center mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-8_bug-8-AcceptCookies.png",
+        "file_path": "src/components/Newsletter.jsx",
+        "text_anchor": "The newsletter section has no internal padding, causing content to crowd directly against the edges.",
+        "positive_node": "<section className=\"relative overflow-hidden rounded-3xl -p-12 mb-16 bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-9_bug-9-AcceptCookies.png",
+        "file_path": "src/components/Testimonials.jsx",
+        "text_anchor": "The testimonial author and role text is invisible against the card background, making it unreadable.",
+        "positive_node": "<h4 className=\"font-bold text-white\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/cookie-consent-banner",
+        "image_anchor": "Cookie Consent Banner_bug-10_bug-10-AcceptCookies.png",
+        "file_path": "src/components/Testimonials.jsx",
+        "text_anchor": "The testimonial quote text is not visible, blending completely into the card background.",
+        "positive_node": "<p className=\"text-white leading-relaxed italic\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/corporate-landing-page",
+        "image_anchor": "Corporate Landing Page_bug-3.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header navigation is hidden behind other page elements and becomes non-interactive and inaccessible.",
+        "positive_node": "<header className=\"fixed w-full bg-white/90 backdrop-blur-sm -z-50 border-b border-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/corporate-landing-page",
+        "image_anchor": "Corporate Landing Page_bug-4.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The navigation links are invisible against the background, making the menu unreadable and preventing user navigation.",
+        "positive_node": "<a href=\"#features\" className=\"text-white hover:text-blue-600 font-medium\">>"
+    },
+    {
+        "github_repo": "https://github.com/jofether/corporate-landing-page",
+        "image_anchor": "Corporate Landing Page_bug-5.png",
+        "file_path": "src/components/Hero.jsx",
+        "text_anchor": "The main heading appears abnormally small and breaks the expected visual hierarchy of the page.",
+        "positive_node": "<h1 className=\"text-5xl md:text-6x font-extrabold text-gray-900 tracking-tight mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/corporate-landing-page",
+        "image_anchor": "Corporate Landing Page_bug-6.png",
+        "file_path": "src/components/Features.jsx",
+        "text_anchor": "The feature cards are stacked in a single column at all screen sizes instead of expanding into multiple columns on larger screens.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-1 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/corporate-landing-page",
+        "image_anchor": "Corporate Landing Page_bug-7.png",
+        "file_path": "src/components/Features.jsx",
+        "text_anchor": "The feature cards are touching each other without any spacing between them, creating a crowded and visually cluttered appearance.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-1 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/corporate-landing-page",
+        "image_anchor": "Corporate Landing Page_bug-8.png",
+        "file_path": "src/components/Pricing.jsx",
+        "text_anchor": "The 'Popular' badge is stuck at the top of the screen and remains visible while scrolling the page content.",
+        "positive_node": "<span className=\"fixed top-0 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/corporate-landing-page",
+        "image_anchor": "Corporate Landing Page_bug-9.png",
+        "file_path": "src/components/Pricing.jsx",
+        "text_anchor": "The pricing amount text is invisible against the background, making the price unreadable and preventing customers from viewing the cost.",
+        "positive_node": "<p className=\"text-4xl font-bold text-white mt-4\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/corporate-landing-page",
+        "image_anchor": "Corporate Landing Page_bug-10.png",
+        "file_path": "src/components/Features.jsx",
+        "text_anchor": "The feature section heading is too close to the feature cards below, creating a cramped visual appearance without adequate breathing room.",
+        "positive_node": "<h2 className=\"text-3xl font-bold text-gray-900 sm:text-4xl\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/data-analytics-table",
+        "image_anchor": "Data Analytics Table_bug-3.png",
+        "file_path": "src/components/Navbar.jsx",
+        "text_anchor": "The navigation bar is hidden behind other page elements and appears inaccessible.",
+        "positive_node": "<nav className=\"bg-white shadow-sm h-16 -z-10 relative\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/data-analytics-table",
+        "image_anchor": "Data Analytics Table_bug-4.png",
+        "file_path": "src/components/Navbar.jsx",
+        "text_anchor": "The user name text is invisible as it blends into the background with insufficient contrast.",
+        "positive_node": "<p className=\"text-sm font-semibold text-white\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/data-analytics-table",
+        "image_anchor": "Data Analytics Table_bug-5.png",
+        "file_path": "src/components/Sidebar.jsx",
+        "text_anchor": "The navigation menu items are misaligned and overlapping with negative spacing disrupting the layout.",
+        "positive_node": "<nav className=\"flex-1 p-4 -mt-20 flex flex-row flex-wrap space-y-1 overflow-y-auto\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/data-analytics-table",
+        "image_anchor": "Data Analytics Table_bug-6.png",
+        "file_path": "src/components/StatCard.jsx",
+        "text_anchor": "The card content is touching the edges without any internal spacing, making it visually cramped.",
+        "positive_node": "<div className=\"bg-white p-0 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/data-analytics-table",
+        "image_anchor": "Data Analytics Table_bug-8.png",
+        "file_path": "src/components/UserTable.jsx",
+        "text_anchor": "The table cell borders are doubled and overlapping, creating visual clutter in the table grid.",
+        "positive_node": "<table className=\"w-full text-left border-collaps\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/data-analytics-table",
+        "image_anchor": "Data Analytics Table_bug-9.png",
+        "file_path": "src/components/UserTable.jsx",
+        "text_anchor": "The user name text appears faded and lacks sufficient contrast against the table background.",
+        "positive_node": "<div className=\"font-medium text-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/data-analytics-table",
+        "image_anchor": "Data Analytics Table_bug-10.png",
+        "file_path": "src/components/UserTable.jsx",
+        "text_anchor": "The email text appears faded and lacks sufficient contrast for comfortable readability.",
+        "positive_node": "<div className=\"text-sm text-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/delete-confirmation-modal",
+        "image_anchor": "Delete Confirmation Modal_bug-4.png",
+        "file_path": "src/components/Card.jsx",
+        "text_anchor": "The card component creates an abnormally large gap below it, pushing subsequent content far down the page.",
+        "positive_node": "<div className=\"bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200 mb-999\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/delete-confirmation-modal",
+        "image_anchor": "Delete Confirmation Modal_bug-5.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The navigation items are stacked in reverse order instead of in their intended left-to-right sequence.",
+        "positive_node": "<nav className=\"flex flex-row-reverse justify-between items-center mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/delete-confirmation-modal",
+        "image_anchor": "Delete Confirmation Modal_bug-6.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The navigation icons are repositioned to the top of the page and overlap with the main header, obscuring content.",
+        "positive_node": "<div className=\"flex space-x-3 absolute -top-4 text-white\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/delete-confirmation-modal",
+        "image_anchor": "Delete Confirmation Modal_bug-9.png",
+        "file_path": "src/components/SettingsSection.jsx",
+        "text_anchor": "The settings section has excessive internal padding that breaks the page layout and pushes content beyond visible boundaries.",
+        "positive_node": "<div className=\"mb-12 p-48\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/delete-confirmation-modal",
+        "image_anchor": "Delete Confirmation Modal_bug-10.png",
+        "file_path": "src/components/StatsGrid.jsx",
+        "text_anchor": "The stats items collapse and fail to display in a proper multi-column grid layout, appearing as a broken single column.",
+        "positive_node": "<div className=\"grid grid-cols-none gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/delete-confirmation-modal",
+        "image_anchor": "Delete Confirmation Modal_bug-8_bug-8-OpenModal.png",
+        "file_path": "src/components/Modal.jsx",
+        "text_anchor": "The alert icon background becomes invisible or displays an unintended neutral color instead of the proper warning tone.",
+        "positive_node": "<div className=\"mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-credit-card-component",
+        "image_anchor": "Digital Credit Card Component_bug-6.png",
+        "file_path": "src/CreditCard.jsx",
+        "text_anchor": "The brand name text is too dark and blends into the dark card background, significantly reducing readability.",
+        "positive_node": "<div className=\"absolute top-6 right-8 text-sm font-bold opacity-75 text-slate-400\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-credit-card-component",
+        "image_anchor": "Digital Credit Card Component_bug-8.png",
+        "file_path": "src/Dashboard.jsx",
+        "text_anchor": "The dashboard stats display with an unbalanced column layout, causing awkward spacing and content overflow at different screen sizes.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-credit-card-component",
+        "image_anchor": "Digital Credit Card Component_bug-9.png",
+        "file_path": "src/Dashboard.jsx",
+        "text_anchor": "The empty state message text is too light and difficult to read against the background.",
+        "positive_node": "<p className=\"text-slate-400 text-center py-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-credit-card-component",
+        "image_anchor": "Digital Credit Card Component_bug-10.png",
+        "file_path": "src/QuickActions.jsx",
+        "text_anchor": "The quick action buttons are stacked vertically in a single column instead of arranged in a responsive multi-column grid layout.",
+        "positive_node": "<div className=\"flex flex-col gap-4\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-credit-card-component",
+        "image_anchor": "Digital Credit Card Component_bug-4_bug-4-OpenCardFormModal.png",
+        "file_path": "src/CardForm.jsx",
+        "text_anchor": "The modal dialog is positioned far below the visible viewport, making it partially or completely invisible.",
+        "positive_node": "<div className=\"fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 -my-96\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-1.png",
+        "file_path": "src/components/CategoryFilter.jsx",
+        "text_anchor": "The category filter buttons are constraining to a rigid grid layout with exactly four columns instead of wrapping flexibly.",
+        "positive_node": "<div className=\"flex flex-wrap gap-2 grid grid-cols-4\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-2.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer is hidden beneath the main content area and positioned at the bottom edge of the viewport.",
+        "positive_node": "<footer className=\"mt-16 bg-stone-800 rounded-lg p-8 border-t-2 border-amber-600 text-center absolute bottom-0 left-0 w-full -z-10\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-3.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header title is displaying in a dark color that is nearly invisible against the page background.",
+        "positive_node": "<h1 className=\"text-6xl font-bold text-ambr-50 mb-2 tracking-tight drop-shadow-lg\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-4.png",
+        "file_path": "src/components/MenuCategory.jsx",
+        "text_anchor": "The menu items are overlapping the section header and extending beyond their container boundaries.",
+        "positive_node": "<ul className=\"space-y-6 -m-4 -mt-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-5.png",
+        "file_path": "src/components/MenuItem.jsx",
+        "text_anchor": "The menu item description is appearing above the item name, reversing the expected visual hierarchy.",
+        "positive_node": "<div className=\"border-b border-stone-700 pb-6 last:border-b-0 hover:bg-stone-700 hover:bg-opacity-50 p-4 rounded-lg transition-colors flex flex-col-reverse\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-6.png",
+        "file_path": "src/components/OrderSummary.jsx",
+        "text_anchor": "The order summary panel contains excessive internal spacing that distorts its size and obscures content within the layout.",
+        "positive_node": "<div className=\"bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-7.png",
+        "file_path": "src/components/SearchBar.jsx",
+        "text_anchor": "The search bar is frozen at the top of the screen and completely blocks access to the menu items below.",
+        "positive_node": "<div className=\"mb-6 fixed top-0 left-0 w-full z-10\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-8.png",
+        "file_path": "src/components/SpecialSection.jsx",
+        "text_anchor": "The special offer title is barely visible against the dark background, making the text unreadable.",
+        "positive_node": "<h3 className=\"text-2xl font-bold text-stone-900 mb-2\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/digital-restaurant-menu",
+        "image_anchor": "Digital Restaurant Menu_bug-10.png",
+        "file_path": "src/components/OrderSummary.jsx",
+        "text_anchor": "The 'Order Summary' heading is not visible on the page, leaving the summary section without a clear label.",
+        "positive_node": "<h3 className=\"text-xl font-bold text-amber-100 mb-4 hidden\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-listing",
+        "image_anchor": "E-Commerce Listing_bug-1.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header is hidden behind other page content instead of appearing on top.",
+        "positive_node": "<header className=\"border-b bg-white sticky top-0 -z-50 shadow-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-listing",
+        "image_anchor": "E-Commerce Listing_bug-2.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The logo background is displaying as a solid dark color instead of the intended gradient.",
+        "positive_node": "<div className=\"h-10 w-10 rounded-lg bg-slate-900 flex items-center justify-center\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-listing",
+        "image_anchor": "E-Commerce Listing_bug-3.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The logo text is not visible against its background due to poor contrast.",
+        "positive_node": "<span className=\"text-slate-900 font-bold text-2xl\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-listing",
+        "image_anchor": "E-Commerce Listing_bug-8.png",
+        "file_path": "src/components/Hero.jsx",
+        "text_anchor": "The hero section content is cramped into too many columns with insufficient spacing between elements.",
+        "positive_node": "<div className=\"grid grid-cols-3 gap-2 items-center\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-listing",
+        "image_anchor": "E-Commerce Listing_bug-9.png",
+        "file_path": "src/components/Hero.jsx",
+        "text_anchor": "The badge element is positioned outside its intended container due to excessive negative spacing.",
+        "positive_node": "<span className=\"inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 -my-20 -ml-12\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-listing",
+        "image_anchor": "E-Commerce Listing_bug-10.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer description text is too bold and dark, creating poor visual hierarchy and readability.",
+        "positive_node": "<p className=\"text-sm text-slate-950 font-bold\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-listing",
+        "image_anchor": "E-Commerce Listing_bug-4_bug-4-OpenFilterBar.png",
+        "file_path": "src/components/FilterBar.jsx",
+        "text_anchor": "The filter buttons are overflowing the container horizontally instead of wrapping to multiple lines.",
+        "positive_node": "<div className=\"flex flex-nowrap gap-0 overflow-visible\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-listing",
+        "image_anchor": "E-Commerce Listing_bug-7_bug-7-RemoveOverlay.png",
+        "file_path": "src/components/ProductCard.jsx",
+        "text_anchor": "The product title is positioned abnormally with excessive negative spacing that collapses the layout.",
+        "positive_node": "<h3 className=\"text-lg font-semibold text-slate-900 -mt-32 -mb-16\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-mega-menu",
+        "image_anchor": "E-Commerce Mega Menu_bug-3.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer heading is not displaying the intended color and appears invisible.",
+        "positive_node": "<h4 className=\"font-bold text-lg mb-4 text-yellow-5\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-mega-menu",
+        "image_anchor": "E-Commerce Mega Menu_bug-4.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer list text is too dark and difficult to read against the dark footer background.",
+        "positive_node": "<ul className=\"space-y-2 text-sm text-gray-800\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-mega-menu",
+        "image_anchor": "E-Commerce Mega Menu_bug-5.png",
+        "file_path": "src/components/Hero.jsx",
+        "text_anchor": "The hero section is overlapping with content below it, causing misalignment and visual collision on the page.",
+        "positive_node": "<header className=\"relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 h-[600px] flex items-center justify-center overflow-hidden -mb-40\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-mega-menu",
+        "image_anchor": "E-Commerce Mega Menu_bug-6.png",
+        "file_path": "src/components/Navbar.jsx",
+        "text_anchor": "The navigation bar is appearing behind page content instead of floating on top of the page.",
+        "positive_node": "<nav className=\"relative bg-gray-900 text-white z-0 shadow-lg\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-mega-menu",
+        "image_anchor": "E-Commerce Mega Menu_bug-7.png",
+        "file_path": "src/components/Navbar.jsx",
+        "text_anchor": "The navigation items are stacking vertically down the page instead of displaying horizontally across the navigation bar.",
+        "positive_node": "<div className=\"flex-col items-center justify-between h-16\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-mega-menu",
+        "image_anchor": "E-Commerce Mega Menu_bug-8.png",
+        "file_path": "src/components/ProductCard.jsx",
+        "text_anchor": "The product cards are abnormally large with excessive internal spacing, causing them to overflow outside the container.",
+        "positive_node": "<div className=\"group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 p-64\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/e-commerce-mega-menu",
+        "image_anchor": "E-Commerce Mega Menu_bug-9.png",
+        "file_path": "src/components/ProductCard.jsx",
+        "text_anchor": "The product placeholder text is not displaying the correct color and appears invisible.",
+        "positive_node": "<div className=\"w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-99 font-bold text-2xl\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/user-profile-settings",
+        "image_anchor": "User Profile Settings_bug-4.png",
+        "file_path": "src/components/GeneralTab.jsx",
+        "text_anchor": "The user avatar symbol appears white and invisible on a white background instead of displaying with the intended gradient colors.",
+        "positive_node": "<div className=\"w-24 h-24 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg text-white\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/user-profile-settings",
+        "image_anchor": "User Profile Settings_bug-6.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The account settings heading text is not applying the intended large font size and appears in regular size.",
+        "positive_node": "<h1 className=\"txt-5xl font-black text-white mb-2\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/user-profile-settings",
+        "image_anchor": "User Profile Settings_bug-9.png",
+        "file_path": "src/components/Sidebar.jsx",
+        "text_anchor": "The sidebar is not displaying at the correct width and appears to collapse or misalign.",
+        "positive_node": "<aside className=\"w-fll lg:w-72 bg-gradient-to-b from-slate-50 to-slate-100 border-r border-gray-200 p-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/user-profile-settings",
+        "image_anchor": "User Profile Settings_bug-3_bug-3-OpenBillingTab.png",
+        "file_path": "src/components/BillingTab.jsx",
+        "text_anchor": "The plan features section is displaying as a single column instead of wrapping into multiple columns on larger screens.",
+        "positive_node": "<div className=\"grid grid-cols-99 gap-4\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/user-profile-settings",
+        "image_anchor": "User Profile Settings_bug-7_bug-7-OpenNotificationsTab.png",
+        "file_path": "src/components/NotificationsTab.jsx",
+        "text_anchor": "The push notification settings card is positioned absolutely and overlaps other content instead of flowing naturally in the page.",
+        "positive_node": "<div className=\"flex items-center justify-between bg-purple-50 p-4 rounded-lg border border-purple-200 absolute\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/user-profile-settings",
+        "image_anchor": "User Profile Settings_bug-8_bug-8-OpenSecurityTab.png",
+        "file_path": "src/components/SecurityTab.jsx",
+        "text_anchor": "The active sessions items have excessive side padding, causing the content to be compressed into a narrow strip.",
+        "positive_node": "<div className=\"flex items-center justify-between px-40 border border-gray-200 rounded-lg hover:bg-gray-50 transition\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/flight-booking-search",
+        "image_anchor": "Flight Booking Search_bug-1.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer section is overlapping the main content area with excessive negative spacing, making the review section partially hidden.",
+        "positive_node": "<footer className=\"bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 md:py-20 -mt-96\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/flight-booking-search",
+        "image_anchor": "Flight Booking Search_bug-4.png",
+        "file_path": "src/components/Navbar.jsx",
+        "text_anchor": "The logo text is displaying in a dark gray color that fails to contrast properly against the navigation bar background.",
+        "positive_node": "<h1 className=\"text-2xl md:text-3xl font-bold text-gray-400\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/flight-booking-search",
+        "image_anchor": "Flight Booking Search_bug-5.png",
+        "file_path": "src/components/PromoCard.jsx",
+        "text_anchor": "The promotional card is positioned absolutely, causing it to float over and overlap other page content unexpectedly.",
+        "positive_node": "<div className=\"bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group overflow-hidden relative absolute\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/flight-booking-search",
+        "image_anchor": "Flight Booking Search_bug-7.png",
+        "file_path": "src/components/SearchCard.jsx",
+        "text_anchor": "The search form fields are not aligning correctly in the container due to an invalid grid configuration value.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-13 gap-3 md:gap-4 items-end\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/flight-booking-search",
+        "image_anchor": "Flight Booking Search_bug-8.png",
+        "file_path": "src/components/SearchCard.jsx",
+        "text_anchor": "The date and time input fields are missing their border styling due to an invalid class name, appearing unstyled.",
+        "positive_node": "<div className=\"md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-2 rounded-xl overflow-hidden relative hover:border-blue-300 transition\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/flight-booking-search",
+        "image_anchor": "Flight Booking Search_bug-10.png",
+        "file_path": "src/components/SearchCard.jsx",
+        "text_anchor": "The search button section has excessive negative spacing that causes it to shift and separate from the rest of the form.",
+        "positive_node": "<div className=\"md:col-span-2 -m-10\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/flight-booking-search",
+        "image_anchor": "Flight Booking Search_bug-2_bug-2-ShowFlightResults.png",
+        "file_path": "src/components/FlightResults.jsx",
+        "text_anchor": "The flight search results are stacked vertically in a single column instead of displaying in a responsive multi-column grid layout.",
+        "positive_node": "<div className=\"flex flex-col gap-6 md:gap-4 items-start\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/flight-booking-search",
+        "image_anchor": "Flight Booking Search_bug-3_bug-3-ShowFlightResults.png",
+        "file_path": "src/components/FlightResults.jsx",
+        "text_anchor": "The flight icon is not rendering at the correct size due to an invalid styling class, appearing distorted or missing.",
+        "positive_node": "<div className=\"text-3xxl mt-1\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/kanban-board",
+        "image_anchor": "Kanban Board_bug-3.png",
+        "file_path": "src/components/Column.jsx",
+        "text_anchor": "The Done column appears faded and semi-transparent, significantly reducing its visual prominence and readability compared to other columns.",
+        "positive_node": "<div className=\"flex-shrink-0 w-96 flex flex-col bg-gradient-to-b from-slate-700 to-slate-800 rounded-xl shadow-xl overflow-hidden border border-slate-600 opacity-50\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/kanban-board",
+        "image_anchor": "Kanban Board_bug-8.png",
+        "file_path": "src/components/TaskCard.jsx",
+        "text_anchor": "Task title text is too dark and difficult to read against the dark card background, severely impacting legibility.",
+        "positive_node": "<p className=\"text-slate-600 font-semibold text-sm flex-1 line-clamp-2 group-hover:text-blue-200\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/video-conference-grid",
+        "image_anchor": "Video Conference Grid_bug-1.png",
+        "file_path": "src/components/ControlBar.jsx",
+        "text_anchor": "The footer control buttons are stacking vertically instead of appearing horizontally in a row.",
+        "positive_node": "<div className=\"flex flex-col items-center gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/video-conference-grid",
+        "image_anchor": "Video Conference Grid_bug-4.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header is hidden behind other page elements, making it inaccessible and obscured.",
+        "positive_node": "<header className=\"bg-gradient-to-r from-slate-900/90 to-slate-800/90 backdrop-blur-2xl border-b border-slate-700/50 px-6 py-4 flex justify-between items-center shadow-2xl z-5\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/video-conference-grid",
+        "image_anchor": "Video Conference Grid_bug-5.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The timer display text appears in an incorrect color, making it difficult to read against the dark background.",
+        "positive_node": "<div className=\"text-2xl font-mono font-bold text-cyan-40 bg-slate-800/50 px-4 py-2 rounded-lg border border-cyan-500/30\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/video-conference-grid",
+        "image_anchor": "Video Conference Grid_bug-6.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The duration label has excessive negative spacing below it, creating an unnatural visual gap in the header layout.",
+        "positive_node": "<p className=\"text-xs text-slate-400 mt-1 -mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/video-conference-grid",
+        "image_anchor": "Video Conference Grid_bug-7.png",
+        "file_path": "src/components/ParticipantCard.jsx",
+        "text_anchor": "The participant name text is too dark and nearly invisible against the dark video overlay background.",
+        "positive_node": "<div className=\"bg-black/70 backdrop-blur-md px-3 py-2 rounded-lg text-slate-700 text-xs font-semibold border border-slate-600/30\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/video-conference-grid",
+        "image_anchor": "Video Conference Grid_bug-10.png",
+        "file_path": "src/components/VideoGrid.jsx",
+        "text_anchor": "The video grid displays only one video per row instead of multiple columns, and extends beyond the container boundaries with negative spacing.",
+        "positive_node": "<div className=\"flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 overflow-y-auto pr-2 pb-2 -m-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/video-conference-grid",
+        "image_anchor": "Video Conference Grid_bug-8_bug-8-OpenParticipantSidebar.png",
+        "file_path": "src/components/ParticipantSidebar.jsx",
+        "text_anchor": "The participant sidebar is locked to the screen edge and overlaps the video grid, obscuring video content.",
+        "positive_node": "<div className=\"w-80 bg-gradient-to-b from-slate-800/90 to-slate-900/90 backdrop-blur-xl border-l border-slate-700/50 rounded-2xl overflow-hidden flex flex-col shadow-2xl fixed right-0 top-0 bottom-0 z-10\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/video-conference-grid",
+        "image_anchor": "Video Conference Grid_bug-9_bug-9-OpenSettingsModal.png",
+        "file_path": "src/components/SettingsModal.jsx",
+        "text_anchor": "The microphone settings label text is too dark and nearly invisible against the dark modal background.",
+        "positive_node": "<span className=\"text-gray-700 font-medium\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/login-authentication",
+        "image_anchor": "Login Authentication_bug-1.png",
+        "file_path": "src/pages/LoginPage.jsx",
+        "text_anchor": "The welcome heading text is barely visible and appears extremely faded, severely reducing readability.",
+        "positive_node": "<h1 className=\"text-3xl font-bold text-white opacity-10 mb-2\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/login-authentication",
+        "image_anchor": "Login Authentication_bug-8.png",
+        "file_path": "src/pages/RegisterPage.jsx",
+        "text_anchor": "The password confirmation field and its associated label are displayed in reverse order, confusing the form layout.",
+        "positive_node": "<div className=\"group flex flex-col-reverse\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/multi-step-onboarding-wizard",
+        "image_anchor": "Multi-Step Onboarding Wizard_bug-5.png",
+        "file_path": "src/components/FormInput.jsx",
+        "text_anchor": "The field description text is too light and difficult to read against the background.",
+        "positive_node": "<p className=\"text-gray-400 mt-1\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/multi-step-onboarding-wizard",
+        "image_anchor": "Multi-Step Onboarding Wizard_bug-9_bug-9-NavigateToStep5.png",
+        "file_path": "src/components/steps/Step5.jsx",
+        "text_anchor": "The success message box has collapsed with insufficient internal spacing, causing the content to overflow.",
+        "positive_node": "<div className=\"bg-green-50 border-2 border-green-200 rounded-xl -p-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/podcast-player",
+        "image_anchor": "Podcast Player_bug-1.png",
+        "file_path": "src/components/Controls.jsx",
+        "text_anchor": "The control buttons are stacking vertically in a column instead of displaying horizontally in a row.",
+        "positive_node": "<div className=\"flex flex-col items-center justify-center gap-6 mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/podcast-player",
+        "image_anchor": "Podcast Player_bug-3.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header is hidden behind other page content when scrolling, making it inaccessible.",
+        "positive_node": "<header className=\"border-b border-gray-800 bg-gray-900/50 backdrop-blur-md sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/podcast-player",
+        "image_anchor": "Podcast Player_bug-4.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The app logo text is rendered in plain white instead of displaying the intended gradient color effect.",
+        "positive_node": "<h1 className=\"text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-white\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/podcast-player",
+        "image_anchor": "Podcast Player_bug-5.png",
+        "file_path": "src/components/Player.jsx",
+        "text_anchor": "The album artwork is offset from its intended position and overlaps the surrounding UI elements.",
+        "positive_node": "<div className=\"flex justify-center mb-8 relative -m-16\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/podcast-player",
+        "image_anchor": "Podcast Player_bug-6.png",
+        "file_path": "src/components/Player.jsx",
+        "text_anchor": "The LIVE indicator badge stretches to cover the entire album artwork instead of appearing as a small badge.",
+        "positive_node": "<div className=\"absolute inset-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/podcast-player",
+        "image_anchor": "Podcast Player_bug-9.png",
+        "file_path": "src/components/SecondaryControls.jsx",
+        "text_anchor": "The secondary control sliders are arranged in two columns instead of three, causing misalignment and poor visual balance.",
+        "positive_node": "<div className=\"grid grid-cols-2 gap-4\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/podcast-player",
+        "image_anchor": "Podcast Player_bug-10.png",
+        "file_path": "src/components/StatsCard.jsx",
+        "text_anchor": "The stats card labels are rendered in a near-black color and are nearly invisible against the dark background.",
+        "positive_node": "<div className=\"text-sm font-bold text-gray-900 mb-4 flex items-center gap-2\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-4.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer content is positioned over the top of the page, creating a visual overlap that obscures the header and other content.",
+        "positive_node": "<div className=\"grid md:grid-cols-5 gap-8 mb-12 absolute top-0 left-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-1_bug-1-RemoveFooterOverlay.png",
+        "file_path": "src/components/CTA.jsx",
+        "text_anchor": "The call-to-action text appears in an incorrect color shade that doesn't match the intended design, creating visual inconsistency.",
+        "positive_node": "<p className=\"text-xl text-blue-90 mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-2_bug-2-RemoveFooterOverlay.png",
+        "file_path": "src/components/FAQ.jsx",
+        "text_anchor": "The FAQ items are displaying horizontally in a single row instead of being vertically stacked, breaking the expected question-and-answer layout structure.",
+        "positive_node": "<div className=\"space-y-4 flex flex-row\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-3_bug-3-RemoveFooterOverlay.png",
+        "file_path": "src/components/Features.jsx",
+        "text_anchor": "The feature cards are arranged in reverse order and displayed in a single column instead of a proper multi-column grid layout.",
+        "positive_node": "<div className=\"flex flex-col-reverse gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-5_bug-5-RemoveFooterOverlay.png",
+        "file_path": "src/components/Hero.jsx",
+        "text_anchor": "The badge element pulls content below it too close, collapsing the vertical gaps and disrupting the natural flow of the page.",
+        "positive_node": "<div className=\"inline-block mb-6 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full -mb-16\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-6_bug-6-RemoveFooterOverlay.png",
+        "file_path": "src/components/Navigation.jsx",
+        "text_anchor": "The navigation bar is hidden behind other page elements and not staying on top where it should be visible and interactive.",
+        "positive_node": "<nav className=\"sticky top-0 z-5 bg-slate-950/80 backdrop-blur-md border-b border-slate-800\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-7_bug-7-RemoveFooterOverlay.png",
+        "file_path": "src/components/PricingSection.jsx",
+        "text_anchor": "The pricing toggle section is surrounded by excessive white space, distorting the layout and visual proportions of the page.",
+        "positive_node": "<div className=\"flex justify-center items-center gap-6 mb-12 p-20\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-8_bug-8-RemoveFooterOverlay.png",
+        "file_path": "src/components/PricingSection.jsx",
+        "text_anchor": "The pricing plan cards are arranged in too many columns, appearing cramped and misaligned instead of displaying in the correct three-column layout.",
+        "positive_node": "<div className=\"grid md:grid-cols-5 gap-8 items-center\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/pricing-table",
+        "image_anchor": "Pricing Table_bug-9_bug-9-RemoveFooterOverlay.png",
+        "file_path": "src/components/Testimonials.jsx",
+        "text_anchor": "The testimonial text is barely visible because the text color is too dark and blends into the dark background, making it unreadable.",
+        "positive_node": "<p className=\"text-slate-900 mb-6 leading-relaxed text-lg\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/project-file-tree",
+        "image_anchor": "Project File Tree_bug-1.png",
+        "file_path": "src/components/FeatureShowcase.jsx",
+        "text_anchor": "The responsive grid layout fails on mobile, displaying two columns instead of one, and collapses to a single column on desktop instead of showing two columns.",
+        "positive_node": "<div className=\"grid grid-cols-2 md:grid-cols-1 gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/project-file-tree",
+        "image_anchor": "Project File Tree_bug-3.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer grid layout breaks responsiveness, showing two columns on mobile and a single column on desktop instead of the intended opposite.",
+        "positive_node": "<div className=\"grid grid-cols-2 md:grid-cols-1 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/project-file-tree",
+        "image_anchor": "Project File Tree_bug-4.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The footer divider section is pulled upward unexpectedly due to conflicting spacing declarations.",
+        "positive_node": "<div className=\"mt-8 pt-6 border-t border-gray-200 -mt-16\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/project-file-tree",
+        "image_anchor": "Project File Tree_bug-5.png",
+        "file_path": "src/components/Footer.jsx",
+        "text_anchor": "The card element has inconsistent internal spacing causing layout distortion and uneven content alignment.",
+        "positive_node": "<div className=\"bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-4 -p-8 border border-blue-100 hover:shadow-md transition-shadow text-center\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/project-file-tree",
+        "image_anchor": "Project File Tree_bug-6.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The header element has an unnecessary layering directive that may cause unexpected rendering or stacking context problems.",
+        "positive_node": "<div className=\"relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/jofether/project-file-tree",
+        "image_anchor": "Project File Tree_bug-7.png",
+        "file_path": "src/components/Header.jsx",
+        "text_anchor": "The decorative blur element shifts to an unexpected position due to duplicate conflicting spacing instructions.",
+        "positive_node": "<div className=\"absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl -mb-80\">"
+    }
+]

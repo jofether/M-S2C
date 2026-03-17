@@ -1,0 +1,87 @@
+=== BM25 RESULTS: spacing_CtaSectionGridGradientCallToAction ===
+
+Query: The Interface Part is inexplicably missing from its designated location, creating a visual imbalance and disrupting the overall flow of the webpage.
+Target: <section className="bg-white py-16 px-36">
+Rank: 6
+--- Top 10 ---
+1. <span className="block transition-transform duration-200 group-hover:-translate-y-full">
+2. <path d="m5.833 14.168 8.334-8.333m0 8.333V5.835H5.833" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+3. <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+4. <h1 className="text-3xl md:text-5xl/14 leading-tight font-semibold tracking-tighter max-w-xl mx-auto mb-4">
+5. <div className="relative overflow-hidden">
+6. <section className="bg-white py-16 px-36"> <--- [HIT]
+7. <span className="absolute top-0 left-0 block transition-transform duration-200 group-hover:translate-y-0 translate-y-full">
+8. <p className="text-sm text-neutral-600 max-w-md mx-auto mb-8">
+9. <button className="bg-linear-to-b from-[#1E1E1E] to-[#050505] text-white text-sm px-6 py-3 rounded-lg border border-[#242424] inline-flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer group">
+10. <div className="max-w-5xl mx-auto bg-linear-to-b from-[#F8FAFF] to-[#EEF2FF] border border-[#E0E7FF] rounded-[20px] px-8 py-12 md:py-20 bg-[url('https://assets.prebuiltui.com/images/components/cta/cta-grid-bg.png')] bg-cover bg-center bg-no-repeat">
+
+==================================================
+
+Query: This looks like an amateur design job - it's as if someone just forgot to add the text for this section!
+Target: <section className="bg-white py-16 px-36">
+Rank: 6
+--- Top 10 ---
+1. <span className="block transition-transform duration-200 group-hover:-translate-y-full">
+2. <path d="m5.833 14.168 8.334-8.333m0 8.333V5.835H5.833" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+3. <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+4. <h1 className="text-3xl md:text-5xl/14 leading-tight font-semibold tracking-tighter max-w-xl mx-auto mb-4">
+5. <div className="relative overflow-hidden">
+6. <section className="bg-white py-16 px-36"> <--- [HIT]
+7. <span className="absolute top-0 left-0 block transition-transform duration-200 group-hover:translate-y-0 translate-y-full">
+8. <p className="text-sm text-neutral-600 max-w-md mx-auto mb-8">
+9. <button className="bg-linear-to-b from-[#1E1E1E] to-[#050505] text-white text-sm px-6 py-3 rounded-lg border border-[#242424] inline-flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer group">
+10. <div className="max-w-5xl mx-auto bg-linear-to-b from-[#F8FAFF] to-[#EEF2FF] border border-[#E0E7FF] rounded-[20px] px-8 py-12 md:py-20 bg-[url('https://assets.prebuiltui.com/images/components/cta/cta-grid-bg.png')] bg-cover bg-center bg-no-repeat">
+
+==================================================
+
+Query: There is a noticeable gap on the left side where the Interface Part should be, contrasting with the rest of the page which is tightly spaced.
+Target: <section className="bg-white py-16 px-36">
+Rank: 6
+--- Top 10 ---
+1. <span className="block transition-transform duration-200 group-hover:-translate-y-full">
+2. <path d="m5.833 14.168 8.334-8.333m0 8.333V5.835H5.833" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+3. <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+4. <h1 className="text-3xl md:text-5xl/14 leading-tight font-semibold tracking-tighter max-w-xl mx-auto mb-4">
+5. <div className="relative overflow-hidden">
+6. <section className="bg-white py-16 px-36"> <--- [HIT]
+7. <span className="absolute top-0 left-0 block transition-transform duration-200 group-hover:translate-y-0 translate-y-full">
+8. <p className="text-sm text-neutral-600 max-w-md mx-auto mb-8">
+9. <button className="bg-linear-to-b from-[#1E1E1E] to-[#050505] text-white text-sm px-6 py-3 rounded-lg border border-[#242424] inline-flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer group">
+10. <div className="max-w-5xl mx-auto bg-linear-to-b from-[#F8FAFF] to-[#EEF2FF] border border-[#E0E7FF] rounded-[20px] px-8 py-12 md:py-20 bg-[url('https://assets.prebuiltui.com/images/components/cta/cta-grid-bg.png')] bg-cover bg-center bg-no-repeat">
+
+==================================================
+
+Query: The Interface Part's absence makes it difficult to evaluate the design as intended without context. It's like having a missing piece of the puzzle.
+Target: <section className="bg-white py-16 px-36">
+Rank: 6
+--- Top 10 ---
+1. <span className="block transition-transform duration-200 group-hover:-translate-y-full">
+2. <path d="m5.833 14.168 8.334-8.333m0 8.333V5.835H5.833" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+3. <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+4. <h1 className="text-3xl md:text-5xl/14 leading-tight font-semibold tracking-tighter max-w-xl mx-auto mb-4">
+5. <div className="relative overflow-hidden">
+6. <section className="bg-white py-16 px-36"> <--- [HIT]
+7. <span className="absolute top-0 left-0 block transition-transform duration-200 group-hover:translate-y-0 translate-y-full">
+8. <p className="text-sm text-neutral-600 max-w-md mx-auto mb-8">
+9. <button className="bg-linear-to-b from-[#1E1E1E] to-[#050505] text-white text-sm px-6 py-3 rounded-lg border border-[#242424] inline-flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer group">
+10. <div className="max-w-5xl mx-auto bg-linear-to-b from-[#F8FAFF] to-[#EEF2FF] border border-[#E0E7FF] rounded-[20px] px-8 py-12 md:py-20 bg-[url('https://assets.prebuiltui.com/images/components/cta/cta-grid-bg.png')] bg-cover bg-center bg-no-repeat">
+
+==================================================
+
+Query: A significant layout error: the 'Interface Part' is not displayed, impacting the overall aesthetic and usability of the page.
+Target: <section className="bg-white py-16 px-36">
+Rank: 6
+--- Top 10 ---
+1. <span className="block transition-transform duration-200 group-hover:-translate-y-full">
+2. <path d="m5.833 14.168 8.334-8.333m0 8.333V5.835H5.833" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+3. <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+4. <h1 className="text-3xl md:text-5xl/14 leading-tight font-semibold tracking-tighter max-w-xl mx-auto mb-4">
+5. <div className="relative overflow-hidden">
+6. <section className="bg-white py-16 px-36"> <--- [HIT]
+7. <span className="absolute top-0 left-0 block transition-transform duration-200 group-hover:translate-y-0 translate-y-full">
+8. <p className="text-sm text-neutral-600 max-w-md mx-auto mb-8">
+9. <button className="bg-linear-to-b from-[#1E1E1E] to-[#050505] text-white text-sm px-6 py-3 rounded-lg border border-[#242424] inline-flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer group">
+10. <div className="max-w-5xl mx-auto bg-linear-to-b from-[#F8FAFF] to-[#EEF2FF] border border-[#E0E7FF] rounded-[20px] px-8 py-12 md:py-20 bg-[url('https://assets.prebuiltui.com/images/components/cta/cta-grid-bg.png')] bg-cover bg-center bg-no-repeat">
+
+==================================================
+

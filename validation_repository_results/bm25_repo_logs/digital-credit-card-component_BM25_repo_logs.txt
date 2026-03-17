@@ -1,0 +1,97 @@
+=== BM25 REPOSITORY RESULTS: digital-credit-card-component ===
+
+Image / ID: Digital Credit Card Component_bug-6.png
+Query: The brand name text is too dark and blends into the dark card background, significantly reducing readability.
+Target File: src/CreditCard.jsx
+Target Node: <div className="absolute top-6 right-8 text-sm font-bold opacity-75 text-slate-400">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/CardDetails.jsx] <CardSecurity card={card} />
+2. [src/App.jsx] <CreditCard card={card} isFlipped={flippedCardId === card.id} onClick={(e) =>
+3. [src/App.jsx] <CardDetails card={selectedCard} transactions={transactions} onClose={() =>
+4. [src/CardForm.jsx] <input type="text" name="expiry" value={formData.expiry} onChange={handleChange} placeholder="12/28" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.expiry ? 'border-red-500' : 'border-slate-300' }`} />
+5. [src/CardForm.jsx] <input type="text" name="cvv" value={formData.cvv} onChange={handleChange} placeholder="123" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.cvv ? 'border-red-500' : 'border-slate-300' }`} />
+6. [src/CardForm.jsx] <input type="text" name="holder" value={formData.holder} onChange={handleChange} placeholder="John Doe" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.holder ? 'border-red-500' : 'border-slate-300' }`} />
+7. [src/CardForm.jsx] <input type="text" name="number" value={formData.number} onChange={handleChange} placeholder="4532 1098 7654 3210" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.number ? 'border-red-500' : 'border-slate-300' }`} />
+8. [src/QuickActions.jsx] <span className="text-sm font-medium text-slate-700 text-center">
+9. [src/QuickActions.jsx] <h2 className="text-lg font-bold text-slate-800 mb-4">
+10. [src/QuickActions.jsx] <span className="text-2xl">
+
+======================================================================
+
+Image / ID: Digital Credit Card Component_bug-8.png
+Query: The dashboard stats display with an unbalanced column layout, causing awkward spacing and content overflow at different screen sizes.
+Target File: src/Dashboard.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 mb-8">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Dashboard cards={cards} transactions={transactions} />
+2. [src/QuickActions.jsx] <span className="text-sm font-medium text-slate-700 text-center">
+3. [src/QuickActions.jsx] <h2 className="text-lg font-bold text-slate-800 mb-4">
+4. [src/QuickActions.jsx] <span className="text-2xl">
+5. [src/QuickActions.jsx] <div className="flex flex-col gap-4">
+6. [src/QuickActions.jsx] <button key={action.action} onClick={() =>
+7. [src/QuickActions.jsx] <div className="mb-12">
+8. [src/TransactionHistory.jsx] <p className="text-xs text-slate-500">
+9. [src/TransactionHistory.jsx] <p className="text-center text-slate-500 text-sm py-4">
+10. [src/TransactionHistory.jsx] <span>
+
+======================================================================
+
+Image / ID: Digital Credit Card Component_bug-9.png
+Query: The empty state message text is too light and difficult to read against the background.
+Target File: src/Dashboard.jsx
+Target Node: <p className="text-slate-400 text-center py-6">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/CardForm.jsx] <input type="text" name="expiry" value={formData.expiry} onChange={handleChange} placeholder="12/28" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.expiry ? 'border-red-500' : 'border-slate-300' }`} />
+2. [src/CardForm.jsx] <input type="text" name="cvv" value={formData.cvv} onChange={handleChange} placeholder="123" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.cvv ? 'border-red-500' : 'border-slate-300' }`} />
+3. [src/CardForm.jsx] <input type="text" name="holder" value={formData.holder} onChange={handleChange} placeholder="John Doe" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.holder ? 'border-red-500' : 'border-slate-300' }`} />
+4. [src/CardForm.jsx] <input type="text" name="number" value={formData.number} onChange={handleChange} placeholder="4532 1098 7654 3210" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.number ? 'border-red-500' : 'border-slate-300' }`} />
+5. [src/QuickActions.jsx] <span className="text-sm font-medium text-slate-700 text-center">
+6. [src/QuickActions.jsx] <h2 className="text-lg font-bold text-slate-800 mb-4">
+7. [src/QuickActions.jsx] <span className="text-2xl">
+8. [src/QuickActions.jsx] <div className="flex flex-col gap-4">
+9. [src/QuickActions.jsx] <button key={action.action} onClick={() =>
+10. [src/QuickActions.jsx] <div className="mb-12">
+
+======================================================================
+
+Image / ID: Digital Credit Card Component_bug-10.png
+Query: The quick action buttons are stacked vertically in a single column instead of arranged in a responsive multi-column grid layout.
+Target File: src/QuickActions.jsx
+Target Node: <div className="flex flex-col gap-4">
+Rank Achieved: 9
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/CardForm.jsx] <div className="grid grid-cols-2 gap-4">
+2. [src/App.jsx] <div className="grid grid-cols-3 gap-6">
+3. [src/CardDetails.jsx] <div className="grid grid-cols-2 gap-4">
+4. [src/Dashboard.jsx] <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 mb-8">
+5. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+6. [src/QuickActions.jsx] <span className="text-sm font-medium text-slate-700 text-center">
+7. [src/QuickActions.jsx] <h2 className="text-lg font-bold text-slate-800 mb-4">
+8. [src/QuickActions.jsx] <span className="text-2xl">
+9. [src/QuickActions.jsx] <div className="flex flex-col gap-4">  <--- [GROUND TRUTH HIT]
+10. [src/QuickActions.jsx] <button key={action.action} onClick={() =>
+
+======================================================================
+
+Image / ID: Digital Credit Card Component_bug-4_bug-4-OpenCardFormModal.png
+Query: The modal dialog is positioned far below the visible viewport, making it partially or completely invisible.
+Target File: src/CardForm.jsx
+Target Node: <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 -my-96">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/QuickActions.jsx] <span className="text-sm font-medium text-slate-700 text-center">
+2. [src/QuickActions.jsx] <h2 className="text-lg font-bold text-slate-800 mb-4">
+3. [src/QuickActions.jsx] <span className="text-2xl">
+4. [src/QuickActions.jsx] <div className="flex flex-col gap-4">
+5. [src/QuickActions.jsx] <button key={action.action} onClick={() =>
+6. [src/QuickActions.jsx] <div className="mb-12">
+7. [src/TransactionHistory.jsx] <p className="text-xs text-slate-500">
+8. [src/TransactionHistory.jsx] <p className="text-center text-slate-500 text-sm py-4">
+9. [src/TransactionHistory.jsx] <span>
+10. [src/TransactionHistory.jsx] <span className={`transform transition ${expanded ? 'rotate-180' : ''}`}>
+
+======================================================================
+

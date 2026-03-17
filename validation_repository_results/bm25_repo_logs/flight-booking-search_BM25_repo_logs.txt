@@ -1,0 +1,154 @@
+=== BM25 REPOSITORY RESULTS: flight-booking-search ===
+
+Image / ID: Flight Booking Search_bug-1.png
+Query: The footer section is overlapping the main content area with excessive negative spacing, making the review section partially hidden.
+Target File: src/components/Footer.jsx
+Target Node: <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 md:py-20 -mt-96">
+Rank Achieved: 10
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <section className="mb-20">
+2. [src/App.jsx] <section className="mb-28">
+3. [src/App.jsx] <section className="mb-20 bg-gray-50 rounded-2xl p-12">
+4. [src/App.jsx] <ReviewCard name="Sarah Johnson" rating={5} comment="Amazing experience! Found the perfect flight at an unbeatable price. Will definitely book again with TravelGo." date="2 weeks ago" image="👩" />
+5. [src/App.jsx] <section className="bg-gradient-to-br from-purple-500 to-blue-600 rounded-2xl p-12 text-white text-center mb-20">
+6. [src/App.jsx] <section className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-center text-white mb-20">
+7. [src/App.jsx] <FAQItem question="Can I change or cancel my flight?" answer="Most tickets allow cancellations or changes, though fees may apply depending on the airline and ticket type. We recommend checking the specific terms when booking. Travel insurance can provide additional coverage for unforeseen circumstances." />
+8. [src/App.jsx] <Footer />
+9. [src/App.jsx] <FAQItem question="How far in advance should I book a flight?" answer="Typically, booking 1-2 months in advance offers the best prices. For domestic flights, 3-4 weeks is usually sufficient. However, prices can vary significantly based on travel season and destination, so using our price comparison tool is recommended." />
+10. [src/components/Footer.jsx] <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 md:py-20 -mt-96">  <--- [GROUND TRUTH HIT]
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-4.png
+Query: The logo text is displaying in a dark gray color that fails to contrast properly against the navigation bar background.
+Target File: src/components/Navbar.jsx
+Target Node: <h1 className="text-2xl md:text-3xl font-bold text-gray-400">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SearchCard.jsx] <input type="text" value={to} onChange={(e) =>
+2. [src/App.jsx] <FAQItem question="How far in advance should I book a flight?" answer="Typically, booking 1-2 months in advance offers the best prices. For domestic flights, 3-4 weeks is usually sufficient. However, prices can vary significantly based on travel season and destination, so using our price comparison tool is recommended." />
+3. [src/App.jsx] <FAQItem question="Can I get a refund?" answer="Refund eligibility depends on your ticket type and the airline's policy. Non-refundable tickets cannot be refunded but can usually be converted to travel credits. Flexible tickets can be refunded directly to your original payment method." />
+4. [src/components/SearchCard.jsx] <input type="text" value={from} onChange={(e) =>
+5. [src/App.jsx] <FAQItem question="Can I change or cancel my flight?" answer="Most tickets allow cancellations or changes, though fees may apply depending on the airline and ticket type. We recommend checking the specific terms when booking. Travel insurance can provide additional coverage for unforeseen circumstances." />
+6. [src/App.jsx] <FAQItem question="What are your baggage policies?" answer="Baggage allowances vary by airline and ticket class. Most economy flights include one checked bag and a carry-on, while premium classes offer more baggage. You can view specific policies for each flight during the booking process." />
+7. [src/App.jsx] <ReviewCard name="Sarah Johnson" rating={5} comment="Amazing experience! Found the perfect flight at an unbeatable price. Will definitely book again with TravelGo." date="2 weeks ago" image="👩" />
+8. [src/App.jsx] <FAQItem question="Is my payment information secure?" answer="Yes, we use industry-leading encryption and security protocols. All payments are processed through secure payment gateways with SSL certificates to protect your personal and financial information." />
+9. [src/components/Footer.jsx] <a href="#" className="hover:text-white hover:translate-x-1 transition duration-300 inline-block">
+10. [src/components/Navbar.jsx] <a href="#" className="text-white hover:text-blue-100 font-medium transition duration-300 relative group">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-5.png
+Query: The promotional card is positioned absolutely, causing it to float over and overlap other page content unexpectedly.
+Target File: src/components/PromoCard.jsx
+Target Node: <div className="bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group overflow-hidden relative absolute">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <FAQItem question="Is my payment information secure?" answer="Yes, we use industry-leading encryption and security protocols. All payments are processed through secure payment gateways with SSL certificates to protect your personal and financial information." />
+2. [src/App.jsx] <FAQItem question="How far in advance should I book a flight?" answer="Typically, booking 1-2 months in advance offers the best prices. For domestic flights, 3-4 weeks is usually sufficient. However, prices can vary significantly based on travel season and destination, so using our price comparison tool is recommended." />
+3. [src/App.jsx] <FAQItem question="Can I get a refund?" answer="Refund eligibility depends on your ticket type and the airline's policy. Non-refundable tickets cannot be refunded but can usually be converted to travel credits. Flexible tickets can be refunded directly to your original payment method." />
+4. [src/components/SearchCard.jsx] <input type="text" value={to} onChange={(e) =>
+5. [src/App.jsx] <FAQItem question="Can I change or cancel my flight?" answer="Most tickets allow cancellations or changes, though fees may apply depending on the airline and ticket type. We recommend checking the specific terms when booking. Travel insurance can provide additional coverage for unforeseen circumstances." />
+6. [src/App.jsx] <FAQItem question="What are your baggage policies?" answer="Baggage allowances vary by airline and ticket class. Most economy flights include one checked bag and a carry-on, while premium classes offer more baggage. You can view specific policies for each flight during the booking process." />
+7. [src/App.jsx] <ReviewCard name="Michael Chen" rating={5} comment="Super easy to use website and great customer service. They helped me change my flight without any issues." date="1 month ago" image="👨" />
+8. [src/App.jsx] <PromoCard icon="🎉" title="Summer Flash Sale" description="Get up to 50% off on selected flights" discount="Save Now" />
+9. [src/App.jsx] <ReviewCard name="Sarah Johnson" rating={5} comment="Amazing experience! Found the perfect flight at an unbeatable price. Will definitely book again with TravelGo." date="2 weeks ago" image="👩" />
+10. [src/App.jsx] <ReviewCard name="Emma Davis" rating={4} comment="Good prices and smooth booking process. Only wish there were more flight options for my specific route." date="3 weeks ago" image="👩" />
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-7.png
+Query: The search form fields are not aligning correctly in the container due to an invalid grid configuration value.
+Target File: src/components/SearchCard.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-13 gap-3 md:gap-4 items-end">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <ReviewCard name="Sarah Johnson" rating={5} comment="Amazing experience! Found the perfect flight at an unbeatable price. Will definitely book again with TravelGo." date="2 weeks ago" image="👩" />
+2. [src/App.jsx] <FAQItem question="How far in advance should I book a flight?" answer="Typically, booking 1-2 months in advance offers the best prices. For domestic flights, 3-4 weeks is usually sufficient. However, prices can vary significantly based on travel season and destination, so using our price comparison tool is recommended." />
+3. [src/App.jsx] <FAQItem question="Can I get a refund?" answer="Refund eligibility depends on your ticket type and the airline's policy. Non-refundable tickets cannot be refunded but can usually be converted to travel credits. Flexible tickets can be refunded directly to your original payment method." />
+4. [src/App.jsx] <FAQItem question="Can I change or cancel my flight?" answer="Most tickets allow cancellations or changes, though fees may apply depending on the airline and ticket type. We recommend checking the specific terms when booking. Travel insurance can provide additional coverage for unforeseen circumstances." />
+5. [src/App.jsx] <FAQItem question="What are your baggage policies?" answer="Baggage allowances vary by airline and ticket class. Most economy flights include one checked bag and a carry-on, while premium classes offer more baggage. You can view specific policies for each flight during the booking process." />
+6. [src/components/SearchCard.jsx] <input type="text" value={to} onChange={(e) =>
+7. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+8. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+9. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+10. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-8.png
+Query: The date and time input fields are missing their border styling due to an invalid class name, appearing unstyled.
+Target File: src/components/SearchCard.jsx
+Target Node: <div className="md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-2 rounded-xl overflow-hidden relative hover:border-blue-300 transition">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SearchCard.jsx] <input type="date" value={returnDate} onChange={(e) =>
+2. [src/components/SearchCard.jsx] <input type="text" value={to} onChange={(e) =>
+3. [src/components/SearchCard.jsx] <input type="date" value={departDate} onChange={(e) =>
+4. [src/App.jsx] <ReviewCard name="Sarah Johnson" rating={5} comment="Amazing experience! Found the perfect flight at an unbeatable price. Will definitely book again with TravelGo." date="2 weeks ago" image="👩" />
+5. [src/App.jsx] <FAQItem question="Is my payment information secure?" answer="Yes, we use industry-leading encryption and security protocols. All payments are processed through secure payment gateways with SSL certificates to protect your personal and financial information." />
+6. [src/App.jsx] <FAQItem question="What are your baggage policies?" answer="Baggage allowances vary by airline and ticket class. Most economy flights include one checked bag and a carry-on, while premium classes offer more baggage. You can view specific policies for each flight during the booking process." />
+7. [src/App.jsx] <ReviewCard name="Michael Chen" rating={5} comment="Super easy to use website and great customer service. They helped me change my flight without any issues." date="1 month ago" image="👨" />
+8. [src/App.jsx] <FAQItem question="Can I get a refund?" answer="Refund eligibility depends on your ticket type and the airline's policy. Non-refundable tickets cannot be refunded but can usually be converted to travel credits. Flexible tickets can be refunded directly to your original payment method." />
+9. [src/components/SearchCard.jsx] <input type="text" value={from} onChange={(e) =>
+10. [src/App.jsx] <div key={idx} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition cursor-pointer">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-10.png
+Query: The search button section has excessive negative spacing that causes it to shift and separate from the rest of the form.
+Target File: src/components/SearchCard.jsx
+Target Node: <div className="md:col-span-2 -m-10">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <FAQItem question="Can I change or cancel my flight?" answer="Most tickets allow cancellations or changes, though fees may apply depending on the airline and ticket type. We recommend checking the specific terms when booking. Travel insurance can provide additional coverage for unforeseen circumstances." />
+2. [src/App.jsx] <FAQItem question="Can I get a refund?" answer="Refund eligibility depends on your ticket type and the airline's policy. Non-refundable tickets cannot be refunded but can usually be converted to travel credits. Flexible tickets can be refunded directly to your original payment method." />
+3. [src/App.jsx] <FAQItem question="What are your baggage policies?" answer="Baggage allowances vary by airline and ticket class. Most economy flights include one checked bag and a carry-on, while premium classes offer more baggage. You can view specific policies for each flight during the booking process." />
+4. [src/components/SearchCard.jsx] <input type="text" value={from} onChange={(e) =>
+5. [src/App.jsx] <ReviewCard name="Sarah Johnson" rating={5} comment="Amazing experience! Found the perfect flight at an unbeatable price. Will definitely book again with TravelGo." date="2 weeks ago" image="👩" />
+6. [src/App.jsx] <section className="mb-20">
+7. [src/App.jsx] <section className="mb-28">
+8. [src/App.jsx] <FAQItem question="How far in advance should I book a flight?" answer="Typically, booking 1-2 months in advance offers the best prices. For domestic flights, 3-4 weeks is usually sufficient. However, prices can vary significantly based on travel season and destination, so using our price comparison tool is recommended." />
+9. [src/App.jsx] <button onClick={() =>
+10. [src/components/FAQItem.jsx] <button onClick={() =>
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-2_bug-2-ShowFlightResults.png
+Query: The flight search results are stacked vertically in a single column instead of displaying in a responsive multi-column grid layout.
+Target File: src/components/FlightResults.jsx
+Target Node: <div className="flex flex-col gap-6 md:gap-4 items-start">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <FAQItem question="How far in advance should I book a flight?" answer="Typically, booking 1-2 months in advance offers the best prices. For domestic flights, 3-4 weeks is usually sufficient. However, prices can vary significantly based on travel season and destination, so using our price comparison tool is recommended." />
+2. [src/App.jsx] <FAQItem question="What are your baggage policies?" answer="Baggage allowances vary by airline and ticket class. Most economy flights include one checked bag and a carry-on, while premium classes offer more baggage. You can view specific policies for each flight during the booking process." />
+3. [src/components/Footer.jsx] <a href="#" className="hover:text-white hover:translate-x-1 transition duration-300 inline-block">
+4. [src/components/Navbar.jsx] <a href="#" className="text-white hover:text-blue-100 font-medium transition duration-300 relative group">
+5. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg">
+6. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg">
+7. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-pink-500 hover:bg-pink-600 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg">
+8. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg font-bold">
+9. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+10. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-3_bug-3-ShowFlightResults.png
+Query: The flight icon is not rendering at the correct size due to an invalid styling class, appearing distorted or missing.
+Target File: src/components/FlightResults.jsx
+Target Node: <div className="text-3xxl mt-1">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <ReviewCard name="Sarah Johnson" rating={5} comment="Amazing experience! Found the perfect flight at an unbeatable price. Will definitely book again with TravelGo." date="2 weeks ago" image="👩" />
+2. [src/App.jsx] <FAQItem question="Can I change or cancel my flight?" answer="Most tickets allow cancellations or changes, though fees may apply depending on the airline and ticket type. We recommend checking the specific terms when booking. Travel insurance can provide additional coverage for unforeseen circumstances." />
+3. [src/App.jsx] <FAQItem question="How far in advance should I book a flight?" answer="Typically, booking 1-2 months in advance offers the best prices. For domestic flights, 3-4 weeks is usually sufficient. However, prices can vary significantly based on travel season and destination, so using our price comparison tool is recommended." />
+4. [src/App.jsx] <FAQItem question="Can I get a refund?" answer="Refund eligibility depends on your ticket type and the airline's policy. Non-refundable tickets cannot be refunded but can usually be converted to travel credits. Flexible tickets can be refunded directly to your original payment method." />
+5. [src/App.jsx] <PromoCard icon="🎉" title="Summer Flash Sale" description="Get up to 50% off on selected flights" discount="Save Now" />
+6. [src/components/SearchCard.jsx] <input type="text" value={to} onChange={(e) =>
+7. [src/App.jsx] <FAQItem question="What are your baggage policies?" answer="Baggage allowances vary by airline and ticket class. Most economy flights include one checked bag and a carry-on, while premium classes offer more baggage. You can view specific policies for each flight during the booking process." />
+8. [src/App.jsx] <FAQItem question="Is my payment information secure?" answer="Yes, we use industry-leading encryption and security protocols. All payments are processed through secure payment gateways with SSL certificates to protect your personal and financial information." />
+9. [src/App.jsx] <ReviewCard name="Michael Chen" rating={5} comment="Super easy to use website and great customer service. They helped me change my flight without any issues." date="1 month ago" image="👨" />
+10. [src/App.jsx] <StatsCard icon="🌍" number="195+" label="Countries" />
+
+======================================================================
+

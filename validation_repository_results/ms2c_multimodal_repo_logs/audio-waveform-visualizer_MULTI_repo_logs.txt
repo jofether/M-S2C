@@ -1,0 +1,82 @@
+=== MULTI REPOSITORY RESULTS: audio-waveform-visualizer ===
+
+Image / ID: Audio Waveform Visualizer_bug-3.png
+Query: The header is hidden behind other interface elements and remains completely invisible.
+Target File: src/components/Header.jsx
+Target Node: <div className="absolute top-8 left-8 right-8 flex items-center justify-between z-[-1]">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5042 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SongInfo.jsx] <p className={themeClasses.textMuted}>
+2. [src/App.jsx] <p className="mb-2 font-semibold">
+3. [src/components/Header.jsx] <div className="flex gap-2">
+4. [src/components/SongInfo.jsx] <div className="text-center mb-[-50px]">
+5. [src/App.jsx] <div className={`mt-12 text-center text-xs ${themeClasses.textMuted}`}>
+6. [src/components/BottomStats.jsx] <div className="grid grid-cols-2 gap-4 text-center">
+7. [src/components/DetailView.jsx] <div className="flex justify-between items-center mb-3">
+8. [src/components/VisualizerSettings.jsx] <div className="flex gap-2 mb-6 px-4">
+9. [src/components/BottomStats.jsx] <div className={`absolute bottom-8 left-8 ${themeClasses.card} rounded-xl p-4 shadow-lg border`}>
+10. [src/components/BottomStats.jsx] <p className={`text-xs ${themeClasses.textMuted}`}>
+
+======================================================================
+
+Image / ID: Audio Waveform Visualizer_bug-4.png
+Query: The buttons are stacking vertically instead of being horizontally distributed, causing layout collapse.
+Target File: src/components/MainControls.jsx
+Target Node: <div className="block items-center justify-between px-4 mb-6">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5873 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SecondaryControls.jsx] <button onClick={toggleRepeat} className={`transition transform hover:scale-110 ${repeatMode >
+2. [src/components/SecondaryControls.jsx] <button onClick={toggleShuffle} className={`transition transform hover:scale-110 ${isShuffle ? 'text-pink-500' : themeClasses.textMuted}`} title="Shuffle" >
+3. [src/components/SecondaryControls.jsx] <div className={`w-6 h-6 rounded-full ${theme === 'dark' ? 'bg-indigo-500' : 'bg-cyan-400'} animate-pulse`}>
+4. [src/components/Visualizer.jsx] <div key={i} className={`w-2 bg-gradient-to-t ${themeClasses.gradientBar} rounded-t-full transition-all duration-100 cursor-pointer hover:w-3 hover:shadow-lg`} style={{ height: `${height}%`, opacity: hoveredBar === null || hoveredBar === i ? 1 : 0.5, }} onMouseEnter={() =>
+5. [src/components/MainControls.jsx] <button onClick={prevSong} className={`${themeClasses.textMuted} hover:${themeClasses.text} transition transform hover:scale-110`} title="Previous (P)" >
+6. [src/components/SecondaryControls.jsx] <span className="text-xs absolute mt-8">
+7. [src/components/RightSidebar.jsx] <div className={`absolute right-8 top-32 w-64 ${themeClasses.card} rounded-2xl p-6 shadow-xl border max-h-96 overflow-y-auto hidden lg:block z-[-10]`}>
+8. [src/components/RightSidebar.jsx] <div className="border-t border-gray-700 pt-3">
+9. [src/components/SongInfo.jsx] <div className={`w-40 h-40 mx-auto bg-gradient-to-tr ${themeClasses.gradientBar} rounded-full shadow-lg mb-6 flex items-center justify-center transition-all duration-300 ${isPlaying ? 'animate-pulse' : ''}`}>
+10. [src/components/EqualizerSection.jsx] <div className={`border-t ${theme === 'dark' ? 'border-gray-700' : 'border-cyan-500/30'} pt-4 mb-4`}>
+
+======================================================================
+
+Image / ID: Audio Waveform Visualizer_bug-7.png
+Query: The buttons are bunched together on one side instead of being spread across the available space.
+Target File: src/components/SecondaryControls.jsx
+Target Node: <div className="flex items-center mb-6">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5471 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SecondaryControls.jsx] <button title="Keyboard shortcuts: Space (play/pause), N (next), P (previous)" className={`transition transform hover:scale-110 ${themeClasses.textMuted}`} >
+2. [src/components/MainControls.jsx] <button onClick={handlePlayPause} className={`w-166 h-16 ${themeClasses.primary} rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition transform`} title="Play/Pause (Space)" >
+3. [src/components/MainControls.jsx] <button onClick={nextSong} className={`${themeClasses.textMuted} hover:${themeClasses.text} transition transform hover:scale-110`} title="Next (N)" >
+4. [src/components/MainControls.jsx] <button onClick={prevSong} className={`${themeClasses.textMuted} hover:${themeClasses.text} transition transform hover:scale-110`} title="Previous (P)" >
+5. [src/components/SecondaryControls.jsx] <button onClick={toggleShuffle} className={`transition transform hover:scale-110 ${isShuffle ? 'text-pink-500' : themeClasses.textMuted}`} title="Shuffle" >
+6. [src/components/RightSidebar.jsx] <p className="font-semibold mb-1">
+7. [src/App.jsx] <p className="mb-2 font-semibold">
+8. [src/components/RightSidebar.jsx] <p className="capitalize">
+9. [src/components/SongInfo.jsx] <p className={themeClasses.textMuted}>
+10. [src/components/DetailView.jsx] <button className={`w-full py-2 px-3 rounded text-xs font-semibold transition hover:scale-105 ${themeClasses.primary}`}>
+
+======================================================================
+
+Image / ID: Audio Waveform Visualizer_bug-8.png
+Query: The song information is overlapping with other elements below due to incorrect spacing.
+Target File: src/components/SongInfo.jsx
+Target Node: <div className="text-center mb-[-50px]">
+Rank Achieved: 6
+Gating Alpha: 0.4947 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SongInfo.jsx] <p className={themeClasses.textMuted}>
+2. [src/App.jsx] <p className="mb-2 font-semibold">
+3. [src/components/SongInfo.jsx] <h2 className={`text-22xl font-bold ${themeClasses.text} mb-1`}>
+4. [src/App.jsx] <div className={`mt-12 text-center text-xs ${themeClasses.textMuted}`}>
+5. [src/components/BottomStats.jsx] <p className={`text-2xl font-bold ${themeClasses.text}`}>
+6. [src/components/SongInfo.jsx] <div className="text-center mb-[-50px]">  <--- [GROUND TRUTH HIT]
+7. [src/components/Header.jsx] <div className="flex gap-2">
+8. [src/components/BottomStats.jsx] <p className={`text-xs ${themeClasses.textMuted}`}>
+9. [src/components/DetailView.jsx] <p className={`text-lg font-bold ${themeClasses.text}`}>
+10. [src/components/SongInfo.jsx] <svg className={`w-16 h-16 ${themeClasses.text}`} fill="currentColor" viewBox="0 0 24 24">
+
+======================================================================
+

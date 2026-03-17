@@ -1,0 +1,173 @@
+=== BM25 REPOSITORY RESULTS: digital-restaurant-menu ===
+
+Image / ID: Digital Restaurant Menu_bug-1.png
+Query: The category filter buttons are constraining to a rigid grid layout with exactly four columns instead of wrapping flexibly.
+Target File: src/components/CategoryFilter.jsx
+Target Node: <div className="flex flex-wrap gap-2 grid grid-cols-4">
+Rank Achieved: 1
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/CategoryFilter.jsx] <div className="flex flex-wrap gap-2 grid grid-cols-4">  <--- [GROUND TRUTH HIT]
+2. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 text-xs text-stone-400">
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <div className="flex-1 space-y-12">
+5. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+6. [src/App.jsx] <div className="w-64">
+7. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+8. [src/App.jsx] <SpecialSection type="daily-special" />
+9. [src/App.jsx] <Footer />
+10. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-2.png
+Query: The footer is hidden beneath the main content area and positioned at the bottom edge of the viewport.
+Target File: src/components/Footer.jsx
+Target Node: <footer className="mt-16 bg-stone-800 rounded-lg p-8 border-t-2 border-amber-600 text-center absolute bottom-0 left-0 w-full -z-10">
+Rank Achieved: 3
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Footer />
+2. [src/components/OrderSummary.jsx] <h3 className="text-xl font-bold text-amber-100 mb-4 hidden">
+3. [src/components/Footer.jsx] <footer className="mt-16 bg-stone-800 rounded-lg p-8 border-t-2 border-amber-600 text-center absolute bottom-0 left-0 w-full -z-10">  <--- [GROUND TRUTH HIT]
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <div className="flex-1 space-y-12">
+6. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+7. [src/App.jsx] <div className="w-64">
+8. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+9. [src/App.jsx] <SpecialSection type="daily-special" />
+10. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-3.png
+Query: The header title is displaying in a dark color that is nearly invisible against the page background.
+Target File: src/components/Header.jsx
+Target Node: <h1 className="text-6xl font-bold text-ambr-50 mb-2 tracking-tight drop-shadow-lg">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Header />
+2. [src/components/Header.jsx] <header className="text-center mb-12">
+3. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <div className="flex-1 space-y-12">
+6. [src/App.jsx] <div className="w-64">
+7. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+8. [src/App.jsx] <SpecialSection type="daily-special" />
+9. [src/App.jsx] <Footer />
+10. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-4.png
+Query: The menu items are overlapping the section header and extending beyond their container boundaries.
+Target File: src/components/MenuCategory.jsx
+Target Node: <ul className="space-y-6 -m-4 -mt-8">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Header />
+2. [src/App.jsx] <OrderSummary items={[]} />
+3. [src/components/Header.jsx] <header className="text-center mb-12">
+4. [src/components/MenuCategory.jsx] <section className="bg-stone-800 rounded-lg p-8 border border-amber-600 border-opacity-20">
+5. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+6. [src/components/SearchBar.jsx] <input type="text" placeholder="Search menu items..." value={searchTerm} onChange={(e) =>
+7. [src/main.jsx] <App />
+8. [src/App.jsx] <div className="flex-1 space-y-12">
+9. [src/App.jsx] <div className="w-64">
+10. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-5.png
+Query: The menu item description is appearing above the item name, reversing the expected visual hierarchy.
+Target File: src/components/MenuItem.jsx
+Target Node: <div className="border-b border-stone-700 pb-6 last:border-b-0 hover:bg-stone-700 hover:bg-opacity-50 p-4 rounded-lg transition-colors flex flex-col-reverse">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/MenuCategory.jsx] <MenuItem name={item.name} price={item.price} description={item.desc} tags={item.tags} />
+2. [src/components/SearchBar.jsx] <input type="text" placeholder="Search menu items..." value={searchTerm} onChange={(e) =>
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <div className="flex-1 space-y-12">
+5. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+6. [src/App.jsx] <div className="w-64">
+7. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+8. [src/App.jsx] <SpecialSection type="daily-special" />
+9. [src/App.jsx] <Footer />
+10. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-6.png
+Query: The order summary panel contains excessive internal spacing that distorts its size and obscures content within the layout.
+Target File: src/components/OrderSummary.jsx
+Target Node: <div className="bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <div className="flex-1 space-y-12">
+3. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+4. [src/App.jsx] <div className="w-64">
+5. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+6. [src/App.jsx] <SpecialSection type="daily-special" />
+7. [src/App.jsx] <Footer />
+8. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+9. [src/App.jsx] <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+10. [src/App.jsx] <Header />
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-7.png
+Query: The search bar is frozen at the top of the screen and completely blocks access to the menu items below.
+Target File: src/components/SearchBar.jsx
+Target Node: <div className="mb-6 fixed top-0 left-0 w-full z-10">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SearchBar.jsx] <input type="text" placeholder="Search menu items..." value={searchTerm} onChange={(e) =>
+2. [src/App.jsx] <OrderSummary items={[]} />
+3. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <div className="flex-1 space-y-12">
+6. [src/App.jsx] <div className="w-64">
+7. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+8. [src/App.jsx] <SpecialSection type="daily-special" />
+9. [src/App.jsx] <Footer />
+10. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-8.png
+Query: The special offer title is barely visible against the dark background, making the text unreadable.
+Target File: src/components/SpecialSection.jsx
+Target Node: <h3 className="text-2xl font-bold text-stone-900 mb-2">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+2. [src/components/SearchBar.jsx] <input type="text" placeholder="Search menu items..." value={searchTerm} onChange={(e) =>
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <div className="flex-1 space-y-12">
+5. [src/App.jsx] <div className="w-64">
+6. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+7. [src/App.jsx] <SpecialSection type="daily-special" />
+8. [src/App.jsx] <Footer />
+9. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+10. [src/App.jsx] <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-10.png
+Query: The 'Order Summary' heading is not visible on the page, leaving the summary section without a clear label.
+Target File: src/components/OrderSummary.jsx
+Target Node: <h3 className="text-xl font-bold text-amber-100 mb-4 hidden">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/MenuCategory.jsx] <section className="bg-stone-800 rounded-lg p-8 border border-amber-600 border-opacity-20">
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <div className="flex-1 space-y-12">
+4. [src/App.jsx] <MenuCategory key={idx} title={cat.title} items={cat.items} />
+5. [src/App.jsx] <div className="w-64">
+6. [src/App.jsx] <CategoryFilter categories={menuCategories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+7. [src/App.jsx] <SpecialSection type="daily-special" />
+8. [src/App.jsx] <Footer />
+9. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+10. [src/App.jsx] <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+
+======================================================================
+

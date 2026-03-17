@@ -1,0 +1,175 @@
+{
+  "repository": "Cinema Seat Selection",
+  "bugs": [
+    {
+      "comment": "Bug #1 - flexbox",
+      "report_text": "The main layout grid items are displaying in reverse order and the content arrangement is inverted.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/App.jsx",
+      "line_number": 93,
+      "neg_code": "<div className=\"grid grid-cols-1 lg:grid-cols-3 gap-8\">",
+      "pos_code": "<div className=\"grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse\">",
+      "css_selector": ".grid.gap-8",
+      "bounding_box": {
+        "x": 64,
+        "y": 302,
+        "width": 1152,
+        "height": 664
+      }
+    },
+    {
+      "comment": "Bug #2 - border-radius",
+      "report_text": "The booking summary card corners are not rounded and appear with sharp edges instead of smooth curves.",
+      "bug_category": "Typo",
+      "bug_type": "border-radius",
+      "file_modified": "src/components/BookingSummary.jsx",
+      "line_number": 12,
+      "neg_code": "<div className=\"bg-gradient-to-b from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-6 sticky top-8 shadow-2xl\">",
+      "pos_code": "<div className=\"bg-gradient-to-b from-gray-800 to-gray-900 border border-gray-700 rounded-xx p-6 sticky top-8 shadow-2xl\">",
+      "css_selector": ".sticky.top-8.p-6.shadow-2xl",
+      "bounding_box": {
+        "x": 853,
+        "y": 302,
+        "width": 363,
+        "height": 664
+      }
+    },
+    {
+      "comment": "Bug #3 - margin",
+      "report_text": "The booking summary section has excessive spacing pushing its content away from the container boundaries.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/BookingSummary.jsx",
+      "line_number": 16,
+      "neg_code": "<div className=\"space-y-4 mb-6 border-b border-gray-700 pb-4\">",
+      "pos_code": "<div className=\"space-y-4 mb-6 border-b border-gray-700 pb-4 m-10\">",
+      "css_selector": ".space-y-4.mb-6.border-b.pb-4",
+      "bounding_box": {
+        "x": 878,
+        "y": 246,
+        "width": 313,
+        "height": 201
+      }
+    },
+    {
+      "comment": "Bug #4 - text-color",
+      "report_text": "The seat information text is displayed in a color that blends into the dark background and is difficult to read.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/BookingSummary.jsx",
+      "line_number": 36,
+      "neg_code": "<span className=\"text-sm\">Seat {seat.id} <span className=\"text-xs text-gray-400 capitalize\">({seat.category})</span></span>",
+      "pos_code": "<span className=\"text-sm text-gray-900\">Seat {seat.id} <span className=\"text-xs text-gray-400 capitalize\">({seat.category})</span></span>",
+      "css_selector": ".space-y-2 span.text-sm",
+      "bounding_box": {
+        "x": 877,
+        "y": 539,
+        "width": 313,
+        "height": 123
+      }
+    },
+    {
+      "comment": "Bug #5 - z-index",
+      "report_text": "The checkout modal is hidden behind other page elements and cannot be interacted with.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/CheckoutModal.jsx",
+      "line_number": 13,
+      "neg_code": "<div className=\"fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50\">",
+      "pos_code": "<div className=\"fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-0\">",
+      "css_selector": ".fixed.backdrop-blur-sm",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #6 - gap",
+      "report_text": "The form fields are positioned too close together with no proper spacing between them.",
+      "bug_category": "Spacing",
+      "bug_type": "gap",
+      "file_modified": "src/components/MovieShowtimeSelector.jsx",
+      "line_number": 10,
+      "neg_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700\">",
+      "pos_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap- mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700\">",
+      "css_selector": ".mb-12.p-6.rounded-xl.border",
+      "bounding_box": {
+        "x": 64,
+        "y": 32,
+        "width": 1152,
+        "height": 118
+      }
+    },
+    {
+      "comment": "Bug #7 - margin",
+      "report_text": "The seat elements are overlapping each other vertically and are positioned too close together.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Seat.jsx",
+      "line_number": 2,
+      "neg_code": "const baseClass = \"w-8 h-8 rounded-t-lg text-xs flex items-center justify-center font-bold transition-all transform hover:scale-125 shadow-sm cursor-pointer duration-200\";",
+      "pos_code": "const baseClass = \"-m-2 w-8 h-8 rounded-t-lg text-xs flex items-center justify-center font-bold transition-all transform hover:scale-125 shadow-sm cursor-pointer duration-200\";",
+      "css_selector": "div[class*='flex gap-2'] .w-8.h-8.rounded-t-lg:first-of-type",
+      "bounding_box": {
+        "x": 64,
+        "y": 410,
+        "width": 757,
+        "height": 162
+      }
+    },
+    {
+      "comment": "Bug #8 - positioning",
+      "report_text": "The seat elements are positioned too high and partially overlap with the row above them.",
+      "bug_category": "Layout",
+      "bug_type": "positioning",
+      "file_modified": "src/components/Seat.jsx",
+      "line_number": 27,
+      "neg_code": "className={`${baseClass} ${getColorClass()}`}",
+      "pos_code": "className={`relative -top-4 ${baseClass} ${getColorClass()}`}",
+      "css_selector": ".w-8.h-8.rounded-t-lg",
+      "bounding_box": {
+        "x": 878,
+        "y": 779,
+        "width": 313,
+        "height": 48
+      }
+    },
+    {
+      "comment": "Bug #9 - grid",
+      "report_text": "The seating grid rows are not properly aligned and content is spanning across multiple columns incorrectly.",
+      "bug_category": "Layout",
+      "bug_type": "grid",
+      "file_modified": "src/components/SeatingGrid.jsx",
+      "line_number": 21,
+      "neg_code": "<div className=\"flex flex-col items-center gap-4 bg-gray-800/30 p-8 rounded-xl border border-gray-700/50\">",
+      "pos_code": "<div className=\"grid grid-cols-4 items-center gap-4 bg-gray-800/30 p-8 rounded-xl border border-gray-700/50\">",
+      "css_selector": ".items-center.gap-4.p-8.rounded-xl",
+      "bounding_box": {
+        "x": 64,
+        "y": 410,
+        "width": 757,
+        "height": 162
+      }
+    },
+    {
+      "comment": "Bug #10 - text-color",
+      "report_text": "The legend labels are displayed in a very dark color that is barely visible against the background.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/SeatingLegend.jsx",
+      "line_number": 14,
+      "neg_code": "<span className={item.color.includes('opacity') ? 'text-gray-400' : 'text-gray-300'}>{item.label}</span>",
+      "pos_code": "<span className=\"text-gray-900\">{item.label}</span>",
+      "css_selector": ".flex.items-center.gap-3 span",
+      "bounding_box": {
+        "x": 64,
+        "y": 604,
+        "width": 757,
+        "height": 54
+      }
+    }
+  ]
+}

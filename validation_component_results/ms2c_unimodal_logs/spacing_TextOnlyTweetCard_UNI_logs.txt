@@ -1,0 +1,87 @@
+=== UNI RESULTS: spacing_TextOnlyTweetCard ===
+
+Query: The Layout Wrapper is positioned such that it appears to be missing on the right side, leaving a large gap where content should typically be.
+Target: <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+Rank: 1
+--- Top 10 ---
+1. <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200"> <--- [HIT]
+2. <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+3. <div className="text-gray-500 text-xs">
+4. <div className="min-w-0 flex-1">
+5. <div className="flex items-start justify-between mb-3">
+6. <div className="flex items-center space-x-1">
+7. <div className="flex items-center space-x-3">
+8. <p className="text-gray-900 text-sm leading-relaxed whitespace-pre-wrap">
+9. <div className="mb-3">
+10. <a href="" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+
+==================================================
+
+Query: It's so annoying to see the Layout Wrapper off by itself like this. It doesn't fit well with the rest of the design elements.
+Target: <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+Rank: 1
+--- Top 10 ---
+1. <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200"> <--- [HIT]
+2. <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+3. <div className="text-gray-500 text-xs">
+4. <div className="min-w-0 flex-1">
+5. <div className="flex items-start justify-between mb-3">
+6. <div className="flex items-center space-x-1">
+7. <div className="flex items-center space-x-3">
+8. <p className="text-gray-900 text-sm leading-relaxed whitespace-pre-wrap">
+9. <div className="mb-3">
+10. <a href="" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+
+==================================================
+
+Query: There is no visible space between the Layout Wrapper and its immediate neighbors, which suggests that it may be incorrectly placed or sized.
+Target: <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+Rank: 1
+--- Top 10 ---
+1. <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200"> <--- [HIT]
+2. <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+3. <div className="text-gray-500 text-xs">
+4. <div className="min-w-0 flex-1">
+5. <div className="flex items-start justify-between mb-3">
+6. <div className="flex items-center space-x-1">
+7. <div className="flex items-center space-x-3">
+8. <p className="text-gray-900 text-sm leading-relaxed whitespace-pre-wrap">
+9. <div className="mb-3">
+10. <a href="" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+
+==================================================
+
+Query: The Layout Wrapper seems to be in stark contrast to the surrounding content that has a more cohesive layout.
+Target: <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+Rank: 1
+--- Top 10 ---
+1. <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200"> <--- [HIT]
+2. <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+3. <div className="text-gray-500 text-xs">
+4. <div className="min-w-0 flex-1">
+5. <div className="flex items-start justify-between mb-3">
+6. <div className="flex items-center space-x-1">
+7. <div className="flex items-center space-x-3">
+8. <p className="text-gray-900 text-sm leading-relaxed whitespace-pre-wrap">
+9. <div className="mb-3">
+10. <a href="" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+
+==================================================
+
+Query: Layout Wrapper disconnects with neighbors.
+Target: <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200">
+Rank: 1
+--- Top 10 ---
+1. <div className="max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200"> <--- [HIT]
+2. <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+3. <div className="text-gray-500 text-xs">
+4. <div className="min-w-0 flex-1">
+5. <div className="flex items-start justify-between mb-3">
+6. <div className="flex items-center space-x-1">
+7. <div className="flex items-center space-x-3">
+8. <p className="text-gray-900 text-sm leading-relaxed whitespace-pre-wrap">
+9. <div className="mb-3">
+10. <a href="" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+
+==================================================
+

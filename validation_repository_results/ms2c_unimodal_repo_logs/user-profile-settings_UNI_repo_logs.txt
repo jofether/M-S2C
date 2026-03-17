@@ -1,0 +1,116 @@
+=== UNI REPOSITORY RESULTS: user-profile-settings ===
+
+Image / ID: User Profile Settings_bug-4.png
+Query: The user avatar symbol appears white and invisible on a white background instead of displaying with the intended gradient colors.
+Target File: src/components/GeneralTab.jsx
+Target Node: <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg text-white">
+Rank Achieved: 5
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+2. [src/components/GeneralTab.jsx] <div className="flex justify-end pt-4">
+3. [src/App.jsx] <div className="max-w-6xl mx-auto relative z-99">
+4. [src/components/BillingTab.jsx] <h3 className="text-lg font-semibold text-gray-800 mb-4">
+5. [src/components/GeneralTab.jsx] <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center text-5xl shadow-lg text-white">  <--- [GROUND TRUTH HIT]
+6. [src/components/BillingTab.jsx] <h3 className="text-lg font-semibold text-orange-900 mb-2">
+7. [src/components/Sidebar.jsx] <span className="text-xl">
+8. [src/components/GeneralTab.jsx] <div className="flex items-center space-x-6 pb-8 border-b border-gray-200">
+9. [src/components/BillingTab.jsx] <p className="font-medium">
+10. [src/components/Sidebar.jsx] <nav className="space-y-2">
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-6.png
+Query: The account settings heading text is not applying the intended large font size and appears in regular size.
+Target File: src/components/Header.jsx
+Target Node: <h1 className="txt-5xl font-black text-white mb-2">
+Rank Achieved: 4
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <p className="text-gray-500 mb-8">
+2. [src/App.jsx] <main className="flex-1 p-8 lg:p-12 overflow-y-auto max-h-screen">
+3. [src/App.jsx] <h2 className="text-3xl font-bold text-gray-900 mb-2">
+4. [src/components/Header.jsx] <h1 className="txt-5xl font-black text-white mb-2">  <--- [GROUND TRUTH HIT]
+5. [src/components/Header.jsx] <p className="text-slate-400 text-lg">
+6. [src/components/Header.jsx] <div className="mb-12">
+7. [src/components/PrivacyTab.jsx] <p className="text-green-700">
+8. [src/components/GeneralTab.jsx] <p className="text-gray-500 mt-1">
+9. [src/components/PrivacyTab.jsx] <p className="text-gray-600 mb-4">
+10. [src/components/SecurityTab.jsx] <p className="text-blue-700">
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-9.png
+Query: The sidebar is not displaying at the correct width and appears to collapse or misalign.
+Target File: src/components/Sidebar.jsx
+Target Node: <aside className="w-fll lg:w-72 bg-gradient-to-b from-slate-50 to-slate-100 border-r border-gray-200 p-6">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
+2. [src/components/BillingTab.jsx] <table className="w-full text-sm">
+3. [src/components/GeneralTab.jsx] <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+4. [src/App.jsx] <div className="max-w-6xl mx-auto relative z-99">
+5. [src/components/BillingTab.jsx] <div className="flex justify-between">
+6. [src/components/BillingTab.jsx] <div className="grid grid-cols-99 gap-4">
+7. [src/components/BillingTab.jsx] <div className="border-t border-gray-200 pt-8">
+8. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4 font-sans">
+9. [src/App.jsx] <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+10. [src/components/GeneralTab.jsx] <div className="flex justify-end pt-4">
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-3_bug-3-OpenBillingTab.png
+Query: The plan features section is displaying as a single column instead of wrapping into multiple columns on larger screens.
+Target File: src/components/BillingTab.jsx
+Target Node: <div className="grid grid-cols-99 gap-4">
+Rank Achieved: 4
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <div className="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col-reverse lg:flex-row min-h-screen">
+2. [src/components/BillingTab.jsx] <table className="w-full text-sm">
+3. [src/components/GeneralTab.jsx] <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+4. [src/components/BillingTab.jsx] <div className="grid grid-cols-99 gap-4">  <--- [GROUND TRUTH HIT]
+5. [src/components/BillingTab.jsx] <div className="flex justify-between">
+6. [src/components/BillingTab.jsx] <div className="border-t border-gray-200 pt-8">
+7. [src/App.jsx] <div className="max-w-6xl mx-auto relative z-99">
+8. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12 px-4 font-sans">
+9. [src/App.jsx] <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+10. [src/components/GeneralTab.jsx] <div className="flex justify-end pt-4">
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-7_bug-7-OpenNotificationsTab.png
+Query: The push notification settings card is positioned absolutely and overlaps other content instead of flowing naturally in the page.
+Target File: src/components/NotificationsTab.jsx
+Target Node: <div className="flex items-center justify-between bg-purple-50 p-4 rounded-lg border border-purple-200 absolute">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/NotificationsTab.jsx] <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-purple-600 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600">
+2. [src/components/SecurityTab.jsx] <div className="bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-lg p-6">
+3. [src/components/BillingTab.jsx] <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-6 text-white mb-4">
+4. [src/components/BillingTab.jsx] <p className={item.included ? 'text-green-700 font-medium' : 'text-gray-500 line-through'}>
+5. [src/components/SecurityTab.jsx] <form className="space-y-4 max-w-md">
+6. [src/components/BillingTab.jsx] <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition font-medium">
+7. [src/components/BillingTab.jsx] <div className="overflow-x-auto">
+8. [src/components/PrivacyTab.jsx] <div className="space-y-8">
+9. [src/components/PrivacyTab.jsx] <div className="space-y-3">
+10. [src/components/SecurityTab.jsx] <div className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition">
+
+======================================================================
+
+Image / ID: User Profile Settings_bug-8_bug-8-OpenSecurityTab.png
+Query: The active sessions items have excessive side padding, causing the content to be compressed into a narrow strip.
+Target File: src/components/SecurityTab.jsx
+Target Node: <div className="flex items-center justify-between px-40 border border-gray-200 rounded-lg hover:bg-gray-50 transition">
+Rank Achieved: 6
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SecurityTab.jsx] <div className="bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-lg p-6">
+2. [src/components/NotificationsTab.jsx] <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-purple-600 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600">
+3. [src/components/BillingTab.jsx] <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-6 text-white mb-4">
+4. [src/components/BillingTab.jsx] <div className="overflow-x-auto">
+5. [src/components/BillingTab.jsx] <p className={item.included ? 'text-green-700 font-medium' : 'text-gray-500 line-through'}>
+6. [src/components/SecurityTab.jsx] <div className="flex items-center justify-between px-40 border border-gray-200 rounded-lg hover:bg-gray-50 transition">  <--- [GROUND TRUTH HIT]
+7. [src/components/SecurityTab.jsx] <div className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition">
+8. [src/components/PrivacyTab.jsx] <div className="pt-4 flex justify-end">
+9. [src/components/BillingTab.jsx] <td className="px-4 py-3 text-gray-700">
+10. [src/components/BillingTab.jsx] <th className="px-4 py-2 text-left font-semibold text-gray-700">
+
+======================================================================
+

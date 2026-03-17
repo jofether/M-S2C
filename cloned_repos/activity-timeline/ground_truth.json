@@ -1,0 +1,135 @@
+{
+  "repository": "Activity Timeline",
+  "bugs": [
+    {
+      "comment": "Bug #1 - margin",
+      "report_text": "The container content is left-aligned instead of being centered horizontally on the page.",
+      "bug_category": "Layout",
+      "bug_type": "margin",
+      "file_modified": "src/components/Container.jsx",
+      "line_number": 7,
+      "neg_code": "<div className=\"max-w-2xl mx-auto\">",
+      "pos_code": "<div className=\"max-w-2xl\">",
+      "css_selector": ".max-w-2xl",
+      "bounding_box": { "x": 0, "y": 48, "width": 1280, "height": 672 }
+    },
+    {
+      "comment": "Bug #2 - bg-green-500",
+      "report_text": "The success indicator dot is displaying in gray instead of green, failing to convey a success state.",
+      "bug_category": "Color",
+      "bug_type": "bg-green-500",
+      "file_modified": "src/components/TimelineEvent.jsx",
+      "line_number": 7,
+      "neg_code": "case 'success': return 'bg-green-500 ring-green-200';",
+      "pos_code": "case 'success': return 'bg-gray-400 ring-gray-200';",
+      "css_selector": "li:first-child .h-8.w-8.rounded-full",
+      "bounding_box": { "x": 16, "y": 70, "width": 32, "height": 32 }
+    },
+    {
+      "comment": "Bug #3 - position",
+      "report_text": "The timeline connecting line is not properly aligned with its corresponding event markers.",
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/TimelineEvent.jsx",
+      "line_number": 15,
+      "neg_code": "<li className=\"relative pb-8\">",
+      "pos_code": "<li className=\"pb-8\">",
+      "css_selector": "li:nth-child(2).pb-8",
+      "bounding_box": { "x": 16, "y": 178, "width": 672, "height": 132 }
+    },
+    {
+      "comment": "Bug #4 - position",
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/TimelineEvent.jsx",
+      "line_number": 19,
+      "report_text": "The vertical timeline line is offset and not correctly positioned relative to the event markers.",
+      "neg_code": "<span className=\"absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200\" aria-hidden=\"true\"></span>",
+      "pos_code": "<span className=\"top-4 left-4 -ml-px h-full w-0.5 bg-gray-200\" aria-hidden=\"true\"></span>",
+      "css_selector": "li:first-child span.bg-gray-200",
+      "bounding_box": { "x": 28, "y": 70, "width": 24, "height": 100 }
+    },
+    {
+      "comment": "Bug #5 - flexbox",
+      "report_text": "The event content is stacking vertically instead of displaying horizontally beside the timeline marker.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/TimelineEvent.jsx",
+      "line_number": 22,
+      "neg_code": "<div className=\"relative flex space-x-3\">",
+      "pos_code": "<div className=\"relative block space-x-3\">",
+      "css_selector": "li:first-child .relative.space-x-3",
+      "bounding_box": {
+        "x": 16,
+        "y": 70,
+        "width": 672,
+        "height": 76
+      }
+    },
+    {
+      "comment": "Bug #6 - ring-8",
+      "report_text": "The timeline event marker is missing its white border styling, appearing incomplete and poorly defined.",
+      "bug_category": "Typo",
+      "bug_type": "ring-8",
+      "file_modified": "src/components/TimelineEvent.jsx",
+      "line_number": 27,
+      "neg_code": "<span className={`h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white ${getDotColor(event.type)}`}>",
+      "pos_code": "<span className={`h-8 w-8 rounded-full flex items-center justify-center ringg-8 ring-white ${getDotColor(event.type)}`}>",
+      "css_selector": "li:first-child .h-8.w-8.rounded-full",
+      "bounding_box": { "x": 8, "y": 62, "width": 48, "height": 48 }
+    },
+    {
+      "comment": "Bug #7 - padding-top",
+      "report_text": "The event description text is touching the marker circle without sufficient vertical spacing above it.",
+      "bug_category": "Spacing",
+      "bug_type": "padding-top",
+      "file_modified": "src/components/TimelineEvent.jsx",
+      "line_number": 33,
+      "neg_code": "<div className=\"min-w-0 flex-1 pt-1.5 flex justify-between space-x-4\">",
+      "pos_code": "<div className=\"min-w-0 flex-1 flex justify-between space-x-4\">",
+      "css_selector": "li:first-child .flex-1.min-w-0",
+      "bounding_box": {
+        "x": 28,
+        "y": 102,
+        "width": 660,
+        "height": 44
+      }
+    },
+    {
+      "comment": "Bug #8 - margin-bottom",
+      "report_text": "The header is overlapping with the timeline content below it, creating a visual collision.",
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/components/TimelineHeader.jsx",
+      "line_number": 5,
+      "neg_code": "<header className=\"mb-10\">",
+      "pos_code": "<header className=\"mb-[-50px]\">",
+      "css_selector": "header",
+      "bounding_box": { "x": 16, "y": 48, "width": 672, "height": 150 }
+    },
+    {
+      "comment": "Bug #9 - text-3xl",
+      "report_text": "The title text is displaying at an abnormally large size and breaking the entire page layout.",
+      "bug_category": "Typo",
+      "bug_type": "text-3xl",
+      "file_modified": "src/components/TimelineHeader.jsx",
+      "line_number": 7,
+      "neg_code": "<h1 className=\"text-3xl font-bold text-gray-900\">{title}</h1>",
+      "pos_code": "<h1 className=\"text-33xl font-bold text-gray-900\">{title}</h1>",
+      "css_selector": "header h1",
+      "bounding_box": { "x": 16, "y": 48, "width": 672, "height": 60 }
+    },
+    {
+      "comment": "Bug #10 - color",
+      "report_text": "The body text is appearing in light gray, making it difficult to read against the page background.",
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/index.css",
+      "line_number": 6,
+      "neg_code": "color: #0f172a;",
+      "pos_code": "color: #d1d5db;",
+      "css_selector": "body",
+      "bounding_box": { "x": 0, "y": 0, "width": 1280, "height": 720 }
+    }
+  ]
+}

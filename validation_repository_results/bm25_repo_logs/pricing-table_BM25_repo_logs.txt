@@ -1,0 +1,173 @@
+=== BM25 REPOSITORY RESULTS: pricing-table ===
+
+Image / ID: Pricing Table_bug-4.png
+Query: The footer content is positioned over the top of the page, creating a visual overlap that obscures the header and other content.
+Target File: src/components/Footer.jsx
+Target Node: <div className="grid md:grid-cols-5 gap-8 mb-12 absolute top-0 left-0">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Footer />
+2. [src/components/Footer.jsx] <footer className="px-6 py-16 border-t border-slate-800 bg-slate-950">
+3. [src/components/Footer.jsx] <a href="#features" className="hover:text-white transition">
+4. [src/components/Footer.jsx] <a href="#" className="hover:text-white transition">
+5. [src/components/Footer.jsx] <a href="#pricing" className="hover:text-white transition">
+6. [src/components/Navigation.jsx] <a href="#faq" className="text-slate-300 hover:text-white transition">
+7. [src/components/Navigation.jsx] <a href="#testimonials" className="text-slate-300 hover:text-white transition">
+8. [src/components/Navigation.jsx] <a href="#features" className="text-slate-300 hover:text-white transition">
+9. [src/components/Navigation.jsx] <a href="#pricing" className="text-slate-300 hover:text-white transition">
+10. [src/components/Footer.jsx] <a href="#" className="text-slate-400 hover:text-white transition text-xl">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-1_bug-1-RemoveFooterOverlay.png
+Query: The call-to-action text appears in an incorrect color shade that doesn't match the intended design, creating visual inconsistency.
+Target File: src/components/CTA.jsx
+Target Node: <p className="text-xl text-blue-90 mb-8">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <CTA />
+3. [src/App.jsx] <Navigation />
+4. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+5. [src/App.jsx] <Features />
+6. [src/App.jsx] <Hero />
+7. [src/App.jsx] <Footer />
+8. [src/App.jsx] <FAQ />
+9. [src/App.jsx] <Testimonials />
+10. [src/App.jsx] <PricingSection />
+
+======================================================================
+
+Image / ID: Pricing Table_bug-2_bug-2-RemoveFooterOverlay.png
+Query: The FAQ items are displaying horizontally in a single row instead of being vertically stacked, breaking the expected question-and-answer layout structure.
+Target File: src/components/FAQ.jsx
+Target Node: <div className="space-y-4 flex flex-row">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <FAQ />
+2. [src/components/FAQ.jsx] <section id="faq" className="px-6 py-20 bg-gradient-to-b from-transparent via-slate-800/30 to-transparent">
+3. [src/components/Footer.jsx] <a href="#features" className="hover:text-white transition">
+4. [src/components/Footer.jsx] <a href="#" className="hover:text-white transition">
+5. [src/components/Footer.jsx] <a href="#pricing" className="hover:text-white transition">
+6. [src/components/Navigation.jsx] <a href="#faq" className="text-slate-300 hover:text-white transition">
+7. [src/components/Navigation.jsx] <a href="#testimonials" className="text-slate-300 hover:text-white transition">
+8. [src/components/Navigation.jsx] <a href="#features" className="text-slate-300 hover:text-white transition">
+9. [src/components/Navigation.jsx] <a href="#pricing" className="text-slate-300 hover:text-white transition">
+10. [src/components/Footer.jsx] <a href="#" className="text-slate-400 hover:text-white transition text-xl">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-3_bug-3-RemoveFooterOverlay.png
+Query: The feature cards are arranged in reverse order and displayed in a single column instead of a proper multi-column grid layout.
+Target File: src/components/Features.jsx
+Target Node: <div className="flex flex-col-reverse gap-8">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Footer.jsx] <a href="#features" className="hover:text-white transition">
+2. [src/components/Footer.jsx] <a href="#" className="hover:text-white transition">
+3. [src/components/Footer.jsx] <a href="#pricing" className="hover:text-white transition">
+4. [src/components/Navigation.jsx] <a href="#faq" className="text-slate-300 hover:text-white transition">
+5. [src/components/Navigation.jsx] <a href="#testimonials" className="text-slate-300 hover:text-white transition">
+6. [src/components/Navigation.jsx] <a href="#features" className="text-slate-300 hover:text-white transition">
+7. [src/components/Navigation.jsx] <a href="#pricing" className="text-slate-300 hover:text-white transition">
+8. [src/components/Footer.jsx] <a href="#" className="text-slate-400 hover:text-white transition text-xl">
+9. [src/components/Testimonials.jsx] <div className="grid md:grid-cols-2 gap-8">
+10. [src/components/PricingSection.jsx] <div className="grid md:grid-cols-5 gap-8 items-center">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-5_bug-5-RemoveFooterOverlay.png
+Query: The badge element pulls content below it too close, collapsing the vertical gaps and disrupting the natural flow of the page.
+Target File: src/components/Hero.jsx
+Target Node: <div className="inline-block mb-6 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full -mb-16">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <CTA />
+3. [src/App.jsx] <Navigation />
+4. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+5. [src/App.jsx] <Features />
+6. [src/App.jsx] <Hero />
+7. [src/App.jsx] <Footer />
+8. [src/App.jsx] <FAQ />
+9. [src/App.jsx] <Testimonials />
+10. [src/App.jsx] <PricingSection />
+
+======================================================================
+
+Image / ID: Pricing Table_bug-6_bug-6-RemoveFooterOverlay.png
+Query: The navigation bar is hidden behind other page elements and not staying on top where it should be visible and interactive.
+Target File: src/components/Navigation.jsx
+Target Node: <nav className="sticky top-0 z-5 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Navigation />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <CTA />
+4. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+5. [src/App.jsx] <Features />
+6. [src/App.jsx] <Hero />
+7. [src/App.jsx] <Footer />
+8. [src/App.jsx] <FAQ />
+9. [src/App.jsx] <Testimonials />
+10. [src/App.jsx] <PricingSection />
+
+======================================================================
+
+Image / ID: Pricing Table_bug-7_bug-7-RemoveFooterOverlay.png
+Query: The pricing toggle section is surrounded by excessive white space, distorting the layout and visual proportions of the page.
+Target File: src/components/PricingSection.jsx
+Target Node: <div className="flex justify-center items-center gap-6 mb-12 p-20">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/PricingSection.jsx] <section id="pricing" className="px-6 py-20 bg-gradient-to-b from-transparent via-slate-800/30 to-transparent">
+2. [src/components/Hero.jsx] <section className="relative px-6 py-20 overflow-hidden">
+3. [src/components/CTA.jsx] <section className="px-6 py-20 max-w-4xl mx-auto text-center">
+4. [src/components/Testimonials.jsx] <section id="testimonials" className="px-6 py-20 max-w-6xl mx-auto">
+5. [src/components/Features.jsx] <section id="features" className="px-6 py-16 max-w-6xl mx-auto">
+6. [src/components/FAQ.jsx] <section id="faq" className="px-6 py-20 bg-gradient-to-b from-transparent via-slate-800/30 to-transparent">
+7. [src/main.jsx] <App />
+8. [src/App.jsx] <CTA />
+9. [src/App.jsx] <Navigation />
+10. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+
+======================================================================
+
+Image / ID: Pricing Table_bug-8_bug-8-RemoveFooterOverlay.png
+Query: The pricing plan cards are arranged in too many columns, appearing cramped and misaligned instead of displaying in the correct three-column layout.
+Target File: src/components/PricingSection.jsx
+Target Node: <div className="grid md:grid-cols-5 gap-8 items-center">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/PricingSection.jsx] <section id="pricing" className="px-6 py-20 bg-gradient-to-b from-transparent via-slate-800/30 to-transparent">
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <CTA />
+4. [src/App.jsx] <Navigation />
+5. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+6. [src/App.jsx] <Features />
+7. [src/App.jsx] <Hero />
+8. [src/App.jsx] <Footer />
+9. [src/App.jsx] <FAQ />
+10. [src/App.jsx] <Testimonials />
+
+======================================================================
+
+Image / ID: Pricing Table_bug-9_bug-9-RemoveFooterOverlay.png
+Query: The testimonial text is barely visible because the text color is too dark and blends into the dark background, making it unreadable.
+Target File: src/components/Testimonials.jsx
+Target Node: <p className="text-slate-900 mb-6 leading-relaxed text-lg">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <CTA />
+3. [src/App.jsx] <Navigation />
+4. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white">
+5. [src/App.jsx] <Features />
+6. [src/App.jsx] <Hero />
+7. [src/App.jsx] <Footer />
+8. [src/App.jsx] <FAQ />
+9. [src/App.jsx] <Testimonials />
+10. [src/App.jsx] <PricingSection />
+
+======================================================================
+

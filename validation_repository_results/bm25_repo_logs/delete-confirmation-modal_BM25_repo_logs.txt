@@ -1,0 +1,116 @@
+=== BM25 REPOSITORY RESULTS: delete-confirmation-modal ===
+
+Image / ID: Delete Confirmation Modal_bug-4.png
+Query: The card component creates an abnormally large gap below it, pushing subsequent content far down the page.
+Target File: src/components/Card.jsx
+Target Node: <div className="bg-slate-700/50 backdrop-blur-sm rounded-lg shadow-sm border border-slate-600 p-6 hover:border-slate-500 hover:shadow-md transition-all duration-200 mb-999">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/StatsGrid.jsx] <Card key={stat.title} icon={stat.icon} title={stat.title} value={stat.value} description={stat.description} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <Toast message={toast.message} type={toast.type} onClose={() =>
+4. [src/App.jsx] <div className="relative z-40">
+5. [src/App.jsx] <style>
+6. [src/App.jsx] <SettingsSection onDeleteClick={() =>
+7. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+8. [src/App.jsx] <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+9. [src/App.jsx] <StatsGrid />
+10. [src/App.jsx] <Header />
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-5.png
+Query: The navigation items are stacked in reverse order instead of in their intended left-to-right sequence.
+Target File: src/components/Header.jsx
+Target Node: <nav className="flex flex-row-reverse justify-between items-center mb-12">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Modal isOpen={isModalOpen} title="Delete Account?" message="Are you sure you want to delete your account? All of your data will be permanently removed." warning="This action cannot be undone." onConfirm={handleDelete} onCancel={handleCancel} confirmText="Delete Forever" cancelText="Cancel" isLoading={isDeleting} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <Toast message={toast.message} type={toast.type} onClose={() =>
+4. [src/App.jsx] <div className="relative z-40">
+5. [src/App.jsx] <style>
+6. [src/App.jsx] <SettingsSection onDeleteClick={() =>
+7. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+8. [src/App.jsx] <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+9. [src/App.jsx] <StatsGrid />
+10. [src/App.jsx] <Header />
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-6.png
+Query: The navigation icons are repositioned to the top of the page and overlap with the main header, obscuring content.
+Target File: src/components/Header.jsx
+Target Node: <div className="flex space-x-3 absolute -top-4 text-white">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Modal isOpen={isModalOpen} title="Delete Account?" message="Are you sure you want to delete your account? All of your data will be permanently removed." warning="This action cannot be undone." onConfirm={handleDelete} onCancel={handleCancel} confirmText="Delete Forever" cancelText="Cancel" isLoading={isDeleting} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <Toast message={toast.message} type={toast.type} onClose={() =>
+4. [src/App.jsx] <div className="relative z-40">
+5. [src/App.jsx] <style>
+6. [src/App.jsx] <SettingsSection onDeleteClick={() =>
+7. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+8. [src/App.jsx] <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+9. [src/App.jsx] <StatsGrid />
+10. [src/App.jsx] <Header />
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-9.png
+Query: The settings section has excessive internal padding that breaks the page layout and pushes content beyond visible boundaries.
+Target File: src/components/SettingsSection.jsx
+Target Node: <div className="mb-12 p-48">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Modal.jsx] <div className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300 p-4 ${ isOpen ? 'opacity-100 visible' : 'opacity-0 invisible' }`} style={{ backgroundColor: isOpen ? 'rgba(0, 0, 0, 0.6)' : 'rgba(0, 0, 0, 0)', backdropFilter: isOpen ? 'blur(8px)' : 'blur(0px)', }} onClick={onCancel} >
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <Toast message={toast.message} type={toast.type} onClose={() =>
+4. [src/App.jsx] <div className="relative z-40">
+5. [src/App.jsx] <style>
+6. [src/App.jsx] <SettingsSection onDeleteClick={() =>
+7. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+8. [src/App.jsx] <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+9. [src/App.jsx] <StatsGrid />
+10. [src/App.jsx] <Header />
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-10.png
+Query: The stats items collapse and fail to display in a proper multi-column grid layout, appearing as a broken single column.
+Target File: src/components/StatsGrid.jsx
+Target Node: <div className="grid grid-cols-none gap-6">
+Rank Achieved: 1
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/StatsGrid.jsx] <div className="grid grid-cols-none gap-6">  <--- [GROUND TRUTH HIT]
+2. [src/App.jsx] <Modal isOpen={isModalOpen} title="Delete Account?" message="Are you sure you want to delete your account? All of your data will be permanently removed." warning="This action cannot be undone." onConfirm={handleDelete} onCancel={handleCancel} confirmText="Delete Forever" cancelText="Cancel" isLoading={isDeleting} />
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <Toast message={toast.message} type={toast.type} onClose={() =>
+5. [src/App.jsx] <div className="relative z-40">
+6. [src/App.jsx] <style>
+7. [src/App.jsx] <SettingsSection onDeleteClick={() =>
+8. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+9. [src/App.jsx] <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+10. [src/App.jsx] <StatsGrid />
+
+======================================================================
+
+Image / ID: Delete Confirmation Modal_bug-8_bug-8-OpenModal.png
+Query: The alert icon background becomes invisible or displays an unintended neutral color instead of the proper warning tone.
+Target File: src/components/Modal.jsx
+Target Node: <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-5 mb-6 animate-pulse">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/StatsGrid.jsx] <Card key={stat.title} icon={stat.icon} title={stat.title} value={stat.value} description={stat.description} />
+2. [src/App.jsx] <Modal isOpen={isModalOpen} title="Delete Account?" message="Are you sure you want to delete your account? All of your data will be permanently removed." warning="This action cannot be undone." onConfirm={handleDelete} onCancel={handleCancel} confirmText="Delete Forever" cancelText="Cancel" isLoading={isDeleting} />
+3. [src/components/Modal.jsx] <div className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300 p-4 ${ isOpen ? 'opacity-100 visible' : 'opacity-0 invisible' }`} style={{ backgroundColor: isOpen ? 'rgba(0, 0, 0, 0.6)' : 'rgba(0, 0, 0, 0)', backdropFilter: isOpen ? 'blur(8px)' : 'blur(0px)', }} onClick={onCancel} >
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <Toast message={toast.message} type={toast.type} onClose={() =>
+6. [src/App.jsx] <div className="relative z-40">
+7. [src/App.jsx] <style>
+8. [src/App.jsx] <SettingsSection onDeleteClick={() =>
+9. [src/App.jsx] <div className="fixed -bottom-32 z-40">
+10. [src/App.jsx] <div className={`p-8 transition-all duration-300 -m-32 ${isModalOpen ? 'blur-sm' : 'blur-0'}`}>
+
+======================================================================
+

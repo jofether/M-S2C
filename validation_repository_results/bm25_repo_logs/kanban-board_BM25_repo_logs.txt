@@ -1,0 +1,40 @@
+=== BM25 REPOSITORY RESULTS: kanban-board ===
+
+Image / ID: Kanban Board_bug-3.png
+Query: The Done column appears faded and semi-transparent, significantly reducing its visual prominence and readability compared to other columns.
+Target File: src/components/Column.jsx
+Target Node: <div className="flex-shrink-0 w-96 flex flex-col bg-gradient-to-b from-slate-700 to-slate-800 rounded-xl shadow-xl overflow-hidden border border-slate-600 opacity-50">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Column key={column.id} column={column} tasks={tasks[column.id]} onDragStart={handleDragStart} onDragOver={handleDragOver} onDrop={handleDrop} onAddTask={handleAddTask} onDeleteTask={handleDeleteTask} newTaskInput={newTaskInput} setNewTaskInput={setNewTaskInput} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-medium">
+4. [src/App.jsx] <div className="flex items-center gap-2 text-slate-300">
+5. [src/App.jsx] <p className="text-slate-400 text-sm mt-1">
+6. [src/App.jsx] <div className="flex h-full gap-1 min-w-max">
+7. [src/App.jsx] <div className="w-2 flex-shrink-0">
+8. [src/App.jsx] <main className="flex-1 overflow-x-auto overflow-y-hidden p-12">
+9. [src/App.jsx] <div className="flex items-center justify-between">
+10. [src/App.jsx] <div>
+
+======================================================================
+
+Image / ID: Kanban Board_bug-8.png
+Query: Task title text is too dark and difficult to read against the dark card background, severely impacting legibility.
+Target File: src/components/TaskCard.jsx
+Target Node: <p className="text-slate-600 font-semibold text-sm flex-1 line-clamp-2 group-hover:text-blue-200">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Column.jsx] <TaskCard key={task.id} task={task} columnId={column.id} onDragStart={onDragStart} onDeleteTask={onDeleteTask} />
+2. [src/components/Column.jsx] <input type="text" placeholder="Add a new task..." value={newTaskInput[column.id] || ''} onChange={(e) =>
+3. [src/components/TaskCard.jsx] <div className={`w-7 h-7 rounded-full ${getAssigneeColor( task.assignee )} text-white text-xs font-bold flex items-center justify-center shadow-sm`} title={task.assignee} >
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-medium">
+6. [src/App.jsx] <div className="flex items-center gap-2 text-slate-300">
+7. [src/App.jsx] <p className="text-slate-400 text-sm mt-1">
+8. [src/App.jsx] <div className="flex h-full gap-1 min-w-max">
+9. [src/App.jsx] <div className="w-2 flex-shrink-0">
+10. [src/App.jsx] <main className="flex-1 overflow-x-auto overflow-y-hidden p-12">
+
+======================================================================
+

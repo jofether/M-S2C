@@ -1,0 +1,154 @@
+=== BM25 REPOSITORY RESULTS: corporate-landing-page ===
+
+Image / ID: Corporate Landing Page_bug-3.png
+Query: The header navigation is hidden behind other page elements and becomes non-interactive and inaccessible.
+Target File: src/components/Header.jsx
+Target Node: <header className="fixed w-full bg-white/90 backdrop-blur-sm -z-50 border-b border-gray-100">
+Rank Achieved: 4
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Header />
+2. [src/components/Header.jsx] <nav className="hidden md:flex space-x-8">
+3. [src/components/Header.jsx] <div className="hidden md:flex items-center space-x-4">
+4. [src/components/Header.jsx] <header className="fixed w-full bg-white/90 backdrop-blur-sm -z-50 border-b border-gray-100">  <--- [GROUND TRUTH HIT]
+5. [src/main.jsx] <App />
+6. [src/App.jsx] <main className="flex-1">
+7. [src/App.jsx] <Pricing />
+8. [src/App.jsx] <Features />
+9. [src/App.jsx] <Hero />
+10. [src/App.jsx] <Footer />
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-4.png
+Query: The navigation links are invisible against the background, making the menu unreadable and preventing user navigation.
+Target File: src/components/Header.jsx
+Target Node: <a href="#features" className="text-white hover:text-blue-600 font-medium">>
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <main className="flex-1">
+3. [src/App.jsx] <Pricing />
+4. [src/App.jsx] <Features />
+5. [src/App.jsx] <Hero />
+6. [src/App.jsx] <Footer />
+7. [src/App.jsx] <div className="min-h-scren bg-white font-sans text-gray-900 flex flex-col-reverse">
+8. [src/App.jsx] <Header />
+9. [src/components/Header.jsx] <a href="#features" className="text-white hover:text-blue-600 font-medium">
+10. [src/components/Header.jsx] <button onClick={() =>
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-5.png
+Query: The main heading appears abnormally small and breaks the expected visual hierarchy of the page.
+Target File: src/components/Hero.jsx
+Target Node: <h1 className="text-5xl md:text-6x font-extrabold text-gray-900 tracking-tight mb-6">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <main className="flex-1">
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <Pricing />
+4. [src/App.jsx] <Features />
+5. [src/App.jsx] <Hero />
+6. [src/App.jsx] <Footer />
+7. [src/App.jsx] <div className="min-h-scren bg-white font-sans text-gray-900 flex flex-col-reverse">
+8. [src/App.jsx] <Header />
+9. [src/components/Header.jsx] <a href="#features" className="text-white hover:text-blue-600 font-medium">
+10. [src/components/Header.jsx] <button onClick={() =>
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-6.png
+Query: The feature cards are stacked in a single column at all screen sizes instead of expanding into multiple columns on larger screens.
+Target File: src/components/Features.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-1 gap-0">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Button.jsx] <button className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`} {...props} >
+2. [src/components/Header.jsx] <a href="#features" className="text-white hover:text-blue-600 font-medium">
+3. [src/components/Header.jsx] <a href="#pricing" className="text-white hover:text-blue-600 font-medium">
+4. [src/components/Header.jsx] <a href="#about" className="text-white hover:text-blue-600 font-medium">
+5. [src/components/Footer.jsx] <a href="#" className="text-gray-500 hover:text-indigo-400 transition-colors text-sm" >
+6. [src/components/Footer.jsx] <a href="#" className="text-gray-500 hover:text-indigo-400 transition-colors text-sm">
+7. [src/components/Footer.jsx] <a key={idx} href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors" aria-label={social} >
+8. [src/main.jsx] <App />
+9. [src/App.jsx] <main className="flex-1">
+10. [src/App.jsx] <Pricing />
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-7.png
+Query: The feature cards are touching each other without any spacing between them, creating a crowded and visually cluttered appearance.
+Target File: src/components/Features.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-1 gap-0">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Header.jsx] <a href="#features" className="text-white hover:text-blue-600 font-medium">
+2. [src/components/Header.jsx] <a href="#pricing" className="text-white hover:text-blue-600 font-medium">
+3. [src/components/Header.jsx] <a href="#about" className="text-white hover:text-blue-600 font-medium">
+4. [src/components/Footer.jsx] <a href="#" className="text-gray-500 hover:text-indigo-400 transition-colors text-sm" >
+5. [src/components/Footer.jsx] <a href="#" className="text-gray-500 hover:text-indigo-400 transition-colors text-sm">
+6. [src/components/Footer.jsx] <a key={idx} href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors" aria-label={social} >
+7. [src/main.jsx] <App />
+8. [src/App.jsx] <main className="flex-1">
+9. [src/App.jsx] <Pricing />
+10. [src/App.jsx] <Features />
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-8.png
+Query: The 'Popular' badge is stuck at the top of the screen and remains visible while scrolling the page content.
+Target File: src/components/Pricing.jsx
+Target Node: <span className="fixed top-0 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <main className="flex-1">
+3. [src/App.jsx] <Pricing />
+4. [src/App.jsx] <Features />
+5. [src/App.jsx] <Hero />
+6. [src/App.jsx] <Footer />
+7. [src/App.jsx] <div className="min-h-scren bg-white font-sans text-gray-900 flex flex-col-reverse">
+8. [src/App.jsx] <Header />
+9. [src/components/Header.jsx] <a href="#features" className="text-white hover:text-blue-600 font-medium">
+10. [src/components/Header.jsx] <button onClick={() =>
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-9.png
+Query: The pricing amount text is invisible against the background, making the price unreadable and preventing customers from viewing the cost.
+Target File: src/components/Pricing.jsx
+Target Node: <p className="text-4xl font-bold text-white mt-4">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Pricing />
+2. [src/components/Pricing.jsx] <section id="pricing" className="py-20 bg-gray-900">
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <main className="flex-1">
+5. [src/App.jsx] <Features />
+6. [src/App.jsx] <Hero />
+7. [src/App.jsx] <Footer />
+8. [src/App.jsx] <div className="min-h-scren bg-white font-sans text-gray-900 flex flex-col-reverse">
+9. [src/App.jsx] <Header />
+10. [src/components/Header.jsx] <a href="#features" className="text-white hover:text-blue-600 font-medium">
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-10.png
+Query: The feature section heading is too close to the feature cards below, creating a cramped visual appearance without adequate breathing room.
+Target File: src/components/Features.jsx
+Target Node: <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Testimonials.jsx] <section className="py-20 px-4 bg-white">
+2. [src/components/Features.jsx] <section id="features" className="py-20 bg-white">
+3. [src/components/Pricing.jsx] <section id="pricing" className="py-20 bg-gray-900">
+4. [src/components/Header.jsx] <a href="#features" className="text-white hover:text-blue-600 font-medium">
+5. [src/components/Header.jsx] <a href="#pricing" className="text-white hover:text-blue-600 font-medium">
+6. [src/components/Header.jsx] <a href="#about" className="text-white hover:text-blue-600 font-medium">
+7. [src/components/Footer.jsx] <a href="#" className="text-gray-500 hover:text-indigo-400 transition-colors text-sm" >
+8. [src/components/Footer.jsx] <a href="#" className="text-gray-500 hover:text-indigo-400 transition-colors text-sm">
+9. [src/components/CTA.jsx] <section className="py-20 px-4 bg-gradient-to-r from-indigo-600 to-purple-600 relative overflow-hidden">
+10. [src/components/Hero.jsx] <section className="pt-0 pb-12 md:pt-40 md:pb-20 bg-gradient-to-b from-blue-50 to-white">
+
+======================================================================
+

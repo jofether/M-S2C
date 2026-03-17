@@ -1,0 +1,92 @@
+=== MULTI RESULTS: spacing_ReceiptCard ===
+
+Query: The 'section' is overlaid with another element, causing a visual anomaly.
+Target: <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20">
+Rank: 1
+Gating Alpha: 0.4958
+--- Top 10 ---
+1. <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20"> <--- [HIT]
+2. <div className="bg-indigo-500/5 border border-gray-500/20 text-sm text-gray-500 flex flex-col items-center w-80 rounded-lg">
+3. <div className="bg-white p-1.5 rounded border border-gray-500/30">
+4. <div className="w-full h-px bg-gray-300/60">
+5. <div className="flex items-center w-full justify-between">
+6. <div className="flex items-center justify-between gap-3">
+7. <div className="flex items-center justify-between w-full px-4 py-2">
+8. <div className="flex items-center gap-2">
+9. <img className="h-9" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyFavicon.svg" alt="dummyFavicon"/>
+10. <p className="bg-green-500/20 px-3 py-0.5 rounded border border-green-500/30 text-green-600">
+
+==================================================
+
+Query: This layout is so confusing. Why is the 'section' on top of everything?
+Target: <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20">
+Rank: 1
+Gating Alpha: 0.4962
+--- Top 10 ---
+1. <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20"> <--- [HIT]
+2. <div className="bg-indigo-500/5 border border-gray-500/20 text-sm text-gray-500 flex flex-col items-center w-80 rounded-lg">
+3. <div className="bg-white p-1.5 rounded border border-gray-500/30">
+4. <div className="w-full h-px bg-gray-300/60">
+5. <div className="flex items-center w-full justify-between">
+6. <div className="flex items-center justify-between gap-3">
+7. <div className="flex items-center justify-between w-full px-4 py-2">
+8. <div className="flex items-center gap-2">
+9. <img className="h-9" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyFavicon.svg" alt="dummyFavicon"/>
+10. <p className="bg-green-500/20 px-3 py-0.5 rounded border border-green-500/30 text-green-600">
+
+==================================================
+
+Query: There is an overlap where the 'section' should be but it's not there.
+Target: <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20">
+Rank: 1
+Gating Alpha: 0.4960
+--- Top 10 ---
+1. <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20"> <--- [HIT]
+2. <div className="bg-indigo-500/5 border border-gray-500/20 text-sm text-gray-500 flex flex-col items-center w-80 rounded-lg">
+3. <div className="bg-white p-1.5 rounded border border-gray-500/30">
+4. <div className="w-full h-px bg-gray-300/60">
+5. <div className="flex items-center w-full justify-between">
+6. <div className="flex items-center justify-between gap-3">
+7. <div className="flex items-center justify-between w-full px-4 py-2">
+8. <div className="flex items-center gap-2">
+9. <img className="h-9" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyFavicon.svg" alt="dummyFavicon"/>
+10. <p className="bg-green-500/20 px-3 py-0.5 rounded border border-green-500/30 text-green-600">
+
+==================================================
+
+Query: The 'section' doesn't belong in this area. It's out of place and it's hard to tell what's happening here.
+Target: <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20">
+Rank: 1
+Gating Alpha: 0.4961
+--- Top 10 ---
+1. <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20"> <--- [HIT]
+2. <div className="bg-indigo-500/5 border border-gray-500/20 text-sm text-gray-500 flex flex-col items-center w-80 rounded-lg">
+3. <div className="bg-white p-1.5 rounded border border-gray-500/30">
+4. <div className="w-full h-px bg-gray-300/60">
+5. <div className="flex items-center w-full justify-between">
+6. <div className="flex items-center justify-between gap-3">
+7. <div className="flex items-center justify-between w-full px-4 py-2">
+8. <div className="flex items-center gap-2">
+9. <img className="h-9" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyFavicon.svg" alt="dummyFavicon"/>
+10. <p className="bg-green-500/20 px-3 py-0.5 rounded border border-green-500/30 text-green-600">
+
+==================================================
+
+Query: The 'section' is misplaced.
+Target: <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20">
+Rank: 1
+Gating Alpha: 0.4950
+--- Top 10 ---
+1. <div className="flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20"> <--- [HIT]
+2. <div className="bg-indigo-500/5 border border-gray-500/20 text-sm text-gray-500 flex flex-col items-center w-80 rounded-lg">
+3. <div className="bg-white p-1.5 rounded border border-gray-500/30">
+4. <div className="w-full h-px bg-gray-300/60">
+5. <div className="flex items-center w-full justify-between">
+6. <div className="flex items-center justify-between gap-3">
+7. <div className="flex items-center justify-between w-full px-4 py-2">
+8. <div className="flex items-center gap-2">
+9. <img className="h-9" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyFavicon.svg" alt="dummyFavicon"/>
+10. <p className="bg-green-500/20 px-3 py-0.5 rounded border border-green-500/30 text-green-600">
+
+==================================================
+

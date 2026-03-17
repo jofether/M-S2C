@@ -1,0 +1,102 @@
+=== MULTI REPOSITORY RESULTS: digital-credit-card-component ===
+
+Image / ID: Digital Credit Card Component_bug-6.png
+Query: The brand name text is too dark and blends into the dark card background, significantly reducing readability.
+Target File: src/CreditCard.jsx
+Target Node: <div className="absolute top-6 right-8 text-sm font-bold opacity-75 text-slate-400">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5005 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/CreditCard.jsx] <p className="font-bold tracking-wide uppercase">
+2. [src/CreditCard.jsx] <p className="font-bold tracking-wide">
+3. [src/App.jsx] <p className="text-4xl mb-4">
+4. [src/App.jsx] <p className="text-3xl font-bold text-purple-600 mt-2">
+5. [src/App.jsx] <p className="text-3xl font-bold text-blue-600 mt-2">
+6. [src/App.jsx] <p className="text-3xl font-bold text-orange-600 mt-2">
+7. [src/CreditCard.jsx] <p className="text-xs opacity-75 uppercase tracking-wider mb-1">
+8. [src/CreditCard.jsx] <p className="text-xs text-gray-600 font-bold">
+9. [src/CreditCard.jsx] <p className="text-xs text-white opacity-75 mt-2">
+10. [src/App.jsx] <p className="text-lg font-semibold text-slate-800">
+
+======================================================================
+
+Image / ID: Digital Credit Card Component_bug-8.png
+Query: The dashboard stats display with an unbalanced column layout, causing awkward spacing and content overflow at different screen sizes.
+Target File: src/Dashboard.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 mb-8">
+Rank Achieved: 1
+Gating Alpha: 0.5380 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/Dashboard.jsx] <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-6 mb-8">  <--- [GROUND TRUTH HIT]
+2. [src/TransactionHistory.jsx] <div className="flex items-center gap-3">
+3. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+4. [src/TransactionHistory.jsx] <div className="flex-1">
+5. [src/Dashboard.jsx] <div className="flex items-center gap-3">
+6. [src/App.jsx] <div className="flex justify-between items-center">
+7. [src/Dashboard.jsx] <div className="bg-white rounded-lg shadow-md p-6">
+8. [src/TransactionHistory.jsx] <div className="mt-4 space-y-3 max-h-64 overflow-y-auto">
+9. [src/CardDetails.jsx] <div className="flex gap-3 pt-4 border-t border-slate-200">
+10. [src/App.jsx] <div className="grid grid-cols-3 gap-6">
+
+======================================================================
+
+Image / ID: Digital Credit Card Component_bug-9.png
+Query: The empty state message text is too light and difficult to read against the background.
+Target File: src/Dashboard.jsx
+Target Node: <p className="text-slate-400 text-center py-6">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5012 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/CreditCard.jsx] <p className="font-bold tracking-wide uppercase">
+2. [src/CreditCard.jsx] <p className="font-bold tracking-wide">
+3. [src/App.jsx] <p className="text-4xl mb-4">
+4. [src/App.jsx] <p className="text-3xl font-bold text-purple-600 mt-2">
+5. [src/App.jsx] <p className="text-3xl font-bold text-blue-600 mt-2">
+6. [src/App.jsx] <p className="text-3xl font-bold text-orange-600 mt-2">
+7. [src/CreditCard.jsx] <p className="text-xs text-gray-600 font-bold">
+8. [src/CreditCard.jsx] <p className="text-xs opacity-75 uppercase tracking-wider mb-1">
+9. [src/CreditCard.jsx] <p className="text-xs text-white opacity-75 mt-2">
+10. [src/App.jsx] <p className="text-lg font-semibold text-slate-800">
+
+======================================================================
+
+Image / ID: Digital Credit Card Component_bug-10.png
+Query: The quick action buttons are stacked vertically in a single column instead of arranged in a responsive multi-column grid layout.
+Target File: src/QuickActions.jsx
+Target Node: <div className="flex flex-col gap-4">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5245 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/CardForm.jsx] <input type="text" name="number" value={formData.number} onChange={handleChange} placeholder="4532 1098 7654 3210" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.number ? 'border-red-500' : 'border-slate-300' }`} />
+2. [src/EmptyState.jsx] <button onClick={onAddCard} className="px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg font-semibold hover:from-purple-700 hover:to-indigo-700 transition transform hover:scale-105" >
+3. [src/CardForm.jsx] <input type="text" name="holder" value={formData.holder} onChange={handleChange} placeholder="John Doe" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.holder ? 'border-red-500' : 'border-slate-300' }`} />
+4. [src/Dashboard.jsx] <span className="w-8 h-8 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center text-white text-sm">
+5. [src/TransactionHistory.jsx] <span className={`transform transition ${expanded ? 'rotate-180' : ''}`}>
+6. [src/CardForm.jsx] <form onSubmit={handleSubmit} className="space-y-4">
+7. [src/CardForm.jsx] <input type="text" name="cvv" value={formData.cvv} onChange={handleChange} placeholder="123" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.cvv ? 'border-red-500' : 'border-slate-300' }`} />
+8. [src/Dashboard.jsx] <div key={merchant} className="flex items-center justify-between p-3 bg-slate-50 rounded">
+9. [src/CardDetails.jsx] <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+10. [src/TransactionHistory.jsx] <div className="mt-4 space-y-3 max-h-64 overflow-y-auto">
+
+======================================================================
+
+Image / ID: Digital Credit Card Component_bug-4_bug-4-OpenCardFormModal.png
+Query: The modal dialog is positioned far below the visible viewport, making it partially or completely invisible.
+Target File: src/CardForm.jsx
+Target Node: <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 -my-96">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5182 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/EmptyState.jsx] <button onClick={onAddCard} className="px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg font-semibold hover:from-purple-700 hover:to-indigo-700 transition transform hover:scale-105" >
+2. [src/CardForm.jsx] <button type="button" onClick={onCancel} className="flex-1 px-6 py-2 border border-slate-300 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition" >
+3. [src/CardForm.jsx] <input type="text" name="cvv" value={formData.cvv} onChange={handleChange} placeholder="123" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.cvv ? 'border-red-500' : 'border-slate-300' }`} />
+4. [src/CardForm.jsx] <input type="text" name="number" value={formData.number} onChange={handleChange} placeholder="4532 1098 7654 3210" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.number ? 'border-red-500' : 'border-slate-300' }`} />
+5. [src/CardForm.jsx] <button type="submit" className="flex-1 px-6 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition" >
+6. [src/CardForm.jsx] <input type="text" name="expiry" value={formData.expiry} onChange={handleChange} placeholder="12/28" className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 ${ errors.expiry ? 'border-red-500' : 'border-slate-300' }`} />
+7. [src/Dashboard.jsx] <span className="w-8 h-8 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center text-white text-sm">
+8. [src/TransactionHistory.jsx] <span className={`transform transition ${expanded ? 'rotate-180' : ''}`}>
+9. [src/CreditCard.jsx] <div className={`relative w-full h-full transition-transform duration-500 transform ${ isFlipped ? 'rotateY-180' : '' }`} style={{ transformStyle: 'preserve-3d', transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)', }} >
+10. [src/TransactionHistory.jsx] <div key={transaction.id} className="flex justify-between items-center p-3 bg-white rounded border border-slate-100 hover:shadow-md transition">
+
+======================================================================
+

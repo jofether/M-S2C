@@ -1,0 +1,97 @@
+=== BM25 REPOSITORY RESULTS: chat-application-interface ===
+
+Image / ID: Chat Application Interface_bug-4.png
+Query: The header bar is rendered behind the messages panel, making it invisible and unreachable for user interaction.
+Target File: src/components/ChatHeader.jsx
+Target Node: <div className="h-16 px-6 flex items-center justify-between bg-white border-b border-gray-200 shadow-sm -z-10 relative">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+3. [src/App.jsx] <div className="block h-screen bg-gray-100 font-sans overflow-hidden">
+4. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+5. [src/App.jsx] <ChatHeader contact={selectedContact} />
+6. [src/App.jsx] <EmptyChatState />
+7. [src/App.jsx] <ChatSidebar contacts={contacts} selectedId={selectedContactId} onSelectContact={setSelectedContactId} />
+8. [src/App.jsx] <MessageBubble key={msg.id} message={msg} isMe={msg.sender === 'me'} />
+9. [src/App.jsx] <MessageInput onSendMessage={handleSendMessage} />
+10. [src/components/MessageBubble.jsx] <span className={`text-[10px] absolute -bottom-5 min-w-max font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 ${ isMe ? 'right-1 text-gray-400' : 'left-1 text-gray-400' }`} >
+
+======================================================================
+
+Image / ID: Chat Application Interface_bug-5.png
+Query: The contact name text is invisible or blends seamlessly into the header background, making it completely unreadable.
+Target File: src/components/ChatHeader.jsx
+Target Node: <h2 className="text-lg font-bold text-white leading-tight">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <ChatHeader contact={selectedContact} />
+2. [src/components/MessageInput.jsx] <input type="text" value={message} onChange={(e) =>
+3. [src/components/ChatSidebar.jsx] <input type="text" placeholder="Search messages..." className="w-full pl-10 pr-4 py-2 bg-white border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" />
+4. [src/main.jsx] <App />
+5. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+6. [src/App.jsx] <div className="block h-screen bg-gray-100 font-sans overflow-hidden">
+7. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+8. [src/App.jsx] <EmptyChatState />
+9. [src/App.jsx] <ChatSidebar contacts={contacts} selectedId={selectedContactId} onSelectContact={setSelectedContactId} />
+10. [src/App.jsx] <MessageBubble key={msg.id} message={msg} isMe={msg.sender === 'me'} />
+
+======================================================================
+
+Image / ID: Chat Application Interface_bug-6.png
+Query: The sidebar is excessively wide, consuming too much horizontal screen space and leaving insufficient room for the message area.
+Target File: src/components/ChatSidebar.jsx
+Target Node: <div className="w-80 bg-white border-r border-gray-200 flex flex-col h-full z-20 relative">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/MessageInput.jsx] <input type="text" value={message} onChange={(e) =>
+2. [src/App.jsx] <MessageBubble key={msg.id} message={msg} isMe={msg.sender === 'me'} />
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+5. [src/App.jsx] <div className="block h-screen bg-gray-100 font-sans overflow-hidden">
+6. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+7. [src/App.jsx] <ChatHeader contact={selectedContact} />
+8. [src/App.jsx] <EmptyChatState />
+9. [src/App.jsx] <ChatSidebar contacts={contacts} selectedId={selectedContactId} onSelectContact={setSelectedContactId} />
+10. [src/App.jsx] <MessageInput onSendMessage={handleSendMessage} />
+
+======================================================================
+
+Image / ID: Chat Application Interface_bug-7.png
+Query: The search bar and input elements have no spacing around them, causing text and UI components to collide directly with the section borders.
+Target File: src/components/ChatSidebar.jsx
+Target Node: <div className="p-0 border-b border-gray-200 bg-gray-50">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/MessageInput.jsx] <input type="text" value={message} onChange={(e) =>
+2. [src/components/ChatSidebar.jsx] <input type="text" placeholder="Search messages..." className="w-full pl-10 pr-4 py-2 bg-white border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" />
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+5. [src/App.jsx] <div className="block h-screen bg-gray-100 font-sans overflow-hidden">
+6. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+7. [src/App.jsx] <ChatHeader contact={selectedContact} />
+8. [src/App.jsx] <EmptyChatState />
+9. [src/App.jsx] <ChatSidebar contacts={contacts} selectedId={selectedContactId} onSelectContact={setSelectedContactId} />
+10. [src/App.jsx] <MessageBubble key={msg.id} message={msg} isMe={msg.sender === 'me'} />
+
+======================================================================
+
+Image / ID: Chat Application Interface_bug-8.png
+Query: The contact list is shifted abnormally upward, causing contact entries to overlap with the header section and creating visual clutter.
+Target File: src/components/ChatSidebar.jsx
+Target Node: <div className="flex-1 overflow-y-auto custom-scrollbar -mt-10">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <ChatHeader contact={selectedContact} />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+4. [src/App.jsx] <div className="block h-screen bg-gray-100 font-sans overflow-hidden">
+5. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+6. [src/App.jsx] <EmptyChatState />
+7. [src/App.jsx] <ChatSidebar contacts={contacts} selectedId={selectedContactId} onSelectContact={setSelectedContactId} />
+8. [src/App.jsx] <MessageBubble key={msg.id} message={msg} isMe={msg.sender === 'me'} />
+9. [src/App.jsx] <MessageInput onSendMessage={handleSendMessage} />
+10. [src/components/MessageBubble.jsx] <span className={`text-[10px] absolute -bottom-5 min-w-max font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 ${ isMe ? 'right-1 text-gray-400' : 'left-1 text-gray-400' }`} >
+
+======================================================================
+

@@ -1,0 +1,62 @@
+GLOBAL REPOSITORY EVALUATION SUMMARY
+=========================================
+Total Valid Queries Evaluated: 150
+
+BM25:        MRR: 0.0590 | Hit@1: 2.67% | Hit@3: 8.00% | Hit@5: 11.33% | Hit@10: 14.00%
+MS2C (Uni):  MRR: 0.1191 | Hit@1: 6.67% | Hit@3: 9.33% | Hit@5: 18.67% | Hit@10: 34.00%
+MS2C (Multi): MRR: 0.1244 | Hit@1: 6.67% | Hit@3: 10.67% | Hit@5: 18.00% | Hit@10: 36.67%
+
+
+=========================================
+TABLE 1: MULTIMODAL HERO CASES (VISION BOOST)
+=========================================
+Query ID                                                     | Uni Rank   | Multi Rank   | Alpha
+----------------------------------------------------------------------------------------------------
+E-Commerce Listing_bug-4_bug-4-OpenFilterBar.png             | 4          | 2            | 0.5558
+User Profile Settings_bug-3_bug-3-OpenBillingTab.png         | 4          | 2            | 0.4977
+Kanban Board_bug-3.png                                       | Fail       | 2            | 0.4948
+Activity Timeline_bug-5.png                                  | 4          | 3            | 0.6736
+Cinema Seat Selection_bug-5_bug-5-Checkout.png               | 4          | 3            | 0.6033
+Data Analytics Table_bug-8.png                               | 5          | 4            | 0.6053
+Pricing Table_bug-6_bug-6-RemoveFooterOverlay.png            | 5          | 4            | 0.5649
+Cookie Consent Banner_bug-5_bug-5-AcceptCookies.png          | 10         | 5            | 0.5039
+Digital Restaurant Menu_bug-1.png                            | 6          | 5            | 0.5454
+Pricing Table_bug-4.png                                      | Fail       | 5            | 0.4951
+Activity Timeline_bug-8.png                                  | 10         | 6            | 0.4968
+Audio Waveform Visualizer_bug-8.png                          | Fail       | 6            | 0.4947
+Chat Application Interface_bug-6.png                         | 7          | 6            | 0.6333
+Admin Dashboard_bug-9.png                                    | Fail       | 8            | 0.4983
+Data Analytics Table_bug-3.png                               | Fail       | 8            | 0.5521
+Delete Confirmation Modal_bug-5.png                          | Fail       | 8            | 0.5588
+Digital Restaurant Menu_bug-6.png                            | 9          | 8            | 0.5442
+Corporate Landing Page_bug-7.png                             | Fail       | 9            | 0.5008
+E-Commerce Listing_bug-8.png                                 | Fail       | 9            | 0.4962
+Flight Booking Search_bug-8.png                              | Fail       | 9            | 0.5670
+Chat Application Interface_bug-8.png                         | Fail       | 10           | 0.5244
+Cookie Consent Banner_bug-1_bug-1-AcceptCookies.png          | Fail       | 10           | 0.5608
+Podcast Player_bug-6.png                                     | Fail       | 10           | 0.4982
+
+
+=========================================
+TABLE 2: VISION INTERFERENCE CASES (TEXT DEGRADATION)
+=========================================
+Query ID                                                     | Uni Rank   | Multi Rank   | Alpha
+----------------------------------------------------------------------------------------------------
+Code Snippet Repository_bug-7.png                            | 2          | Fail         | 0.4951
+Activity Timeline_bug-9.png                                  | 3          | 5            | 0.4977
+Digital Restaurant Menu_bug-7.png                            | 3          | 5            | 0.5169
+Chat Application Interface_bug-5.png                         | 4          | 5            | 0.4959
+Flight Booking Search_bug-7.png                              | 4          | 5            | 0.5343
+Corporate Landing Page_bug-5.png                             | 5          | 6            | 0.5021
+Corporate Landing Page_bug-10.png                            | 5          | 8            | 0.5268
+User Profile Settings_bug-4.png                              | 5          | Fail         | 0.4997
+Video Conference Grid_bug-9_bug-9-OpenSettingsModal.png      | 5          | 7            | 0.4965
+Code Snippet Repository_bug-10.png                           | 6          | Fail         | 0.5363
+Chat Application Interface_bug-7.png                         | 7          | 9            | 0.5607
+Delete Confirmation Modal_bug-9.png                          | 7          | 9            | 0.5177
+Activity Timeline_bug-4.png                                  | 8          | Fail         | 0.4953
+Admin Dashboard_bug-8.png                                    | 8          | Fail         | 0.5135
+Login Authentication_bug-1.png                               | 8          | Fail         | 0.4949
+Multi-Step Onboarding Wizard_bug-5.png                       | 8          | 9            | 0.4957
+Checkout Page_bug-8.png                                      | 9          | Fail         | 0.5212
+Kanban Board_bug-8.png                                       | 9          | Fail         | 0.4958

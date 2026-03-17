@@ -1,0 +1,102 @@
+=== MULTI REPOSITORY RESULTS: chat-application-interface ===
+
+Image / ID: Chat Application Interface_bug-4.png
+Query: The header bar is rendered behind the messages panel, making it invisible and unreachable for user interaction.
+Target File: src/components/ChatHeader.jsx
+Target Node: <div className="h-16 px-6 flex items-center justify-between bg-white border-b border-gray-200 shadow-sm -z-10 relative">
+Rank Achieved: 10
+Gating Alpha: 0.5973 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/ChatSidebar.jsx] <div className="flex justify-between items-baseline mb-1">
+2. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+3. [src/components/ChatSidebar.jsx] <div className="relative flex-shrink-0">
+4. [src/components/EmptyChatState.jsx] <div className="flex-1 flex flex-col items-center justify-center bg-gray-50">
+5. [src/components/ChatSidebar.jsx] <div className="flex-1 min-w-0">
+6. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+7. [src/components/ChatSidebar.jsx] <div className="flex-1 overflow-y-auto custom-scrollbar -mt-10">
+8. [src/components/ChatSidebar.jsx] <div className="w-80 bg-white border-r border-gray-200 flex flex-col h-full z-20 relative">
+9. [src/components/ChatHeader.jsx] <div className="flex items-center gap-3">
+10. [src/components/ChatHeader.jsx] <div className="h-16 px-6 flex items-center justify-between bg-white border-b border-gray-200 shadow-sm -z-10 relative">  <--- [GROUND TRUTH HIT]
+
+======================================================================
+
+Image / ID: Chat Application Interface_bug-5.png
+Query: The contact name text is invisible or blends seamlessly into the header background, making it completely unreadable.
+Target File: src/components/ChatHeader.jsx
+Target Node: <h2 className="text-lg font-bold text-white leading-tight">
+Rank Achieved: 5
+Gating Alpha: 0.4959 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <div className="block h-screen bg-gray-100 font-sans overflow-hidden">
+2. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+3. [src/components/EmptyChatState.jsx] <div className="flex-1 flex flex-col items-center justify-center bg-gray-50">
+4. [src/components/ChatSidebar.jsx] <div className="flex justify-between items-baseline mb-1">
+5. [src/components/ChatHeader.jsx] <h2 className="text-lg font-bold text-white leading-tight">  <--- [GROUND TRUTH HIT]
+6. [src/components/EmptyChatState.jsx] <div className="text-6xl mb-4">
+7. [src/components/MessageBubble.jsx] <p className="text-[15px] leading-relaxed break-words">
+8. [src/components/ChatHeader.jsx] <p className="text-xs text-gray-500 font-medium">
+9. [src/components/ChatHeader.jsx] <div className="flex items-center gap-3">
+10. [src/components/EmptyChatState.jsx] <h2 className="text-2xl font-bold text-gray-800 mb-2">
+
+======================================================================
+
+Image / ID: Chat Application Interface_bug-6.png
+Query: The sidebar is excessively wide, consuming too much horizontal screen space and leaving insufficient room for the message area.
+Target File: src/components/ChatSidebar.jsx
+Target Node: <div className="w-80 bg-white border-r border-gray-200 flex flex-col h-full z-20 relative">
+Rank Achieved: 6
+Gating Alpha: 0.6333 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/ChatSidebar.jsx] <div className="flex justify-between items-baseline mb-1">
+2. [src/components/ChatSidebar.jsx] <div className="relative flex-shrink-0">
+3. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+4. [src/components/ChatSidebar.jsx] <div className="flex-1 min-w-0">
+5. [src/components/ChatSidebar.jsx] <div className="flex-1 overflow-y-auto custom-scrollbar -mt-10">
+6. [src/components/ChatSidebar.jsx] <div className="w-80 bg-white border-r border-gray-200 flex flex-col h-full z-20 relative">  <--- [GROUND TRUTH HIT]
+7. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+8. [src/components/ChatHeader.jsx] <div className="h-16 px-6 flex items-center justify-between bg-white border-b border-gray-200 shadow-sm -z-10 relative">
+9. [src/components/ChatSidebar.jsx] <div className="p-0 border-b border-gray-200 bg-gray-50">
+10. [src/components/ChatHeader.jsx] <div className="flex items-center gap-3">
+
+======================================================================
+
+Image / ID: Chat Application Interface_bug-7.png
+Query: The search bar and input elements have no spacing around them, causing text and UI components to collide directly with the section borders.
+Target File: src/components/ChatSidebar.jsx
+Target Node: <div className="p-0 border-b border-gray-200 bg-gray-50">
+Rank Achieved: 9
+Gating Alpha: 0.5607 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/ChatSidebar.jsx] <div className="relative flex-shrink-0">
+2. [src/components/ChatSidebar.jsx] <div className="flex-1 overflow-y-auto custom-scrollbar -mt-10">
+3. [src/components/ChatSidebar.jsx] <div className="flex justify-between items-baseline mb-1">
+4. [src/components/ChatSidebar.jsx] <div className="w-80 bg-white border-r border-gray-200 flex flex-col h-full z-20 relative">
+5. [src/components/ChatSidebar.jsx] <div className="flex-1 min-w-0">
+6. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+7. [src/components/MessageBubble.jsx] <div className={`grid ${isMe ? 'justify-end' : 'justify-start'} mb-4 group`}>
+8. [src/components/ChatHeader.jsx] <div className="h-16 px-6 flex items-center justify-between bg-white border-b border-gray-200 shadow-sm -z-10 relative">
+9. [src/components/ChatSidebar.jsx] <div className="p-0 border-b border-gray-200 bg-gray-50">  <--- [GROUND TRUTH HIT]
+10. [src/components/ChatHeader.jsx] <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full">
+
+======================================================================
+
+Image / ID: Chat Application Interface_bug-8.png
+Query: The contact list is shifted abnormally upward, causing contact entries to overlap with the header section and creating visual clutter.
+Target File: src/components/ChatSidebar.jsx
+Target Node: <div className="flex-1 overflow-y-auto custom-scrollbar -mt-10">
+Rank Achieved: 10
+Gating Alpha: 0.5244 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <div className="block h-screen bg-gray-100 font-sans overflow-hidden">
+2. [src/components/EmptyChatState.jsx] <div className="flex-1 flex flex-col items-center justify-center bg-gray-50">
+3. [src/App.jsx] <div className="flex-1 flex flex-col bg-white shadow-xl relative z-0 overlfow-hidden">
+4. [src/components/ChatSidebar.jsx] <div className="flex justify-between items-baseline mb-1">
+5. [src/components/ChatSidebar.jsx] <div className="relative flex-shrink-0">
+6. [src/components/ChatHeader.jsx] <div className="flex items-center gap-3">
+7. [src/components/EmptyChatState.jsx] <div className="text-6xl mb-4">
+8. [src/App.jsx] <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50">
+9. [src/components/ChatSidebar.jsx] <div className="flex-1 min-w-0">
+10. [src/components/ChatSidebar.jsx] <div className="flex-1 overflow-y-auto custom-scrollbar -mt-10">  <--- [GROUND TRUTH HIT]
+
+======================================================================
+

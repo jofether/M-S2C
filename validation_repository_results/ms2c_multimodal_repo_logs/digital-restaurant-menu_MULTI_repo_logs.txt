@@ -1,0 +1,182 @@
+=== MULTI REPOSITORY RESULTS: digital-restaurant-menu ===
+
+Image / ID: Digital Restaurant Menu_bug-1.png
+Query: The category filter buttons are constraining to a rigid grid layout with exactly four columns instead of wrapping flexibly.
+Target File: src/components/CategoryFilter.jsx
+Target Node: <div className="flex flex-wrap gap-2 grid grid-cols-4">
+Rank Achieved: 5
+Gating Alpha: 0.5454 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 text-xs text-stone-400">
+2. [src/components/OrderSummary.jsx] <div className="flex justify-between text-stone-300 text-sm">
+3. [src/components/OrderSummary.jsx] <div className="bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8">
+4. [src/components/Footer.jsx] <div className="flex justify-center gap-4 flex-wrap mb-4 text-sm text-stone-400">
+5. [src/components/CategoryFilter.jsx] <div className="flex flex-wrap gap-2 grid grid-cols-4">  <--- [GROUND TRUTH HIT]
+6. [src/components/OrderSummary.jsx] <div className="border-t border-stone-700 pt-2 mt-2 flex justify-between text-amber-100 font-bold">
+7. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+8. [src/components/Footer.jsx] <div className="my-4 border-t border-amber-600 border-opacity-30">
+9. [src/components/MenuItem.jsx] <div className="flex justify-between items-start mb-2">
+10. [src/components/MenuItem.jsx] <div className="flex gap-2 mt-1 flex-wrap">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-2.png
+Query: The footer is hidden beneath the main content area and positioned at the bottom edge of the viewport.
+Target File: src/components/Footer.jsx
+Target Node: <footer className="mt-16 bg-stone-800 rounded-lg p-8 border-t-2 border-amber-600 text-center absolute bottom-0 left-0 w-full -z-10">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.4976 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 text-xs text-stone-400">
+2. [src/components/OrderSummary.jsx] <div className="flex justify-between text-stone-300 text-sm">
+3. [src/components/OrderSummary.jsx] <div className="bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8">
+4. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+5. [src/components/OrderSummary.jsx] <div className="border-t border-stone-700 pt-2 mt-2 flex justify-between text-amber-100 font-bold">
+6. [src/components/Footer.jsx] <div className="flex justify-center gap-4 flex-wrap mb-4 text-sm text-stone-400">
+7. [src/components/CategoryFilter.jsx] <div className="flex flex-wrap gap-2 grid grid-cols-4">
+8. [src/components/MenuItem.jsx] <div className="flex justify-between items-start mb-2">
+9. [src/components/Footer.jsx] <div className="my-4 border-t border-amber-600 border-opacity-30">
+10. [src/components/MenuItem.jsx] <div className="flex gap-2 mt-1 flex-wrap">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-3.png
+Query: The header title is displaying in a dark color that is nearly invisible against the page background.
+Target File: src/components/Header.jsx
+Target Node: <h1 className="text-6xl font-bold text-ambr-50 mb-2 tracking-tight drop-shadow-lg">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5032 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Footer.jsx] <p className="font-semibold text-amber-100 mb-2">
+2. [src/components/SpecialSection.jsx] <span className="mr-3">
+3. [src/components/Header.jsx] <p className="text-amber-100 text-lg italic mb-2">
+4. [src/App.jsx] <div className="w-64">
+5. [src/components/Footer.jsx] <p className="text-amber-100 font-semibold">
+6. [src/components/SpecialSection.jsx] <h3 className="text-2xl font-bold text-stone-900 mb-2">
+7. [src/components/SpecialSection.jsx] <p className="text-amber-50 text-sm mb-4">
+8. [src/components/Header.jsx] <header className="text-center mb-12">
+9. [src/components/SpecialSection.jsx] <ul className="space-y-2">
+10. [src/components/Footer.jsx] <p className="text-xs text-stone-500 mt-4">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-4.png
+Query: The menu items are overlapping the section header and extending beyond their container boundaries.
+Target File: src/components/MenuCategory.jsx
+Target Node: <ul className="space-y-6 -m-4 -mt-8">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5105 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Header.jsx] <div className="flex justify-center gap-2 mb-4">
+2. [src/components/OrderSummary.jsx] <div className="flex justify-between text-stone-300 text-sm">
+3. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 text-xs text-stone-400">
+4. [src/components/CategoryFilter.jsx] <div className="flex flex-wrap gap-2 grid grid-cols-4">
+5. [src/components/Footer.jsx] <div className="flex justify-center gap-4 flex-wrap mb-4 text-sm text-stone-400">
+6. [src/components/Footer.jsx] <div className="my-4 border-t border-amber-600 border-opacity-30">
+7. [src/components/OrderSummary.jsx] <div className="space-y-2 mb-4">
+8. [src/components/OrderSummary.jsx] <div className="bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8">
+9. [src/components/OrderSummary.jsx] <div className="border-t border-stone-700 pt-2 mt-2 flex justify-between text-amber-100 font-bold">
+10. [src/components/MenuItem.jsx] <div className="flex justify-between items-start mb-2">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-5.png
+Query: The menu item description is appearing above the item name, reversing the expected visual hierarchy.
+Target File: src/components/MenuItem.jsx
+Target Node: <div className="border-b border-stone-700 pb-6 last:border-b-0 hover:bg-stone-700 hover:bg-opacity-50 p-4 rounded-lg transition-colors flex flex-col-reverse">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5078 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SpecialSection.jsx] <span className="mr-3">
+2. [src/components/Footer.jsx] <p className="font-semibold text-amber-100 mb-2">
+3. [src/components/Header.jsx] <p className="text-amber-100 text-lg italic mb-2">
+4. [src/components/Footer.jsx] <p className="text-amber-100 font-semibold">
+5. [src/components/SpecialSection.jsx] <p className="text-amber-50 text-sm mb-4">
+6. [src/components/SpecialSection.jsx] <ul className="space-y-2">
+7. [src/components/SpecialSection.jsx] <h3 className="text-2xl font-bold text-stone-900 mb-2">
+8. [src/App.jsx] <div className="w-64">
+9. [src/components/Footer.jsx] <p className="text-xs text-stone-500 mt-4">
+10. [src/components/Header.jsx] <header className="text-center mb-12">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-6.png
+Query: The order summary panel contains excessive internal spacing that distorts its size and obscures content within the layout.
+Target File: src/components/OrderSummary.jsx
+Target Node: <div className="bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8">
+Rank Achieved: 8
+Gating Alpha: 0.5442 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SearchBar.jsx] <div className="mb-6 fixed top-0 left-0 w-full z-10">
+2. [src/components/SpecialSection.jsx] <div className="bg-gradient-to-r from-amber-900 to-amber-800 rounded-lg p-6 border-2 border-amber-600 my-8">
+3. [src/components/MenuItem.jsx] <div className="border-b border-stone-700 pb-6 last:border-b-0 hover:bg-stone-700 hover:bg-opacity-50 p-4 rounded-lg transition-colors flex flex-col-reverse">
+4. [src/components/MenuCategory.jsx] <div className="w-12 h-1 bg-gradient-to-r from-amber-600 to-amber-500 mb-6">
+5. [src/components/Header.jsx] <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-500">
+6. [src/components/Header.jsx] <div className="w-16 h-1 bg-gradient-to-l from-amber-600 to-amber-500">
+7. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+8. [src/components/OrderSummary.jsx] <div className="bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8">  <--- [GROUND TRUTH HIT]
+9. [src/components/OrderSummary.jsx] <div className="border-t border-stone-700 pt-2 mt-2 flex justify-between text-amber-100 font-bold">
+10. [src/components/MenuItem.jsx] <div className="flex justify-between items-start mb-2">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-7.png
+Query: The search bar is frozen at the top of the screen and completely blocks access to the menu items below.
+Target File: src/components/SearchBar.jsx
+Target Node: <div className="mb-6 fixed top-0 left-0 w-full z-10">
+Rank Achieved: 5
+Gating Alpha: 0.5169 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <div className="min-h-screen bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 py-12 px-4 font-serif">
+2. [src/components/OrderSummary.jsx] <div className="bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8">
+3. [src/components/MenuItem.jsx] <div className="border-b border-stone-700 pb-6 last:border-b-0 hover:bg-stone-700 hover:bg-opacity-50 p-4 rounded-lg transition-colors flex flex-col-reverse">
+4. [src/components/OrderSummary.jsx] <div className="border-t border-stone-700 pt-2 mt-2 flex justify-between text-amber-100 font-bold">
+5. [src/components/SearchBar.jsx] <div className="mb-6 fixed top-0 left-0 w-full z-10">  <--- [GROUND TRUTH HIT]
+6. [src/components/Header.jsx] <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-500">
+7. [src/components/Header.jsx] <div className="w-16 h-1 bg-gradient-to-l from-amber-600 to-amber-500">
+8. [src/components/SpecialSection.jsx] <div className="bg-gradient-to-r from-amber-900 to-amber-800 rounded-lg p-6 border-2 border-amber-600 my-8">
+9. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 text-xs text-stone-400">
+10. [src/components/OrderSummary.jsx] <div className="flex justify-between text-stone-300 text-sm">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-8.png
+Query: The special offer title is barely visible against the dark background, making the text unreadable.
+Target File: src/components/SpecialSection.jsx
+Target Node: <h3 className="text-2xl font-bold text-stone-900 mb-2">
+Rank Achieved: 7
+Gating Alpha: 0.5037 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SpecialSection.jsx] <span className="mr-3">
+2. [src/components/Header.jsx] <p className="text-amber-100 text-lg italic mb-2">
+3. [src/components/Footer.jsx] <p className="font-semibold text-amber-100 mb-2">
+4. [src/components/Footer.jsx] <p className="text-amber-100 font-semibold">
+5. [src/components/SpecialSection.jsx] <p className="text-amber-50 text-sm mb-4">
+6. [src/components/SpecialSection.jsx] <ul className="space-y-2">
+7. [src/components/SpecialSection.jsx] <h3 className="text-2xl font-bold text-stone-900 mb-2">  <--- [GROUND TRUTH HIT]
+8. [src/components/MenuCategory.jsx] <h2 className="text-3xl font-bold text-amber-400 mb-2 uppercase tracking-wider">
+9. [src/components/Footer.jsx] <p className="text-xs text-stone-500 mt-4">
+10. [src/components/MenuCategory.jsx] <ul className="space-y-6 -m-4 -mt-8">
+
+======================================================================
+
+Image / ID: Digital Restaurant Menu_bug-10.png
+Query: The 'Order Summary' heading is not visible on the page, leaving the summary section without a clear label.
+Target File: src/components/OrderSummary.jsx
+Target Node: <h3 className="text-xl font-bold text-amber-100 mb-4 hidden">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.4951 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/OrderSummary.jsx] <div className="flex justify-between text-stone-300 text-sm">
+2. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 text-xs text-stone-400">
+3. [src/components/CategoryFilter.jsx] <div className="flex flex-wrap gap-2 grid grid-cols-4">
+4. [src/components/Footer.jsx] <div className="flex justify-center gap-4 flex-wrap mb-4 text-sm text-stone-400">
+5. [src/components/Header.jsx] <div className="flex justify-center gap-2 mb-4">
+6. [src/components/Footer.jsx] <div className="my-4 border-t border-amber-600 border-opacity-30">
+7. [src/components/OrderSummary.jsx] <div className="space-y-2 mb-4">
+8. [src/components/OrderSummary.jsx] <div className="bg-stone-800 rounded-lg p-12 pb-20 border border-amber-600 border-opacity-20 mt-8 sticky top-8">
+9. [src/components/Header.jsx] <div className="w-2 h-1 bg-amber-500">
+10. [src/components/OrderSummary.jsx] <div className="border-t border-stone-700 pt-2 mt-2 flex justify-between text-amber-100 font-bold">
+
+======================================================================
+

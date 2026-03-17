@@ -1,0 +1,175 @@
+{
+  "repository": "Project File Tree",
+  "bugs": [
+    {
+      "comment": "Bug #1 - grid layout reversed",
+      "report_text": "The responsive grid layout fails on mobile, displaying two columns instead of one, and collapses to a single column on desktop instead of showing two columns.",
+      "bug_category": "Layout",
+      "bug_type": "grid-cols",
+      "file_modified": "src/components/FeatureShowcase.jsx",
+      "line_number": 33,
+      "neg_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-6\">",
+      "pos_code": "<div className=\"grid grid-cols-2 md:grid-cols-1 gap-6\">",
+      "css_selector": "div.py-12.px-8.bg-white .grid.gap-6",
+      "bounding_box": {
+        "x": 192,
+        "y": 700,
+        "width": 896,
+        "height": 709
+      }
+    },
+    {
+      "comment": "Bug #2 - padding typo (pxx-3)",
+      "report_text": "List items have uneven or missing horizontal spacing due to an invalid style declaration failing to apply.",
+      "bug_category": "Typo",
+      "bug_type": "padding",
+      "file_modified": "src/components/FileTreeNode.jsx",
+      "line_number": 35,
+      "neg_code": "className=\"flex items-center py-2 px-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-md cursor-pointer text-gray-700 transition-all group\"",
+      "pos_code": "className=\"flex items-center py-2 pxx-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-md cursor-pointer text-gray-700 transition-all group\"",
+      "css_selector": "div.flex.items-center.py-2.group",
+      "bounding_box": {
+        "x": 260,
+        "y": 950,
+        "width": 760,
+        "height": 36
+      }
+    },
+    {
+      "comment": "Bug #3 - grid layout reversed",
+      "report_text": "The footer grid layout breaks responsiveness, showing two columns on mobile and a single column on desktop instead of the intended opposite.",
+      "bug_category": "Layout",
+      "bug_type": "grid-cols",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 6,
+      "neg_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">",
+      "pos_code": "<div className=\"grid grid-cols-2 md:grid-cols-1 gap-8\">",
+      "css_selector": "div.border-t.border-gray-200.bg-gradient-to-r > div.grid.gap-8",
+      "bounding_box": {
+        "x": 32,
+        "y": 3100,
+        "width": 1216,
+        "height": 419
+      }
+    },
+    {
+      "comment": "Bug #4 - conflicting margin (-mt-16)",
+      "report_text": "The footer divider section is pulled upward unexpectedly due to conflicting spacing declarations.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 28,
+      "neg_code": "<div className=\"mt-8 pt-6 border-t border-gray-200\">",
+      "pos_code": "<div className=\"mt-8 pt-6 border-t border-gray-200 -mt-16\">",
+      "css_selector": "div.mt-8.pt-6.border-t.border-gray-200",
+      "bounding_box": {
+        "x": 32,
+        "y": 3350,
+        "width": 1216,
+        "height": 300
+      }
+    },
+    {
+      "comment": "Bug #5 - conflicting padding (-p-8)",
+      "report_text": "The card element has inconsistent internal spacing causing layout distortion and uneven content alignment.",
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 59,
+      "neg_code": "<div className=\"bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-4 border border-blue-100 hover:shadow-md transition-shadow text-center\">",
+      "pos_code": "<div className=\"bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-4 -p-8 border border-blue-100 hover:shadow-md transition-shadow text-center\">",
+      "css_selector": "div.rounded-lg.border.border-blue-100.hover\\:shadow-md",
+      "bounding_box": {
+        "x": 32,
+        "y": 3380,
+        "width": 389,
+        "height": 126
+      }
+    },
+    {
+      "comment": "Bug #6 - unnecessary z-0 layer",
+      "report_text": "The header element has an unnecessary layering directive that may cause unexpected rendering or stacking context problems.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 5,
+      "neg_code": "<div className=\"relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8\">",
+      "pos_code": "<div className=\"relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8 z-0\">",
+      "css_selector": "div.relative.overflow-hidden.bg-gradient-to-r.from-blue-600",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 248
+      }
+    },
+    {
+      "comment": "Bug #7 - conflicting margin (-mb-80)",
+      "report_text": "The decorative blur element shifts to an unexpected position due to duplicate conflicting spacing instructions.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 8,
+      "neg_code": "<div className=\"absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl\"></div>",
+      "pos_code": "<div className=\"absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl -mb-80\"></div>",
+      "css_selector": "div.absolute.bottom-0.left-0.w-80.h-80",
+      "bounding_box": {
+        "x": 0,
+        "y": 50,
+        "width": 320,
+        "height": 320
+      }
+    },
+    {
+      "comment": "Bug #8 - absolute positioning",
+      "report_text": "The toolbar is anchored to the screen corner and overlaps the page content instead of staying in the document flow.",
+      "bug_category": "Layout",
+      "bug_type": "position",
+      "file_modified": "src/components/Toolbar.jsx",
+      "line_number": 6,
+      "neg_code": "<div className=\"flex gap-3 flex-wrap items-center mb-4\">",
+      "pos_code": "<div className=\"flex gap-3 flex-wrap items-center mb-4 absolute top-0 left-0\">",
+      "css_selector": "div.flex.gap-3.flex-wrap.items-center.mb-4",
+      "bounding_box": {
+        "x": 0,
+        "y": 80,
+        "width": 399,
+        "height": 38
+      }
+    },
+    {
+      "comment": "Bug #9 - invalid color value (blue-5)",
+      "report_text": "The button displays with a broken gradient starting color and washed-out text that fails to contrast properly against the background.",
+      "bug_category": "Typo",
+      "bug_type": "background-color",
+      "file_modified": "src/components/Toolbar.jsx",
+      "line_number": 21,
+      "neg_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
+      "pos_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-5 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-gray-100 rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
+      "css_selector": "button.px-5.py-2.bg-gradient-to-r.rounded-lg.shadow-md",
+      "bounding_box": {
+        "x": 262,
+        "y": 85,
+        "width": 137,
+        "height": 36
+      }
+    },
+    {
+      "comment": "Bug #10 - text color changed to gray-100",
+      "report_text": "The button text appears faded and nearly invisible, blending into the background gradient and severely impacting readability.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Toolbar.jsx",
+      "line_number": 21,
+      "neg_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
+      "pos_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-5 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-gray-100 rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
+      "css_selector": "button.px-5.py-2.bg-gradient-to-r.rounded-lg.shadow-md",
+      "bounding_box": {
+        "x": 262,
+        "y": 85,
+        "width": 137,
+        "height": 36
+      }
+    }
+  ]
+}

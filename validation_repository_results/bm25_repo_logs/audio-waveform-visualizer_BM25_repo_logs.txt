@@ -1,0 +1,78 @@
+=== BM25 REPOSITORY RESULTS: audio-waveform-visualizer ===
+
+Image / ID: Audio Waveform Visualizer_bug-3.png
+Query: The header is hidden behind other interface elements and remains completely invisible.
+Target File: src/components/Header.jsx
+Target Node: <div className="absolute top-8 left-8 right-8 flex items-center justify-between z-[-1]">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Header theme={theme} setTheme={setTheme} showPlaylist={showPlaylist} setShowPlaylist={setShowPlaylist} showSettings={showSettings} setShowSettings={setShowSettings} themeClasses={themeClasses} />
+2. [src/components/RightSidebar.jsx] <div className={`absolute right-8 top-32 w-64 ${themeClasses.card} rounded-2xl p-6 shadow-xl border max-h-96 overflow-y-auto hidden lg:block z-[-10]`}>
+3. [src/main.jsx] <App />
+4. [src/main.jsx] <StrictMode>
+5. [src/App.jsx] <VisualizerSettings visualizerSize={visualizerSize} setVisualizerSize={setVisualizerSize} themeClasses={themeClasses} />
+6. [src/App.jsx] <MainControls isPlaying={isPlaying} handlePlayPause={handlePlayPause} nextSong={nextSong} prevSong={prevSong} themeClasses={themeClasses} />
+7. [src/App.jsx] <PlaylistSection showPlaylist={showPlaylist} songs={songs} currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} setProgress={setProgress} setIsPlaying={setIsPlaying} theme={theme} themeClasses={themeClasses} />
+8. [src/App.jsx] <SongInfo currentSong={currentSong} isPlaying={isPlaying} themeClasses={themeClasses} theme={theme} />
+9. [src/App.jsx] <div>
+10. [src/App.jsx] <div className={`mt-12 text-center text-xs ${themeClasses.textMuted}`}>
+
+======================================================================
+
+Image / ID: Audio Waveform Visualizer_bug-4.png
+Query: The buttons are stacking vertically instead of being horizontally distributed, causing layout collapse.
+Target File: src/components/MainControls.jsx
+Target Node: <div className="block items-center justify-between px-4 mb-6">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/main.jsx] <StrictMode>
+3. [src/App.jsx] <VisualizerSettings visualizerSize={visualizerSize} setVisualizerSize={setVisualizerSize} themeClasses={themeClasses} />
+4. [src/App.jsx] <MainControls isPlaying={isPlaying} handlePlayPause={handlePlayPause} nextSong={nextSong} prevSong={prevSong} themeClasses={themeClasses} />
+5. [src/App.jsx] <PlaylistSection showPlaylist={showPlaylist} songs={songs} currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} setProgress={setProgress} setIsPlaying={setIsPlaying} theme={theme} themeClasses={themeClasses} />
+6. [src/App.jsx] <SongInfo currentSong={currentSong} isPlaying={isPlaying} themeClasses={themeClasses} theme={theme} />
+7. [src/App.jsx] <div>
+8. [src/App.jsx] <div className={`mt-12 text-center text-xs ${themeClasses.textMuted}`}>
+9. [src/App.jsx] <div className="space-y-1">
+10. [src/App.jsx] <SecondaryControls isShuffle={isShuffle} toggleShuffle={toggleShuffle} repeatMode={repeatMode} toggleRepeat={toggleRepeat} isMuted={isMuted} setIsMuted={setIsMuted} theme={theme} themeClasses={themeClasses} />
+
+======================================================================
+
+Image / ID: Audio Waveform Visualizer_bug-7.png
+Query: The buttons are bunched together on one side instead of being spread across the available space.
+Target File: src/components/SecondaryControls.jsx
+Target Node: <div className="flex items-center mb-6">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/main.jsx] <StrictMode>
+3. [src/App.jsx] <VisualizerSettings visualizerSize={visualizerSize} setVisualizerSize={setVisualizerSize} themeClasses={themeClasses} />
+4. [src/App.jsx] <MainControls isPlaying={isPlaying} handlePlayPause={handlePlayPause} nextSong={nextSong} prevSong={prevSong} themeClasses={themeClasses} />
+5. [src/App.jsx] <PlaylistSection showPlaylist={showPlaylist} songs={songs} currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} setProgress={setProgress} setIsPlaying={setIsPlaying} theme={theme} themeClasses={themeClasses} />
+6. [src/App.jsx] <SongInfo currentSong={currentSong} isPlaying={isPlaying} themeClasses={themeClasses} theme={theme} />
+7. [src/App.jsx] <div>
+8. [src/App.jsx] <div className={`mt-12 text-center text-xs ${themeClasses.textMuted}`}>
+9. [src/App.jsx] <div className="space-y-1">
+10. [src/App.jsx] <SecondaryControls isShuffle={isShuffle} toggleShuffle={toggleShuffle} repeatMode={repeatMode} toggleRepeat={toggleRepeat} isMuted={isMuted} setIsMuted={setIsMuted} theme={theme} themeClasses={themeClasses} />
+
+======================================================================
+
+Image / ID: Audio Waveform Visualizer_bug-8.png
+Query: The song information is overlapping with other elements below due to incorrect spacing.
+Target File: src/components/SongInfo.jsx
+Target Node: <div className="text-center mb-[-50px]">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/main.jsx] <App />
+2. [src/main.jsx] <StrictMode>
+3. [src/App.jsx] <VisualizerSettings visualizerSize={visualizerSize} setVisualizerSize={setVisualizerSize} themeClasses={themeClasses} />
+4. [src/App.jsx] <MainControls isPlaying={isPlaying} handlePlayPause={handlePlayPause} nextSong={nextSong} prevSong={prevSong} themeClasses={themeClasses} />
+5. [src/App.jsx] <PlaylistSection showPlaylist={showPlaylist} songs={songs} currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} setProgress={setProgress} setIsPlaying={setIsPlaying} theme={theme} themeClasses={themeClasses} />
+6. [src/App.jsx] <SongInfo currentSong={currentSong} isPlaying={isPlaying} themeClasses={themeClasses} theme={theme} />
+7. [src/App.jsx] <div>
+8. [src/App.jsx] <div className={`mt-12 text-center text-xs ${themeClasses.textMuted}`}>
+9. [src/App.jsx] <div className="space-y-1">
+10. [src/App.jsx] <SecondaryControls isShuffle={isShuffle} toggleShuffle={toggleShuffle} repeatMode={repeatMode} toggleRepeat={toggleRepeat} isMuted={isMuted} setIsMuted={setIsMuted} theme={theme} themeClasses={themeClasses} />
+
+======================================================================
+

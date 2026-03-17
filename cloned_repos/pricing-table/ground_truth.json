@@ -1,0 +1,179 @@
+{
+  "repository": "Pricing Table",
+  "playwright_config": {
+    "viewport_height": 6000,
+    "note": "Viewport height of 6000px required for deep-page bugs (#1, #2, #7, #8, #9). Alternatively, execute scrollIntoView() before screenshot for each selector."
+  },
+  "bugs": [
+    {
+      "comment": "Bug #1 - text-blue-90",
+      "report_text": "The call-to-action text appears in an incorrect color shade that doesn't match the intended design, creating visual inconsistency.",
+      "bug_category": "Color",
+      "bug_type": "text-blue-90",
+      "file_modified": "src/components/CTA.jsx",
+      "line_number": 14,
+      "neg_code": "<p className=\"text-xl text-blue-100 mb-8\">Join thousands of teams already using SaaS Pro to achieve more. Start your journey today.</p>",
+      "pos_code": "<p className=\"text-xl text-blue-90 mb-8\">Join thousands of teams already using SaaS Pro to achieve more. Start your journey today.</p>",
+      "css_selector": "section:nth-of-type(6) p.text-xl",
+      "bounding_box": {
+        "x": 264,
+        "y": 5502,
+        "width": 752,
+        "height": 56
+      }
+    },
+    {
+      "comment": "Bug #2 - flexbox",
+      "report_text": "The FAQ items are displaying horizontally in a single row instead of being vertically stacked, breaking the expected question-and-answer layout structure.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/FAQ.jsx",
+      "line_number": 49,
+      "neg_code": "<div className=\"space-y-4\">",
+      "pos_code": "<div className=\"space-y-4 flex flex-row\">",
+      "css_selector": "#faq div.space-y-4",
+      "bounding_box": {
+        "x": 256,
+        "y": 5086,
+        "width": 768,
+        "height": 234
+      }
+    },
+    {
+      "comment": "Bug #3 - flexbox",
+      "report_text": "The feature cards are arranged in reverse order and displayed in a single column instead of a proper multi-column grid layout.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Features.jsx",
+      "line_number": 20,
+      "neg_code": "<div className=\"grid md:grid-cols-2 lg:grid-cols-3 gap-8\">",
+      "pos_code": "<div className=\"flex flex-col-reverse gap-8\">",
+      "css_selector": "#features div[class*=\"gap-8\"]",
+      "bounding_box": {
+        "x": 88,
+        "y": 938,
+        "width": 1104,
+        "height": 1346
+      }
+    },
+    {
+      "comment": "Bug #4 - position",
+      "report_text": "The footer content is positioned over the top of the page, creating a visual overlap that obscures the header and other content.",
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 9,
+      "neg_code": "<div className=\"grid md:grid-cols-5 gap-8 mb-12\">",
+      "pos_code": "<div className=\"grid md:grid-cols-5 gap-8 mb-12 absolute top-0 left-0\">",
+      "css_selector": "footer",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 144
+      }
+    },
+    {
+      "comment": "Bug #5 - margin-bottom",
+      "report_text": "The badge element pulls content below it too close, collapsing the vertical gaps and disrupting the natural flow of the page.",
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/components/Hero.jsx",
+      "line_number": 12,
+      "neg_code": "<div className=\"inline-block mb-6 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full\">",
+      "pos_code": "<div className=\"inline-block mb-6 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full -mb-16\">",
+      "css_selector": "section:first-of-type div.inline-block.rounded-full",
+      "bounding_box": {
+        "x": 514,
+        "y": 15,
+        "width": 253,
+        "height": 42
+      }
+    },
+    {
+      "comment": "Bug #6 - z-index",
+      "report_text": "The navigation bar is hidden behind other page elements and not staying on top where it should be visible and interactive.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Navigation.jsx",
+      "line_number": 5,
+      "neg_code": "<nav className=\"sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800\">",
+      "pos_code": "<nav className=\"sticky top-0 z-5 bg-slate-950/80 backdrop-blur-md border-b border-slate-800\">",
+      "css_selector": "nav.sticky",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 73
+      }
+    },
+    {
+      "comment": "Bug #7 - padding",
+      "report_text": "The pricing toggle section is surrounded by excessive white space, distorting the layout and visual proportions of the page.",
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/PricingSection.jsx",
+      "line_number": 74,
+      "neg_code": "<div className=\"flex justify-center items-center gap-6 mb-12\">",
+      "pos_code": "<div className=\"flex justify-center items-center gap-6 mb-12 p-20\">",
+      "css_selector": "#pricing div.flex.gap-6",
+      "bounding_box": {
+        "x": 32,
+        "y": 2370,
+        "width": 1216,
+        "height": 300
+      }
+    },
+    {
+      "comment": "Bug #8 - grid-template-columns",
+      "report_text": "The pricing plan cards are arranged in too many columns, appearing cramped and misaligned instead of displaying in the correct three-column layout.",
+      "bug_category": "Layout",
+      "bug_type": "grid-template-columns",
+      "file_modified": "src/components/PricingSection.jsx",
+      "line_number": 93,
+      "neg_code": "<div className=\"grid md:grid-cols-3 gap-8 items-center\">",
+      "pos_code": "<div className=\"grid md:grid-cols-5 gap-8 items-center\">",
+      "css_selector": "#pricing div.grid.gap-8.items-center",
+      "bounding_box": {
+        "x": 64,
+        "y": 2791,
+        "width": 1152,
+        "height": 1035
+      }
+    },
+    {
+      "comment": "Bug #9 - text-slate-900",
+      "report_text": "The testimonial text is barely visible because the text color is too dark and blends into the dark background, making it unreadable.",
+      "bug_category": "Color",
+      "bug_type": "text-slate-900",
+      "file_modified": "src/components/Testimonials.jsx",
+      "line_number": 54,
+      "neg_code": "<p className=\"text-slate-300 mb-6 leading-relaxed text-lg\">\"{testimonial.text}\"</p>",
+      "pos_code": "<p className=\"text-slate-900 mb-6 leading-relaxed text-lg\">\"{testimonial.text}\"</p>",
+      "css_selector": "#testimonials p.text-lg",
+      "bounding_box": {
+        "x": 121,
+        "y": 4081,
+        "width": 470,
+        "height": 88
+      }
+    },
+    {
+      "comment": "Bug #10 - css-variable",
+      "report_text": "Certain text elements use a light background color that provides poor contrast against the dark page background, making them barely readable.",
+      "bug_category": "Color",
+      "bug_type": "css-variable",
+      "file_modified": "src/index.css",
+      "line_number": 26,
+      "neg_code": "* { box-sizing: border-box; }",
+      "pos_code": "* { box-sizing: border-box; } :root { --text-inverted: #0f172a; }",
+      "css_selector": "html",
+      "bounding_box": {
+        "x": 540,
+        "y": 400,
+        "width": 200,
+        "height": 50
+      }
+    }
+  ]
+}

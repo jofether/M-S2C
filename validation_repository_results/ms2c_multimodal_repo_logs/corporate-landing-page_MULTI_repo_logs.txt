@@ -1,0 +1,162 @@
+=== MULTI REPOSITORY RESULTS: corporate-landing-page ===
+
+Image / ID: Corporate Landing Page_bug-3.png
+Query: The header navigation is hidden behind other page elements and becomes non-interactive and inaccessible.
+Target File: src/components/Header.jsx
+Target Node: <header className="fixed w-full bg-white/90 backdrop-blur-sm -z-50 border-b border-gray-100">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5041 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/CTA.jsx] <p className="text-xl text-indigo-100 mb-10 max-w-2xl mx-auto">
+2. [src/components/CTA.jsx] <p className="text-indigo-200 mt-8 text-sm">
+3. [src/components/Testimonials.jsx] <div className="max-w-6xl mx-auto">
+4. [src/components/Header.jsx] <div className="md:hidden">
+5. [src/components/Footer.jsx] <h3 className="text-white text-lg font-bold mb-6">
+6. [src/components/Footer.jsx] <div className="flex gap-6">
+7. [src/components/Footer.jsx] <ul className="space-y-2">
+8. [src/components/Testimonials.jsx] <section className="py-20 px-4 bg-white">
+9. [src/components/Footer.jsx] <div className="col-span-2 md:col-span-1">
+10. [src/components/Footer.jsx] <footer className="bg-gray-900 text-gray-400 py-16 px-4">
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-4.png
+Query: The navigation links are invisible against the background, making the menu unreadable and preventing user navigation.
+Target File: src/components/Header.jsx
+Target Node: <a href="#features" className="text-white hover:text-blue-600 font-medium">>
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5339 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/CTA.jsx] <Button size="lg" className="text-white border-white hover:bg-white/10">
+2. [src/components/Hero.jsx] <button className="px-8 py-4 bg-white text-gray-700 border border-gray-200 rounded-xl font-bold text-lg hover:bg-gray-50 transition-all">
+3. [src/components/Header.jsx] <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+4. [src/components/Hero.jsx] <button className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all">
+5. [src/components/Header.jsx] <button className="text-gray-600 font-medium hover:text-blue-600">
+6. [src/components/Pricing.jsx] <button className="w-full mt-8 py-3 bg-gray-700 text-white rounded-lg font-bold">
+7. [src/components/Pricing.jsx] <button className="w-full mt-8 py-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">
+8. [src/components/Pricing.jsx] <div className="bg-white p-8 rounded-2xl border-2 border-blue-500 relative transform md:-translate-y-4">
+9. [src/components/Pricing.jsx] <section id="pricing" className="py-20 bg-gray-900">
+10. [src/components/Pricing.jsx] <div className="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-5.png
+Query: The main heading appears abnormally small and breaks the expected visual hierarchy of the page.
+Target File: src/components/Hero.jsx
+Target Node: <h1 className="text-5xl md:text-6x font-extrabold text-gray-900 tracking-tight mb-6">
+Rank Achieved: 6
+Gating Alpha: 0.5021 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <main className="flex-1">
+2. [src/components/Testimonials.jsx] <span className="text-5xl">
+3. [src/components/Footer.jsx] <h4 className="text-white font-semibold mb-4">
+4. [src/components/CTA.jsx] <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+5. [src/components/Footer.jsx] <h3 className="text-white text-lg font-bold mb-6">
+6. [src/components/Hero.jsx] <h1 className="text-5xl md:text-6x font-extrabold text-gray-900 tracking-tight mb-6">  <--- [GROUND TRUTH HIT]
+7. [src/components/Testimonials.jsx] <p className="text-xl text-gray-600">
+8. [src/components/Features.jsx] <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+9. [src/components/Features.jsx] <p className="mt-4 text-lg text-gray-500">
+10. [src/components/Testimonials.jsx] <p className="text-gray-700 italic leading-relaxed">
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-6.png
+Query: The feature cards are stacked in a single column at all screen sizes instead of expanding into multiple columns on larger screens.
+Target File: src/components/Features.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-1 gap-0">
+Rank Achieved: 6
+Gating Alpha: 0.5310 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Pricing.jsx] <div className="bg-white p-8 rounded-2xl border-2 border-blue-500 relative transform md:-translate-y-4">
+2. [src/components/Pricing.jsx] <div className="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+3. [src/components/Pricing.jsx] <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+4. [src/components/Pricing.jsx] <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+5. [src/components/Pricing.jsx] <section id="pricing" className="py-20 bg-gray-900">
+6. [src/components/Features.jsx] <div className="grid grid-cols-1 md:grid-cols-1 gap-0">  <--- [GROUND TRUTH HIT]
+7. [src/components/Pricing.jsx] <ul className="mt-8 space-y-4 text-gray-400">
+8. [src/components/Features.jsx] <div key={index} className="p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-blue-100 hover:bg-blue-50/50 transition-all">
+9. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+10. [src/components/Testimonials.jsx] <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-7.png
+Query: The feature cards are touching each other without any spacing between them, creating a crowded and visually cluttered appearance.
+Target File: src/components/Features.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-1 gap-0">
+Rank Achieved: 9
+Gating Alpha: 0.5008 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Header.jsx] <button className="text-gray-600 font-medium hover:text-blue-600">
+2. [src/components/CTA.jsx] <div className="flex flex-col sm:flex-row justify-center gap-4">
+3. [src/components/Header.jsx] <div className="hidden md:flex items-center space-x-4">
+4. [src/components/Header.jsx] <nav className="hidden md:flex space-x-8">
+5. [src/components/Header.jsx] <div className="flex items-center">
+6. [src/components/Footer.jsx] <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+7. [src/components/Features.jsx] <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+8. [src/App.jsx] <div className="min-h-scren bg-white font-sans text-gray-900 flex flex-col-reverse">
+9. [src/components/Features.jsx] <div className="grid grid-cols-1 md:grid-cols-1 gap-0">  <--- [GROUND TRUTH HIT]
+10. [src/components/Hero.jsx] <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-8.png
+Query: The 'Popular' badge is stuck at the top of the screen and remains visible while scrolling the page content.
+Target File: src/components/Pricing.jsx
+Target Node: <span className="fixed top-0 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5029 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <main className="flex-1">
+2. [src/components/Testimonials.jsx] <span className="text-5xl">
+3. [src/components/Footer.jsx] <h4 className="text-white font-semibold mb-4">
+4. [src/components/CTA.jsx] <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+5. [src/components/Footer.jsx] <h3 className="text-white text-lg font-bold mb-6">
+6. [src/components/Testimonials.jsx] <p className="text-xl text-gray-600">
+7. [src/components/Hero.jsx] <h1 className="text-5xl md:text-6x font-extrabold text-gray-900 tracking-tight mb-6">
+8. [src/components/Features.jsx] <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+9. [src/components/Testimonials.jsx] <p className="text-gray-700 italic leading-relaxed">
+10. [src/components/Features.jsx] <p className="mt-4 text-lg text-gray-500">
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-9.png
+Query: The pricing amount text is invisible against the background, making the price unreadable and preventing customers from viewing the cost.
+Target File: src/components/Pricing.jsx
+Target Node: <p className="text-4xl font-bold text-white mt-4">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5313 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Testimonials.jsx] <span className="text-5xl">
+2. [src/components/Footer.jsx] <h4 className="text-white font-semibold mb-4">
+3. [src/App.jsx] <main className="flex-1">
+4. [src/components/Footer.jsx] <h3 className="text-white text-lg font-bold mb-6">
+5. [src/components/Features.jsx] <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+6. [src/components/CTA.jsx] <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+7. [src/components/Testimonials.jsx] <p className="text-xl text-gray-600">
+8. [src/components/Hero.jsx] <h1 className="text-5xl md:text-6x font-extrabold text-gray-900 tracking-tight mb-6">
+9. [src/components/Features.jsx] <p className="mt-4 text-lg text-gray-500">
+10. [src/components/Testimonials.jsx] <p className="text-gray-700 italic leading-relaxed">
+
+======================================================================
+
+Image / ID: Corporate Landing Page_bug-10.png
+Query: The feature section heading is too close to the feature cards below, creating a cramped visual appearance without adequate breathing room.
+Target File: src/components/Features.jsx
+Target Node: <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+Rank Achieved: 8
+Gating Alpha: 0.5268 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Footer.jsx] <h4 className="text-white font-semibold mb-4">
+2. [src/components/Testimonials.jsx] <span className="text-5xl">
+3. [src/App.jsx] <main className="flex-1">
+4. [src/components/CTA.jsx] <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+5. [src/components/Footer.jsx] <h3 className="text-white text-lg font-bold mb-6">
+6. [src/components/Hero.jsx] <h1 className="text-5xl md:text-6x font-extrabold text-gray-900 tracking-tight mb-6">
+7. [src/components/Testimonials.jsx] <p className="text-xl text-gray-600">
+8. [src/components/Features.jsx] <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">  <--- [GROUND TRUTH HIT]
+9. [src/components/Features.jsx] <p className="mt-4 text-lg text-gray-500">
+10. [src/components/Testimonials.jsx] <p className="text-gray-700 italic leading-relaxed">
+
+======================================================================
+

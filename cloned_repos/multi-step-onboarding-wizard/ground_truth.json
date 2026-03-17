@@ -1,0 +1,175 @@
+{
+  "repository": "Multi-Step Onboarding Wizard",
+  "bugs": [
+    {
+      "comment": "Bug #1 - margin-bottom",
+      "report_text": "The content below the header is pushed up and overlapping with the title section.",
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/App.jsx",
+      "line_number": 60,
+      "neg_code": "<div className=\"text-center mb-12\">",
+      "pos_code": "<div className=\"text-center -mb-32\">",
+      "css_selector": "div.text-center:has(h1)",
+      "bounding_box": {
+        "x": 192,
+        "y": 16,
+        "width": 896,
+        "height": 400
+      }
+    },
+    {
+      "comment": "Bug #2 - z-index",
+      "report_text": "The main form card is hidden behind the page background, making it impossible to interact with.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 73,
+      "neg_code": "<div className=\"bg-white rounded-3xl shadow-2xl overflow-hidden\">",
+      "pos_code": "<div className=\"bg-white rounded-3xl shadow-2xl overflow-hidden -z-10\">",
+      "css_selector": "div.bg-white.rounded-3xl.shadow-2xl",
+      "bounding_box": {
+        "x": 192,
+        "y": 44,
+        "width": 896,
+        "height": 800
+      }
+    },
+    {
+      "comment": "Bug #3 - border-color",
+      "report_text": "The email input field's border is missing or not displaying correctly.",
+      "bug_category": "Typo",
+      "bug_type": "border-color",
+      "file_modified": "src/components/FormInput.jsx",
+      "line_number": 21,
+      "neg_code": "className=\"w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition\"",
+      "pos_code": "className=\"w-full px-4 py-3 border-2 border-gray-20 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition\"",
+      "css_selector": "input[name=\"email\"]",
+      "bounding_box": {
+        "x": 224,
+        "y": 318,
+        "width": 267,
+        "height": 51
+      }
+    },
+    {
+      "comment": "Bug #4 - background-color",
+      "report_text": "The dropdown select field has an unexpected or incorrect background color.",
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/FormInput.jsx",
+      "line_number": 44,
+      "neg_code": "className=\"w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition\"",
+      "pos_code": "className=\"w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition bg-red-5\"",
+      "css_selector": "select.border-2.rounded-lg",
+      "bounding_box": {
+        "x": 224,
+        "y": 413,
+        "width": 832,
+        "height": 50
+      }
+    },
+    {
+      "comment": "Bug #5 - text-color",
+      "report_text": "The field description text is too light and difficult to read against the background.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/FormInput.jsx",
+      "line_number": 65,
+      "neg_code": "<p className=\"text-gray-500 mt-1\">{description}</p>",
+      "pos_code": "<p className=\"text-gray-400 mt-1\">{description}</p>",
+      "css_selector": "p.mt-1",
+      "bounding_box": {
+        "x": 276,
+        "y": 242,
+        "width": 287,
+        "height": 24
+      }
+    },
+    {
+      "comment": "Bug #6 - position",
+      "report_text": "The step indicators are positioned unexpectedly and break the horizontal alignment.",
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/StepIndicator.jsx",
+      "line_number": 7,
+      "neg_code": "className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${",
+      "pos_code": "className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 absolute ${",
+      "css_selector": "div.flex.justify-between >> div:nth-child(2) >> div.w-12.h-12.rounded-full",
+      "bounding_box": {
+        "x": 269,
+        "y": 92,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "comment": "Bug #7 - grid",
+      "report_text": "The form input fields are displayed in a three-column grid layout instead of stacking vertically.",
+      "bug_category": "Layout",
+      "bug_type": "grid",
+      "file_modified": "src/components/steps/Step1.jsx",
+      "line_number": 19,
+      "neg_code": "<div className=\"space-y-4 mt-8\">",
+      "pos_code": "<div className=\"grid grid-cols-3 gap-4\">",
+      "css_selector": "input[name=\"firstName\"]",
+      "bounding_box": {
+        "x": 224,
+        "y": 290,
+        "width": 832,
+        "height": 79
+      }
+    },
+    {
+      "comment": "Bug #8 - flexbox",
+      "report_text": "The pricing card content is displayed in reverse order, with the price appearing at the bottom and features at the top.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/steps/Step4.jsx",
+      "line_number": 45,
+      "neg_code": "className={`p-6 rounded-2xl border-2 cursor-pointer transition-all ${",
+      "pos_code": "className={`p-6 rounded-2xl border-2 cursor-pointer transition-all flex flex-col-reverse ${",
+      "css_selector": "div.p-6.rounded-2xl:has(:text(\"Most Popular\"))",
+      "bounding_box": {
+        "x": 224,
+        "y": 207,
+        "width": 267,
+        "height": 251
+      }
+    },
+    {
+      "comment": "Bug #9 - padding",
+      "report_text": "The success message box has collapsed with insufficient internal spacing, causing the content to overflow.",
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/steps/Step5.jsx",
+      "line_number": 28,
+      "neg_code": "<div className=\"bg-green-50 border-2 border-green-200 rounded-xl p-4\">",
+      "pos_code": "<div className=\"bg-green-50 border-2 border-green-200 rounded-xl -p-8\">",
+      "css_selector": "div.bg-green-50.border-2.border-green-200.rounded-xl",
+      "bounding_box": {
+        "x": 224,
+        "y": 207,
+        "width": 832,
+        "height": 283
+      }
+    },
+    {
+      "comment": "Bug #10 - text-color",
+      "report_text": "The footer text is displaying in an incorrect color that does not match the design system.",
+      "bug_category": "Typo",
+      "bug_type": "text-color",
+      "file_modified": "src/App.jsx",
+      "line_number": 132,
+      "neg_code": "<div className=\"mt-8 text-center text-gray-600 text-sm\">",
+      "pos_code": "<div className=\"mt-8 text-center text-gray-60 text-sm\">",
+      "css_selector": "div.mt-8.text-center.text-sm",
+      "bounding_box": {
+        "x": 192,
+        "y": 700,
+        "width": 896,
+        "height": 20
+      }
+    }
+  ]
+}

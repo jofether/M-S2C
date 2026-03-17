@@ -1,0 +1,116 @@
+=== BM25 REPOSITORY RESULTS: project-file-tree ===
+
+Image / ID: Project File Tree_bug-1.png
+Query: The responsive grid layout fails on mobile, displaying two columns instead of one, and collapses to a single column on desktop instead of showing two columns.
+Target File: src/components/FeatureShowcase.jsx
+Target Node: <div className="grid grid-cols-2 md:grid-cols-1 gap-6">
+Rank Achieved: 5
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Toolbar.jsx] <StatBox label="⚡ Ready to Deploy" value="Yes" />
+2. [src/components/Toolbar.jsx] <div className="grid grid-cols-3 gap-4">
+3. [src/components/Footer.jsx] <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+4. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-1 gap-8">
+5. [src/components/FeatureShowcase.jsx] <div className="grid grid-cols-2 md:grid-cols-1 gap-6">  <--- [GROUND TRUTH HIT]
+6. [src/components/Footer.jsx] <InfoCard icon="⚡" title="Vite" description="Lightning-fast build tool and dev server" />
+7. [src/App.jsx] <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+8. [src/main.jsx] <App />
+9. [src/App.jsx] <File name="index.html" />
+10. [src/App.jsx] <File name="App.jsx" />
+
+======================================================================
+
+Image / ID: Project File Tree_bug-3.png
+Query: The footer grid layout breaks responsiveness, showing two columns on mobile and a single column on desktop instead of the intended opposite.
+Target File: src/components/Footer.jsx
+Target Node: <div className="grid grid-cols-2 md:grid-cols-1 gap-8">
+Rank Achieved: 4
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Footer />
+2. [src/components/Toolbar.jsx] <div className="grid grid-cols-3 gap-4">
+3. [src/components/Footer.jsx] <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+4. [src/components/Footer.jsx] <div className="grid grid-cols-2 md:grid-cols-1 gap-8">  <--- [GROUND TRUTH HIT]
+5. [src/components/FeatureShowcase.jsx] <div className="grid grid-cols-2 md:grid-cols-1 gap-6">
+6. [src/components/Footer.jsx] <InfoCard icon="⚡" title="Vite" description="Lightning-fast build tool and dev server" />
+7. [src/App.jsx] <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+8. [src/main.jsx] <App />
+9. [src/App.jsx] <File name="index.html" />
+10. [src/App.jsx] <File name="App.jsx" />
+
+======================================================================
+
+Image / ID: Project File Tree_bug-4.png
+Query: The footer divider section is pulled upward unexpectedly due to conflicting spacing declarations.
+Target File: src/components/Footer.jsx
+Target Node: <div className="mt-8 pt-6 border-t border-gray-200 -mt-16">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Footer />
+2. [src/components/Toolbar.jsx] <StatBox label="⚡ Ready to Deploy" value="Yes" />
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <File name="index.html" />
+5. [src/App.jsx] <File name="App.jsx" />
+6. [src/App.jsx] <p className="text-sm opacity-90 mb-1">
+7. [src/App.jsx] <div className="max-w-4xl mx-auto px-8 py-12">
+8. [src/App.jsx] <div className="text-4xl mb-2">
+9. [src/App.jsx] <File name="constants.js" />
+10. [src/App.jsx] <File name="index.css" />
+
+======================================================================
+
+Image / ID: Project File Tree_bug-5.png
+Query: The card element has inconsistent internal spacing causing layout distortion and uneven content alignment.
+Target File: src/components/Footer.jsx
+Target Node: <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-4 -p-8 border border-blue-100 hover:shadow-md transition-shadow text-center">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Footer.jsx] <InfoCard icon="⚡" title="Vite" description="Lightning-fast build tool and dev server" />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <File name="index.html" />
+4. [src/App.jsx] <File name="App.jsx" />
+5. [src/App.jsx] <p className="text-sm opacity-90 mb-1">
+6. [src/App.jsx] <div className="max-w-4xl mx-auto px-8 py-12">
+7. [src/App.jsx] <div className="text-4xl mb-2">
+8. [src/App.jsx] <Footer />
+9. [src/App.jsx] <File name="constants.js" />
+10. [src/App.jsx] <File name="index.css" />
+
+======================================================================
+
+Image / ID: Project File Tree_bug-6.png
+Query: The header element has an unnecessary layering directive that may cause unexpected rendering or stacking context problems.
+Target File: src/components/Header.jsx
+Target Node: <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8 z-0">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <Header />
+2. [src/components/Toolbar.jsx] <input type="text" placeholder="🔍 Search files or folders..." value={searchQuery} onChange={(e) =>
+3. [src/main.jsx] <App />
+4. [src/App.jsx] <File name="index.html" />
+5. [src/App.jsx] <File name="App.jsx" />
+6. [src/App.jsx] <p className="text-sm opacity-90 mb-1">
+7. [src/App.jsx] <div className="max-w-4xl mx-auto px-8 py-12">
+8. [src/App.jsx] <div className="text-4xl mb-2">
+9. [src/App.jsx] <Footer />
+10. [src/App.jsx] <File name="constants.js" />
+
+======================================================================
+
+Image / ID: Project File Tree_bug-7.png
+Query: The decorative blur element shifts to an unexpected position due to duplicate conflicting spacing instructions.
+Target File: src/components/Header.jsx
+Target Node: <div className="absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl -mb-80">
+Rank Achieved: FAILED (Not in Top 10)
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Toolbar.jsx] <StatBox label="⚡ Ready to Deploy" value="Yes" />
+2. [src/main.jsx] <App />
+3. [src/App.jsx] <File name="index.html" />
+4. [src/App.jsx] <File name="App.jsx" />
+5. [src/App.jsx] <p className="text-sm opacity-90 mb-1">
+6. [src/App.jsx] <div className="max-w-4xl mx-auto px-8 py-12">
+7. [src/App.jsx] <div className="text-4xl mb-2">
+8. [src/App.jsx] <Footer />
+9. [src/App.jsx] <File name="constants.js" />
+10. [src/App.jsx] <File name="index.css" />
+
+======================================================================
+

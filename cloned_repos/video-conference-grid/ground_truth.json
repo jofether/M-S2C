@@ -1,0 +1,180 @@
+{
+  "repository": "Video Conference Grid",
+  "playwright_config": {
+    "viewport_height": 1080,
+    "note": "Standard viewport sufficient for header/footer bugs; wait_for visible used for modal bug #9."
+  },
+  "bugs": [
+    {
+      "comment": "Bug #1 - flexbox",
+      "report_text": "The footer control buttons are stacking vertically instead of appearing horizontally in a row.",
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/ControlBar.jsx",
+      "line_number": 45,
+      "neg_code": "<div className=\"flex items-center gap-8\">",
+      "pos_code": "<div className=\"flex flex-col items-center gap-8\">",
+      "css_selector": "footer > div:nth-child(2)",
+      "bounding_box": {
+        "x": 24,
+        "y": 16,
+        "width": 422,
+        "height": 400
+      }
+    },
+    {
+      "comment": "Bug #2 - bg-red-600",
+      "report_text": "The end call button appears with an incorrect background color that does not match the design palette.",
+      "bug_category": "Color",
+      "bug_type": "bg-red-600",
+      "file_modified": "src/components/ControlBar.jsx",
+      "line_number": 53,
+      "neg_code": "? 'bg-red-600 hover:bg-red-700 shadow-red-600/50 text-white'",
+      "pos_code": "? 'bg-red-6 hover:bg-red-700 shadow-red-600/50 text-white'",
+      "css_selector": "button[class*='bg-red']",
+      "bounding_box": {
+        "x": 6,
+        "y": 285,
+        "width": 519,
+        "height": 36
+      }
+    },
+    {
+      "comment": "Bug #3 - bg-emerald-600",
+      "report_text": "The microphone toggle button displays an incorrect background color that does not match the design system.",
+      "bug_category": "Color",
+      "bug_type": "bg-emerald-600",
+      "file_modified": "src/components/ControlBar.jsx",
+      "line_number": 55,
+      "neg_code": ": 'bg-emerald-600 hover:bg-emerald-700 shadow-emerald-600/50 text-white'",
+      "pos_code": ": 'bg-emerald-6 hover:bg-emerald-700 shadow-emerald-600/50 text-white'",
+      "css_selector": "footer div:nth-child(2) div:first-child button[class*='shadow-emerald']",
+      "bounding_box": {
+        "x": 6,
+        "y": 148,
+        "width": 519,
+        "height": 36
+      }
+    },
+    {
+      "comment": "Bug #4 - z-index",
+      "report_text": "The header is hidden behind other page elements, making it inaccessible and obscured.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 9,
+      "neg_code": "<header className=\"bg-gradient-to-r from-slate-900/90 to-slate-800/90 backdrop-blur-2xl border-b border-slate-700/50 px-6 py-4 flex justify-between items-center shadow-2xl\">",
+      "pos_code": "<header className=\"bg-gradient-to-r from-slate-900/90 to-slate-800/90 backdrop-blur-2xl border-b border-slate-700/50 px-6 py-4 flex justify-between items-center shadow-2xl z-5\">",
+      "css_selector": "header.backdrop-blur-2xl",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 81
+      }
+    },
+    {
+      "comment": "Bug #5 - text-cyan-400",
+      "report_text": "The timer display text appears in an incorrect color, making it difficult to read against the dark background.",
+      "bug_category": "Color",
+      "bug_type": "text-cyan-400",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 25,
+      "neg_code": "<div className=\"text-2xl font-mono font-bold text-cyan-400 bg-slate-800/50 px-4 py-2 rounded-lg border border-cyan-500/30\">",
+      "pos_code": "<div className=\"text-2xl font-mono font-bold text-cyan-40 bg-slate-800/50 px-4 py-2 rounded-lg border border-cyan-500/30\">",
+      "css_selector": "header div.font-mono",
+      "bounding_box": {
+        "x": 893,
+        "y": 17,
+        "width": 139,
+        "height": 50
+      }
+    },
+    {
+      "comment": "Bug #6 - margin",
+      "report_text": "The duration label has excessive negative spacing below it, creating an unnatural visual gap in the header layout.",
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 27,
+      "neg_code": "<p className=\"text-xs text-slate-400 mt-1\">Duration</p>",
+      "pos_code": "<p className=\"text-xs text-slate-400 mt-1 -mb-6\">Duration</p>",
+      "css_selector": "header div.text-center:first-of-type p",
+      "bounding_box": {
+        "x": 893,
+        "y": 71,
+        "width": 139,
+        "height": 60
+      }
+    },
+    {
+      "comment": "Bug #7 - text-white",
+      "report_text": "The participant name text is too dark and nearly invisible against the dark video overlay background.",
+      "bug_category": "Color",
+      "bug_type": "text-white",
+      "file_modified": "src/components/ParticipantCard.jsx",
+      "line_number": 69,
+      "neg_code": "<div className=\"bg-black/70 backdrop-blur-md px-3 py-2 rounded-lg text-white text-xs font-semibold border border-slate-600/30\">",
+      "pos_code": "<div className=\"bg-black/70 backdrop-blur-md px-3 py-2 rounded-lg text-slate-700 text-xs font-semibold border border-slate-600/30\">",
+      "css_selector": "div.bg-black\\/70.backdrop-blur-md",
+      "bounding_box": {
+        "x": 6,
+        "y": 150,
+        "width": 78,
+        "height": 34
+      }
+    },
+    {
+      "comment": "Bug #8 - position",
+      "report_text": "The participant sidebar is locked to the screen edge and overlaps the video grid, obscuring video content.",
+      "bug_category": "Layout",
+      "bug_type": "position",
+      "file_modified": "src/components/ParticipantSidebar.jsx",
+      "line_number": 7,
+      "neg_code": "<div className=\"w-80 bg-gradient-to-b from-slate-800/90 to-slate-900/90 backdrop-blur-xl border-l border-slate-700/50 rounded-2xl overflow-hidden flex flex-col shadow-2xl\">",
+      "pos_code": "<div className=\"w-80 bg-gradient-to-b from-slate-800/90 to-slate-900/90 backdrop-blur-xl border-l border-slate-700/50 rounded-2xl overflow-hidden flex flex-col shadow-2xl fixed right-0 top-0 bottom-0 z-10\">",
+      "css_selector": "div.w-80.backdrop-blur-xl",
+      "bounding_box": {
+        "x": 960,
+        "y": 0,
+        "width": 320,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #9 - text-white",
+      "report_text": "The microphone settings label text is too dark and nearly invisible against the dark modal background.",
+      "bug_category": "Color",
+      "bug_type": "text-white",
+      "file_modified": "src/components/SettingsModal.jsx",
+      "line_number": 22,
+      "neg_code": "<span className=\"text-white font-medium\">Microphone</span>",
+      "pos_code": "<span className=\"text-gray-700 font-medium\">Microphone</span>",
+      "css_selector": "div.space-y-4 label:first-of-type span:first-child",
+      "wait_for": "visible",
+      "bounding_box": {
+        "x": 400,
+        "y": 200,
+        "width": 480,
+        "height": 300
+      }
+    },
+    {
+      "comment": "Bug #10 - grid-cols",
+      "report_text": "The video grid displays only one video per row instead of multiple columns, and extends beyond the container boundaries with negative spacing.",
+      "bug_category": "Layout",
+      "bug_type": "grid-cols",
+      "file_modified": "src/components/VideoGrid.jsx",
+      "line_number": 6,
+      "neg_code": "<div className=\"flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 overflow-y-auto pr-2 pb-2\">",
+      "pos_code": "<div className=\"flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 overflow-y-auto pr-2 pb-2 -m-6\">",
+      "css_selector": "div.flex-1.grid.overflow-y-auto",
+      "bounding_box": {
+        "x": -8,
+        "y": 73,
+        "width": 1296,
+        "height": 543
+      }
+    }
+  ]
+}

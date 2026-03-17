@@ -1,0 +1,175 @@
+{
+  "repository": "Corporate Landing Page",
+  "bugs": [
+    {
+      "comment": "Bug #1 - min-height typo",
+      "report_text": "The page container fails to fill the full viewport height, leaving empty space and incomplete visual coverage.",
+      "bug_category": "Typo",
+      "bug_type": "min-height",
+      "file_modified": "src/App.jsx",
+      "line_number": 10,
+      "neg_code": "<div className=\"font-sans text-gray-900 antialiased bg-white\">",
+      "pos_code": "<div className=\"min-h-scren bg-white font-sans text-gray-900 flex flex-col-reverse\">",
+      "css_selector": "div.bg-white.font-sans.text-gray-900",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #2 - flex-direction reverse",
+      "report_text": "The page content is displaying in reverse order, with footer elements appearing at the top and header-like content at the bottom.",
+      "bug_category": "Layout",
+      "bug_type": "flex-direction",
+      "file_modified": "src/App.jsx",
+      "line_number": 10,
+      "neg_code": "<div className=\"font-sans text-gray-900 antialiased bg-white\">",
+      "pos_code": "<div className=\"min-h-scren bg-white font-sans text-gray-900 flex flex-col-reverse\">",
+      "css_selector": "div.bg-white.font-sans.text-gray-900",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #3 - z-index negative",
+      "report_text": "The header navigation is hidden behind other page elements and becomes non-interactive and inaccessible.",
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 7,
+      "neg_code": "<nav className=\"flex items-center justify-between flex-wrap bg-white p-6 shadow-sm sticky top-0 z-50 backdrop-blur-md bg-white/80\">",
+      "pos_code": "<header className=\"fixed w-full bg-white/90 backdrop-blur-sm -z-50 border-b border-gray-100\">",
+      "css_selector": "nav, header",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 100
+      }
+    },
+    {
+      "comment": "Bug #4 - nav link text color",
+      "report_text": "The navigation links are invisible against the background, making the menu unreadable and preventing user navigation.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 15,
+      "neg_code": "<a key={link} href=\"#\" className=\"block py-2 md:py-0 px-3 md:px-0 rounded-md text-gray-600 hover:text-indigo-600 font-medium transition-colors\">",
+      "pos_code": "<a href=\"#features\" className=\"text-white hover:text-blue-600 font-medium\">Features</a>",
+      "css_selector": "a:has-text('Features')",
+      "bounding_box": {
+        "x": 450,
+        "y": 16,
+        "width": 200,
+        "height": 50
+      }
+    },
+    {
+      "comment": "Bug #5 - font-size typo 6x",
+      "report_text": "The main heading appears abnormally small and breaks the expected visual hierarchy of the page.",
+      "bug_category": "Typo",
+      "bug_type": "font-size",
+      "file_modified": "src/components/Hero.jsx",
+      "line_number": 12,
+      "neg_code": "<h1 className=\"text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight mb-6\">",
+      "pos_code": "<h1 className=\"text-5xl md:text-6x font-extrabold text-gray-900 tracking-tight mb-6\">",
+      "css_selector": "h1.text-5xl.font-extrabold.text-gray-900",
+      "bounding_box": {
+        "x": 32,
+        "y": 127,
+        "width": 1216,
+        "height": 96
+      }
+    },
+    {
+      "comment": "Bug #6 - grid columns single column",
+      "report_text": "The feature cards are stacked in a single column at all screen sizes instead of expanding into multiple columns on larger screens.",
+      "bug_category": "Layout",
+      "bug_type": "grid-columns",
+      "file_modified": "src/components/Features.jsx",
+      "line_number": 21,
+      "neg_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\">",
+      "pos_code": "<div className=\"grid grid-cols-1 md:grid-cols-1 gap-0\">",
+      "css_selector": "div.grid.grid-cols-1",
+      "bounding_box": {
+        "x": 32,
+        "y": 713,
+        "width": 1216,
+        "height": 500
+      }
+    },
+    {
+      "comment": "Bug #7 - grid gap zero",
+      "report_text": "The feature cards are touching each other without any spacing between them, creating a crowded and visually cluttered appearance.",
+      "bug_category": "Spacing",
+      "bug_type": "gap",
+      "file_modified": "src/components/Features.jsx",
+      "line_number": 21,
+      "neg_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\">",
+      "pos_code": "<div className=\"grid grid-cols-1 md:grid-cols-1 gap-0\">",
+      "css_selector": "div.grid.grid-cols-1",
+      "bounding_box": {
+        "x": 32,
+        "y": 713,
+        "width": 1216,
+        "height": 500
+      }
+    },
+    {
+      "comment": "Bug #8 - badge position fixed",
+      "report_text": "The 'Popular' badge is stuck at the top of the screen and remains visible while scrolling the page content.",
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/Pricing.jsx",
+      "line_number": 25,
+      "neg_code": "<div className=\"mb-4 px-4 py-2 bg-indigo-600 text-white rounded-full inline-block text-sm font-semibold\">",
+      "pos_code": "<span className=\"fixed top-0 left-1/2 -translate-x-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg\">",
+      "css_selector": ".rounded-full.text-white.text-sm",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "comment": "Bug #9 - price text white color",
+      "report_text": "The pricing amount text is invisible against the background, making the price unreadable and preventing customers from viewing the cost.",
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Pricing.jsx",
+      "line_number": 30,
+      "neg_code": "<span className=\"text-4xl font-extrabold text-gray-900\">",
+      "pos_code": "<p className=\"text-4xl font-bold text-white mt-4\">$49<span className=\"text-lg text-gray-500\">/mo</span></p>",
+      "css_selector": "p.text-4xl:has-text('$49')",
+      "bounding_box": {
+        "x": 32,
+        "y": 600,
+        "width": 1216,
+        "height": 120
+      }
+    },
+    {
+      "comment": "Bug #10 - features heading spacing",
+      "report_text": "The feature section heading is too close to the feature cards below, creating a cramped visual appearance without adequate breathing room.",
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/components/Features.jsx",
+      "line_number": 17,
+      "neg_code": "<h2 className=\"text-4xl md:text-5xl font-extrabold text-gray-900 mb-4\">",
+      "pos_code": "<h2 className=\"text-3xl font-bold text-gray-900 sm:text-4xl\">Everything you need</h2>",
+      "css_selector": "h2:has-text('Everything you need')",
+      "bounding_box": {
+        "x": 32,
+        "y": 565,
+        "width": 1216,
+        "height": 100
+      }
+    }
+  ]
+}

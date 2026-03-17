@@ -1,0 +1,602 @@
+[
+  {
+    "id": "spacing_ExperienceCard",
+    "image_anchor": "ExperienceCard.png",
+    "text_anchor": "The Container Box is literally colliding with the border of the webpage.",
+    "positive_node": "<div className=\"w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl\">"
+  },
+  {
+    "id": "spacing_ExperienceCard",
+    "image_anchor": "ExperienceCard.png",
+    "text_anchor": "I can't figure out why this Container Box isn't showing up properly!",
+    "positive_node": "<div className=\"w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl\">"
+  },
+  {
+    "id": "spacing_ExperienceCard",
+    "image_anchor": "ExperienceCard.png",
+    "text_anchor": "There is a noticeable absence of content in the Container Box, which contrasts sharply with the surrounding elements on the page.",
+    "positive_node": "<div className=\"w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl\">"
+  },
+  {
+    "id": "spacing_ExperienceCard",
+    "image_anchor": "ExperienceCard.png",
+    "text_anchor": "It seems that all other UI elements are perfectly aligned except for this one Container Box which disrupts the layout.",
+    "positive_node": "<div className=\"w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl\">"
+  },
+  {
+    "id": "spacing_ExperienceCard",
+    "image_anchor": "ExperienceCard.png",
+    "text_anchor": "The Container Box is causing issues and needs immediate attention.",
+    "positive_node": "<div className=\"w-full border border-gray-200 p-60 rounded-xl mx-2 max-w-2xl\">"
+  },
+  {
+    "id": "spacing_SimpleCardWithButton",
+    "image_anchor": "SimpleCardWithButton.png",
+    "text_anchor": "The Text Paragraph is misaligned and not aligned with the design grid, which creates a disjointed visual experience.",
+    "positive_node": "<p className=\"text-gray-900 text-xl font-semibold ml-0 mt-4\">"
+  },
+  {
+    "id": "spacing_SimpleCardWithButton",
+    "image_anchor": "SimpleCardWithButton.png",
+    "text_anchor": "I'm so frustrated by how poorly this Text Paragraph is placed; it ruins the balance of the layout!",
+    "positive_node": "<p className=\"text-gray-900 text-xl font-semibold ml-0 mt-4\">"
+  },
+  {
+    "id": "spacing_SimpleCardWithButton",
+    "image_anchor": "SimpleCardWithButton.png",
+    "text_anchor": "There's an unexpected void on the right side of the Text Paragraph, causing confusion and clutter.",
+    "positive_node": "<p className=\"text-gray-900 text-xl font-semibold ml-0 mt-4\">"
+  },
+  {
+    "id": "spacing_SimpleCardWithButton",
+    "image_anchor": "SimpleCardWithButton.png",
+    "text_anchor": "The surrounding elements are well-organized and consistent, while the Text Paragraph stands out as a sore thumb due to its misalignment.",
+    "positive_node": "<p className=\"text-gray-900 text-xl font-semibold ml-0 mt-4\">"
+  },
+  {
+    "id": "spacing_SimpleCardWithButton",
+    "image_anchor": "SimpleCardWithButton.png",
+    "text_anchor": "Fix the Text Paragraph placement for improved user experience.",
+    "positive_node": "<p className=\"text-gray-900 text-xl font-semibold ml-0 mt-4\">"
+  },
+  {
+    "id": "spacing_MusicCard",
+    "image_anchor": "MusicCard.png",
+    "text_anchor": "The 'Body Text' is visually disconnected from the surrounding elements, creating a jarring and unprofessional appearance.",
+    "positive_node": "<p className=\"text-gray-900 font-semibold text-sm ml-3\">"
+  },
+  {
+    "id": "spacing_MusicCard",
+    "image_anchor": "MusicCard.png",
+    "text_anchor": "This layout error has caused considerable confusion and frustration for viewers, as they may struggle to understand the content.",
+    "positive_node": "<p className=\"text-gray-900 font-semibold text-sm ml-3\">"
+  },
+  {
+    "id": "spacing_MusicCard",
+    "image_anchor": "MusicCard.png",
+    "text_anchor": "A significant gap is present to the right of the 'Body Text', which disrupts the natural flow of the content and leaves a void in the design.",
+    "positive_node": "<p className=\"text-gray-900 font-semibold text-sm ml-3\">"
+  },
+  {
+    "id": "spacing_MusicCard",
+    "image_anchor": "MusicCard.png",
+    "text_anchor": "The body text is positioned in such a way that it does not align with the adjacent elements, creating a visual disconnect between them.",
+    "positive_node": "<p className=\"text-gray-900 font-semibold text-sm ml-3\">"
+  },
+  {
+    "id": "spacing_MusicCard",
+    "image_anchor": "MusicCard.png",
+    "text_anchor": "There is an unexpected spatial anomaly within the layout, which can impact the overall effectiveness and usability of the design.",
+    "positive_node": "<p className=\"text-gray-900 font-semibold text-sm ml-3\">"
+  },
+  {
+    "id": "spacing_BasicCookieAlert",
+    "image_anchor": "BasicCookieAlert.png",
+    "text_anchor": "The Content Area is literally colliding with the border, as evidenced by the absence of visible content.",
+    "positive_node": "<div className=\"flex items-center justify-start w-full gap-2 pb-21\">"
+  },
+  {
+    "id": "spacing_BasicCookieAlert",
+    "image_anchor": "BasicCookieAlert.png",
+    "text_anchor": "I hate how this Content Area is shoved into the corner with no spacing on its right side. It's unprofessional and visually off-putting!",
+    "positive_node": "<div className=\"flex items-center justify-start w-full gap-2 pb-21\">"
+  },
+  {
+    "id": "spacing_BasicCookieAlert",
+    "image_anchor": "BasicCookieAlert.png",
+    "text_anchor": "A significant void is present to the left of the Content Area, which creates a sense of imbalance and disorganization in the design.",
+    "positive_node": "<div className=\"flex items-center justify-start w-full gap-2 pb-21\">"
+  },
+  {
+    "id": "spacing_BasicCookieAlert",
+    "image_anchor": "BasicCookieAlert.png",
+    "text_anchor": "The spacing error in the Content Area stands out starkly when compared to the surrounding elements that are neatly aligned and properly spaced.",
+    "positive_node": "<div className=\"flex items-center justify-start w-full gap-2 pb-21\">"
+  },
+  {
+    "id": "spacing_BasicCookieAlert",
+    "image_anchor": "BasicCookieAlert.png",
+    "text_anchor": "The layout is broken due to the lack of spacing within the Content Area, which detracts from the overall aesthetic appeal.",
+    "positive_node": "<div className=\"flex items-center justify-start w-full gap-2 pb-21\">"
+  },
+  {
+    "id": "spacing_ProductCard",
+    "image_anchor": "ProductCard.png",
+    "text_anchor": "The section's content has been pushed out of the viewport, causing it to spill over and be cut off by the border of the image.",
+    "positive_node": "<div className=\"grid grid-cols-2 gap-2 me-3\">"
+  },
+  {
+    "id": "spacing_ProductCard",
+    "image_anchor": "ProductCard.png",
+    "text_anchor": "Users might find this visually confusing or difficult to navigate due to the lack of space for interaction.",
+    "positive_node": "<div className=\"grid grid-cols-2 gap-2 me-3\">"
+  },
+  {
+    "id": "spacing_ProductCard",
+    "image_anchor": "ProductCard.png",
+    "text_anchor": "The section's layout is disjointed, with a large empty space on the right side and content squeezed into the left edge of the image.",
+    "positive_node": "<div className=\"grid grid-cols-2 gap-2 me-3\">"
+  },
+  {
+    "id": "spacing_ProductCard",
+    "image_anchor": "ProductCard.png",
+    "text_anchor": "The stable elements surrounding the section, such as the price tag, maintain a clean and organized appearance in contrast to the broken section",
+    "positive_node": "<div className=\"grid grid-cols-2 gap-2 me-3\">"
+  },
+  {
+    "id": "spacing_ProductCard",
+    "image_anchor": "ProductCard.png",
+    "text_anchor": "The 'section' is currently broken and needs immediate attention.",
+    "positive_node": "<div className=\"grid grid-cols-2 gap-2 me-3\">"
+  },
+  {
+    "id": "spacing_EmailAndPasswordLoginForm",
+    "image_anchor": "EmailAndPasswordLoginForm.png",
+    "text_anchor": "The 'Typography Element' appears to be out of alignment, possibly indicating a spacing issue between it and its neighboring elements.",
+    "positive_node": "<p className=\"me-4 text-base text-gray-500/90\">"
+  },
+  {
+    "id": "spacing_EmailAndPasswordLoginForm",
+    "image_anchor": "EmailAndPasswordLoginForm.png",
+    "text_anchor": "Users may find the layout confusing due to the misaligned 'Typography Element', leading to a less than optimal user experience.",
+    "positive_node": "<p className=\"me-4 text-base text-gray-500/90\">"
+  },
+  {
+    "id": "spacing_EmailAndPasswordLoginForm",
+    "image_anchor": "EmailAndPasswordLoginForm.png",
+    "text_anchor": "There is noticeable separation between the 'Typography Element' and the adjacent email input field, which could be confusing for users trying to enter information.",
+    "positive_node": "<p className=\"me-4 text-base text-gray-500/90\">"
+  },
+  {
+    "id": "spacing_EmailAndPasswordLoginForm",
+    "image_anchor": "EmailAndPasswordLoginForm.png",
+    "text_anchor": "The 'Typography Element' contrasts with the stable design of the login screen, drawing attention to its alignment issues.",
+    "positive_node": "<p className=\"me-4 text-base text-gray-500/90\">"
+  },
+  {
+    "id": "spacing_EmailAndPasswordLoginForm",
+    "image_anchor": "EmailAndPasswordLoginForm.png",
+    "text_anchor": "Improper spacing is affecting the 'Typography Element', causing it to stand out negatively in comparison to the rest of the UI.",
+    "positive_node": "<p className=\"me-4 text-base text-gray-500/90\">"
+  },
+  {
+    "id": "spacing_SubscribeCard",
+    "image_anchor": "SubscribeCard.png",
+    "text_anchor": "The Structural Division is positioned directly on top of the navigation bar, creating an illusion that it is part of the bar. This lack of visual hierarchy and proper separation from other UI elements can be confusing for users.",
+    "positive_node": "<div className=\"flex items-center mt-5 w-full md:px-1 px-6\">"
+  },
+  {
+    "id": "spacing_SubscribeCard",
+    "image_anchor": "SubscribeCard.png",
+    "text_anchor": "It's extremely frustrating to have such a large empty space within the visible content area while the rest of the design looks so complete!",
+    "positive_node": "<div className=\"flex items-center mt-5 w-full md:px-1 px-6\">"
+  },
+  {
+    "id": "spacing_SubscribeCard",
+    "image_anchor": "SubscribeCard.png",
+    "text_anchor": "The Structural Division overlaps with the 'Enter your email' field, obstructing the user's view and making it difficult to interact with the email input. There is also an absence of padding or margins around the division.",
+    "positive_node": "<div className=\"flex items-center mt-5 w-full md:px-1 px-6\">"
+  },
+  {
+    "id": "spacing_SubscribeCard",
+    "image_anchor": "SubscribeCard.png",
+    "text_anchor": "Contrasted with the clean lines and well-defined spacing in the rest of the UI, this structural division creates a visually disruptive experience for the user due to its misplacement within the design.",
+    "positive_node": "<div className=\"flex items-center mt-5 w-full md:px-1 px-6\">"
+  },
+  {
+    "id": "spacing_SubscribeCard",
+    "image_anchor": "SubscribeCard.png",
+    "text_anchor": "The layout is broken by the out-of-place placement of the 'Structural Division'.",
+    "positive_node": "<div className=\"flex items-center mt-5 w-full md:px-1 px-6\">"
+  },
+  {
+    "id": "spacing_NewsletterSection",
+    "image_anchor": "NewsletterSection.png",
+    "text_anchor": "The 'Structural Division' is misaligned with the right side of the 'newsletter' section, creating a visual disconnection between these two elements.",
+    "positive_node": "<div className=\"bg-gray-500/10 w-max p-25 rounded\">"
+  },
+  {
+    "id": "spacing_NewsletterSection",
+    "image_anchor": "NewsletterSection.png",
+    "text_anchor": "Users might find it confusing that there is no content in this section, as they expect to see the same level of detail across all parts of the interface.",
+    "positive_node": "<div className=\"bg-gray-500/10 w-max p-25 rounded\">"
+  },
+  {
+    "id": "spacing_NewsletterSection",
+    "image_anchor": "NewsletterSection.png",
+    "text_anchor": "The immediate neighbor of the 'Structural Division' is the 'newsletter' section on its right. However, there is a noticeable gap between these two elements that can be perceived as disjointed.",
+    "positive_node": "<div className=\"bg-gray-500/10 w-max p-25 rounded\">"
+  },
+  {
+    "id": "spacing_NewsletterSection",
+    "image_anchor": "NewsletterSection.png",
+    "text_anchor": "While other elements in the screenshot maintain consistent spacing and alignment, this particular area seems to have been overlooked during design or development.",
+    "positive_node": "<div className=\"bg-gray-500/10 w-max p-25 rounded\">"
+  },
+  {
+    "id": "spacing_NewsletterSection",
+    "image_anchor": "NewsletterSection.png",
+    "text_anchor": "The 'Structural Division' lacks context and content, causing a jarring visual experience.",
+    "positive_node": "<div className=\"bg-gray-500/10 w-max p-25 rounded\">"
+  },
+  {
+    "id": "spacing_NewsletterSection2",
+    "image_anchor": "NewsletterSection2.png",
+    "text_anchor": "The 'interactive part' is physically disconnected and unaligned with its parent container.",
+    "positive_node": "<button className=\"shrink-0 mr-2 px-6 pr-3 text-sm bg-gradient-to-r from-indigo-600 to-indigo-800 rounded-md active:scale-95 transition duration-300 text-white\">"
+  },
+  {
+    "id": "spacing_NewsletterSection2",
+    "image_anchor": "NewsletterSection2.png",
+    "text_anchor": "Users will likely find the lack of visual hierarchy confusing and off-putting.",
+    "positive_node": "<button className=\"shrink-0 mr-2 px-6 pr-3 text-sm bg-gradient-to-r from-indigo-600 to-indigo-800 rounded-md active:scale-95 transition duration-300 text-white\">"
+  },
+  {
+    "id": "spacing_NewsletterSection2",
+    "image_anchor": "NewsletterSection2.png",
+    "text_anchor": "There is a noticeable gap between the 'interactive part' and the adjacent content.",
+    "positive_node": "<button className=\"shrink-0 mr-2 px-6 pr-3 text-sm bg-gradient-to-r from-indigo-600 to-indigo-800 rounded-md active:scale-95 transition duration-300 text-white\">"
+  },
+  {
+    "id": "spacing_NewsletterSection2",
+    "image_anchor": "NewsletterSection2.png",
+    "text_anchor": "The rest of the layout maintains consistent spacing, but this section stands out as an exception.",
+    "positive_node": "<button className=\"shrink-0 mr-2 px-6 pr-3 text-sm bg-gradient-to-r from-indigo-600 to-indigo-800 rounded-md active:scale-95 transition duration-300 text-white\">"
+  },
+  {
+    "id": "spacing_NewsletterSection2",
+    "image_anchor": "NewsletterSection2.png",
+    "text_anchor": "Disorganized space in the UI design.",
+    "positive_node": "<button className=\"shrink-0 mr-2 px-6 pr-3 text-sm bg-gradient-to-r from-indigo-600 to-indigo-800 rounded-md active:scale-95 transition duration-300 text-white\">"
+  },
+  {
+    "id": "spacing_ErrorPageWithActionButtons",
+    "image_anchor": "ErrorPageWithActionButtons.png",
+    "text_anchor": "The Hyperlink is positioned directly on the edge of its container, leaving an awkward gap on the right side.",
+    "positive_node": "<a href=\"#\" className=\"border border-gray-300 px-7 py-0 text-gray-800 rounded-md active:scale-95 transition-all\">"
+  },
+  {
+    "id": "spacing_ErrorPageWithActionButtons",
+    "image_anchor": "ErrorPageWithActionButtons.png",
+    "text_anchor": "This layout is visually unappealing and feels as if it's missing a vital piece of text that would complete its purpose.",
+    "positive_node": "<a href=\"#\" className=\"border border-gray-300 px-7 py-0 text-gray-800 rounded-md active:scale-95 transition-all\">"
+  },
+  {
+    "id": "spacing_ErrorPageWithActionButtons",
+    "image_anchor": "ErrorPageWithActionButtons.png",
+    "text_anchor": "There is a noticeable spacing discrepancy between the Hyperlink and its neighboring elements, causing a visual discontinuity.",
+    "positive_node": "<a href=\"#\" className=\"border border-gray-300 px-7 py-0 text-gray-800 rounded-md active:scale-95 transition-all\">"
+  },
+  {
+    "id": "spacing_ErrorPageWithActionButtons",
+    "image_anchor": "ErrorPageWithActionButtons.png",
+    "text_anchor": "The immediate neighbors maintain their alignment but the Hyperlink stands out as an anomaly due to its misaligned position.",
+    "positive_node": "<a href=\"#\" className=\"border border-gray-300 px-7 py-0 text-gray-800 rounded-md active:scale-95 transition-all\">"
+  },
+  {
+    "id": "spacing_ErrorPageWithActionButtons",
+    "image_anchor": "ErrorPageWithActionButtons.png",
+    "text_anchor": "In terms of layout, the Hyperlink is the only element that appears to be malfunctioning.",
+    "positive_node": "<a href=\"#\" className=\"border border-gray-300 px-7 py-0 text-gray-800 rounded-md active:scale-95 transition-all\">"
+  },
+  {
+    "id": "spacing_TextOnlyTweetCard",
+    "image_anchor": "TextOnlyTweetCard.png",
+    "text_anchor": "The Layout Wrapper is positioned such that it appears to be missing on the right side, leaving a large gap where content should typically be.",
+    "positive_node": "<div className=\"max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200\">"
+  },
+  {
+    "id": "spacing_TextOnlyTweetCard",
+    "image_anchor": "TextOnlyTweetCard.png",
+    "text_anchor": "It's so annoying to see the Layout Wrapper off by itself like this. It doesn't fit well with the rest of the design elements.",
+    "positive_node": "<div className=\"max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200\">"
+  },
+  {
+    "id": "spacing_TextOnlyTweetCard",
+    "image_anchor": "TextOnlyTweetCard.png",
+    "text_anchor": "There is no visible space between the Layout Wrapper and its immediate neighbors, which suggests that it may be incorrectly placed or sized.",
+    "positive_node": "<div className=\"max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200\">"
+  },
+  {
+    "id": "spacing_TextOnlyTweetCard",
+    "image_anchor": "TextOnlyTweetCard.png",
+    "text_anchor": "The Layout Wrapper seems to be in stark contrast to the surrounding content that has a more cohesive layout.",
+    "positive_node": "<div className=\"max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200\">"
+  },
+  {
+    "id": "spacing_TextOnlyTweetCard",
+    "image_anchor": "TextOnlyTweetCard.png",
+    "text_anchor": "Layout Wrapper disconnects with neighbors.",
+    "positive_node": "<div className=\"max-w-lg w-full bg-white border border-gray-200 rounded-xl p-24 shadow-sm hover:shadow-md transition-shadow duration-200\">"
+  },
+  {
+    "id": "spacing_Testimonial",
+    "image_anchor": "Testimonial.png",
+    "text_anchor": "The Directional Reference is physically displaced from its intended position, seemingly pushed to the left of the visible content.",
+    "positive_node": "<a className=\"mx-8 md:mb-12\" href=\"https://prebuiltui.com\">"
+  },
+  {
+    "id": "spacing_Testimonial",
+    "image_anchor": "Testimonial.png",
+    "text_anchor": "Users might find it confusing that the Directional Reference seems to have been forced to the left edge of the content area.",
+    "positive_node": "<a className=\"mx-8 md:mb-12\" href=\"https://prebuiltui.com\">"
+  },
+  {
+    "id": "spacing_Testimonial",
+    "image_anchor": "Testimonial.png",
+    "text_anchor": "There's a noticeable gap on the right side of the Directional Reference, while the rest of the visible content is aligned to the left.",
+    "positive_node": "<a className=\"mx-8 md:mb-12\" href=\"https://prebuiltui.com\">"
+  },
+  {
+    "id": "spacing_Testimonial",
+    "image_anchor": "Testimonial.png",
+    "text_anchor": "The Directional Reference appears to be out of alignment with its surroundings, making it stand out as an anomaly within the layout.",
+    "positive_node": "<a className=\"mx-8 md:mb-12\" href=\"https://prebuiltui.com\">"
+  },
+  {
+    "id": "spacing_Testimonial",
+    "image_anchor": "Testimonial.png",
+    "text_anchor": "The misaligned Directional Reference disrupts the visual harmony and should be realigned for better user experience.",
+    "positive_node": "<a className=\"mx-8 md:mb-12\" href=\"https://prebuiltui.com\">"
+  },
+  {
+    "id": "spacing_HotelBookingSearchForm",
+    "image_anchor": "HotelBookingSearchForm.png",
+    "text_anchor": "The Data Entry Module is physically broken with an unexpected spacing error, causing it to overlap with its immediate neighbors, creating a visual confusion.",
+    "positive_node": "<input min={1} max={4} id=\"guests\" type=\"number\" className=\" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16\" placeholder=\"0\"/>"
+  },
+  {
+    "id": "spacing_HotelBookingSearchForm",
+    "image_anchor": "HotelBookingSearchForm.png",
+    "text_anchor": "This layout is extremely frustrating as the Data Entry Module appears to be smashed into the left corner of the screen, blocking visibility and accessibility.",
+    "positive_node": "<input min={1} max={4} id=\"guests\" type=\"number\" className=\" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16\" placeholder=\"0\"/>"
+  },
+  {
+    "id": "spacing_HotelBookingSearchForm",
+    "image_anchor": "HotelBookingSearchForm.png",
+    "text_anchor": "There is a massive void on the right side of the Data Entry Module, leaving the overall design feeling unbalanced and incomplete.",
+    "positive_node": "<input min={1} max={4} id=\"guests\" type=\"number\" className=\" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16\" placeholder=\"0\"/>"
+  },
+  {
+    "id": "spacing_HotelBookingSearchForm",
+    "image_anchor": "HotelBookingSearchForm.png",
+    "text_anchor": "In contrast to the stable elements surrounding it, the Data Entry Module stands out as the only element without any content or proper alignment within its designated space.",
+    "positive_node": "<input min={1} max={4} id=\"guests\" type=\"number\" className=\" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16\" placeholder=\"0\"/>"
+  },
+  {
+    "id": "spacing_HotelBookingSearchForm",
+    "image_anchor": "HotelBookingSearchForm.png",
+    "text_anchor": "The broken spacing in the Data Entry Module is a clear visual error that detracts from the overall usability and aesthetic of the interface.",
+    "positive_node": "<input min={1} max={4} id=\"guests\" type=\"number\" className=\" rounded border border-gray-200 px-3 py-1.5 mt-12 text-sm outline-none max-w-16\" placeholder=\"0\"/>"
+  },
+  {
+    "id": "spacing_AboutUsSectionWithGradientBg",
+    "image_anchor": "AboutUsSectionWithGradientBg.png",
+    "text_anchor": "The Content Area is pushed too far to the right, with no text within its bounds, creating a stark contrast between it and the rest of the layout.",
+    "positive_node": "<div className=\"flex flex-col gap-10 mr-6\">"
+  },
+  {
+    "id": "spacing_AboutUsSectionWithGradientBg",
+    "image_anchor": "AboutUsSectionWithGradientBg.png",
+    "text_anchor": "This layout's design doesn't align well with the content\u2014it's like they didn't think through the text placement.",
+    "positive_node": "<div className=\"flex flex-col gap-10 mr-6\">"
+  },
+  {
+    "id": "spacing_AboutUsSectionWithGradientBg",
+    "image_anchor": "AboutUsSectionWithGradientBg.png",
+    "text_anchor": "The Content Area is located at the far right edge of the screenshot, with a considerable amount of empty space on both sides.",
+    "positive_node": "<div className=\"flex flex-col gap-10 mr-6\">"
+  },
+  {
+    "id": "spacing_AboutUsSectionWithGradientBg",
+    "image_anchor": "AboutUsSectionWithGradientBg.png",
+    "text_anchor": "While the rest of the website features well-defined content blocks and clear spacing, this Content Area stands out due to its awkward placement.",
+    "positive_node": "<div className=\"flex flex-col gap-10 mr-6\">"
+  },
+  {
+    "id": "spacing_AboutUsSectionWithGradientBg",
+    "image_anchor": "AboutUsSectionWithGradientBg.png",
+    "text_anchor": "The layout's design is incomplete\u2014the Content Area should be centered or aligned with other elements for better readability.",
+    "positive_node": "<div className=\"flex flex-col gap-10 mr-6\">"
+  },
+  {
+    "id": "spacing_PrivacyFirstNotice",
+    "image_anchor": "PrivacyFirstNotice.png",
+    "text_anchor": "The 'thing to click' is misaligned with the surrounding elements, creating a visual disconnect and potential confusion for users.",
+    "positive_node": "<button type=\"button\" className=\"font-medium px-8 border border-gray-500/30 py-18 rounded hover:bg-blue-500/10 active:scale-95 transition\">"
+  },
+  {
+    "id": "spacing_PrivacyFirstNotice",
+    "image_anchor": "PrivacyFirstNotice.png",
+    "text_anchor": "This layout can be frustrating as it seems inconsistent with the rest of the interface design.",
+    "positive_node": "<button type=\"button\" className=\"font-medium px-8 border border-gray-500/30 py-18 rounded hover:bg-blue-500/10 active:scale-95 transition\">"
+  },
+  {
+    "id": "spacing_PrivacyFirstNotice",
+    "image_anchor": "PrivacyFirstNotice.png",
+    "text_anchor": "There is a significant space discrepancy between the 'thing to click' and its neighboring content, which disrupts the flow and readability of the page.",
+    "positive_node": "<button type=\"button\" className=\"font-medium px-8 border border-gray-500/30 py-18 rounded hover:bg-blue-500/10 active:scale-95 transition\">"
+  },
+  {
+    "id": "spacing_PrivacyFirstNotice",
+    "image_anchor": "PrivacyFirstNotice.png",
+    "text_anchor": "The 'thing to click' stands out as an isolated object with no visual ties to its surroundings, which may create a confusing user experience.",
+    "positive_node": "<button type=\"button\" className=\"font-medium px-8 border border-gray-500/30 py-18 rounded hover:bg-blue-500/10 active:scale-95 transition\">"
+  },
+  {
+    "id": "spacing_PrivacyFirstNotice",
+    "image_anchor": "PrivacyFirstNotice.png",
+    "text_anchor": "Layout inconsistency in the placement of the 'thing to click', impacting usability and aesthetics.",
+    "positive_node": "<button type=\"button\" className=\"font-medium px-8 border border-gray-500/30 py-18 rounded hover:bg-blue-500/10 active:scale-95 transition\">"
+  },
+  {
+    "id": "spacing_Notification",
+    "image_anchor": "Notification.png",
+    "text_anchor": "The 'block' is visually disconnected from its immediate neighbors, suggesting a design flaw in the content's placement or alignment.",
+    "positive_node": "<div className=\"py-25 flex justify-center flex-col pr-3\">"
+  },
+  {
+    "id": "spacing_Notification",
+    "image_anchor": "Notification.png",
+    "text_anchor": "Users may find this confusing and disconcerting as they navigate through the interface due to the apparent lack of coherence in the layout.",
+    "positive_node": "<div className=\"py-25 flex justify-center flex-col pr-3\">"
+  },
+  {
+    "id": "spacing_Notification",
+    "image_anchor": "Notification.png",
+    "text_anchor": "The right edge of the 'block' is truncated, leaving a noticeable blank space that could be filled with more content or context.",
+    "positive_node": "<div className=\"py-25 flex justify-center flex-col pr-3\">"
+  },
+  {
+    "id": "spacing_Notification",
+    "image_anchor": "Notification.png",
+    "text_anchor": "Contrasted with the surrounding areas, which are well-defined and properly organized, this spacing error stands out as an anomaly in the design.",
+    "positive_node": "<div className=\"py-25 flex justify-center flex-col pr-3\">"
+  },
+  {
+    "id": "spacing_Notification",
+    "image_anchor": "Notification.png",
+    "text_anchor": "The block is disjointed from its neighbors, disrupting the flow of information and potentially causing confusion for users.",
+    "positive_node": "<div className=\"py-25 flex justify-center flex-col pr-3\">"
+  },
+  {
+    "id": "spacing_ReceiptCard",
+    "image_anchor": "ReceiptCard.png",
+    "text_anchor": "The 'section' is overlaid with another element, causing a visual anomaly.",
+    "positive_node": "<div className=\"flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20\">"
+  },
+  {
+    "id": "spacing_ReceiptCard",
+    "image_anchor": "ReceiptCard.png",
+    "text_anchor": "This layout is so confusing. Why is the 'section' on top of everything?",
+    "positive_node": "<div className=\"flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20\">"
+  },
+  {
+    "id": "spacing_ReceiptCard",
+    "image_anchor": "ReceiptCard.png",
+    "text_anchor": "There is an overlap where the 'section' should be but it's not there.",
+    "positive_node": "<div className=\"flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20\">"
+  },
+  {
+    "id": "spacing_ReceiptCard",
+    "image_anchor": "ReceiptCard.png",
+    "text_anchor": "The 'section' doesn't belong in this area. It's out of place and it's hard to tell what's happening here.",
+    "positive_node": "<div className=\"flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20\">"
+  },
+  {
+    "id": "spacing_ReceiptCard",
+    "image_anchor": "ReceiptCard.png",
+    "text_anchor": "The 'section' is misplaced.",
+    "positive_node": "<div className=\"flex flex-col items-center gap-2 w-full p-4 pb-20 rounded-b-lg bg-white border-t border-gray-500/20\">"
+  },
+  {
+    "id": "spacing_CtaSectionGridGradientCallToAction",
+    "image_anchor": "CtaSectionGridGradientCallToAction.png",
+    "text_anchor": "The Interface Part is inexplicably missing from its designated location, creating a visual imbalance and disrupting the overall flow of the webpage.",
+    "positive_node": "<section className=\"bg-white py-16 px-36\">"
+  },
+  {
+    "id": "spacing_CtaSectionGridGradientCallToAction",
+    "image_anchor": "CtaSectionGridGradientCallToAction.png",
+    "text_anchor": "This looks like an amateur design job - it's as if someone just forgot to add the text for this section!",
+    "positive_node": "<section className=\"bg-white py-16 px-36\">"
+  },
+  {
+    "id": "spacing_CtaSectionGridGradientCallToAction",
+    "image_anchor": "CtaSectionGridGradientCallToAction.png",
+    "text_anchor": "There is a noticeable gap on the left side where the Interface Part should be, contrasting with the rest of the page which is tightly spaced.",
+    "positive_node": "<section className=\"bg-white py-16 px-36\">"
+  },
+  {
+    "id": "spacing_CtaSectionGridGradientCallToAction",
+    "image_anchor": "CtaSectionGridGradientCallToAction.png",
+    "text_anchor": "The Interface Part's absence makes it difficult to evaluate the design as intended without context. It's like having a missing piece of the puzzle.",
+    "positive_node": "<section className=\"bg-white py-16 px-36\">"
+  },
+  {
+    "id": "spacing_CtaSectionGridGradientCallToAction",
+    "image_anchor": "CtaSectionGridGradientCallToAction.png",
+    "text_anchor": "A significant layout error: the 'Interface Part' is not displayed, impacting the overall aesthetic and usability of the page.",
+    "positive_node": "<section className=\"bg-white py-16 px-36\">"
+  },
+  {
+    "id": "spacing_SmallCtaBanner",
+    "image_anchor": "SmallCtaBanner.png",
+    "text_anchor": "The Action Button is misaligned, visually disrupting the flow of the UI.",
+    "positive_node": "<button className=\"px-12 px-3 text-slate-800 bg-white rounded-full text-sm mt-4\">"
+  },
+  {
+    "id": "spacing_SmallCtaBanner",
+    "image_anchor": "SmallCtaBanner.png",
+    "text_anchor": "Users may be confused by the unusual placement of the button.",
+    "positive_node": "<button className=\"px-12 px-3 text-slate-800 bg-white rounded-full text-sm mt-4\">"
+  },
+  {
+    "id": "spacing_SmallCtaBanner",
+    "image_anchor": "SmallCtaBanner.png",
+    "text_anchor": "There is a significant gap on the right side of the Action Button where its content should be.",
+    "positive_node": "<button className=\"px-12 px-3 text-slate-800 bg-white rounded-full text-sm mt-4\">"
+  },
+  {
+    "id": "spacing_SmallCtaBanner",
+    "image_anchor": "SmallCtaBanner.png",
+    "text_anchor": "The Action Button's position contrasts with the rest of the app, which appears to have more balanced spacing.",
+    "positive_node": "<button className=\"px-12 px-3 text-slate-800 bg-white rounded-full text-sm mt-4\">"
+  },
+  {
+    "id": "spacing_SmallCtaBanner",
+    "image_anchor": "SmallCtaBanner.png",
+    "text_anchor": "Misaligned action button creates confusion.",
+    "positive_node": "<button className=\"px-12 px-3 text-slate-800 bg-white rounded-full text-sm mt-4\">"
+  },
+  {
+    "id": "spacing_SpecialFeaturesSection",
+    "image_anchor": "SpecialFeaturesSection.png",
+    "text_anchor": "The 'section' element is positioned too far to the left, causing an alignment issue with its neighbors.",
+    "positive_node": "<div className=\"pr-6 aspect-square bg-green-100 rounded-full\">"
+  },
+  {
+    "id": "spacing_SpecialFeaturesSection",
+    "image_anchor": "SpecialFeaturesSection.png",
+    "text_anchor": "Users may feel frustrated by the misaligned content due to the visual disturbance created by the empty space.",
+    "positive_node": "<div className=\"pr-6 aspect-square bg-green-100 rounded-full\">"
+  },
+  {
+    "id": "spacing_SpecialFeaturesSection",
+    "image_anchor": "SpecialFeaturesSection.png",
+    "text_anchor": "On the right side of the 'section', there is a considerable gap between the element and the adjacent container, which could be disorienting for users.",
+    "positive_node": "<div className=\"pr-6 aspect-square bg-green-100 rounded-full\">"
+  },
+  {
+    "id": "spacing_SpecialFeaturesSection",
+    "image_anchor": "SpecialFeaturesSection.png",
+    "text_anchor": "While the 'section' appears to have adequate spacing on its left side, it is significantly offset in relation to its neighbors, creating an imbalance in the layout.",
+    "positive_node": "<div className=\"pr-6 aspect-square bg-green-100 rounded-full\">"
+  },
+  {
+    "id": "spacing_SpecialFeaturesSection",
+    "image_anchor": "SpecialFeaturesSection.png",
+    "text_anchor": "Layout error: misaligned 'section' element",
+    "positive_node": "<div className=\"pr-6 aspect-square bg-green-100 rounded-full\">"
+  }
+]

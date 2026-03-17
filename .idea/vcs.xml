@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/cloned_repos/activity-timeline" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/admin-dashboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/audio-waveform-visualizer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/bento-grid-dashboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/chat-application-interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/checkout-page" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/cinema-seat-selection" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/code-snippet-repository" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/cookie-consent-banner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/corporate-landing-page" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/data-analytics-table" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/delete-confirmation-modal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/digital-credit-card-component" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/digital-restaurant-menu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/e-commerce-listing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/e-commerce-mega-menu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/flight-booking-search" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/kanban-board" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/login-authentication" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/multi-step-onboarding-wizard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/podcast-player" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/pricing-table" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/project-file-tree" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/user-profile-settings" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloned_repos/video-conference-grid" vcs="Git" />
+  </component>
+</project>

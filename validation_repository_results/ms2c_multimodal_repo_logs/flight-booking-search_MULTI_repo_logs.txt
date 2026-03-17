@@ -1,0 +1,162 @@
+=== MULTI REPOSITORY RESULTS: flight-booking-search ===
+
+Image / ID: Flight Booking Search_bug-1.png
+Query: The footer section is overlapping the main content area with excessive negative spacing, making the review section partially hidden.
+Target File: src/components/Footer.jsx
+Target Node: <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 md:py-20 -mt-96">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5134 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Footer.jsx] <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+2. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+3. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+4. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+5. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+6. [src/App.jsx] <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+7. [src/App.jsx] <div className="flex items-center justify-between mb-4">
+8. [src/components/Navbar.jsx] <div className="flex justify-between items-center">
+9. [src/components/FlightResults.jsx] <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+10. [src/components/FlightResults.jsx] <div className="flex flex-col gap-6 md:gap-4 items-start">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-4.png
+Query: The logo text is displaying in a dark gray color that fails to contrast properly against the navigation bar background.
+Target File: src/components/Navbar.jsx
+Target Node: <h1 className="text-2xl md:text-3xl font-bold text-gray-400">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5111 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/App.jsx] <p className="text-2xl font-bold text-gray-900">
+2. [src/App.jsx] <p className="text-2xl font-bold text-blue-600 text-center">
+3. [src/App.jsx] <p className="text-lg text-purple-100 mb-8">
+4. [src/App.jsx] <p className="text-gray-600 mb-10">
+5. [src/App.jsx] <p className="text-gray-600">
+6. [src/App.jsx] <p className="text-xl text-blue-100 mb-8">
+7. [src/App.jsx] <p className="text-lg text-gray-600">
+8. [src/components/PriceCard.jsx] <p className="text-xs text-blue-100 font-semibold">
+9. [src/App.jsx] <h2 className="text-4xl font-bold mb-4">
+10. [src/App.jsx] <p className="text-sm text-purple-200 mt-4">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-5.png
+Query: The promotional card is positioned absolutely, causing it to float over and overlap other page content unexpectedly.
+Target File: src/components/PromoCard.jsx
+Target Node: <div className="bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group overflow-hidden relative absolute">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5084 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/PromoCard.jsx] <h3 className="font-bold text-xl mb-3 leading-tight">
+2. [src/components/ReviewCard.jsx] <p className="text-gray-600 mt-4 leading-relaxed text-base" style={{color: '#f3f4f6'}}>
+3. [src/components/SearchCard.jsx] <span className="font-semibold">
+4. [src/components/PromoCard.jsx] <p className="text-blue-100 text-sm mb-6 leading-relaxed">
+5. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg">
+6. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-pink-500 hover:bg-pink-600 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg">
+7. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg font-bold">
+8. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg">
+9. [src/components/SearchCard.jsx] <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+10. [src/components/SearchCard.jsx] <div className="p-4 md:p-5 bg-gray-50 border-r border-gray-200 hover:bg-white transition">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-7.png
+Query: The search form fields are not aligning correctly in the container due to an invalid grid configuration value.
+Target File: src/components/SearchCard.jsx
+Target Node: <div className="grid grid-cols-1 md:grid-cols-13 gap-3 md:gap-4 items-end">
+Rank Achieved: 5
+Gating Alpha: 0.5343 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Navbar.jsx] <div className="bg-white rounded-xl p-2.5 shadow-md group-hover:shadow-lg transition transform group-hover:-translate-y-0.5">
+2. [src/components/Navbar.jsx] <div className="flex items-center gap-3 group cursor-pointer">
+3. [src/components/Navbar.jsx] <div className="hidden lg:flex gap-10">
+4. [src/components/PriceCard.jsx] <div className={`rounded-2xl p-8 text-center transition duration-300 transform hover:scale-110 shadow-lg hover:shadow-2xl border-2 ${ highlight ? 'bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white border-blue-400 ring-2 ring-blue-400 ring-offset-2' : 'bg-white text-gray-900 border-gray-200 hover:border-blue-300' }`}>
+5. [src/components/SearchCard.jsx] <div className="grid grid-cols-1 md:grid-cols-13 gap-3 md:gap-4 items-end">  <--- [GROUND TRUTH HIT]
+6. [src/App.jsx] <div className="bg-gradient-to-b from-blue-600 via-blue-700 to-blue-800 pb-0 relative overflow-hidden">
+7. [src/components/FlightResults.jsx] <div className="flex-1 h-0.5 bg-gradient-to-r from-blue-400 to-transparent">
+8. [src/components/FlightResults.jsx] <div className="flex-1 h-0.5 bg-gradient-to-l from-blue-400 to-transparent">
+9. [src/components/StatsCard.jsx] <div className="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group border border-gray-100 hover:border-blue-200">
+10. [src/components/Navbar.jsx] <div className="max-w-7xl mx-auto px-4 md:px-8 py-5">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-8.png
+Query: The date and time input fields are missing their border styling due to an invalid class name, appearing unstyled.
+Target File: src/components/SearchCard.jsx
+Target Node: <div className="md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-2 rounded-xl overflow-hidden relative hover:border-blue-300 transition">
+Rank Achieved: 9
+Gating Alpha: 0.5670 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/FlightResults.jsx] <div key={flight.id} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 p-7 md:p-8 cursor-pointer border-2 border-transparent hover:border-blue-300 hover:-translate-y-1" onClick={() =>
+2. [src/components/SearchCard.jsx] <button onClick={handleSearch} className="w-full h-full bg-gradient-to-r from-blue-600 via-blue-600 to-blue-700 hover:from-blue-700 hover:via-blue-700 hover:to-blue-800 text-white font-bold py-5 md:py-0 px-4 md:px-6 rounded-xl transition shadow-lg hover:shadow-2xl active:shadow-md hover:-translate-y-0.5 flex items-center justify-center gap-2 md:gap-3 duration-300 text-base md:text-lg" >
+3. [src/components/Navbar.jsx] <button className="bg-white text-blue-700 font-bold px-6 md:px-8 py-2.5 rounded-lg hover:bg-blue-50 transition shadow-lg hover:shadow-xl active:shadow-md hover:-translate-y-0.5 duration-300 text-sm md:text-base font-semibold">
+4. [src/components/PromoCard.jsx] <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-5 transition duration-300">
+5. [src/components/Navbar.jsx] <a href="#" className="text-white hover:text-blue-100 font-medium transition duration-300 relative group">
+6. [src/components/FlightResults.jsx] <button className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-base">
+7. [src/components/PromoCard.jsx] <div className="relative z-10">
+8. [src/components/SearchCard.jsx] <div className="flex-1 p-4 md:p-5 hover:bg-blue-50 transition">
+9. [src/components/SearchCard.jsx] <div className="md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-2 rounded-xl overflow-hidden relative hover:border-blue-300 transition">  <--- [GROUND TRUTH HIT]
+10. [src/components/SearchCard.jsx] <div className="p-4 md:p-5 bg-gray-50 hover:bg-white transition">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-10.png
+Query: The search button section has excessive negative spacing that causes it to shift and separate from the rest of the form.
+Target File: src/components/SearchCard.jsx
+Target Node: <div className="md:col-span-2 -m-10">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5387 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/SearchCard.jsx] <button onClick={handleSwap} className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 border-2 border-gray-200 shadow-md hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg transition duration-300 -z-10" >
+2. [src/components/SearchCard.jsx] <button onClick={handleSearch} className="w-full h-full bg-gradient-to-r from-blue-600 via-blue-600 to-blue-700 hover:from-blue-700 hover:via-blue-700 hover:to-blue-800 text-white font-bold py-5 md:py-0 px-4 md:px-6 rounded-xl transition shadow-lg hover:shadow-2xl active:shadow-md hover:-translate-y-0.5 flex items-center justify-center gap-2 md:gap-3 duration-300 text-base md:text-lg" >
+3. [src/components/PromoCard.jsx] <button className="inline-block bg-white text-blue-600 font-bold px-6 py-3 rounded-xl text-sm hover:bg-blue-50 transition duration-300 shadow-lg hover:shadow-xl">
+4. [src/components/Navbar.jsx] <button className="bg-white text-blue-700 font-bold px-6 md:px-8 py-2.5 rounded-lg hover:bg-blue-50 transition shadow-lg hover:shadow-xl active:shadow-md hover:-translate-y-0.5 duration-300 text-sm md:text-base font-semibold">
+5. [src/components/SearchCard.jsx] <p className="text-xs text-gray-500 truncate mt-1">
+6. [src/components/PromoCard.jsx] <p className="text-blue-100 text-sm mb-6 leading-relaxed">
+7. [src/components/SearchCard.jsx] <span className="font-semibold">
+8. [src/components/PromoCard.jsx] <h3 className="font-bold text-xl mb-3 leading-tight">
+9. [src/components/SearchCard.jsx] <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider">
+10. [src/components/ReviewCard.jsx] <p className="text-gray-600 mt-4 leading-relaxed text-base" style={{color: '#f3f4f6'}}>
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-2_bug-2-ShowFlightResults.png
+Query: The flight search results are stacked vertically in a single column instead of displaying in a responsive multi-column grid layout.
+Target File: src/components/FlightResults.jsx
+Target Node: <div className="flex flex-col gap-6 md:gap-4 items-start">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5408 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Navbar.jsx] <div className="bg-white rounded-xl p-2.5 shadow-md group-hover:shadow-lg transition transform group-hover:-translate-y-0.5">
+2. [src/components/Navbar.jsx] <div className="flex items-center gap-3 group cursor-pointer">
+3. [src/components/PriceCard.jsx] <div className={`rounded-2xl p-8 text-center transition duration-300 transform hover:scale-110 shadow-lg hover:shadow-2xl border-2 ${ highlight ? 'bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white border-blue-400 ring-2 ring-blue-400 ring-offset-2' : 'bg-white text-gray-900 border-gray-200 hover:border-blue-300' }`}>
+4. [src/components/SearchCard.jsx] <div className="grid grid-cols-1 md:grid-cols-13 gap-3 md:gap-4 items-end">
+5. [src/components/StatsCard.jsx] <div className="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group border border-gray-100 hover:border-blue-200">
+6. [src/components/Navbar.jsx] <nav className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 shadow-xl sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
+7. [src/components/Navbar.jsx] <div className="hidden lg:flex gap-10">
+8. [src/App.jsx] <div className="bg-gradient-to-b from-blue-600 via-blue-700 to-blue-800 pb-0 relative overflow-hidden">
+9. [src/components/ReviewCard.jsx] <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-blue-200">
+10. [src/components/FlightResults.jsx] <div className="flex-1 h-0.5 bg-gradient-to-r from-blue-400 to-transparent">
+
+======================================================================
+
+Image / ID: Flight Booking Search_bug-3_bug-3-ShowFlightResults.png
+Query: The flight icon is not rendering at the correct size due to an invalid styling class, appearing distorted or missing.
+Target File: src/components/FlightResults.jsx
+Target Node: <div className="text-3xxl mt-1">
+Rank Achieved: FAILED (Not in Top 10)
+Gating Alpha: 0.5928 [BALANCED]
+--- Top 10 Retrieved (File -> Node) ---
+1. [src/components/Navbar.jsx] <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300">
+2. [src/App.jsx] <svg className="w-6 h-6 group-hover:-translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+3. [src/components/ReviewCard.jsx] <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-blue-200">
+4. [src/components/SearchCard.jsx] <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+5. [src/components/SearchCard.jsx] <div className="bg-white w-full max-w-7xl rounded-3xl shadow-2xl p-8 md:p-10">
+6. [src/components/SearchCard.jsx] <div className="md:col-span-2 border-2 border-gray-200 rounded-xl p-4 md:p-5 hover:bg-blue-50 hover:border-blue-300 transition">
+7. [src/components/Navbar.jsx] <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+8. [src/components/Footer.jsx] <a href="#" className="w-12 h-12 bg-blue-400 hover:bg-blue-500 rounded-full flex items-center justify-center transition duration-300 hover:shadow-lg hover:-translate-y-1 text-lg">
+9. [src/components/SearchCard.jsx] <div className="md:col-span-4 flex border-2 border-gray-200 rounded-xl overflow-hidden hover:border-blue-300 transition">
+10. [src/components/FAQItem.jsx] <svg className={`w-6 h-6 text-blue-600 flex-shrink-0 transition duration-300 ${open ? 'rotate-180' : 'rotate-0'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" >
+
+======================================================================
+
