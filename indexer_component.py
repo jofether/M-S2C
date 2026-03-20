@@ -53,18 +53,37 @@ def extract_all_nodes_per_component(jsx_filepath):
 
 def run_indexer():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    jsx_path = os.path.join(base_dir, "validation_component", "component.jsx")
+    # FOR VALIDATION
+    components_dir = os.path.join(base_dir, "validation_component", "components")
     output_path = os.path.join(base_dir, "validation_component_results", "indexed_nodes.json")
+
+    # FOR TESTING
+    # components_dir = os.path.join(base_dir, "testing_component", "components")
+    # output_path = os.path.join(base_dir, "testing_component_results", "indexed_nodes.json")
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
-    print(f"[TRACE] indexing all tags from {jsx_path}...")
-    corpus_dict = extract_all_nodes_per_component(jsx_path)
+    print(f"[TRACE] indexing all tags from {components_dir}...")
+
+    master_corpus_dict = {}
+
+    # Iterate through all the batch files in the components directory
+    if os.path.exists(components_dir):
+        for filename in os.listdir(components_dir):
+            if filename.endswith((".jsx", ".js", ".tsx", ".ts")):
+                filepath = os.path.join(components_dir, filename)
+                # Extract nodes from this specific batch file
+                corpus_dict = extract_all_nodes_per_component(filepath)
+                # Merge the results into our master dictionary
+                master_corpus_dict.update(corpus_dict)
+    else:
+        print(f"[ERROR] Directory not found: {components_dir}")
+        return
 
     with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(corpus_dict, f, indent=4)
+        json.dump(master_corpus_dict, f, indent=4)
 
-    for comp, nodes in corpus_dict.items():
+    for comp, nodes in master_corpus_dict.items():
         print(f"   -> {comp}: {len(nodes)} nodes indexed.")
 
     print(f"[TRACE] SUCCESS: Results saved to {output_path}")

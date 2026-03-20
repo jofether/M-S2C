@@ -6,46 +6,79 @@ import torch.nn.functional as F
 from transformers import AutoModel, AutoTokenizer, ViTModel, ViTImageProcessor
 from PIL import Image
 
+"""
+=========================================================================================
+Multimodal Semantic-to-Code (MS2C) Engine - Global Repository Scope
+=========================================================================================
+This module contains the core neural network architecture for bug localization.
+It defines the late-fusion mechanism combining CodeBERT (Text/Code) and Vision 
+Transformer (Image) embeddings via a dynamically learned gating network.
+
+The retriever in this file is strictly designed for Repository-Level searches 
+(evaluating thousands of nodes across an entire system).
+=========================================================================================
+"""
+
 
 class MS2CModel(nn.Module):
+    """
+    The PyTorch neural network model defining the MS2C architecture.
+    It encapsulates the unimodal encoders (CodeBERT and ViT) and the gating network
+    used to calculate the dynamic fusion weight (alpha).
+    """
+
     def __init__(self, hidden_dim=768):
         super(MS2CModel, self).__init__()
+
+        # 1. Unimodal Encoders
         self.codebert = AutoModel.from_pretrained("microsoft/codebert-base")
         self.vit = ViTModel.from_pretrained("google/vit-base-patch16-224-in21k")
 
+        # 2. Vision Projection Head
+        # Projects the ViT output to match the hidden dimensionality of CodeBERT
         self.mlp_projection = nn.Sequential(
             nn.Linear(self.vit.config.hidden_size, hidden_dim),
             nn.ReLU(),
             nn.Linear(hidden_dim, hidden_dim)
         )
 
+        # 3. Gating Network (Late Fusion Router)
+        # Learns to predict the reliability (alpha) of the text modality vs vision modality
         self.gating_network = nn.Sequential(
             nn.Linear(hidden_dim * 2, hidden_dim),
             nn.ReLU(),
             nn.Dropout(0.1),
             nn.Linear(hidden_dim, 1),
-            nn.Sigmoid()
+            nn.Sigmoid()  # Outputs a value between 0.0 and 1.0
         )
 
     def forward_text(self, input_ids, attention_mask):
+        """Generates L2-normalized embeddings for Code/Text sequences."""
         outputs = self.codebert(input_ids=input_ids, attention_mask=attention_mask)
         cls_embedding = outputs.last_hidden_state[:, 0, :]
         return F.normalize(cls_embedding, p=2, dim=1)
 
     def forward_image(self, pixel_values):
+        """Generates L2-normalized embeddings for UI screenshots."""
         outputs = self.vit(pixel_values=pixel_values)
         cls_embedding = outputs.last_hidden_state[:, 0, :]
         projected_embedding = self.mlp_projection(cls_embedding)
         return F.normalize(projected_embedding, p=2, dim=1)
 
     def compute_gating_weight(self, text_emb, visual_emb):
+        """Concatenates the multimodal embeddings to predict the alpha fusion weight."""
         fused_features = torch.cat([text_emb, visual_emb], dim=1)
         return self.gating_network(fused_features)
 
 
 class MS2CRetriever:
+    """
+    The Global Repository pipeline. Manages data ingestion, AST node encoding,
+    and Top-K similarity calculations across the entire software repository.
+    """
+
     def __init__(self, model_path, index_dict, batch_size=64):
-        print("\n[TRACE] --- Initializing Scope-Aware MS2C Retriever ---")
+        print("\n[TRACE] --- Initializing MS2C Repository Retriever ---")
         self.device = torch.device(
             "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 
@@ -58,59 +91,48 @@ class MS2CRetriever:
         self.text_tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
         self.image_processor = ViTImageProcessor.from_pretrained("google/vit-base-patch16-224-in21k")
 
-        self.global_corpus = []  # Will hold tuples of (key, node)
-        self.global_embeddings = None  # Will hold the Nx768 tensor matrix
+        self.global_corpus = []  # List of (file_path, ast_node_string)
+        self.global_embeddings = None  # Nx768 Tensor of pre-computed embeddings
 
-        # Trigger the batched flattening process
         self._flatten_and_encode(index_dict, batch_size)
 
     def _flatten_and_encode(self, index_dict, batch_size):
-        print("[TRACE] Flattening index and batch-encoding AST nodes...")
-        # Flatten dictionary into a 1D global list
+        """Flattens the repository index and batch-encodes all AST nodes."""
+        print("[TRACE] Flattening index and batch-encoding repository nodes...")
+
         for key, nodes in index_dict.items():
             for node in nodes:
                 self.global_corpus.append((key, node))
 
         total_nodes = len(self.global_corpus)
-        print(f"[TRACE] Global Search Space: {total_nodes} nodes.")
+        print(f"[TRACE] Global Repository Search Space: {total_nodes} nodes.")
 
         all_embeddings = []
         with torch.no_grad():
             for i in range(0, total_nodes, batch_size):
                 batch_tuples = self.global_corpus[i: i + batch_size]
 
-                # INJECT CONTEXT: Prepend the file path/component name to the string before encoding
+                # Context Injection: Includes the file path to aid global localization
                 batch_texts = [f"[{item[0]}] {item[1]}" for item in batch_tuples]
 
                 inputs = self.text_tokenizer(batch_texts, return_tensors="pt", truncation=True, padding="max_length",
                                              max_length=128).to(self.device)
                 embeddings = self.model.forward_text(inputs["input_ids"], inputs["attention_mask"])
-                all_embeddings.append(embeddings.cpu())  # Offload to CPU temporarily
+                all_embeddings.append(embeddings.cpu())
 
         if all_embeddings:
             self.global_embeddings = torch.cat(all_embeddings, dim=0).to(self.device)
-            print("[TRACE] Batch Encoding complete.")
+            print("[TRACE] Repository Batch Encoding complete.")
         else:
             print("[WARNING] No nodes found to encode!")
 
-    def retrieve_top_k(self, text_query, target_key=None, image_path=None, k=10, mode="multimodal", scope="component"):
-        """
-        Scope-Aware Retrieval:
-        - scope="component": target_key is 'comp_name'. Returns [node1, node2, ...]
-        - scope="repository": target_key is ignored. Returns [(file_path, node), ...]
-        """
+    def retrieve_top_k(self, text_query, image_path=None, k=10, mode="multimodal"):
+        """Executes Multimodal retrieval across the entire repository."""
         if self.global_embeddings is None or len(self.global_corpus) == 0:
             return [], 0.0
 
-        # 1. SCOPE-AWARE FILTER MASK
-        if scope == "component":
-            # Only look at nodes matching the specific component name AND containing className
-            valid_indices = [i for i, item in enumerate(self.global_corpus)
-                             if item[0] == target_key and "className" in item[1]]
-        else:
-            # Look at ALL nodes across the whole repository containing className
-            valid_indices = [i for i, item in enumerate(self.global_corpus)
-                             if "className" in item[1]]
+        # Global scope: Look at ALL nodes containing className
+        valid_indices = [i for i, item in enumerate(self.global_corpus) if "className" in item[1]]
 
         if not valid_indices:
             return [], 0.0
@@ -119,8 +141,6 @@ class MS2CRetriever:
             text_inputs = self.text_tokenizer(text_query, return_tensors="pt", truncation=True, padding="max_length",
                                               max_length=128).to(self.device)
             text_emb = self.model.forward_text(text_inputs["input_ids"], text_inputs["attention_mask"])
-
-            # 1-vs-N global similarity calculation
             text_sim = torch.matmul(text_emb, self.global_embeddings.T).squeeze(0)
 
             if mode == "unimodal" or image_path is None:
@@ -132,46 +152,24 @@ class MS2CRetriever:
                 vis_emb = self.model.forward_image(img_inputs["pixel_values"])
                 vis_sim = torch.matmul(vis_emb, self.global_embeddings.T).squeeze(0)
 
-                # Raw gating network prediction
                 base_alpha = self.model.compute_gating_weight(text_emb, vis_emb).squeeze()
 
-                # --- IMPROVEMENT: Node-Level Confidence Bypassing ---
-                # We apply the threshold per-node. If a specific node has a very high text score (>0.90),
-                # we protect it with a high alpha. If it doesn't, we let the gating network dictate the blend.
-                # We raised the threshold to 0.90 based on the CSV analysis to avoid the False Confidence Trap.
+                # Node-Level Confidence Bypassing (Strict threshold for large search spaces)
                 text_threshold = 0.90
                 alpha_vector = torch.where(text_sim > text_threshold, torch.tensor(0.95, device=self.device),
                                            base_alpha)
-                # ----------------------------------------------------
-
-                # For logging purposes, we'll return the mean alpha used across the active nodes
                 alpha_val = alpha_vector.mean().item()
 
-                # Element-wise fusion
-                final_scores = (alpha_vector * text_sim) + ((1 - alpha_vector) * vis_sim)
+                final_scores = (alpha_vector * text_sim) + ((1.0 - alpha_vector) * vis_sim)
 
-            # Ensure 1D tensor to prevent indexing errors
             if final_scores.dim() > 1:
                 final_scores = final_scores.squeeze()
 
-            # 2. Apply the valid indices mask
             filtered_scores = final_scores[valid_indices]
-
-            # 3. Retrieve Top-K
             top_k_val = min(k, len(valid_indices))
             top_k_res = torch.topk(filtered_scores, top_k_val)
 
             top_k_indices = [valid_indices[idx] for idx in top_k_res.indices.tolist()]
             raw_results = [self.global_corpus[i] for i in top_k_indices]
 
-            # 4. Format Output based on scope
-            if scope == "component":
-                # Strip the key, return just the node string for validate_component.py
-                return [node for key, node in raw_results], alpha_val
-            else:
-                # Return the full (file_path, node) tuple for validate_repo.py
-                return raw_results, alpha_val
-
-
-# Backward compatibility for validate_component.py
-MS2CComponentRetriever = MS2CRetriever
+            return raw_results, alpha_val
