@@ -1,0 +1,181 @@
+const { chromium } = require('playwright');
+const { spawn, spawnSync, execSync } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+
+const PORT = 3000; 
+const BASE_URL = `http://localhost:${PORT}`;
+
+// Setup the images-validation directory
+const ROOT_DIR = __dirname;
+const IMAGES_DIR = path.join(ROOT_DIR, 'images-validation');
+
+if (!fs.existsSync(IMAGES_DIR)) {
+    fs.mkdirSync(IMAGES_DIR, { recursive: true });
+}
+
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+function killPort(port) {
+    try {
+        if (process.platform === 'win32') {
+            const output = execSync(`netstat -ano | findstr :${port}`).toString();
+            const lines = output.trim().split('\n');
+            if (lines.length > 0 && lines[0]) {
+                const pid = lines[0].trim().split(/\s+/).pop();
+                if (pid && pid !== "0") {
+                    execSync(`taskkill /F /PID ${pid}`);
+                    console.log(`  -> Killed zombie process on port ${port} (PID: ${pid})`);
+                }
+            }
+        }
+    } catch (e) {}
+}
+
+async function waitForServer(url, timeout = 30000) {
+    const startTime = Date.now();
+    while (Date.now() - startTime < timeout) {
+        try {
+            const response = await fetch(url);
+            if (response.ok) return true;
+        } catch (error) {
+            await delay(1000);
+        }
+    }
+    throw new Error(`Server at ${url} did not start within ${timeout / 1000} seconds.`);
+}
+
+async function processRepository(repoFolder) {
+    const repoPath = path.join(ROOT_DIR, repoFolder);
+    const jsonPath = path.join(repoPath, 'playwright_capture.json');
+
+    if (!fs.existsSync(jsonPath)) return;
+
+    console.log(`\n================================================`);
+    console.log(`🚀 Processing Repository: ${repoFolder}`);
+    console.log(`================================================`);
+
+    const bugsData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+    if (!Array.isArray(bugsData) || bugsData.length === 0) return;
+
+    const npmCmd = /^win/.test(process.platform) ? 'npm.cmd' : 'npm';
+    let serverProcess;
+    let browser;
+
+    try {
+        if (!fs.existsSync(path.join(repoPath, 'node_modules'))) {
+            spawnSync(npmCmd, ['install'], { cwd: repoPath, shell: true, stdio: 'inherit' });
+        }
+
+        killPort(PORT);
+        console.log(`  -> Starting dev server...`);
+        serverProcess = spawn(npmCmd, ['run', 'dev'], { cwd: repoPath, shell: true });
+
+        serverProcess.stdout.on('data', (data) => console.log(`      [Vite]: ${data.toString().trim()}`));
+        serverProcess.stderr.on('data', (data) => console.error(`      [Vite Error]: ${data.toString().trim()}`));
+
+        await waitForServer(BASE_URL);
+        console.log(`  -> Server is live at ${BASE_URL}`);
+
+        browser = await chromium.launch({ headless: true });
+        const context = await browser.newContext(); 
+        const page = await context.newPage();
+
+        for (const bug of bugsData) {
+            const imagePath = path.join(IMAGES_DIR, bug.image_anchor);
+            
+            if (fs.existsSync(imagePath)) {
+                console.log(`  ⏭️  Skipping ${bug.image_anchor} (Already exists)`);
+                continue; 
+            }
+
+            console.log(`  📸 Capturing: ${bug.image_anchor}...`);
+            
+            try {
+                // Dynamic Viewport Sizing
+                if (bug.viewport) {
+                    await page.setViewportSize(bug.viewport);
+                } else {
+                    await page.setViewportSize({ width: 1280, height: 720 });
+                }
+
+                await page.goto(BASE_URL, { waitUntil: 'networkidle' });
+
+                // Smart Actions Handler
+                if (bug.action_selector) {
+                    const actions = Array.isArray(bug.action_selector) ? bug.action_selector : [bug.action_selector];
+                    for (const action of actions) {
+                        console.log(`     -> Performing action on: ${action}`);
+                        try {
+                            const actionBtn = page.locator(action).first();
+                            
+                            // If we are just blindly looking for an input, don't wait 5 seconds. Just check quickly.
+                            const waitTime = action.includes('input') ? 1000 : 5000;
+                            await actionBtn.waitFor({ state: 'attached', timeout: waitTime });
+                            
+                            const tagName = await actionBtn.evaluate(el => el.tagName.toLowerCase());
+                            if (tagName === 'select') {
+                                await actionBtn.selectOption({ index: 1 });
+                            } else if (tagName === 'input') {
+                                const textToType = bug.type_text || 'test@example.com';
+                                await actionBtn.fill(textToType);
+                            } else {
+                                await actionBtn.evaluate(node => node.click());
+                            }
+                            await page.waitForTimeout(800); 
+                        } catch (actionErr) {
+                            console.log(`     ! Action failed (Skipping): ${action}`);
+                        }
+                    }
+                }
+
+                const element = page.locator(bug.playwright_selector).first();
+                await element.waitFor({ state: 'attached', timeout: 5000 });
+                
+                try {
+                    await element.screenshot({ path: imagePath, animations: 'disabled' });
+                } catch (screenshotError) {
+                    await page.screenshot({ path: imagePath, animations: 'disabled' });
+                }
+                console.log(`     ✓ Saved to images-validation/${bug.image_anchor}`);
+
+            } catch (err) {
+                console.error(`     [X] Failed to capture ${bug.image_anchor}: Could not find selector '${bug.playwright_selector}'`);
+            }
+        }
+    } catch (err) {
+        console.error(`  [X] Fatal Error processing ${repoFolder}: ${err.message}`);
+    } finally {
+        if (browser) await browser.close();
+        if (serverProcess) {
+            console.log(`  -> Shutting down server...`);
+            if (/^win/.test(process.platform)) {
+                spawnSync("taskkill", ["/pid", serverProcess.pid, '/f', '/t'], { shell: true });
+            } else {
+                serverProcess.kill('SIGKILL');
+            }
+        }
+        killPort(PORT); 
+        await delay(2000); 
+    }
+}
+
+async function main() {
+    console.log('╔════════════════════════════════════════════════════════╗');
+    console.log('║  M-S2C Playwright Automated Image Capture (TESTING)    ║');
+    console.log('╚════════════════════════════════════════════════════════╝\n');
+    
+    const items = fs.readdirSync(ROOT_DIR);
+    const folders = items.filter(item => {
+        const itemPath = path.join(ROOT_DIR, item);
+        return fs.lstatSync(itemPath).isDirectory() && !item.startsWith('.') && item !== 'node_modules' && item !== 'images-demo' && item !== 'images-validation';
+    });
+
+    for (const folder of folders) {
+        await processRepository(folder);
+    }
+
+    console.log(`\n🎉 All captures complete! Check the 'images-validation' folder.`);
+}
+
+main();
