@@ -1,0 +1,2102 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation menu disappears behind other content on the page",
+        "positive_node": "<nav className=\"fixed top-0 w-full z-10 bg-white/80 backdrop-blur-md border-b border-zinc-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-2.png",
+        "file_path": "components/AppHero.jsx",
+        "text_anchor": "The phone notch is hidden behind the displayed content",
+        "positive_node": "<div className=\"absolute top-0 w-full h-8 bg-zinc-900 z-5 flex justify-center\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-3.png",
+        "file_path": "components/AppHero.jsx",
+        "text_anchor": "The main heading is way too small and hard to read",
+        "positive_node": "<h1 className=\"text-2xl sm:text-2xl lg:text-2xl font-bold tracking-tight text-zinc-900 leading-[1.1]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-4.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "Feature cards are crammed directly under the section heading with no gap",
+        "positive_node": "<div className=\"text-center max-w-3xl mx-auto mb-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-5.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "Text inside the feature cards is pushed against the edges with no breathing room",
+        "positive_node": "<div className=\"bento-feature-card group col-span-1 md:col-span-2 md:row-span-2 bg-white rounded-3xl p-2 border border-zinc-100 shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-6.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "Text in the dark card stacks awkwardly and the layout appears broken",
+        "positive_node": "<div className=\"relative z-1 h-full\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-7.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "The testimonial section heading and navigation buttons are in unexpected positions",
+        "positive_node": "<div className=\"flex flex-col-reverse md:flex-row justify-between items-start mb-12 gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-8.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "Testimonial cards are cut off and you can't scroll horizontally to see more",
+        "positive_node": "<div ref={scrollContainerRef} className=\"flex overflow-hidden snap-x snap-mandatory gap-6 pb-8 hide-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-9.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "The testimonial cards are so faded they're barely visible",
+        "positive_node": "<div key={t.id} className=\"snap-center flex-shrink-0 w-[400px] md:w-[400px] bg-zinc-50 rounded-2xl p-8 border border-zinc-100 hover:shadow-lg transition-shadow duration-300 opacity-30\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-10.png",
+        "file_path": "components/DownloadSection.jsx",
+        "text_anchor": "The QR code sits on top of the page content at the bottom right corner",
+        "positive_node": "<div className=\"hidden md:block absolute bottom-0 right-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Navigation bar lacks sufficient stacking context, allowing other elements to overlap it",
+        "positive_node": "<nav className=\"fixed top-0 w-full z-10 bg-white/80 backdrop-blur-md border-b border-zinc-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-2.png",
+        "file_path": "components/AppHero.jsx",
+        "text_anchor": "Notch element has lower stacking context than content elements, causing it to render beneath them",
+        "positive_node": "<div className=\"absolute top-0 w-full h-8 bg-zinc-900 z-5 flex justify-center\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-3.png",
+        "file_path": "components/AppHero.jsx",
+        "text_anchor": "Hero heading uses uniform text size across all breakpoints instead of scaling, resulting in minimal font size",
+        "positive_node": "<h1 className=\"text-2xl sm:text-2xl lg:text-2xl font-bold tracking-tight text-zinc-900 leading-[1.1]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-4.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "The section header and feature grid are immediately adjacent without vertical spacing between them",
+        "positive_node": "<div className=\"text-center max-w-3xl mx-auto mb-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-5.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "Feature card interior spacing is minimal, compressing content toward the card borders",
+        "positive_node": "<div className=\"bento-feature-card group col-span-1 md:col-span-2 md:row-span-2 bg-white rounded-3xl p-2 border border-zinc-100 shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-6.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "Card content is not aligned vertically, with elements flowing in unexpected directions",
+        "positive_node": "<div className=\"relative z-1 h-full\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-7.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "The testimonial section header elements are positioned in reverse order with incorrect vertical alignment",
+        "positive_node": "<div className=\"flex flex-col-reverse md:flex-row justify-between items-start mb-12 gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-8.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "Carousel container is clipped at the viewport edge, hiding testimonial cards beyond the visible area",
+        "positive_node": "<div ref={scrollContainerRef} className=\"flex overflow-hidden snap-x snap-mandatory gap-6 pb-8 hide-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-9.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "Testimonial cards have reduced opacity, making text and content difficult to read",
+        "positive_node": "<div key={t.id} className=\"snap-center flex-shrink-0 w-[400px] md:w-[400px] bg-zinc-50 rounded-2xl p-8 border border-zinc-100 hover:shadow-lg transition-shadow duration-300 opacity-30\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-10.png",
+        "file_path": "components/DownloadSection.jsx",
+        "text_anchor": "QR code container is positioned absolutely without accounting for content layout, causing visual overlap",
+        "positive_node": "<div className=\"hidden md:block absolute bottom-0 right-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Users cannot interact with the navbar because page elements are covering it",
+        "positive_node": "<nav className=\"fixed top-0 w-full z-10 bg-white/80 backdrop-blur-md border-b border-zinc-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-2.png",
+        "file_path": "components/AppHero.jsx",
+        "text_anchor": "The decorative device frame is not visible because content overlaps it",
+        "positive_node": "<div className=\"absolute top-0 w-full h-8 bg-zinc-900 z-5 flex justify-center\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-3.png",
+        "file_path": "components/AppHero.jsx",
+        "text_anchor": "Users cannot easily identify the main page title due to insufficient text scaling",
+        "positive_node": "<h1 className=\"text-2xl sm:text-2xl lg:text-2xl font-bold tracking-tight text-zinc-900 leading-[1.1]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-4.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "The area between the heading and feature cards appears cramped",
+        "positive_node": "<div className=\"text-center max-w-3xl mx-auto mb-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-5.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "Content feels cramped inside the feature cards",
+        "positive_node": "<div className=\"bento-feature-card group col-span-1 md:col-span-2 md:row-span-2 bg-white rounded-3xl p-2 border border-zinc-100 shadow-sm hover:shadow-md transition-all duration-300 relative overflow-hidden\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-6.png",
+        "file_path": "components/FeatureBentoGrid.jsx",
+        "text_anchor": "The feature card's internal structure is misaligned on mobile devices",
+        "positive_node": "<div className=\"relative z-1 h-full\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-7.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "The layout of the testimonials header appears inverted",
+        "positive_node": "<div className=\"flex flex-col-reverse md:flex-row justify-between items-start mb-12 gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-8.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "Users cannot access all testimonial cards because they extend beyond the viewable region",
+        "positive_node": "<div ref={scrollContainerRef} className=\"flex overflow-hidden snap-x snap-mandatory gap-6 pb-8 hide-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-9.png",
+        "file_path": "components/UserTestimonials.jsx",
+        "text_anchor": "Users have trouble reading testimonial content because the cards are too transparent",
+        "positive_node": "<div key={t.id} className=\"snap-center flex-shrink-0 w-[400px] md:w-[400px] bg-zinc-50 rounded-2xl p-8 border border-zinc-100 hover:shadow-lg transition-shadow duration-300 opacity-30\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Apex.git",
+        "image_anchor": "Apex_bug-10.png",
+        "file_path": "components/DownloadSection.jsx",
+        "text_anchor": "Users cannot fully access content because the QR code is covering it",
+        "positive_node": "<div className=\"hidden md:block absolute bottom-0 right-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation menu disappears behind the main content when scrolling down",
+        "positive_node": "<nav className=\"fixed top-0 left-0 w-full z-10 bg-space-900/80 backdrop-blur-lg border-b border-space-700\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The footer is stretched vertically on large screens when it should be in a row",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-4 flex flex-col justify-between items-center gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-3.png",
+        "file_path": "components/MissionCountdown.jsx",
+        "text_anchor": "The countdown timer boxes are appearing in reverse order from right to left",
+        "positive_node": "<div className=\"flex flex-wrap-reverse justify-center items-start mb-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-4.png",
+        "file_path": "components/MissionCountdown.jsx",
+        "text_anchor": "The timer unit labels (Days, Hours, Minutes, Seconds) are invisible due to insufficient color contrast against the dark background",
+        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">{label}</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-5.png",
+        "file_path": "components/CosmosNewsFeed.jsx",
+        "text_anchor": "The news article headlines are way too small and hard to read",
+        "positive_node": "<h3 className=\"text-xs font-bold text-white mb-3 leading-tight group-hover:text-accent-cyan transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-6.png",
+        "file_path": "components/CosmosNewsFeed.jsx",
+        "text_anchor": "The news summary text is overlapping with the image header section above it due to excessive negative margin",
+        "positive_node": "<div className=\"p-6 flex-1 flex flex-col relative z-10 -mt-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-7.png",
+        "file_path": "components/LaunchLiveStream.jsx",
+        "text_anchor": "The red 'LIVE' indicator badge has completely disappeared from the video player due to zero opacity",
+        "positive_node": "<div className=\"bg-red-600/90 text-white text-xs font-bold px-3 py-1 rounded uppercase animate-pulse opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-8.png",
+        "file_path": "components/LaunchLiveStream.jsx",
+        "text_anchor": "The play button overlay is floating on top of everything with excessive stacking context, blocking access to video controls",
+        "positive_node": "<div className=\"absolute inset-0 flex items-center justify-center z-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-9.png",
+        "file_path": "components/PlanetComparison.jsx",
+        "text_anchor": "The planetary database table headers are too dim and hard to read due to low-contrast text color",
+        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">Celestial Body</th>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-10.png",
+        "file_path": "components/PlanetComparison.jsx",
+        "text_anchor": "The planet names in the table are cramped against the left edge with no padding making them hard to read",
+        "positive_node": "<td className=\"p-0 font-bold text-white font-mono sticky left-0 bg-space-800/50 backdrop-blur-md group-hover:bg-space-700/80 group-hover:text-accent-cyan transition-colors border-r border-space-700/50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Navigation bar has insufficient stacking context, causing content layering conflicts",
+        "positive_node": "<nav className=\"fixed top-0 left-0 w-full z-10 bg-space-900/80 backdrop-blur-lg border-b border-space-700\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Footer flexbox layout is stacking vertically instead of horizontally on larger viewports",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-4 flex flex-col justify-between items-center gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-3.png",
+        "file_path": "components/MissionCountdown.jsx",
+        "text_anchor": "Timer unit containers are displaying in reversed order (right to left instead of left to right)",
+        "positive_node": "<div className=\"flex flex-wrap-reverse justify-center items-start mb-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-4.png",
+        "file_path": "components/MissionCountdown.jsx",
+        "text_anchor": "Label text color is too dark, resulting in insufficient contrast against the dark background",
+        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">{label}</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-5.png",
+        "file_path": "components/CosmosNewsFeed.jsx",
+        "text_anchor": "News card title text is too small, compromising readability and visual hierarchy",
+        "positive_node": "<h3 className=\"text-xs font-bold text-white mb-3 leading-tight group-hover:text-accent-cyan transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-6.png",
+        "file_path": "components/CosmosNewsFeed.jsx",
+        "text_anchor": "News card content section has excessive negative margin pushing it over the image",
+        "positive_node": "<div className=\"p-6 flex-1 flex flex-col relative z-10 -mt-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-7.png",
+        "file_path": "components/LaunchLiveStream.jsx",
+        "text_anchor": "Live status badge is invisible despite being rendered in the DOM",
+        "positive_node": "<div className=\"bg-red-600/90 text-white text-xs font-bold px-3 py-1 rounded uppercase animate-pulse opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-8.png",
+        "file_path": "components/LaunchLiveStream.jsx",
+        "text_anchor": "Play button container has very high stacking context, appearing above all stream UI elements",
+        "positive_node": "<div className=\"absolute inset-0 flex items-center justify-center z-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-9.png",
+        "file_path": "components/PlanetComparison.jsx",
+        "text_anchor": "Table header text color has low contrast against the background color",
+        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">Celestial Body</th>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-10.png",
+        "file_path": "components/PlanetComparison.jsx",
+        "text_anchor": "First table column (Celestial Body) has no padding causing text to be cramped",
+        "positive_node": "<td className=\"p-0 font-bold text-white font-mono sticky left-0 bg-space-800/50 backdrop-blur-md group-hover:bg-space-700/80 group-hover:text-accent-cyan transition-colors border-r border-space-700/50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Navigation is hidden behind page content due to incorrect stacking order",
+        "positive_node": "<nav className=\"fixed top-0 left-0 w-full z-10 bg-space-900/80 backdrop-blur-lg border-b border-space-700\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Footer content stacks vertically instead of spreading horizontally on desktop",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-4 flex flex-col justify-between items-center gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-3.png",
+        "file_path": "components/MissionCountdown.jsx",
+        "text_anchor": "Countdown numbers are arranged backwards (seconds, minutes, hours, days)",
+        "positive_node": "<div className=\"flex flex-wrap-reverse justify-center items-start mb-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-4.png",
+        "file_path": "components/MissionCountdown.jsx",
+        "text_anchor": "Day/Hour/Minute/Second text cannot be seen against the dark background",
+        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">{label}</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-5.png",
+        "file_path": "components/CosmosNewsFeed.jsx",
+        "text_anchor": "Article titles are shrunk down and barely visible in the news feed cards",
+        "positive_node": "<h3 className=\"text-xs font-bold text-white mb-3 leading-tight group-hover:text-accent-cyan transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-6.png",
+        "file_path": "components/CosmosNewsFeed.jsx",
+        "text_anchor": "News card text is pushed too far up and covering the image",
+        "positive_node": "<div className=\"p-6 flex-1 flex flex-col relative z-10 -mt-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-7.png",
+        "file_path": "components/LaunchLiveStream.jsx",
+        "text_anchor": "Live broadcast indicator is not visible on the stream overlay",
+        "positive_node": "<div className=\"bg-red-600/90 text-white text-xs font-bold px-3 py-1 rounded uppercase animate-pulse opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-8.png",
+        "file_path": "components/LaunchLiveStream.jsx",
+        "text_anchor": "Play button is covering the stream stats and timer information",
+        "positive_node": "<div className=\"absolute inset-0 flex items-center justify-center z-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-9.png",
+        "file_path": "components/PlanetComparison.jsx",
+        "text_anchor": "Column headers in the planet comparison table are barely visible",
+        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">Celestial Body</th>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/AstroNova.git",
+        "image_anchor": "AstroNova_bug-10.png",
+        "file_path": "components/PlanetComparison.jsx",
+        "text_anchor": "Table cells are missing padding causing text to overlap the borders",
+        "positive_node": "<td className=\"p-0 font-bold text-white font-mono sticky left-0 bg-space-800/50 backdrop-blur-md group-hover:bg-space-700/80 group-hover:text-accent-cyan transition-colors border-r border-space-700/50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-1.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "The recipe title is hidden behind a dark overlay that is too opaque",
+        "positive_node": "<div className=\"absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-950/40 z-50\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The search bar seems to be stuck behind the header",
+        "positive_node": "className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-3.png",
+        "file_path": "components/IngredientList.jsx",
+        "text_anchor": "The ingredient amounts are stacked below the ingredient names instead of on the right",
+        "positive_node": "className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-4.png",
+        "file_path": "components/StepByStepInstructions.jsx",
+        "text_anchor": "The step numbers are crammed into the top-left corner of their boxes",
+        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${`"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-5.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "The difficulty badge is so faint you can barely see what it says",
+        "positive_node": "<span className={`badge-difficulty px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest opacity-40 ${difficultyColor[difficulty]}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-6.png",
+        "file_path": "components/NutritionFacts.jsx",
+        "text_anchor": "The nutrition values are all crammed on top of each other",
+        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-7.png",
+        "file_path": "components/IngredientList.jsx",
+        "text_anchor": "The ingredients are crammed really tightly together and hard to click on",
+        "positive_node": "className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-8.png",
+        "file_path": "components/StepByStepInstructions.jsx",
+        "text_anchor": "The recipe step cards are overlapping and running into each other",
+        "positive_node": "className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${`"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-9.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "You can barely see the cooking time - it's almost invisible",
+        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-10.png",
+        "file_path": "components/NutritionFacts.jsx",
+        "text_anchor": "The nutrition information table is so faint you can barely read it",
+        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-1.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "The gradient overlay has excessive layering, blocking the main heading content from being visible",
+        "positive_node": "<div className=\"absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-950/40 z-50\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Z-index layering issue causes the search input to render below the sticky header background",
+        "positive_node": "className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-3.png",
+        "file_path": "components/IngredientList.jsx",
+        "text_anchor": "Flexbox layout breaks the horizontal alignment, stacking content vertically without proper spacing",
+        "positive_node": "className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-4.png",
+        "file_path": "components/StepByStepInstructions.jsx",
+        "text_anchor": "Flexbox centering is broken - items-start alignment pushes step numbers to the top instead of center",
+        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${`"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-5.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "Text opacity is reduced to 40%, making the badge label nearly invisible against the background",
+        "positive_node": "<span className={`badge-difficulty px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest opacity-40 ${difficultyColor[difficulty]}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-6.png",
+        "file_path": "components/NutritionFacts.jsx",
+        "text_anchor": "Line height is set to none, causing vertical text overlap and improper spacing between table row content",
+        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-7.png",
+        "file_path": "components/IngredientList.jsx",
+        "text_anchor": "Vertical padding is reduced and horizontal padding removed, compressing the ingredient items together",
+        "positive_node": "className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-8.png",
+        "file_path": "components/StepByStepInstructions.jsx",
+        "text_anchor": "Negative vertical margin creates overlapping layers between consecutive step containers",
+        "positive_node": "className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${`"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-9.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "Opacity is set to 20%, making the time badge nearly transparent with insufficient visibility and readability",
+        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-10.png",
+        "file_path": "components/NutritionFacts.jsx",
+        "text_anchor": "Opacity is applied to the entire table element, reducing all content visibility to 30% and making information difficult to perceive",
+        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-1.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "Make the gradient overlay more transparent so the recipe title displays clearly",
+        "positive_node": "<div className=\"absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-950/40 z-50\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Increase the z-index of the search input so it displays above the header background",
+        "positive_node": "className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-3.png",
+        "file_path": "components/IngredientList.jsx",
+        "text_anchor": "Change the flex layout back to horizontal so quantities appear on the right side ",
+        "positive_node": "className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-4.png",
+        "file_path": "components/StepByStepInstructions.jsx",
+        "text_anchor": "Fix the flex alignment to center the step numbers within their containers",
+        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${`"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-5.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "Remove the opacity reduction to make the difficulty level text readable",
+        "positive_node": "<span className={`badge-difficulty px-5 py-2 rounded-full text-sm font-bold uppercase tracking-widest opacity-40 ${difficultyColor[difficulty]}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-6.png",
+        "file_path": "components/NutritionFacts.jsx",
+        "text_anchor": "Restore proper line height so nutrition facts display without overlapping",
+        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-7.png",
+        "file_path": "components/IngredientList.jsx",
+        "text_anchor": "Increase padding on ingredient rows to improve spacing and readability",
+        "positive_node": "className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-8.png",
+        "file_path": "components/StepByStepInstructions.jsx",
+        "text_anchor": "Remove the negative margin so step instructions are properly spaced apart",
+        "positive_node": "className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${`"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-9.png",
+        "file_path": "components/RecipeHero.jsx",
+        "text_anchor": "Increase opacity of the cooking time badge so the information is clearly visible",
+        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Culina.git",
+        "image_anchor": "Culina_bug-10.png",
+        "file_path": "components/NutritionFacts.jsx",
+        "text_anchor": "Remove the low opacity so the nutrition facts are clearly readable",
+        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-1.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "When I scroll down the page, the main content covers up the navigation menu at the top.",
+        "positive_node": "className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-2.png",
+        "file_path": "components/Hero.jsx",
+        "text_anchor": "The big buttons under the hero image are stacked on top of each other instead of sitting side by side.",
+        "positive_node": "className=\"flex flex-col items-center justify-center gap-4\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-3.png",
+        "file_path": "components/Contact.jsx",
+        "text_anchor": "The form labels like 'Full Name' and 'Email' are so tiny and faint that I can barely see them.",
+        "positive_node": "className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-4.png",
+        "file_path": "components/Projects.jsx",
+        "text_anchor": "The category labels on each project card are squished against the title text with no space between them.",
+        "positive_node": "className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-5.png",
+        "file_path": "components/Hero.jsx",
+        "text_anchor": "The little green dot that shows I'm online next to my profile picture is completely invisible.",
+        "positive_node": "className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-1.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The navigation bar has incorrect stacking order and is positioned behind other page elements instead of on top.",
+        "positive_node": "className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-2.png",
+        "file_path": "components/Hero.jsx",
+        "text_anchor": "The button container uses only vertical flexbox direction without responsive horizontal layout on desktop screens.",
+        "positive_node": "className=\"flex flex-col items-center justify-center gap-4\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-3.png",
+        "file_path": "components/Contact.jsx",
+        "text_anchor": "Form input labels have excessively reduced font size and insufficient color contrast against the background.",
+        "positive_node": "className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-4.png",
+        "file_path": "components/Projects.jsx",
+        "text_anchor": "Project tag elements have zero internal padding causing their content to overlap with adjacent elements.",
+        "positive_node": "className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-5.png",
+        "file_path": "components/Hero.jsx",
+        "text_anchor": "The status indicator badge is rendered with zero opacity making it imperceptible to users.",
+        "positive_node": "className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-1.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "Verify that the navigation menu stays visible and on top of all other content when scrolling.",
+        "positive_node": "className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-2.png",
+        "file_path": "components/Hero.jsx",
+        "text_anchor": "Ensure action buttons display horizontally next to each other on larger screens.",
+        "positive_node": "className=\"flex flex-col items-center justify-center gap-4\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-3.png",
+        "file_path": "components/Contact.jsx",
+        "text_anchor": "Increase the clarity and readability of form field labels by adjusting text appearance.",
+        "positive_node": "className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-4.png",
+        "file_path": "components/Projects.jsx",
+        "text_anchor": "Add proper spacing around project category badges to separate them from surrounding content.",
+        "positive_node": "className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Elite.git",
+        "image_anchor": "elite-portfolio-pro_bug-5.png",
+        "file_path": "components/Hero.jsx",
+        "text_anchor": "Make the online status indicator visible next to the user's profile image.",
+        "positive_node": "className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\""
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-1.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "Product names are extremely oversized and breaking out of the product cards",
+        "positive_node": "<h3 className=\"font-semibold text-gray-900 text-5xl group-hover:text-brand-600 transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-2.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "Cart items are stacking on top of each other instead of being properly spaced",
+        "positive_node": "<div key={item.id} className=\"flex gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100 group hover:border-brand-200 transition-colors -mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-3.png",
+        "file_path": "components/WeeklyDeals.jsx",
+        "text_anchor": "The main sale headline is invisible on the weekly deals banner",
+        "positive_node": "<h2 className=\"text-3xl md:text-4xl font-serif font-bold mb-2 leading-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-1.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "Product title text exceeds its container height due to oversized font rendering",
+        "positive_node": "<h3 className=\"font-semibold text-gray-900 text-5xl group-hover:text-brand-600 transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-2.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "Cart item containers have negative bottom margin causing vertical overlap with adjacent items",
+        "positive_node": "<div key={item.id} className=\"flex gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100 group hover:border-brand-200 transition-colors -mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-3.png",
+        "file_path": "components/WeeklyDeals.jsx",
+        "text_anchor": "The promotional heading has zero opacity making it invisible while still occupying layout space",
+        "positive_node": "<h2 className=\"text-3xl md:text-4xl font-serif font-bold mb-2 leading-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-1.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "Reduce product name font size so it fits properly within the card bounds without extending beyond edges",
+        "positive_node": "<h3 className=\"font-semibold text-gray-900 text-5xl group-hover:text-brand-600 transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-2.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "Fix the cart item spacing so each product displays without overlapping the one below it",
+        "positive_node": "<div key={item.id} className=\"flex gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100 group hover:border-brand-200 transition-colors -mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market.git",
+        "image_anchor": "FreshHarvest-Market_bug-3.png",
+        "file_path": "components/WeeklyDeals.jsx",
+        "text_anchor": "Make the sale headline visible and readable on the deals banner",
+        "positive_node": "<h2 className=\"text-3xl md:text-4xl font-serif font-bold mb-2 leading-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshMarket.git",
+        "image_anchor": "FreshMarket_bug-1.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "The green 'Organic' label on organic product cards is not visible—it disappears behind the product image",
+        "positive_node": "<div className=\"absolute top-3 right-3 bg-green-100 text-brand-green border border-green-200 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshMarket.git",
+        "image_anchor": "FreshMarket_bug-2.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "When I add items to my cart, the product picture and product name are squished together and overlapping each other",
+        "positive_node": "<div key={`${item.product.id}-${item.weightOption}`} className=\"cart-item flex animate-fadeIn\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshMarket.git",
+        "image_anchor": "FreshMarket_bug-1.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "The organic badge element lacks proper stacking order, causing it to render beneath the product image layer",
+        "positive_node": "<div className=\"absolute top-3 right-3 bg-green-100 text-brand-green border border-green-200 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshMarket.git",
+        "image_anchor": "FreshMarket_bug-2.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "The cart item container is missing horizontal spacing between its image and text sections, causing elements to collapse together",
+        "positive_node": "<div key={`${item.product.id}-${item.weightOption}`} className=\"cart-item flex animate-fadeIn\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshMarket.git",
+        "image_anchor": "FreshMarket_bug-1.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "Click on a product with an 'Organic' label and verify the label appears on top of the product picture—it should be visible in the top-right corner",
+        "positive_node": "<div className=\"absolute top-3 right-3 bg-green-100 text-brand-green border border-green-200 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/FreshMarket.git",
+        "image_anchor": "FreshMarket_bug-2.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "Add a product to the cart and examine the cart summary—check if the product thumbnail and its name appear with proper separation",
+        "positive_node": "<div key={`${item.product.id}-${item.weightOption}`} className=\"cart-item flex animate-fadeIn\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation bar is getting hidden behind other content on the page.",
+        "positive_node": "<nav className=\"bg-white border-b border-gray-200 sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-2.png",
+        "file_path": "components/JobSearchHero.jsx",
+        "text_anchor": "The search form looks weird on larger screens - the inputs are stacking instead of stretching across.",
+        "positive_node": "<form onSubmit={handleSearch} className=\"search-bar max-w-4xl mx-auto flex flex-col md:flex-col gap-2 p-2 bg-white rounded-xl shadow-lg border border-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-3.png",
+        "file_path": "components/JobFeed.jsx",
+        "text_anchor": "The job titles look really hard to read - they're too small and faint.",
+        "positive_node": "<h3 className=\"text-xs font-light text-gray-400 group-hover:text-indigo-600 transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-4.png",
+        "file_path": "components/JobFeed.jsx",
+        "text_anchor": "The content inside each job card is crammed right up against the border with no breathing room.",
+        "positive_node": "<div key={job.id} className=\"job-listing group bg-white p-0 rounded-lg border border-gray-200 job-card-shadow transition-all duration-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-5.png",
+        "file_path": "components/CompanySpotlight.jsx",
+        "text_anchor": "The company names and information in the sidebar are invisible.",
+        "positive_node": "<div key={company.id} className=\"flex items-center gap-4 group cursor-pointer opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-6.png",
+        "file_path": "components/NewsletterSignup.jsx",
+        "text_anchor": "After subscribing, the confirmation message appears way off the screen and I can't see it.",
+        "positive_node": "<div className=\"bg-green-500 text-white p-4 rounded-lg animate-bounce inline-block absolute -top-20 -left-96\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Elements are rendering on top of the navigation because the stacking order is incorrect.",
+        "positive_node": "<nav className=\"bg-white border-b border-gray-200 sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-2.png",
+        "file_path": "components/JobSearchHero.jsx",
+        "text_anchor": "The search inputs are displaying vertically on medium and larger screens instead of side-by-side.",
+        "positive_node": "<form onSubmit={handleSearch} className=\"search-bar max-w-4xl mx-auto flex flex-col md:flex-col gap-2 p-2 bg-white rounded-xl shadow-lg border border-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-3.png",
+        "file_path": "components/JobFeed.jsx",
+        "text_anchor": "The job title text has reduced font weight and size, and the color contrast is too low.",
+        "positive_node": "<h3 className=\"text-xs font-light text-gray-400 group-hover:text-indigo-600 transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-4.png",
+        "file_path": "components/JobFeed.jsx",
+        "text_anchor": "The job card container has no internal padding, causing content to overlap and appear misaligned.",
+        "positive_node": "<div key={job.id} className=\"job-listing group bg-white p-0 rounded-lg border border-gray-200 job-card-shadow transition-all duration-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-5.png",
+        "file_path": "components/CompanySpotlight.jsx",
+        "text_anchor": "The company spotlight items have zero opacity and are completely transparent.",
+        "positive_node": "<div key={company.id} className=\"flex items-center gap-4 group cursor-pointer opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-6.png",
+        "file_path": "components/NewsletterSignup.jsx",
+        "text_anchor": "The success message is positioned with absolute positioning far outside the viewport.",
+        "positive_node": "<div className=\"bg-green-500 text-white p-4 rounded-lg animate-bounce inline-block absolute -top-20 -left-96\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot click on navigation links because they are covered by other elements.",
+        "positive_node": "<nav className=\"bg-white border-b border-gray-200 sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-2.png",
+        "file_path": "components/JobSearchHero.jsx",
+        "text_anchor": "The search interface is unusable on desktop because the search field takes up too much vertical space.",
+        "positive_node": "<form onSubmit={handleSearch} className=\"search-bar max-w-4xl mx-auto flex flex-col md:flex-col gap-2 p-2 bg-white rounded-xl shadow-lg border border-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-3.png",
+        "file_path": "components/JobFeed.jsx",
+        "text_anchor": "I cannot clearly read the job titles in the list because they are too small and dim.",
+        "positive_node": "<h3 className=\"text-xs font-light text-gray-400 group-hover:text-indigo-600 transition-colors\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-4.png",
+        "file_path": "components/JobFeed.jsx",
+        "text_anchor": "The job listings are unreadable because the content is crowded against the edges.",
+        "positive_node": "<div key={job.id} className=\"job-listing group bg-white p-0 rounded-lg border border-gray-200 job-card-shadow transition-all duration-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-5.png",
+        "file_path": "components/CompanySpotlight.jsx",
+        "text_anchor": "I cannot see the company spotlight information at all because the items are not visible.",
+        "positive_node": "<div key={company.id} className=\"flex items-center gap-4 group cursor-pointer opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HireSync.git",
+        "image_anchor": "HireSync_bug-6.png",
+        "file_path": "components/NewsletterSignup.jsx",
+        "text_anchor": "I never see the newsletter confirmation message because it is positioned off-screen and I cannot confirm the subscription worked.",
+        "positive_node": "<div className=\"bg-green-500 text-white p-4 rounded-lg animate-bounce inline-block absolute -top-20 -left-96\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-1.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "The header disappears when I scroll down the page.",
+        "positive_node": "<header className=\"sticky top-0 z-[-10] w-full bg-white/80 backdrop-blur-md border-b border-slate-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-2.png",
+        "file_path": "components/MissionHero.jsx",
+        "text_anchor": "The main heading text is way too huge on the page.",
+        "positive_node": "<h1 className=\"text-9xl md:text-9xl font-bold text-slate-900 leading-[1.1] mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-3.png",
+        "file_path": "components/CauseCards.jsx",
+        "text_anchor": "The cards are displaying in the wrong order.",
+        "positive_node": "<div className=\"flex flex-row-reverse gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-4.png",
+        "file_path": "components/DonationForm.jsx",
+        "text_anchor": "The donation form is overlapping with the content above it.",
+        "positive_node": "<div className=\"bg-white p-8 md:p-12 rounded-3xl shadow-2xl w-full max-w-xl relative border border-slate-100 -mt-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-1.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "The header is positioned behind the main content instead of on top.",
+        "positive_node": "<header className=\"sticky top-0 z-[-10] w-full bg-white/80 backdrop-blur-md border-b border-slate-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-2.png",
+        "file_path": "components/MissionHero.jsx",
+        "text_anchor": "The headline font size is oversized and breaks the layout proportions.",
+        "positive_node": "<h1 className=\"text-9xl md:text-9xl font-bold text-slate-900 leading-[1.1] mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-3.png",
+        "file_path": "components/CauseCards.jsx",
+        "text_anchor": "The cause cards are stacking horizontally reversed instead of vertically.",
+        "positive_node": "<div className=\"flex flex-row-reverse gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-4.png",
+        "file_path": "components/DonationForm.jsx",
+        "text_anchor": "The form has excessive negative margin that causes it to overlap the section above.",
+        "positive_node": "<div className=\"bg-white p-8 md:p-12 rounded-3xl shadow-2xl w-full max-w-xl relative border border-slate-100 -mt-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-1.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "I cannot see the navigation menu when I scroll because it is hidden behind the content.",
+        "positive_node": "<header className=\"sticky top-0 z-[-10] w-full bg-white/80 backdrop-blur-md border-b border-slate-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-2.png",
+        "file_path": "components/MissionHero.jsx",
+        "text_anchor": "The heading is so large it overflows off the screen and makes the page hard to navigate.",
+        "positive_node": "<h1 className=\"text-9xl md:text-9xl font-bold text-slate-900 leading-[1.1] mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-3.png",
+        "file_path": "components/CauseCards.jsx",
+        "text_anchor": "The card layout is backwards making it confusing to read the causes in the proper sequence.",
+        "positive_node": "<div className=\"flex flex-row-reverse gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/HopeBridge.git",
+        "image_anchor": "HopeBridge_bug-4.png",
+        "file_path": "components/DonationForm.jsx",
+        "text_anchor": "I cannot click the donation form because another element is covering it.",
+        "positive_node": "<div className=\"bg-white p-8 md:p-12 rounded-3xl shadow-2xl w-full max-w-xl relative border border-slate-100 -mt-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-1.png",
+        "file_path": "components/Layout.jsx",
+        "text_anchor": "The mobile menu appears behind the content when you open it.",
+        "positive_node": "<div className=\"md:hidden bg-white border-t border-slate-100 -z-10 relative\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-2.png",
+        "file_path": "components/ResultsDashboard.jsx",
+        "text_anchor": "The insurance plan cards are not lining up properly side-by-side.",
+        "positive_node": "<div className=\"grid grid-cols-1 gap-8 mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-3.png",
+        "file_path": "components/FormWizard.jsx",
+        "text_anchor": "The Age input label is overlapping with the text box.",
+        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">Age</label>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-1.png",
+        "file_path": "components/Layout.jsx",
+        "text_anchor": "The mobile menu items are being rendered with lower stacking order than underlying page elements.",
+        "positive_node": "<div className=\"md:hidden bg-white border-t border-slate-100 -z-10 relative\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-2.png",
+        "file_path": "components/ResultsDashboard.jsx",
+        "text_anchor": "The grid layout is displaying cards in a single column instead of using responsive columns.",
+        "positive_node": "<div className=\"grid grid-cols-1 gap-8 mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-3.png",
+        "file_path": "components/FormWizard.jsx",
+        "text_anchor": "The label element lacks proper vertical spacing above the input field.",
+        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">Age</label>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-1.png",
+        "file_path": "components/Layout.jsx",
+        "text_anchor": "I cannot click on mobile navigation options because they are hidden beneath the main content.",
+        "positive_node": "<div className=\"md:hidden bg-white border-t border-slate-100 -z-10 relative\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-2.png",
+        "file_path": "components/ResultsDashboard.jsx",
+        "text_anchor": "The pricing comparison is hard to read because plans are stacked vertically instead of shown side-by-side.",
+        "positive_node": "<div className=\"grid grid-cols-1 gap-8 mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/InsureAI",
+        "image_anchor": "InsureAI_bug-3.png",
+        "file_path": "components/FormWizard.jsx",
+        "text_anchor": "I cannot clearly see the Age field label because it overlaps with the input box.",
+        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">Age</label>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "image_anchor": "Lumina-Books_bug-1.png",
+        "file_path": "components/BookGrid.jsx",
+        "text_anchor": "There's a dark overlay blocking the cover image of each book.",
+        "positive_node": "<div className=\"absolute inset-0 bg-black/40 transition-colors duration-300 flex items-end justify-center pb-4 opacity-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "image_anchor": "Lumina-Books_bug-2.png",
+        "file_path": "components/BookSearch.jsx",
+        "text_anchor": "The search suggestions dropdown is cut off and only shows half the width.",
+        "positive_node": "<div className=\"absolute z-50 mt-1 w-1/2 bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm left-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "image_anchor": "Lumina-Books_bug-1.png",
+        "file_path": "components/BookGrid.jsx",
+        "text_anchor": "The book cover images have a dark semi-transparent layer permanently covering them, preventing the user from seeing the book artwork.",
+        "positive_node": "<div className=\"absolute inset-0 bg-black/40 transition-colors duration-300 flex items-end justify-center pb-4 opacity-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "image_anchor": "Lumina-Books_bug-2.png",
+        "file_path": "components/BookSearch.jsx",
+        "text_anchor": "The search suggestions dropdown is rendered at only half the expected width, with the right side of the content area truncated and inaccessible.",
+        "positive_node": "<div className=\"absolute z-50 mt-1 w-1/2 bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm left-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "image_anchor": "Lumina-Books_bug-1.png",
+        "file_path": "components/BookGrid.jsx",
+        "text_anchor": "I cannot see the book covers because a dark layer is permanently blocking my view of all the product images.",
+        "positive_node": "<div className=\"absolute inset-0 bg-black/40 transition-colors duration-300 flex items-end justify-center pb-4 opacity-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Books.git",
+        "image_anchor": "Lumina-Books_bug-2.png",
+        "file_path": "components/BookSearch.jsx",
+        "text_anchor": "I cannot see or interact with the complete search suggestions because the dropdown is cut off on the right side.",
+        "positive_node": "<div className=\"absolute z-50 mt-1 w-1/2 bg-white shadow-xl max-h-96 rounded-lg py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm left-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-1.png",
+        "file_path": "components/SecurityStatus.jsx",
+        "text_anchor": "There's a white blob covering the security status on the locked/unlocked screen.",
+        "positive_node": "<div className={`\n            absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10\n            ${isLocked ? 'bg-white' : 'bg-red-500'}\n         `}></div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-2.png",
+        "file_path": "components/DeviceGrid.jsx",
+        "text_anchor": "The device toggle switch is hanging below the device icon instead of being lined up next to it.",
+        "positive_node": "<div className=\"flex flex-col justify-between items-start mb-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-3.png",
+        "file_path": "components/QuickSceneToggle.jsx",
+        "text_anchor": "The scene names in the selection buttons are way too small and almost invisible.",
+        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">{scene.label}</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-4.png",
+        "file_path": "components/EnergyConsumption.jsx",
+        "text_anchor": "The chart legend is overlapping with the bars in the energy chart.",
+        "positive_node": "<div className=\"-mt-8 flex items-center justify-between text-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-5.png",
+        "file_path": "components/SecurityStatus.jsx",
+        "text_anchor": "The lock/unlock icon is missing from the security status display.",
+        "positive_node": "<div className={`\n                w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0\n                ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'}\n            `}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-1.png",
+        "file_path": "components/SecurityStatus.jsx",
+        "text_anchor": "The decorative background circle is rendered in front of the status message instead of behind it, obscuring the security state text and status icon.",
+        "positive_node": "<div className={`\n            absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10\n            ${isLocked ? 'bg-white' : 'bg-red-500'}\n         `}></div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-2.png",
+        "file_path": "components/DeviceGrid.jsx",
+        "text_anchor": "The device icon and toggle switch are stacked vertically instead of being arranged horizontally side-by-side, breaking the intended layout.",
+        "positive_node": "<div className=\"flex flex-col justify-between items-start mb-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-3.png",
+        "file_path": "components/QuickSceneToggle.jsx",
+        "text_anchor": "The scene label text is rendered at an extremely small size with very low opacity, making it nearly impossible to read the scene options.",
+        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">{scene.label}</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-4.png",
+        "file_path": "components/EnergyConsumption.jsx",
+        "text_anchor": "The legend section has a large negative margin that causes it to overlap with the bar chart above it, obscuring some bar data.",
+        "positive_node": "<div className=\"-mt-8 flex items-center justify-between text-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-5.png",
+        "file_path": "components/SecurityStatus.jsx",
+        "text_anchor": "The status icon element is completely transparent due to zero opacity, rendering it invisible even though the container remains in the layout.",
+        "positive_node": "<div className={`\n                w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0\n                ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'}\n            `}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-1.png",
+        "file_path": "components/SecurityStatus.jsx",
+        "text_anchor": "I cannot determine if my house is secured or unlocked because the status display is blocked by the background element.",
+        "positive_node": "<div className={`\n            absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10\n            ${isLocked ? 'bg-white' : 'bg-red-500'}\n         `}></div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-2.png",
+        "file_path": "components/DeviceGrid.jsx",
+        "text_anchor": "The device card layout looks unorganized and the toggle button is difficult to locate and click due to unexpected positioning.",
+        "positive_node": "<div className=\"flex flex-col justify-between items-start mb-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-3.png",
+        "file_path": "components/QuickSceneToggle.jsx",
+        "text_anchor": "I cannot read which scene (Home, Away, Sleep, Movie) I'm selecting before clicking the button because the labels are not visible.",
+        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">{scene.label}</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-4.png",
+        "file_path": "components/EnergyConsumption.jsx",
+        "text_anchor": "I cannot see the complete energy usage data for certain days because the legend is covering portions of the chart bars.",
+        "positive_node": "<div className=\"-mt-8 flex items-center justify-between text-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home.git",
+        "image_anchor": "Lumina-Smart-Home_bug-5.png",
+        "file_path": "components/SecurityStatus.jsx",
+        "text_anchor": "I cannot see the visual indicator (lock or unlock icon) for my security status, losing an important visual cue for home safety.",
+        "positive_node": "<div className={`\n                w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0\n                ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'}\n            `}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-1.png",
+        "file_path": "components/CategoryNav.jsx",
+        "text_anchor": "The navigation menu disappears when I scroll down the page.",
+        "positive_node": "<nav className=\"sticky top-0 z-10 bg-white border-b border-gray-200 overflow-x-auto no-scrollbar shadow-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-2.png",
+        "file_path": "components/MenuItemGrid.jsx",
+        "text_anchor": "The menu items are all squished together with no space between them.",
+        "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-0 p-4 md:p-8 max-w-7xl mx-auto\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-3.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "The restaurant name in the header is really tiny and hard to read.",
+        "positive_node": "<span className=\"font-bold text-xs tracking-tight text-gray-900 hidden sm:block\">Lumina Dine</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-4.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "The 'Your Order' title is overlapping with the close button in the cart panel.",
+        "positive_node": "<h2 className=\"text-xl font-bold text-gray-900 -mr-16\">Your Order</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-1.png",
+        "file_path": "components/CategoryNav.jsx",
+        "text_anchor": "The category navigation is being obscured behind the header content instead of staying on top.",
+        "positive_node": "<nav className=\"sticky top-0 z-10 bg-white border-b border-gray-200 overflow-x-auto no-scrollbar shadow-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-2.png",
+        "file_path": "components/MenuItemGrid.jsx",
+        "text_anchor": "The grid layout has zero spacing between food item cards, causing them to appear as a continuous block.",
+        "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-0 p-4 md:p-8 max-w-7xl mx-auto\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-3.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "The brand text 'Lumina Dine' is rendering at an extremely small font size compared to the logo icon.",
+        "positive_node": "<span className=\"font-bold text-xs tracking-tight text-gray-900 hidden sm:block\">Lumina Dine</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-4.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "The heading title is positioned with excessive negative margin, causing it to overlap the close button on the right side.",
+        "positive_node": "<h2 className=\"text-xl font-bold text-gray-900 -mr-16\">Your Order</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-1.png",
+        "file_path": "components/CategoryNav.jsx",
+        "text_anchor": "I cannot see or select different menu categories while scrolling because they are hidden beneath the page header.",
+        "positive_node": "<nav className=\"sticky top-0 z-10 bg-white border-b border-gray-200 overflow-x-auto no-scrollbar shadow-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-2.png",
+        "file_path": "components/MenuItemGrid.jsx",
+        "text_anchor": "The menu items are touching each other with no visual separation, making it difficult to distinguish individual dishes and read their details.",
+        "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-0 p-4 md:p-8 max-w-7xl mx-auto\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-3.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "Users cannot easily identify the restaurant name at the top of the page, making the branding unclear and reducing usability.",
+        "positive_node": "<span className=\"font-bold text-xs tracking-tight text-gray-900 hidden sm:block\">Lumina Dine</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaDine.git",
+        "image_anchor": "LuminaDine_bug-4.png",
+        "file_path": "components/CartSummary.jsx",
+        "text_anchor": "I cannot easily close the cart because the text is blocking the close button, preventing me from dismissing the sidebar.",
+        "positive_node": "<h2 className=\"text-xl font-bold text-gray-900 -mr-16\">Your Order</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-1.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "The navigation menu items are missing from the top of the header.",
+        "positive_node": "<nav className=\"hidden md:flex space-x-8 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-2.png",
+        "file_path": "components/ProductGallery.jsx",
+        "text_anchor": "The product thumbnails look squished together with no spacing between them.",
+        "positive_node": "<div className=\"grid grid-cols-4 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-3.png",
+        "file_path": "components/ProductDetails.jsx",
+        "text_anchor": "The star ratings look strange and appear to be stacked on top of each other.",
+        "positive_node": "<div className=\"flex items-center text-amber-400 -space-x-2\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-1.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "The desktop navigation menu is rendered but appears completely transparent, making all navigation items invisible to the user.",
+        "positive_node": "<nav className=\"hidden md:flex space-x-8 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-2.png",
+        "file_path": "components/ProductGallery.jsx",
+        "text_anchor": "The thumbnail grid has zero spacing between images, causing them to display directly adjacent to each other without any gaps.",
+        "positive_node": "<div className=\"grid grid-cols-4 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-3.png",
+        "file_path": "components/ProductDetails.jsx",
+        "text_anchor": "The rating stars are overlapping due to negative spacing applied to the container, making them appear layered on top of each other instead of side-by-side.",
+        "positive_node": "<div className=\"flex items-center text-amber-400 -space-x-2\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-1.png",
+        "file_path": "components/Header.jsx",
+        "text_anchor": "Users cannot navigate to different product sections like Keyboards, Keycaps, Switches, or Custom Build because the navigation menu is not visible on the screen.",
+        "positive_node": "<nav className=\"hidden md:flex space-x-8 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-2.png",
+        "file_path": "components/ProductGallery.jsx",
+        "text_anchor": "It is difficult to distinguish individual thumbnail images and they are hard to click on because they are rendered touching each other without separation.",
+        "positive_node": "<div className=\"grid grid-cols-4 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuminaTech.git",
+        "image_anchor": "LuminaTech_bug-3.png",
+        "file_path": "components/ProductDetails.jsx",
+        "text_anchor": "The star rating is difficult to read because the stars are rendered on top of each other instead of displayed horizontally, making the rating unclear.",
+        "positive_node": "<div className=\"flex items-center text-amber-400 -space-x-2\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The header keeps disappearing behind the main content when I scroll.",
+        "positive_node": "<nav className=\"fixed top-0 w-full z-0 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-[#ffffff0a]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-2.png",
+        "file_path": "components/BookingForm.jsx",
+        "text_anchor": "The booking form looks weird with all fields crammed into one narrow column.",
+        "positive_node": "<form \n          onSubmit={handleSubmit}\n          className=\"bg-[#0f0f0f] p-10 rounded-[2.5rem] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.9)] border border-[#ffffff0a] grid grid-cols-1 gap-8 items-end\"\n        >"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-3.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "The text in those service boxes is way too tiny to read.",
+        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">{feature.title}</h4>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-4.png",
+        "file_path": "components/TrustBar.jsx",
+        "text_anchor": "The rating section looks broken with things piling on top of each other.",
+        "positive_node": "<div className=\"flex items-center -gap-4 bg-[#0a0a0a] px-10 py-6 rounded-3xl border border-[#ffffff05] shadow-xl\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-5.png",
+        "file_path": "components/FleetCarousel.jsx",
+        "text_anchor": "The car prices are missing from the cards.",
+        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">\\${car.pricePerDay}<span className=\"text-sm font-normal text-gray-500 ml-1 italic\">/day</span></p>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation stacking order is incorrect; elements are rendering above it instead of below it.",
+        "positive_node": "<nav className=\"fixed top-0 w-full z-0 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-[#ffffff0a]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-2.png",
+        "file_path": "components/BookingForm.jsx",
+        "text_anchor": "The form layout is rendering with fields stacking vertically instead of displaying in a horizontal row.",
+        "positive_node": "<form \n          onSubmit={handleSubmit}\n          className=\"bg-[#0f0f0f] p-10 rounded-[2.5rem] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.9)] border border-[#ffffff0a] grid grid-cols-1 gap-8 items-end\"\n        >"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-3.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "The feature card headings are rendered in extremely small font size, causing poor readability.",
+        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">{feature.title}</h4>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-4.png",
+        "file_path": "components/TrustBar.jsx",
+        "text_anchor": "The customer avatar images and rating text are overlapping due to negative spacing between flex items.",
+        "positive_node": "<div className=\"flex items-center -gap-4 bg-[#0a0a0a] px-10 py-6 rounded-3xl border border-[#ffffff05] shadow-xl\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-5.png",
+        "file_path": "components/FleetCarousel.jsx",
+        "text_anchor": "The pricing text is rendered with complete transparency, making it invisible even though the label is visible.",
+        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">\\${car.pricePerDay}<span className=\"text-sm font-normal text-gray-500 ml-1 italic\">/day</span></p>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot interact with navigation buttons because background elements overlap them, blocking access to key features.",
+        "positive_node": "<nav className=\"fixed top-0 w-full z-0 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-[#ffffff0a]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-2.png",
+        "file_path": "components/BookingForm.jsx",
+        "text_anchor": "Users must scroll extensively through the form because all fields are arranged vertically, making it cumbersome to book a car.",
+        "positive_node": "<form \n          onSubmit={handleSubmit}\n          className=\"bg-[#0f0f0f] p-10 rounded-[2.5rem] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.9)] border border-[#ffffff0a] grid grid-cols-1 gap-8 items-end\"\n        >"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-3.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "Users cannot read the service titles because the text is so small, making it difficult to understand what features are offered.",
+        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">{feature.title}</h4>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-4.png",
+        "file_path": "components/TrustBar.jsx",
+        "text_anchor": "Users cannot clearly see the customer testimonial rating because the avatar images overlap the text and obscure the information.",
+        "positive_node": "<div className=\"flex items-center -gap-4 bg-[#0a0a0a] px-10 py-6 rounded-3xl border border-[#ffffff05] shadow-xl\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
+        "image_anchor": "LuxeDrive_bug-5.png",
+        "file_path": "components/FleetCarousel.jsx",
+        "text_anchor": "Customers cannot see the daily rental rates for any vehicles because the price numbers are completely transparent and invisible.",
+        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">\\${car.pricePerDay}<span className=\"text-sm font-normal text-gray-500 ml-1 italic\">/day</span></p>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The top navigation bar is going behind the search box when I scroll.",
+        "positive_node": "<nav className=\"bg-white border-b border-slate-200 sticky top-0 z-10 px-4 py-3 lg:px-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The app name disappears on tablet but the icon stays.",
+        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">LuxeEstate</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-3.png",
+        "file_path": "components/SearchBar.jsx",
+        "text_anchor": "The address input box is way shorter than before.",
+        "positive_node": "<div className=\"relative flex-1 min-w-[240px] group\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-4.png",
+        "file_path": "components/SearchBar.jsx",
+        "text_anchor": "I can barely see the example text in the search box.",
+        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" className=\"...placeholder:text-slate-300...\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-5.png",
+        "file_path": "components/ListingGrid.jsx",
+        "text_anchor": "The property title is overlapping and disappearing into the picture above.",
+        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">{property.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-6.png",
+        "file_path": "components/ListingGrid.jsx",
+        "text_anchor": "The property info boxes are arranged weird and misaligned.",
+        "positive_node": "<div className=\"grid grid-cols-2 gap-4 border-y border-slate-100 py-4 mb-5\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-7.png",
+        "file_path": "components/PropertyMapPreview.jsx",
+        "text_anchor": "The price numbers on the map are invisible.",
+        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">${(prop.price / 1000).toFixed(0)}k</div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-8.png",
+        "file_path": "components/PropertyMapPreview.jsx",
+        "text_anchor": "The zoom buttons on the map are too faint to see.",
+        "positive_node": "<div className=\"absolute right-6 top-6 flex flex-col gap-2 opacity-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-9.png",
+        "file_path": "components/AgentContact.jsx",
+        "text_anchor": "The contact popup window is hidden behind other stuff on the screen.",
+        "positive_node": "<div className=\"fixed bottom-6 right-6 w-[350px] bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20 flex flex-col animate-in slide-in-from-bottom-4 duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-10.png",
+        "file_path": "components/AgentContact.jsx",
+        "text_anchor": "The input fields in the contact form are squeezed vertically.",
+        "positive_node": "<input required type=\"text\" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} className=\"w-full pl-10 pr-4 py-0.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none\" placeholder=\"John Doe\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation elements are hidden beneath the search bar instead of staying on top.",
+        "positive_node": "<nav className=\"bg-white border-b border-slate-200 sticky top-0 z-10 px-4 py-3 lg:px-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The LuxeEstate brand text visibility breakpoint is misconfigured to hide on medium screens too.",
+        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">LuxeEstate</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-3.png",
+        "file_path": "components/SearchBar.jsx",
+        "text_anchor": "The location search field is misconfigured with incorrect flexbox ratio, making it much narrower.",
+        "positive_node": "<div className=\"relative flex-1 min-w-[240px] group\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-4.png",
+        "file_path": "components/SearchBar.jsx",
+        "text_anchor": "Placeholder text uses a color that lacks sufficient contrast with the input field background.",
+        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" className=\"...placeholder:text-slate-300...\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-5.png",
+        "file_path": "components/ListingGrid.jsx",
+        "text_anchor": "The property card title has a large negative bottom margin causing it to overlap the image.",
+        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">{property.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-6.png",
+        "file_path": "components/ListingGrid.jsx",
+        "text_anchor": "The property specifications grid is configured to 2 columns instead of 3, causing the square footage to wrap.",
+        "positive_node": "<div className=\"grid grid-cols-2 gap-4 border-y border-slate-100 py-4 mb-5\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-7.png",
+        "file_path": "components/PropertyMapPreview.jsx",
+        "text_anchor": "The map price bubble text color is extremely light, making it nearly invisible against the white background.",
+        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">${(prop.price / 1000).toFixed(0)}k</div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-8.png",
+        "file_path": "components/PropertyMapPreview.jsx",
+        "text_anchor": "The map control buttons container has reduced opacity making the zoom and compass icons nearly transparent.",
+        "positive_node": "<div className=\"absolute right-6 top-6 flex flex-col gap-2 opacity-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-9.png",
+        "file_path": "components/AgentContact.jsx",
+        "text_anchor": "The agent contact modal has a lower stacking context than the main page content, making it inaccessible.",
+        "positive_node": "<div className=\"fixed bottom-6 right-6 w-[350px] bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20 flex flex-col animate-in slide-in-from-bottom-4 duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-10.png",
+        "file_path": "components/AgentContact.jsx",
+        "text_anchor": "Form input fields have dramatically reduced vertical padding, creating a cramped appearance.",
+        "positive_node": "<input required type=\"text\" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} className=\"w-full pl-10 pr-4 py-0.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none\" placeholder=\"John Doe\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot click the navigation buttons because the search bar is covering them.",
+        "positive_node": "<nav className=\"bg-white border-b border-slate-200 sticky top-0 z-10 px-4 py-3 lg:px-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "On my tablet, I only see an icon and cannot tell what app this is.",
+        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">LuxeEstate</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-3.png",
+        "file_path": "components/SearchBar.jsx",
+        "text_anchor": "The location field is too small to comfortably read and type in my address.",
+        "positive_node": "<div className=\"relative flex-1 min-w-[240px] group\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-4.png",
+        "file_path": "components/SearchBar.jsx",
+        "text_anchor": "The placeholder hint text is too faint to read what format the location should be.",
+        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" className=\"...placeholder:text-slate-300...\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-5.png",
+        "file_path": "components/ListingGrid.jsx",
+        "text_anchor": "I cannot read the property title because it is hidden behind the property image.",
+        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">{property.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-6.png",
+        "file_path": "components/ListingGrid.jsx",
+        "text_anchor": "The square footage information is displayed on a separate line, breaking the visual alignment.",
+        "positive_node": "<div className=\"grid grid-cols-2 gap-4 border-y border-slate-100 py-4 mb-5\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-7.png",
+        "file_path": "components/PropertyMapPreview.jsx",
+        "text_anchor": "I cannot read the property prices displayed on the map markers.",
+        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">${(prop.price / 1000).toFixed(0)}k</div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-8.png",
+        "file_path": "components/PropertyMapPreview.jsx",
+        "text_anchor": "The map zoom controls are so faint that they are difficult to locate and click.",
+        "positive_node": "<div className=\"absolute right-6 top-6 flex flex-col gap-2 opacity-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-9.png",
+        "file_path": "components/AgentContact.jsx",
+        "text_anchor": "I cannot interact with the contact form because other page elements are layered on top of it.",
+        "positive_node": "<div className=\"fixed bottom-6 right-6 w-[350px] bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20 flex flex-col animate-in slide-in-from-bottom-4 duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LuxeEstate.git",
+        "image_anchor": "LuxeEstate_bug-10.png",
+        "file_path": "components/AgentContact.jsx",
+        "text_anchor": "The text in the form fields is vertically compressed making it hard to read what I am typing.",
+        "positive_node": "<input required type=\"text\" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})} className=\"w-full pl-10 pr-4 py-0.5 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none\" placeholder=\"John Doe\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-1.png",
+        "file_path": "components/VideoPlayer.jsx",
+        "text_anchor": "The lesson title is permanently visible over the video and blocks the view.",
+        "positive_node": "<div className=\"absolute top-4 left-4 z-40 opacity-100 group-hover:opacity-100 transition-opacity duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-2.png",
+        "file_path": "components/CourseSidebar.jsx",
+        "text_anchor": "The sidebar items look weird and crushed together on the right side.",
+        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-3.png",
+        "file_path": "components/LessonTabs.jsx",
+        "text_anchor": "The tab content area is completely empty and I can't see any information.",
+        "positive_node": "<div className=\"tab-content p-6 -m-6 flex-grow overflow-hidden max-h-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-1.png",
+        "file_path": "components/VideoPlayer.jsx",
+        "text_anchor": "The text overlay is rendered with full opacity on top of the video player, obstructing the playback area.",
+        "positive_node": "<div className=\"absolute top-4 left-4 z-40 opacity-100 group-hover:opacity-100 transition-opacity duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-2.png",
+        "file_path": "components/CourseSidebar.jsx",
+        "text_anchor": "The lesson list items are stacked vertically with right-aligned text instead of horizontal layout, making them hard to read.",
+        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-3.png",
+        "file_path": "components/LessonTabs.jsx",
+        "text_anchor": "The tab content section is collapsed with maximum height set to zero, hiding all text and elements.",
+        "positive_node": "<div className=\"tab-content p-6 -m-6 flex-grow overflow-hidden max-h-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-1.png",
+        "file_path": "components/VideoPlayer.jsx",
+        "text_anchor": "I cannot see the video clearly because the title text is constantly covering it.",
+        "positive_node": "<div className=\"absolute top-4 left-4 z-40 opacity-100 group-hover:opacity-100 transition-opacity duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-2.png",
+        "file_path": "components/CourseSidebar.jsx",
+        "text_anchor": "I cannot easily browse lessons because the sidebar layout is broken and items are misaligned.",
+        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MasterClass.git",
+        "image_anchor": "MasterClass_bug-3.png",
+        "file_path": "components/LessonTabs.jsx",
+        "text_anchor": "The lesson overview, resources, and notes are not visible because the content area is not displaying.",
+        "positive_node": "<div className=\"tab-content p-6 -m-6 flex-grow overflow-hidden max-h-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MetroPulse.git",
+        "image_anchor": "MetroPulse_bug-1.png",
+        "file_path": "components/AlertTicker.jsx",
+        "text_anchor": "The system alert label disappeared from the notification bar.",
+        "positive_node": "<span className=\"shrink-0 uppercase text-xs font-bold tracking-wider opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MetroPulse.git",
+        "image_anchor": "MetroPulse_bug-2.png",
+        "file_path": "components/TrafficMetrics.jsx",
+        "text_anchor": "The traffic metrics display looks all crammed and stacked weirdly.",
+        "positive_node": "<div className=\"flex flex-col items-start mb-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MetroPulse.git",
+        "image_anchor": "MetroPulse_bug-1.png",
+        "file_path": "components/AlertTicker.jsx",
+        "text_anchor": "The 'System Alert' text is invisible and cannot be read in the alert header section.",
+        "positive_node": "<span className=\"shrink-0 uppercase text-xs font-bold tracking-wider opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MetroPulse.git",
+        "image_anchor": "MetroPulse_bug-2.png",
+        "file_path": "components/TrafficMetrics.jsx",
+        "text_anchor": "The traffic density metric and speed indicator are stacked vertically instead of side-by-side, taking up too much vertical space.",
+        "positive_node": "<div className=\"flex flex-col items-start mb-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MetroPulse.git",
+        "image_anchor": "MetroPulse_bug-1.png",
+        "file_path": "components/AlertTicker.jsx",
+        "text_anchor": "I cannot identify what type of notification this is because the label is hidden.",
+        "positive_node": "<span className=\"shrink-0 uppercase text-xs font-bold tracking-wider opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MetroPulse.git",
+        "image_anchor": "MetroPulse_bug-2.png",
+        "file_path": "components/TrafficMetrics.jsx",
+        "text_anchor": "The metrics card layout is cramped and the average speed indicator now overlaps the main number, making it hard to read the information.",
+        "positive_node": "<div className=\"flex flex-col items-start mb-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-1.png",
+        "file_path": "components/BalanceCard.jsx",
+        "text_anchor": "The balance amount display area is blank and showing nothing.",
+        "positive_node": "<h1 className=\"text-4xl md:text-5xl font-bold tracking-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-2.png",
+        "file_path": "components/TransactionHistory.jsx",
+        "text_anchor": "The transaction merchant names are shifted up weirdly.",
+        "positive_node": "<h4 className=\"font-bold text-gray-900 text-sm leading-tight -mt-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-3.png",
+        "file_path": "components/SpendingChart.jsx",
+        "text_anchor": "The 'Spending Categories' header looks smashed into the chart.",
+        "positive_node": "<h2 className=\"text-xl font-bold text-gray-900 mb-2 -mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-1.png",
+        "file_path": "components/BalanceCard.jsx",
+        "text_anchor": "The balance text is not visible, appearing completely transparent against the card background.",
+        "positive_node": "<h1 className=\"text-4xl md:text-5xl font-bold tracking-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-2.png",
+        "file_path": "components/TransactionHistory.jsx",
+        "text_anchor": "The merchant name is positioned higher than expected, overlapping with the icon space above.",
+        "positive_node": "<h4 className=\"font-bold text-gray-900 text-sm leading-tight -mt-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-3.png",
+        "file_path": "components/SpendingChart.jsx",
+        "text_anchor": "The header has conflicting spacing rules, causing it to overlap with the pie chart visualization below.",
+        "positive_node": "<h2 className=\"text-xl font-bold text-gray-900 mb-2 -mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-1.png",
+        "file_path": "components/BalanceCard.jsx",
+        "text_anchor": "The account balance cannot be displayed, preventing users from seeing their current funds.",
+        "positive_node": "<h1 className=\"text-4xl md:text-5xl font-bold tracking-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-2.png",
+        "file_path": "components/TransactionHistory.jsx",
+        "text_anchor": "The transaction details are hard to read because the merchant name overlaps with the transaction icon.",
+        "positive_node": "<h4 className=\"font-bold text-gray-900 text-sm leading-tight -mt-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Nexus.git",
+        "image_anchor": "Nexus_bug-3.png",
+        "file_path": "components/SpendingChart.jsx",
+        "text_anchor": "The chart title is compressed and difficult to read as it collides with the chart itself, making it unclear what the visualization represents.",
+        "positive_node": "<h2 className=\"text-xl font-bold text-gray-900 mb-2 -mb-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusTech.git",
+        "image_anchor": "NexusTech_bug-1.png",
+        "file_path": "components/ScheduleTimeline.jsx",
+        "text_anchor": "The speaker photos in the schedule cards are missing or appearing outside the timeline areas.",
+        "positive_node": "<img src={session.speaker.avatar} alt={session.speaker.name} className=\"w-10 h-10 rounded-full object-cover border-2 border-slate-800 absolute -top-20 -left-20\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusTech.git",
+        "image_anchor": "NexusTech_bug-1.png",
+        "file_path": "components/ScheduleTimeline.jsx",
+        "text_anchor": "The speaker avatar images are rendered outside the card boundaries due to absolute positioning, making them not visible in the normal card layout.",
+        "positive_node": "<img src={session.speaker.avatar} alt={session.speaker.name} className=\"w-10 h-10 rounded-full object-cover border-2 border-slate-800 absolute -top-20 -left-20\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusTech.git",
+        "image_anchor": "NexusTech_bug-1.png",
+        "file_path": "components/ScheduleTimeline.jsx",
+        "text_anchor": "I cannot see who is speaking at each event because the speaker profile pictures are not displayed within the schedule cards.",
+        "positive_node": "<img src={session.speaker.avatar} alt={session.speaker.name} className=\"w-10 h-10 rounded-full object-cover border-2 border-slate-800 absolute -top-20 -left-20\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/OrbitExchange.git",
+        "image_anchor": "OrbitExchange_bug-1.png",
+        "file_path": "components/OrderBook.jsx",
+        "text_anchor": "The current price display in the middle of the order book has disappeared from view.",
+        "positive_node": "<div className=\"flex items-center justify-center gap-2 py-3 my-1 border-y border-ex-border bg-ex-bg z-10 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/OrbitExchange.git",
+        "image_anchor": "OrbitExchange_bug-1.png",
+        "file_path": "components/OrderBook.jsx",
+        "text_anchor": "The market price indicator between buy and sell orders is rendered as transparent and completely invisible on the screen.",
+        "positive_node": "<div className=\"flex items-center justify-center gap-2 py-3 my-1 border-y border-ex-border bg-ex-bg z-10 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/OrbitExchange.git",
+        "image_anchor": "OrbitExchange_bug-1.png",
+        "file_path": "components/OrderBook.jsx",
+        "text_anchor": "I cannot see the last traded price, making it impossible to gauge the current market rate and place informed orders.",
+        "positive_node": "<div className=\"flex items-center justify-center gap-2 py-3 my-1 border-y border-ex-border bg-ex-bg z-10 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PawPal.git",
+        "image_anchor": "PawPal_bug-1.png",
+        "file_path": "components/AnimalGrid.jsx",
+        "text_anchor": "The heart icon button appears as a giant white box covering the entire pet photo.",
+        "positive_node": "<button \n                  className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\"\n                  aria-label=\"Add to favorites\"\n                >\n                  <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n                    <path fillRule=\"evenodd\" d=\"M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z\" clipRule=\"evenodd\" />\n                  </svg>\n                </button>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PawPal.git",
+        "image_anchor": "PawPal_bug-2.png",
+        "file_path": "components/PetFilterHero.jsx",
+        "text_anchor": "The search box looks really tiny and squished.",
+        "positive_node": "<input\n              type=\"text\"\n              className=\"block w-full pl-10 pr-3 py-4 h-8 text-xs border border-transparent rounded-full leading-5 bg-white/95 backdrop-blur-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-4 focus:ring-orange-500/30 sm:text-lg shadow-xl transition-all\"\n              placeholder=\"Search by name, breed, or personality...\"\n              value={searchTerm}\n              onChange={(e) => setSearchTerm(e.target.value)}\n            />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PawPal.git",
+        "image_anchor": "PawPal_bug-1.png",
+        "file_path": "components/AnimalGrid.jsx",
+        "text_anchor": "The favorite button element is rendering as a full-screen overlay instead of a small icon in the bottom-right corner, obscuring the pet image completely.",
+        "positive_node": "<button \n                  className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\"\n                  aria-label=\"Add to favorites\"\n                >\n                  <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n                    <path fillRule=\"evenodd\" d=\"M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z\" clipRule=\"evenodd\" />\n                  </svg>\n                </button>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PawPal.git",
+        "image_anchor": "PawPal_bug-2.png",
+        "file_path": "components/PetFilterHero.jsx",
+        "text_anchor": "The search input field has reduced vertical height and the placeholder text is displayed at an extremely small font size, making it difficult to read.",
+        "positive_node": "<input\n              type=\"text\"\n              className=\"block w-full pl-10 pr-3 py-4 h-8 text-xs border border-transparent rounded-full leading-5 bg-white/95 backdrop-blur-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-4 focus:ring-orange-500/30 sm:text-lg shadow-xl transition-all\"\n              placeholder=\"Search by name, breed, or personality...\"\n              value={searchTerm}\n              onChange={(e) => setSearchTerm(e.target.value)}\n            />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PawPal.git",
+        "image_anchor": "PawPal_bug-1.png",
+        "file_path": "components/AnimalGrid.jsx",
+        "text_anchor": "I cannot view the pet's photo because a large semi-transparent button is blocking the entire image.",
+        "positive_node": "<button \n                  className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\"\n                  aria-label=\"Add to favorites\"\n                >\n                  <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n                    <path fillRule=\"evenodd\" d=\"M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z\" clipRule=\"evenodd\" />\n                  </svg>\n                </button>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PawPal.git",
+        "image_anchor": "PawPal_bug-2.png",
+        "file_path": "components/PetFilterHero.jsx",
+        "text_anchor": "I cannot properly use the search function because the input field is too small and the text is cut off vertically.",
+        "positive_node": "<input\n              type=\"text\"\n              className=\"block w-full pl-10 pr-3 py-4 h-8 text-xs border border-transparent rounded-full leading-5 bg-white/95 backdrop-blur-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-4 focus:ring-orange-500/30 sm:text-lg shadow-xl transition-all\"\n              placeholder=\"Search by name, breed, or personality...\"\n              value={searchTerm}\n              onChange={(e) => setSearchTerm(e.target.value)}\n            />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-1.png",
+        "file_path": "components/MarketplaceHeader.jsx",
+        "text_anchor": "The search suggestions dropdown is showing behind the header instead of appearing in front of it.",
+        "positive_node": "<div className=\"absolute mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden py-2 animate-in fade-in zoom-in duration-200 z-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-2.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "Product cards are displaying in a single column instead of a multi-column grid.",
+        "positive_node": "<div className=\"flex flex-col gap-4 md:gap-6 py-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-3.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The banner headline text looks way too small, making it hard to read the main message.",
+        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">Buy and sell in your neighborhood</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-4.png",
+        "file_path": "components/CategoryIcons.jsx",
+        "text_anchor": "Category icons are squished together and overlapping each other.",
+        "positive_node": "<div className=\"flex overflow-x-auto no-scrollbar py-4 space-x-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-5.png",
+        "file_path": "components/SellerBadge.jsx",
+        "text_anchor": "The seller information is almost invisible as if it's faded out.",
+        "positive_node": "<div className={`seller-info flex items-center space-x-2 opacity-20 ${className}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-6.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "Product details are getting cut off at the bottom of each card.",
+        "positive_node": "<div className=\"p-3 md:p-4 max-h-12 overflow-hidden\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-1.png",
+        "file_path": "components/MarketplaceHeader.jsx",
+        "text_anchor": "The search suggestions dropdown has insufficient stacking order and renders below the sticky header and other page elements.",
+        "positive_node": "<div className=\"absolute mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden py-2 animate-in fade-in zoom-in duration-200 z-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-2.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "The grid layout system has been changed to vertical flexbox, causing items to stack linearly instead of wrapping into columns.",
+        "positive_node": "<div className=\"flex flex-col gap-4 md:gap-6 py-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-3.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The heading font size is set to an extremely small value that breaks the visual hierarchy and makes content unreadable at normal viewing distance.",
+        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">Buy and sell in your neighborhood</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-4.png",
+        "file_path": "components/CategoryIcons.jsx",
+        "text_anchor": "The horizontal spacing between icon buttons has been reduced to minimum, causing adjacent elements to visually collide and appear cramped.",
+        "positive_node": "<div className=\"flex overflow-x-auto no-scrollbar py-4 space-x-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-5.png",
+        "file_path": "components/SellerBadge.jsx",
+        "text_anchor": "The seller badge container has a very low opacity value applied, rendering the entire component nearly transparent and difficult to perceive.",
+        "positive_node": "<div className={`seller-info flex items-center space-x-2 opacity-20 ${className}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-6.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "The details section has a constrained maximum height with hidden overflow, clipping any content that exceeds the small vertical space.",
+        "positive_node": "<div className=\"p-3 md:p-4 max-h-12 overflow-hidden\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-1.png",
+        "file_path": "components/MarketplaceHeader.jsx",
+        "text_anchor": "I cannot click on AI search suggestions because the header is blocking them from being selected.",
+        "positive_node": "<div className=\"absolute mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden py-2 animate-in fade-in zoom-in duration-200 z-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-2.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "I have to scroll endlessly through a long list of products instead of seeing multiple items at once, making it impossible to browse the marketplace efficiently.",
+        "positive_node": "<div className=\"flex flex-col gap-4 md:gap-6 py-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-3.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot read the banner message to understand what the marketplace offers or what action I should take.",
+        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">Buy and sell in your neighborhood</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-4.png",
+        "file_path": "components/CategoryIcons.jsx",
+        "text_anchor": "The category buttons are so tightly packed that I struggle to tap the correct category on mobile devices.",
+        "positive_node": "<div className=\"flex overflow-x-auto no-scrollbar py-4 space-x-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-5.png",
+        "file_path": "components/SellerBadge.jsx",
+        "text_anchor": "I cannot verify seller credibility or read seller information because it is nearly invisible on the product card.",
+        "positive_node": "<div className={`seller-info flex items-center space-x-2 opacity-20 ${className}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/PeerMarket.git",
+        "image_anchor": "PeerMarket_bug-6.png",
+        "file_path": "components/ProductGrid.jsx",
+        "text_anchor": "I cannot see the complete product details and location information because they are cut off and cannot be expanded.",
+        "positive_node": "<div className=\"p-3 md:p-4 max-h-12 overflow-hidden\">"
+    }
+]
