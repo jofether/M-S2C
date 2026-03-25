@@ -1,0 +1,2102 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-1.png",
+        "file_path": "components/AgencyHero.jsx",
+        "text_anchor": "The down arrow animation at the bottom right corner is hidden behind other content",
+        "positive_node": "<div className=\"absolute bottom-12 right-12 hidden lg:block z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-2.png",
+        "file_path": "components/AgencyHero.jsx",
+        "text_anchor": "The 'View Work' button text is getting squished and cramped inside the button",
+        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-3.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The navigation menu items are stacking vertically on top of each other instead of being horizontal",
+        "positive_node": "<div className=\"max-w-7xl mx-auto flex flex-col justify-between items-end\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-4.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The 'AURA' title in the top left is too dark and hard to see against the dark background",
+        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">AURA</h1>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-5.png",
+        "file_path": "components/ServiceGrid.jsx",
+        "text_anchor": "The service cards have all their content squished against the edges with no margins",
+        "positive_node": "<div className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-6.png",
+        "file_path": "components/ServiceGrid.jsx",
+        "text_anchor": "The icons in the service cards are completely invisible",
+        "positive_node": "<div className=\"text-4xl mb-6 group-hover:scale-110 transition-transform duration-500 origin-left opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-7.png",
+        "file_path": "components/PortfolioShowcase.jsx",
+        "text_anchor": "When you hover over portfolio images, the case study button disappears behind the image",
+        "positive_node": "<div className=\"absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-8.png",
+        "file_path": "components/PortfolioShowcase.jsx",
+        "text_anchor": "The portfolio project titles are so tiny you can barely read them",
+        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">{item.title}</h5>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-9.png",
+        "file_path": "components/ClientLogos.jsx",
+        "text_anchor": "The client logos are all crammed together with no space between them",
+        "positive_node": "<div className=\"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 items-center opacity-40 hover:opacity-100 transition-opacity duration-700\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-10.png",
+        "file_path": "components/Footer.jsx",
+        "text_anchor": "The footer content is cramped and broken into too many columns with barely any space",
+        "positive_node": "<div className=\"grid grid-cols-1 lg:grid-cols-4 gap-2 mb-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-1.png",
+        "file_path": "components/AgencyHero.jsx",
+        "text_anchor": "Z-index set to 0 causing absolute positioned element to appear layered behind other content elements",
+        "positive_node": "<div className=\"absolute bottom-12 right-12 hidden lg:block z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-2.png",
+        "file_path": "components/AgencyHero.jsx",
+        "text_anchor": "Horizontal padding reduced from 40px to 8px causes text compression and improper spacing within button",
+        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-3.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "Flexbox direction changed to column causing navbar items to stack vertically instead of horizontal row layout",
+        "positive_node": "<div className=\"max-w-7xl mx-auto flex flex-col justify-between items-end\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-4.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "Text color changed to dark gray significantly reducing contrast ratio against dark background, causing readability issues",
+        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">AURA</h1>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-5.png",
+        "file_path": "components/ServiceGrid.jsx",
+        "text_anchor": "Padding property removed causing card content to have no internal spacing and overlap with borders",
+        "positive_node": "<div className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-6.png",
+        "file_path": "components/ServiceGrid.jsx",
+        "text_anchor": "Opacity set to 0 makes the icon elements imperceptible regardless of interaction state",
+        "positive_node": "<div className=\"text-4xl mb-6 group-hover:scale-110 transition-transform duration-500 origin-left opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-7.png",
+        "file_path": "components/PortfolioShowcase.jsx",
+        "text_anchor": "Overlay layer has z-index 0 with nested element z-index -10, causing hover content to render behind parent layer",
+        "positive_node": "<div className=\"absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-8.png",
+        "file_path": "components/PortfolioShowcase.jsx",
+        "text_anchor": "Font size reduced from 20px to 12px significantly decreasing readability and visual hierarchy of titles",
+        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">{item.title}</h5>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-9.png",
+        "file_path": "components/ClientLogos.jsx",
+        "text_anchor": "Gap property changed from 12 to 0 causes grid items to overlap and have zero spacing",
+        "positive_node": "<div className=\"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 items-center opacity-40 hover:opacity-100 transition-opacity duration-700\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-10.png",
+        "file_path": "components/Footer.jsx",
+        "text_anchor": "Grid layout changed from 2 columns with 24px gap to 4 columns with 8px gap causing improper content distribution",
+        "positive_node": "<div className=\"grid grid-cols-1 lg:grid-cols-4 gap-2 mb-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-1.png",
+        "file_path": "components/AgencyHero.jsx",
+        "text_anchor": "The scroll indicator arrow is not visible where it should be positioned at the bottom right",
+        "positive_node": "<div className=\"absolute bottom-12 right-12 hidden lg:block z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-2.png",
+        "file_path": "components/AgencyHero.jsx",
+        "text_anchor": "Make the button have more breathing room around the text inside it",
+        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-3.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "Fix the navigation layout so the menu links appear in a horizontal line next to the logo",
+        "positive_node": "<div className=\"max-w-7xl mx-auto flex flex-col justify-between items-end\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-4.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The logo text needs to be lighter so it's visible against the background",
+        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">AURA</h1>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-5.png",
+        "file_path": "components/ServiceGrid.jsx",
+        "text_anchor": "Add proper padding around the text inside each service card",
+        "positive_node": "<div className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-6.png",
+        "file_path": "components/ServiceGrid.jsx",
+        "text_anchor": "The service card icons need to be visible at all times",
+        "positive_node": "<div className=\"text-4xl mb-6 group-hover:scale-110 transition-transform duration-500 origin-left opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-7.png",
+        "file_path": "components/PortfolioShowcase.jsx",
+        "text_anchor": "The case study button should appear on top of the image overlay when hovering",
+        "positive_node": "<div className=\"absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-8.png",
+        "file_path": "components/PortfolioShowcase.jsx",
+        "text_anchor": "The project title text needs to be larger so it's readable",
+        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">{item.title}</h5>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-9.png",
+        "file_path": "components/ClientLogos.jsx",
+        "text_anchor": "Add space between the client logo items so they don't touch each other",
+        "positive_node": "<div className=\"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 items-center opacity-40 hover:opacity-100 transition-opacity duration-700\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Aura",
+        "image_anchor": "Aura_bug-10.png",
+        "file_path": "components/Footer.jsx",
+        "text_anchor": "Restore proper footer layout with correct column distribution and spacing",
+        "positive_node": "<div className=\"grid grid-cols-1 lg:grid-cols-4 gap-2 mb-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-1.png",
+        "file_path": "components/SavingsCalculator.jsx",
+        "text_anchor": "The Location label appears below the dropdown instead of above it",
+        "positive_node": "<div className=\"mb-8 group flex flex-col-reverse\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-2.png",
+        "file_path": "components/SavingsCalculator.jsx",
+        "text_anchor": "The state dropdown is way too tall and overlaps with other form fields",
+        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-3.png",
+        "file_path": "components/ResultsDisplay.jsx",
+        "text_anchor": "The result cards disappear or become hidden when you hover over them",
+        "positive_node": "<div className={`savings-card group relative bg-white p-6 rounded-2xl shadow-lg border border-slate-100 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-xl animate-fade-in-up ${delay} z-0`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-4.png",
+        "file_path": "components/ResultsDisplay.jsx",
+        "text_anchor": "The dollar amounts and numbers in the result cards are almost invisible",
+        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">{value}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-5.png",
+        "file_path": "components/SolarFeatures.jsx",
+        "text_anchor": "The four feature boxes are crammed into a single horizontal row on mobile and overlap each other",
+        "positive_node": "<div className=\"grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-6.png",
+        "file_path": "components/SolarFeatures.jsx",
+        "text_anchor": "The feature icons are pushed way down and to the left, ruining the feature card layout",
+        "positive_node": "<div className=\"w-12 h-12 rounded-lg bg-emerald-500 flex items-center justify-center mb-12 shadow-emerald-200 shadow-lg -ml-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-7.png",
+        "file_path": "App.jsx",
+        "text_anchor": "As you scroll down, the navigation header gradually disappears behind the main content area",
+        "positive_node": "<header className=\"bg-white/80 backdrop-blur-md sticky top-0 z-10 border-b border-slate-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-8.png",
+        "file_path": "components/ConsultationCTA.jsx",
+        "text_anchor": "On desktop the email box and submit button are stacked vertically, but on mobile they go side-by-side and don't fit",
+        "positive_node": "<form onSubmit={handleSubmit} className=\"flex flex-row sm:flex-col gap-12 justify-center items-stretch max-w-lg mx-auto\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-9.png",
+        "file_path": "components/ConsultationCTA.jsx",
+        "text_anchor": "The text you type in the email field gets squished against the sides and hides partially",
+        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-10.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The hero description text lines are cramped together and some letters overlap",
+        "positive_node": "<p className=\"max-w-2xl text-lg md:text-xl text-slate-300 mb-10 leading-tight\" style={{lineHeight: '0.8'}}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-1.png",
+        "file_path": "components/SavingsCalculator.jsx",
+        "text_anchor": "State selection label and input have reversed flex direction causing the label to appear beneath the form control instead of above",
+        "positive_node": "<div className=\"mb-8 group flex flex-col-reverse\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-2.png",
+        "file_path": "components/SavingsCalculator.jsx",
+        "text_anchor": "Select element has excessive vertical padding creating tall dropdown that extends beyond its container boundaries",
+        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-3.png",
+        "file_path": "components/ResultsDisplay.jsx",
+        "text_anchor": "Result cards have stacking context issue with z-index set to 0 causing them to render beneath background layers",
+        "positive_node": "<div className={`savings-card group relative bg-white p-6 rounded-2xl shadow-lg border border-slate-100 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-xl animate-fade-in-up ${delay} z-0`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-4.png",
+        "file_path": "components/ResultsDisplay.jsx",
+        "text_anchor": "Result value text uses insufficient color contrast with light gray on white background failing accessibility standards",
+        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">{value}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-5.png",
+        "file_path": "components/SolarFeatures.jsx",
+        "text_anchor": "Grid layout uses fixed column count that does not respect mobile-first responsive design principles",
+        "positive_node": "<div className=\"grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-6.png",
+        "file_path": "components/SolarFeatures.jsx",
+        "text_anchor": "Icon container applies negative margin-left and excessive margin-bottom disrupting the normal document flow",
+        "positive_node": "<div className=\"w-12 h-12 rounded-lg bg-emerald-500 flex items-center justify-center mb-12 shadow-emerald-200 shadow-lg -ml-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-7.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Header has insufficient z-index value relative to main content stacking context causing content to layer on top",
+        "positive_node": "<header className=\"bg-white/80 backdrop-blur-md sticky top-0 z-10 border-b border-slate-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-8.png",
+        "file_path": "components/ConsultationCTA.jsx",
+        "text_anchor": "Form flex direction is reversed relative to intended responsive breakpoints causing layout inversion",
+        "positive_node": "<form onSubmit={handleSubmit} className=\"flex flex-row sm:flex-col gap-12 justify-center items-stretch max-w-lg mx-auto\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-9.png",
+        "file_path": "components/ConsultationCTA.jsx",
+        "text_anchor": "Input element horizontal padding significantly reduced while vertical padding increased causing text layout problems",
+        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-10.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Paragraph has inline style with line-height value of 0.8 creating compressed text overlaps between lines",
+        "positive_node": "<p className=\"max-w-2xl text-lg md:text-xl text-slate-300 mb-10 leading-tight\" style={{lineHeight: '0.8'}}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-1.png",
+        "file_path": "components/SavingsCalculator.jsx",
+        "text_anchor": "I cannot tell which field is for the state selection because the label is below the dropdown",
+        "positive_node": "<div className=\"mb-8 group flex flex-col-reverse\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-2.png",
+        "file_path": "components/SavingsCalculator.jsx",
+        "text_anchor": "The dropdown field is so large it covers other form fields and I cannot access them",
+        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-3.png",
+        "file_path": "components/ResultsDisplay.jsx",
+        "text_anchor": "When I interact with the savings cards, they disappear and I cannot see my calculated results",
+        "positive_node": "<div className={`savings-card group relative bg-white p-6 rounded-2xl shadow-lg border border-slate-100 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-xl animate-fade-in-up ${delay} z-0`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-4.png",
+        "file_path": "components/ResultsDisplay.jsx",
+        "text_anchor": "I cannot read the savings amounts in the cards because the text blends into the background",
+        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">{value}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-5.png",
+        "file_path": "components/SolarFeatures.jsx",
+        "text_anchor": "On my phone, the feature descriptions are unreadable because all four boxes are squashed into one line",
+        "positive_node": "<div className=\"grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-6.png",
+        "file_path": "components/SolarFeatures.jsx",
+        "text_anchor": "The feature icons are cut off and misaligned, making the cards look broken",
+        "positive_node": "<div className=\"w-12 h-12 rounded-lg bg-emerald-500 flex items-center justify-center mb-12 shadow-emerald-200 shadow-lg -ml-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-7.png",
+        "file_path": "App.jsx",
+        "text_anchor": "When scrolling down the page, the navigation menu becomes hidden behind the main content and I cannot access links",
+        "positive_node": "<header className=\"bg-white/80 backdrop-blur-md sticky top-0 z-10 border-b border-slate-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-8.png",
+        "file_path": "components/ConsultationCTA.jsx",
+        "text_anchor": "On mobile the email field and submit button do not fit together and the button gets pushed off screen",
+        "positive_node": "<form onSubmit={handleSubmit} className=\"flex flex-row sm:flex-col gap-12 justify-center items-stretch max-w-lg mx-auto\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-9.png",
+        "file_path": "components/ConsultationCTA.jsx",
+        "text_anchor": "When I type into the email field, my text gets hidden because there is not enough space",
+        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
+        "image_anchor": "Helios-Solar_bug-10.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The hero text is difficult to read because the lines are overlapping each other",
+        "positive_node": "<p className=\"max-w-2xl text-lg md:text-xl text-slate-300 mb-10 leading-tight\" style={{lineHeight: '0.8'}}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-1.png",
+        "file_path": "components/InquiryModal.jsx",
+        "text_anchor": "The popup window is hidden behind the page content and I can't interact with it.",
+        "positive_node": "<div className=\"modal-overlay fixed inset-0 z-0 flex items-center justify-center bg-white/80 backdrop-blur-sm px-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The header disappears when I scroll down and the content goes on top of it.",
+        "positive_node": "<header className=\"py-12 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 sticky top-0 bg-white/95 backdrop-blur-md z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-3.png",
+        "file_path": "components/ExhibitionTabs.jsx",
+        "text_anchor": "The tabs are stacked on top of each other instead of side by side.",
+        "positive_node": "<div className=\"flex flex-col gap-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-4.png",
+        "file_path": "components/ArtistBio.jsx",
+        "text_anchor": "The bio section looks squished and unbalanced.",
+        "positive_node": "<div className=\"col-span-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The main heading is way too small and hard to read.",
+        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">The Shape of Silence</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-6.png",
+        "file_path": "components/ArtGrid.jsx",
+        "text_anchor": "The artwork titles are barely visible against the white background.",
+        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">{artwork.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-7.png",
+        "file_path": "components/InquiryModal.jsx",
+        "text_anchor": "The form fields are crammed against the edges of the popup window.",
+        "positive_node": "<div className=\"modal-container bg-white border border-gray-100 w-full max-w-xl p-0 md:p-0 relative shadow-2xl animate-in fade-in zoom-in duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-8.png",
+        "file_path": "components/ArtistBio.jsx",
+        "text_anchor": "The social media links are too close to the artist name.",
+        "positive_node": "<div className=\"flex gap-6 mt-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-9.png",
+        "file_path": "components/ArtGrid.jsx",
+        "text_anchor": "The Inquire button disappears when I hover over the artwork card.",
+        "positive_node": "<div className=\"pt-4 flex items-center justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-500\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-10.png",
+        "file_path": "components/ExhibitionTabs.jsx",
+        "text_anchor": "There's no visual indicator showing which tab is currently selected.",
+        "positive_node": "<span className=\"absolute bottom-0 left-0 w-full h-px bg-black opacity-0 animate-[scale-x_0.3s_ease-out]\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-1.png",
+        "file_path": "components/InquiryModal.jsx",
+        "text_anchor": "The modal element is stacking below the main content instead of appearing on top.",
+        "positive_node": "<div className=\"modal-overlay fixed inset-0 z-0 flex items-center justify-center bg-white/80 backdrop-blur-sm px-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The sticky header has no stacking context and is being overlapped by gallery items.",
+        "positive_node": "<header className=\"py-12 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 sticky top-0 bg-white/95 backdrop-blur-md z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-3.png",
+        "file_path": "components/ExhibitionTabs.jsx",
+        "text_anchor": "The tab buttons are arranged vertically instead of being in a row.",
+        "positive_node": "<div className=\"flex flex-col gap-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-4.png",
+        "file_path": "components/ArtistBio.jsx",
+        "text_anchor": "The artist information and social links are all stacked in a single column instead of being side by side on larger screens.",
+        "positive_node": "<div className=\"col-span-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The exhibition title has extremely small font size compared to the page layout.",
+        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">The Shape of Silence</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-6.png",
+        "file_path": "components/ArtGrid.jsx",
+        "text_anchor": "The text color is too light and doesn't have enough contrast with the background.",
+        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">{artwork.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-7.png",
+        "file_path": "components/InquiryModal.jsx",
+        "text_anchor": "The form has no internal padding and the inputs are touching the modal border.",
+        "positive_node": "<div className=\"modal-container bg-white border border-gray-100 w-full max-w-xl p-0 md:p-0 relative shadow-2xl animate-in fade-in zoom-in duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-8.png",
+        "file_path": "components/ArtistBio.jsx",
+        "text_anchor": "There's missing vertical spacing between the name and the social links section.",
+        "positive_node": "<div className=\"flex gap-6 mt-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-9.png",
+        "file_path": "components/ArtGrid.jsx",
+        "text_anchor": "The opacity is inverted - the button is visible initially then becomes transparent on hover interaction.",
+        "positive_node": "<div className=\"pt-4 flex items-center justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-500\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-10.png",
+        "file_path": "components/ExhibitionTabs.jsx",
+        "text_anchor": "The underline that shows which tab is active is not visible.",
+        "positive_node": "<span className=\"absolute bottom-0 left-0 w-full h-px bg-black opacity-0 animate-[scale-x_0.3s_ease-out]\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-1.png",
+        "file_path": "components/InquiryModal.jsx",
+        "text_anchor": "I cannot submit my inquiry because the modal is blocked by elements behind it.",
+        "positive_node": "<div className=\"modal-overlay fixed inset-0 z-0 flex items-center justify-center bg-white/80 backdrop-blur-sm px-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-2.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Navigation and branding become hidden when scrolling through the art gallery.",
+        "positive_node": "<header className=\"py-12 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 sticky top-0 bg-white/95 backdrop-blur-md z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-3.png",
+        "file_path": "components/ExhibitionTabs.jsx",
+        "text_anchor": "Navigation between Current, Upcoming and Past tabs is confusing because they are stacked vertically.",
+        "positive_node": "<div className=\"flex flex-col gap-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-4.png",
+        "file_path": "components/ArtistBio.jsx",
+        "text_anchor": "The layout is not taking full advantage of space and feels cramped.",
+        "positive_node": "<div className=\"col-span-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Visitors cannot easily see the exhibition name because the text is tiny.",
+        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">The Shape of Silence</h2>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-6.png",
+        "file_path": "components/ArtGrid.jsx",
+        "text_anchor": "I can hardly read the names of the artworks displayed in the gallery.",
+        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">{artwork.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-7.png",
+        "file_path": "components/InquiryModal.jsx",
+        "text_anchor": "It's difficult to interact with the form fields because there's no space around them.",
+        "positive_node": "<div className=\"modal-container bg-white border border-gray-100 w-full max-w-xl p-0 md:p-0 relative shadow-2xl animate-in fade-in zoom-in duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-8.png",
+        "file_path": "components/ArtistBio.jsx",
+        "text_anchor": "The layout feels cramped and the social media section runs together with the name.",
+        "positive_node": "<div className=\"flex gap-6 mt-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-9.png",
+        "file_path": "components/ArtGrid.jsx",
+        "text_anchor": "I cannot click the Inquire button when I want to because it fades away.",
+        "positive_node": "<div className=\"pt-4 flex items-center justify-between opacity-100 group-hover:opacity-0 transition-opacity duration-500\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art.git",
+        "image_anchor": "L-Atelier-d-Art_bug-10.png",
+        "file_path": "components/ExhibitionTabs.jsx",
+        "text_anchor": "I don't know which exhibition category I'm currently viewing because the indicator is missing.",
+        "positive_node": "<span className=\"absolute bottom-0 left-0 w-full h-px bg-black opacity-0 animate-[scale-x_0.3s_ease-out]\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation bar keeps disappearing behind everything when you scroll down.",
+        "positive_node": "<header className=\"border-b-2 border-gray-100 sticky top-0 bg-white/90 backdrop-blur-md z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-2.png",
+        "file_path": "components/LanguageHero.jsx",
+        "text_anchor": "The language dropdown list is hidden behind the background when you click to open it.",
+        "positive_node": "<div className=\"absolute top-full left-0 mt-2 w-full sm:w-64 bg-white rounded-2xl shadow-xl border-2 border-gray-100 overflow-hidden z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-3.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "The features on desktop are stacking vertically in a single column instead of spreading across the screen.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-4.png",
+        "file_path": "components/LanguageHero.jsx",
+        "text_anchor": "The main heading text is so tiny you can barely read it.",
+        "positive_node": "<h1 className=\"text-xs md:text-xs font-extrabold text-white mb-6 leading-tight drop-shadow-md\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-5.png",
+        "file_path": "components/GrammarAIDemo.jsx",
+        "text_anchor": "The Grammar AI title is microscopic and hard to spot in the demo box.",
+        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">Grammar AI</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-6.png",
+        "file_path": "components/TestimonialGrid.jsx",
+        "text_anchor": "There is way too much empty space between the user avatar and the testimonial text.",
+        "positive_node": "<div className=\"flex items-center gap-4 mb-16\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-7.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "The feature cards are touching each other with no space in between.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-8.png",
+        "file_path": "components/GrammarAIDemo.jsx",
+        "text_anchor": "The AI feedback message appears but is completely invisible.",
+        "positive_node": "<div className=\"bg-brand-yellow/20 border-2 border-brand-yellow rounded-2xl p-4 flex gap-4 items-start animate-fade-in opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-9.png",
+        "file_path": "components/PricingTiers.jsx",
+        "text_anchor": "The Most Popular indicator badge on the pricing card is invisible.",
+        "positive_node": "<div className=\"absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-blue text-white px-4 py-1 rounded-full text-sm font-extrabold uppercase tracking-wide shadow-sm flex items-center gap-1 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-10.png",
+        "file_path": "components/PricingTiers.jsx",
+        "text_anchor": "The Select Plan button text is so faint you can barely see it against the background colors.",
+        "positive_node": "<button className={`w-full py-4 rounded-2xl font-extrabold uppercase tracking-widest text-sm transition-all shadow-[0_4px_0_0_rgba(0,0,0,0.1)] active:shadow-none active:translate-y-[4px] border-2 border-transparent ${plan.isRecommended ? 'bg-brand-blue text-gray-300 hover:bg-opacity-90' : 'bg-white text-gray-400 border-gray-200 hover:bg-gray-50'}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The header is rendering underneath the page content instead of staying on top due to incorrect stacking order.",
+        "positive_node": "<header className=\"border-b-2 border-gray-100 sticky top-0 bg-white/90 backdrop-blur-md z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-2.png",
+        "file_path": "components/LanguageHero.jsx",
+        "text_anchor": "The dropdown menu is rendering in a lower stacking layer than the background elements, making it invisible to users.",
+        "positive_node": "<div className=\"absolute top-full left-0 mt-2 w-full sm:w-64 bg-white rounded-2xl shadow-xl border-2 border-gray-100 overflow-hidden z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-3.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "The grid is configured to only display one column on large screens instead of four, causing poor use of horizontal space.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-4.png",
+        "file_path": "components/LanguageHero.jsx",
+        "text_anchor": "The hero title is rendered at an extremely small text size, making it nearly unreadable on all screen sizes.",
+        "positive_node": "<h1 className=\"text-xs md:text-xs font-extrabold text-white mb-6 leading-tight drop-shadow-md\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-5.png",
+        "file_path": "components/GrammarAIDemo.jsx",
+        "text_anchor": "The heading is rendered with an excessively small font size, reducing visual hierarchy and making it difficult to identify the feature.",
+        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">Grammar AI</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-6.png",
+        "file_path": "components/TestimonialGrid.jsx",
+        "text_anchor": "The vertical margin below the user profile section is excessive, creating inconsistent spacing within the testimonial card.",
+        "positive_node": "<div className=\"flex items-center gap-4 mb-16\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-7.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "The grid gap between feature items is set to zero, causing the cards to have no horizontal or vertical separation.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-8.png",
+        "file_path": "components/GrammarAIDemo.jsx",
+        "text_anchor": "The feedback container is rendered with full transparency, making the AI response invisible regardless of the content inside.",
+        "positive_node": "<div className=\"bg-brand-yellow/20 border-2 border-brand-yellow rounded-2xl p-4 flex gap-4 items-start animate-fade-in opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-9.png",
+        "file_path": "components/PricingTiers.jsx",
+        "text_anchor": "The recommended plan badge is rendered with zero opacity, making it completely invisible even though the element exists in the DOM.",
+        "positive_node": "<div className=\"absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-blue text-white px-4 py-1 rounded-full text-sm font-extrabold uppercase tracking-wide shadow-sm flex items-center gap-1 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-10.png",
+        "file_path": "components/PricingTiers.jsx",
+        "text_anchor": "The button text color has poor contrast against both the blue background and white background, rendering the text nearly invisible.",
+        "positive_node": "<button className={`w-full py-4 rounded-2xl font-extrabold uppercase tracking-widest text-sm transition-all shadow-[0_4px_0_0_rgba(0,0,0,0.1)] active:shadow-none active:translate-y-[4px] border-2 border-transparent ${plan.isRecommended ? 'bg-brand-blue text-gray-300 hover:bg-opacity-90' : 'bg-white text-gray-400 border-gray-200 hover:bg-gray-50'}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Users cannot access navigation menu items because they are hidden behind the main content when scrolling.",
+        "positive_node": "<header className=\"border-b-2 border-gray-100 sticky top-0 bg-white/90 backdrop-blur-md z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-2.png",
+        "file_path": "components/LanguageHero.jsx",
+        "text_anchor": "Users cannot select a language because the dropdown options are obscured by other page elements.",
+        "positive_node": "<div className=\"absolute top-full left-0 mt-2 w-full sm:w-64 bg-white rounded-2xl shadow-xl border-2 border-gray-100 overflow-hidden z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-3.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "Users see a cramped, cluttered view of features because they are all stacked on top of each other.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-4.png",
+        "file_path": "components/LanguageHero.jsx",
+        "text_anchor": "Users cannot see the primary message of the landing page because the text is too small to read.",
+        "positive_node": "<h1 className=\"text-xs md:text-xs font-extrabold text-white mb-6 leading-tight drop-shadow-md\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-5.png",
+        "file_path": "components/GrammarAIDemo.jsx",
+        "text_anchor": "Users struggle to understand which section they are looking at because the title is nearly invisible at this scale.",
+        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">Grammar AI</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-6.png",
+        "file_path": "components/TestimonialGrid.jsx",
+        "text_anchor": "The layout appears broken with awkward gaps that push the testimonial text far away from the user information.",
+        "positive_node": "<div className=\"flex items-center gap-4 mb-16\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-7.png",
+        "file_path": "components/FeaturesList.jsx",
+        "text_anchor": "The layout looks cramped and it is hard to distinguish where one feature card ends and another begins.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-8.png",
+        "file_path": "components/GrammarAIDemo.jsx",
+        "text_anchor": "Users cannot see the grammar corrections and feedback because the message box is completely transparent.",
+        "positive_node": "<div className=\"bg-brand-yellow/20 border-2 border-brand-yellow rounded-2xl p-4 flex gap-4 items-start animate-fade-in opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-9.png",
+        "file_path": "components/PricingTiers.jsx",
+        "text_anchor": "Users cannot identify which pricing plan is recommended because the indicator badge is not visible.",
+        "positive_node": "<div className=\"absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-blue text-white px-4 py-1 rounded-full text-sm font-extrabold uppercase tracking-wide shadow-sm flex items-center gap-1 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/LinguaSphere.git",
+        "image_anchor": "LinguaSphere_bug-10.png",
+        "file_path": "components/PricingTiers.jsx",
+        "text_anchor": "Users cannot easily read which plan they will be selecting because the button text is indistinguishable from the background.",
+        "positive_node": "<button className={`w-full py-4 rounded-2xl font-extrabold uppercase tracking-widest text-sm transition-all shadow-[0_4px_0_0_rgba(0,0,0,0.1)] active:shadow-none active:translate-y-[4px] border-2 border-transparent ${plan.isRecommended ? 'bg-brand-blue text-gray-300 hover:bg-opacity-90' : 'bg-white text-gray-400 border-gray-200 hover:bg-gray-50'}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-1.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "The button text on the hero section looks faded and hard to read.",
+        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">Explore The Atelier</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-2.png",
+        "file_path": "components/CollectionGrid.jsx",
+        "text_anchor": "The collection boxes are all squeezed into one row on large screens.",
+        "positive_node": "<div className=\"grid grid-cols-3 md:grid-cols-1 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-3.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "The main headline on the hero is almost invisible—it's way too small.",
+        "positive_node": "<h1 className=\"text-white font-serif text-sm md:text-lg lg:text-xl mb-8 leading-tight fade-in-up\" style={{ animationDelay: '0.3s' }}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-4.png",
+        "file_path": "components/ProductCard.jsx",
+        "text_anchor": "The product cards have enormous gaps between them, making the page look broken.",
+        "positive_node": "<div className=\"group relative flex flex-col items-center mb-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation menu items completely vanish when you scroll down.",
+        "positive_node": "<div className=\"hidden md:flex space-x-8 lg:space-x-12 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-6.png",
+        "file_path": "components/ProductCard.jsx",
+        "text_anchor": "The 'New Arrival' badge is hidden behind the product photo.",
+        "positive_node": "<span className=\"absolute top-4 left-4 z-0 bg-white/90 px-3 py-1 text-[10px] tracking-widest uppercase font-bold text-luxury-black backdrop-blur-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-7.png",
+        "file_path": "components/CraftsmanshipSection.jsx",
+        "text_anchor": "The image and text stack awkwardly on top of each other instead of sitting side by side.",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-col items-center gap-16 md:gap-24\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-8.png",
+        "file_path": "components/CollectionGrid.jsx",
+        "text_anchor": "The collection names are too tiny to read.",
+        "positive_node": "<h3 className=\"text-white font-serif text-xs md:text-sm italic group-hover:-translate-y-2 transition-transform duration-500\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-9.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "The button on the hero section is ridiculously huge and breaks the layout.",
+        "positive_node": "<button className=\"fade-in-up group relative px-40 py-16 bg-transparent border border-white text-white hover:bg-white hover:text-black transition-all duration-300\" style={{ animationDelay: '0.7s' }}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-10.png",
+        "file_path": "components/CraftsmanshipSection.jsx",
+        "text_anchor": "The image of the jeweler is completely invisible.",
+        "positive_node": "<img src=\"https://picsum.photos/id/250/800/1000\" alt=\"Jeweler working on a ring\" className=\"relative z-10 w-full h-auto object-cover opacity-0 hover:grayscale-0 transition-all duration-700 shadow-2xl\"/>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-1.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "The button text layer is rendering with lower stacking order than the overlay, making it appear behind the button border.",
+        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">Explore The Atelier</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-2.png",
+        "file_path": "components/CollectionGrid.jsx",
+        "text_anchor": "The grid layout is displaying three columns on mobile and collapsing to a single column on larger viewports, inverting the responsive behavior.",
+        "positive_node": "<div className=\"grid grid-cols-3 md:grid-cols-1 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-3.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "The heading font sizes are misconfigured to render at extra-small sizes across all breakpoints instead of progressively scaling up.",
+        "positive_node": "<h1 className=\"text-white font-serif text-sm md:text-lg lg:text-xl mb-8 leading-tight fade-in-up\" style={{ animationDelay: '0.3s' }}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-4.png",
+        "file_path": "components/ProductCard.jsx",
+        "text_anchor": "The product card component has an excessively large bottom margin value that creates disproportionate vertical spacing.",
+        "positive_node": "<div className=\"group relative flex flex-col items-center mb-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation links container is set to full transparency, causing all menu items to become invisible.",
+        "positive_node": "<div className=\"hidden md:flex space-x-8 lg:space-x-12 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-6.png",
+        "file_path": "components/ProductCard.jsx",
+        "text_anchor": "The product badge element has an incorrect stacking context value, positioning it below the product image layer.",
+        "positive_node": "<span className=\"absolute top-4 left-4 z-0 bg-white/90 px-3 py-1 text-[10px] tracking-widest uppercase font-bold text-luxury-black backdrop-blur-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-7.png",
+        "file_path": "components/CraftsmanshipSection.jsx",
+        "text_anchor": "The flexbox layout is set to column direction on both mobile and medium screens, eliminating the side-by-side layout.",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-col items-center gap-16 md:gap-24\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-8.png",
+        "file_path": "components/CollectionGrid.jsx",
+        "text_anchor": "The collection title text size values are configured at the smallest available scale across all viewports.",
+        "positive_node": "<h3 className=\"text-white font-serif text-xs md:text-sm italic group-hover:-translate-y-2 transition-transform duration-500\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-9.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "The button element has severely inflated horizontal and vertical padding values that cause it to overflow its container.",
+        "positive_node": "<button className=\"fade-in-up group relative px-40 py-16 bg-transparent border border-white text-white hover:bg-white hover:text-black transition-all duration-300\" style={{ animationDelay: '0.7s' }}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-10.png",
+        "file_path": "components/CraftsmanshipSection.jsx",
+        "text_anchor": "The image element is applied with full opacity transparency, rendering it completely invisible on the page.",
+        "positive_node": "<img src=\"https://picsum.photos/id/250/800/1000\" alt=\"Jeweler working on a ring\" className=\"relative z-10 w-full h-auto object-cover opacity-0 hover:grayscale-0 transition-all duration-700 shadow-2xl\"/>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-1.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "I cannot read the call-to-action button text on the hero section because it lacks sufficient visual priority.",
+        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">Explore The Atelier</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-2.png",
+        "file_path": "components/CollectionGrid.jsx",
+        "text_anchor": "Users cannot view the full collection items because they are crushed horizontally on desktop screens.",
+        "positive_node": "<div className=\"grid grid-cols-3 md:grid-cols-1 gap-8\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-3.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "The main headline is unreadable and does not grab the user's attention as intended for a luxury brand hero section.",
+        "positive_node": "<h1 className=\"text-white font-serif text-sm md:text-lg lg:text-xl mb-8 leading-tight fade-in-up\" style={{ animationDelay: '0.3s' }}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-4.png",
+        "file_path": "components/ProductCard.jsx",
+        "text_anchor": "Users must scroll excessively to browse products due to overlarge spacing between each item.",
+        "positive_node": "<div className=\"group relative flex flex-col items-center mb-32\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Navigation is completely inaccessible because the menu items are hidden and cannot be clicked.",
+        "positive_node": "<div className=\"hidden md:flex space-x-8 lg:space-x-12 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-6.png",
+        "file_path": "components/ProductCard.jsx",
+        "text_anchor": "Customers cannot identify new products in the catalog because the 'New Arrival' indicator is obscured.",
+        "positive_node": "<span className=\"absolute top-4 left-4 z-0 bg-white/90 px-3 py-1 text-[10px] tracking-widest uppercase font-bold text-luxury-black backdrop-blur-sm\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-7.png",
+        "file_path": "components/CraftsmanshipSection.jsx",
+        "text_anchor": "The craftsmanship narrative cannot be effectively communicated because the content layout is vertically stacked instead of visually balanced.",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-col items-center gap-16 md:gap-24\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-8.png",
+        "file_path": "components/CollectionGrid.jsx",
+        "text_anchor": "Users cannot identify collection categories because the text labels are illegibly small.",
+        "positive_node": "<h3 className=\"text-white font-serif text-xs md:text-sm italic group-hover:-translate-y-2 transition-transform duration-500\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-9.png",
+        "file_path": "components/LuxuryHero.jsx",
+        "text_anchor": "Users cannot interact with the hero button because its oversized dimensions cause it to render outside the clickable viewport.",
+        "positive_node": "<button className=\"fade-in-up group relative px-40 py-16 bg-transparent border border-white text-white hover:bg-white hover:text-black transition-all duration-300\" style={{ animationDelay: '0.7s' }}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Lumiere.git",
+        "image_anchor": "Lumiere_bug-10.png",
+        "file_path": "components/CraftsmanshipSection.jsx",
+        "text_anchor": "The artisan craftsmanship story cannot be conveyed properly because the supporting imagery is invisible.",
+        "positive_node": "<img src=\"https://picsum.photos/id/250/800/1000\" alt=\"Jeweler working on a ring\" className=\"relative z-10 w-full h-auto object-cover opacity-0 hover:grayscale-0 transition-all duration-700 shadow-2xl\"/>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-1.png",
+        "file_path": "components/TourNavigation.jsx",
+        "text_anchor": "The gallery map menu is hidden behind the main exhibition content.",
+        "positive_node": "<div className=\"fixed top-6 right-6 z-10 flex flex-col items-end gap-2 group\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-2.png",
+        "file_path": "components/ArtifactHotspots.jsx",
+        "text_anchor": "The artifact details popup is showing behind the hotspot buttons.",
+        "positive_node": "<div className=\"absolute inset-0 z-5 flex items-center justify-center bg-black/60 backdrop-blur-sm pointer-events-auto p-4 transition-opacity duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-3.png",
+        "file_path": "components/ArtifactHotspots.jsx",
+        "text_anchor": "I can't read the artifact description text on the modal.",
+        "positive_node": "<p className=\"text-gray-800 text-sm md:text-base leading-relaxed mb-6 font-light\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-4.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The room title is barely visible on the screen.",
+        "positive_node": "<h1 className=\"text-4xl md:text-6xl font-serif leading-tight drop-shadow-lg opacity-20 animate-[slideUp_0.7s_ease-out_0.7s_forwards]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-5.png",
+        "file_path": "components/ExhibitionHero.jsx",
+        "text_anchor": "The start tour button content is stacked vertically instead of being horizontal.",
+        "positive_node": "<button \n          onClick={onStart}\n          className=\"tour-start-btn group relative inline-flex flex-col items-center gap-0 px-8 py-4 bg-transparent border border-white/30 rounded-full text-white text-lg font-medium tracking-wide overflow-hidden transition-all duration-300 hover:bg-white hover:text-museum-dark hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] focus:outline-none focus:ring-2 focus:ring-museum-gold focus:ring-offset-2 focus:ring-offset-museum-dark\"\n        >"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-6.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The exhibition room description text is invisible during the intro.",
+        "positive_node": "<p className=\"mt-4 text-gray-200 text-sm md:text-base leading-relaxed opacity-10 animate-[fadeIn_0.7s_ease-out_1s_forwards] max-w-md\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-7.png",
+        "file_path": "components/TourNavigation.jsx",
+        "text_anchor": "The room thumbnail galleries are overlapping each other and difficult to see individually.",
+        "positive_node": "<div className=\"flex flex-col gap-0 -space-y-3 bg-museum-charcoal/40 p-2 rounded-2xl backdrop-blur-sm border border-white/5 transition-all duration-300 hover:bg-museum-charcoal/90\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-8.png",
+        "file_path": "components/ExhibitionHero.jsx",
+        "text_anchor": "The main hero title is too small and hard to read.",
+        "positive_node": "<h1 className=\"text-sm md:text-base font-serif text-white mb-8 leading-tight drop-shadow-2xl\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-9.png",
+        "file_path": "components/AudioGuidePlayer.jsx",
+        "text_anchor": "The now playing label in the audio player is invisible.",
+        "positive_node": "<div className=\"flex-shrink-0 text-center md:text-left w-full md:w-48 lg:w-64 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-10.png",
+        "file_path": "components/AudioGuidePlayer.jsx",
+        "text_anchor": "The audio player buttons are stacked vertically instead of being in a horizontal row.",
+        "positive_node": "<div className=\"flex flex-col items-center gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-1.png",
+        "file_path": "components/TourNavigation.jsx",
+        "text_anchor": "The gallery map navigation is rendering with incorrect stacking order, appearing behind the exhibition area instead of on top.",
+        "positive_node": "<div className=\"fixed top-6 right-6 z-10 flex flex-col items-end gap-2 group\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-2.png",
+        "file_path": "components/ArtifactHotspots.jsx",
+        "text_anchor": "The artifact modal has insufficient depth in the stacking context, causing it to render underneath the interactive hotspot layer.",
+        "positive_node": "<div className=\"absolute inset-0 z-5 flex items-center justify-center bg-black/60 backdrop-blur-sm pointer-events-auto p-4 transition-opacity duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-3.png",
+        "file_path": "components/ArtifactHotspots.jsx",
+        "text_anchor": "The artifact description text is using a dark color that blends with the dark background, rendering as visually imperceptible.",
+        "positive_node": "<p className=\"text-gray-800 text-sm md:text-base leading-relaxed mb-6 font-light\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-4.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The room title element has low opacity, rendering faintly semi-transparent with poor visibility.",
+        "positive_node": "<h1 className=\"text-4xl md:text-6xl font-serif leading-tight drop-shadow-lg opacity-20 animate-[slideUp_0.7s_ease-out_0.7s_forwards]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-5.png",
+        "file_path": "components/ExhibitionHero.jsx",
+        "text_anchor": "The button flex layout is misconfigured as a column with zero spacing, causing content to overlap vertically.",
+        "positive_node": "<button \n          onClick={onStart}\n          className=\"tour-start-btn group relative inline-flex flex-col items-center gap-0 px-8 py-4 bg-transparent border border-white/30 rounded-full text-white text-lg font-medium tracking-wide overflow-hidden transition-all duration-300 hover:bg-white hover:text-museum-dark hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] focus:outline-none focus:ring-2 focus:ring-museum-gold focus:ring-offset-2 focus:ring-offset-museum-dark\"\n        >"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-6.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The room description paragraph has critically low opacity rendering nearly transparent against the dark background.",
+        "positive_node": "<p className=\"mt-4 text-gray-200 text-sm md:text-base leading-relaxed opacity-10 animate-[fadeIn_0.7s_ease-out_1s_forwards] max-w-md\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-7.png",
+        "file_path": "components/TourNavigation.jsx",
+        "text_anchor": "The thumbnail container has negative spacing applied, causing gallery preview images to overlap vertically with each other.",
+        "positive_node": "<div className=\"flex flex-col gap-0 -space-y-3 bg-museum-charcoal/40 p-2 rounded-2xl backdrop-blur-sm border border-white/5 transition-all duration-300 hover:bg-museum-charcoal/90\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-8.png",
+        "file_path": "components/ExhibitionHero.jsx",
+        "text_anchor": "The exhibition hero heading is using drastically reduced font size, rendering at body text scale instead of display heading scale.",
+        "positive_node": "<h1 className=\"text-sm md:text-base font-serif text-white mb-8 leading-tight drop-shadow-2xl\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-9.png",
+        "file_path": "components/AudioGuidePlayer.jsx",
+        "text_anchor": "The track information section has full transparency applied, rendering the content completely invisible.",
+        "positive_node": "<div className=\"flex-shrink-0 text-center md:text-left w-full md:w-48 lg:w-64 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-10.png",
+        "file_path": "components/AudioGuidePlayer.jsx",
+        "text_anchor": "The playback controls container is using vertical flex layout, causing play, pause, and skip buttons to stack on top of each other.",
+        "positive_node": "<div className=\"flex flex-col items-center gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-1.png",
+        "file_path": "components/TourNavigation.jsx",
+        "text_anchor": "I cannot access the gallery navigation menu because it is obscured by the background content.",
+        "positive_node": "<div className=\"fixed top-6 right-6 z-10 flex flex-col items-end gap-2 group\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-2.png",
+        "file_path": "components/ArtifactHotspots.jsx",
+        "text_anchor": "I cannot interact with the artifact modal or read its content because hotspot buttons are blocking it.",
+        "positive_node": "<div className=\"absolute inset-0 z-5 flex items-center justify-center bg-black/60 backdrop-blur-sm pointer-events-auto p-4 transition-opacity duration-300\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-3.png",
+        "file_path": "components/ArtifactHotspots.jsx",
+        "text_anchor": "The artifact information is unreadable because the text color is indistinguishable from the dark card background.",
+        "positive_node": "<p className=\"text-gray-800 text-sm md:text-base leading-relaxed mb-6 font-light\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-4.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot clearly determine which room I am viewing because the room title is too faint to read.",
+        "positive_node": "<h1 className=\"text-4xl md:text-6xl font-serif leading-tight drop-shadow-lg opacity-20 animate-[slideUp_0.7s_ease-out_0.7s_forwards]\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-5.png",
+        "file_path": "components/ExhibitionHero.jsx",
+        "text_anchor": "The button label and icon are overlapping each other, making it impossible to clearly read the button action.",
+        "positive_node": "<button \n          onClick={onStart}\n          className=\"tour-start-btn group relative inline-flex flex-col items-center gap-0 px-8 py-4 bg-transparent border border-white/30 rounded-full text-white text-lg font-medium tracking-wide overflow-hidden transition-all duration-300 hover:bg-white hover:text-museum-dark hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] focus:outline-none focus:ring-2 focus:ring-museum-gold focus:ring-offset-2 focus:ring-offset-museum-dark\"\n        >"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-6.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The exhibition description at the top of the screen is not visible, so I cannot understand the context of what I am viewing.",
+        "positive_node": "<p className=\"mt-4 text-gray-200 text-sm md:text-base leading-relaxed opacity-10 animate-[fadeIn_0.7s_ease-out_1s_forwards] max-w-md\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-7.png",
+        "file_path": "components/TourNavigation.jsx",
+        "text_anchor": "I cannot see the individual room gallery options clearly because the thumbnail previews are stacked on top of each other and obscure each other.",
+        "positive_node": "<div className=\"flex flex-col gap-0 -space-y-3 bg-museum-charcoal/40 p-2 rounded-2xl backdrop-blur-sm border border-white/5 transition-all duration-300 hover:bg-museum-charcoal/90\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-8.png",
+        "file_path": "components/ExhibitionHero.jsx",
+        "text_anchor": "I can barely read the main exhibition title on the welcome screen because it is rendered too small to be legible.",
+        "positive_node": "<h1 className=\"text-sm md:text-base font-serif text-white mb-8 leading-tight drop-shadow-2xl\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-9.png",
+        "file_path": "components/AudioGuidePlayer.jsx",
+        "text_anchor": "I cannot see what audio guide is currently playing, making it difficult to understand which room's narration I am listening to.",
+        "positive_node": "<div className=\"flex-shrink-0 text-center md:text-left w-full md:w-48 lg:w-64 opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Meridian-Virtual-Museum.git",
+        "image_anchor": "Meridian-Virtual-Museum_bug-10.png",
+        "file_path": "components/AudioGuidePlayer.jsx",
+        "text_anchor": "The audio control buttons are stacked and take up excessive vertical space, making the player interface unusable and crowding the bottom of the screen.",
+        "positive_node": "<div className=\"flex flex-col items-center gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation menu is hidden behind the page background.",
+        "positive_node": "<div className={`fixed inset-0 bg-mono-white z-20 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isNavOpen ? 'translate-y-0' : '-translate-y-full'}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-2.png",
+        "file_path": "components/ProjectShowcase.jsx",
+        "text_anchor": "The project number at the corner is missing.",
+        "positive_node": "<span className=\"font-sans text-white/0 text-xs md:text-sm tracking-widest\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-3.png",
+        "file_path": "components/ProjectShowcase.jsx",
+        "text_anchor": "The project title on mobile is shifted up and overlapping the image.",
+        "positive_node": "<div className=\"absolute top-8 left-6 md:hidden z-20 -mt-16\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-4.png",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "text_anchor": "Some text in the philosophy section is too tiny to read.",
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-5.png",
+        "file_path": "components/AwardsList.jsx",
+        "text_anchor": "The awards list items are not aligned properly in a grid.",
+        "positive_node": "<div className=\"md:col-span-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-6.png",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "text_anchor": "The main philosophy section heading is not showing.",
+        "positive_node": "<h2 className=\"text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-7.png",
+        "file_path": "components/AwardsList.jsx",
+        "text_anchor": "The awards section heading is overlapping with the awards list below it.",
+        "positive_node": "<div className=\"flex flex-col items-center text-center mb-16 md:mb-24 -mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-8.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The studio address is shifted way to the left and off the page.",
+        "positive_node": "<div className=\"-ml-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-9.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The location marker on the map has moved to the wrong position.",
+        "positive_node": "<div className=\"absolute top-0 left-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-10.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The social media links at the bottom are barely visible.",
+        "positive_node": "<a key={social} href=\"#\" className=\"text-sm uppercase tracking-widest hover:text-mono-gray transition-colors opacity-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation overlay is rendering behind the header elements instead of on top of the page.",
+        "positive_node": "<div className={`fixed inset-0 bg-mono-white z-20 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isNavOpen ? 'translate-y-0' : '-translate-y-full'}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-2.png",
+        "file_path": "components/ProjectShowcase.jsx",
+        "text_anchor": "The index text has zero opacity making it completely invisible.",
+        "positive_node": "<span className=\"font-sans text-white/0 text-xs md:text-sm tracking-widest\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-3.png",
+        "file_path": "components/ProjectShowcase.jsx",
+        "text_anchor": "Negative spacing is causing the mobile title to stack too close to the top of the image layer.",
+        "positive_node": "<div className=\"absolute top-8 left-6 md:hidden z-20 -mt-16\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-4.png",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "text_anchor": "The italic subtitle word has been resized to extra-small creating a visual hierarchy issue.",
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-5.png",
+        "file_path": "components/AwardsList.jsx",
+        "text_anchor": "Grid column distribution is broken causing uneven spacing in the awards layout.",
+        "positive_node": "<div className=\"md:col-span-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-6.png",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "text_anchor": "The heading text has zero opacity making it completely transparent.",
+        "positive_node": "<h2 className=\"text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-7.png",
+        "file_path": "components/AwardsList.jsx",
+        "text_anchor": "Negative margin is causing the heading to collapse down into the grid items.",
+        "positive_node": "<div className=\"flex flex-col items-center text-center mb-16 md:mb-24 -mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-8.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The contact address section has excessive negative margin pushing content off the visible area.",
+        "positive_node": "<div className=\"-ml-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-9.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The map pin is positioned at the top-left corner instead of being centered on New York.",
+        "positive_node": "<div className=\"absolute top-0 left-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-10.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The social media links have extremely low opacity making them nearly invisible against the background.",
+        "positive_node": "<a key={social} href=\"#\" className=\"text-sm uppercase tracking-widest hover:text-mono-gray transition-colors opacity-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot access the navigation links because the overlay is hidden behind other page elements.",
+        "positive_node": "<div className={`fixed inset-0 bg-mono-white z-20 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isNavOpen ? 'translate-y-0' : '-translate-y-full'}`}>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-2.png",
+        "file_path": "components/ProjectShowcase.jsx",
+        "text_anchor": "I cannot see the project numbering system.",
+        "positive_node": "<span className=\"font-sans text-white/0 text-xs md:text-sm tracking-widest\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-3.png",
+        "file_path": "components/ProjectShowcase.jsx",
+        "text_anchor": "The project title is overlapping and covering important image content.",
+        "positive_node": "<div className=\"absolute top-8 left-6 md:hidden z-20 -mt-16\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-4.png",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "text_anchor": "I cannot read the inline word in the philosophy heading because it is too small.",
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-5.png",
+        "file_path": "components/AwardsList.jsx",
+        "text_anchor": "The award information is cramped and not distributed evenly across the available space.",
+        "positive_node": "<div className=\"md:col-span-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-6.png",
+        "file_path": "components/FirmPhilosophy.jsx",
+        "text_anchor": "I cannot see the section title for the philosophy section.",
+        "positive_node": "<h2 className=\"text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] tracking-tight opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-7.png",
+        "file_path": "components/AwardsList.jsx",
+        "text_anchor": "The awards list and heading are overlapping making text unreadable.",
+        "positive_node": "<div className=\"flex flex-col items-center text-center mb-16 md:mb-24 -mb-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-8.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "I cannot read the studio address because it is pushed outside the viewable area.",
+        "positive_node": "<div className=\"-ml-12\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-9.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "The map indicator is not showing the correct location for the studio.",
+        "positive_node": "<div className=\"absolute top-0 left-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/MONOLITH.git",
+        "image_anchor": "MONOLITH_bug-10.png",
+        "file_path": "components/ContactFooter.jsx",
+        "text_anchor": "I cannot see the social media links to click on them.",
+        "positive_node": "<a key={social} href=\"#\" className=\"text-sm uppercase tracking-widest hover:text-mono-gray transition-colors opacity-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-1.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The navigation bar is stuck behind the page content when I scroll.",
+        "positive_node": "<nav className=\"fixed w-full z-0 bg-white/80 backdrop-blur-md border-b border-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-2.png",
+        "file_path": "components/FeatureGrid.jsx",
+        "text_anchor": "The feature cards are stacking vertically instead of showing side by side.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:flex md:flex-col lg:grid-cols-3 gap-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-3.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The main title is really hard to read.",
+        "positive_node": "<h1 className=\"text-5xl md:text-7xl font-extrabold text-slate-200 tracking-tight mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-4.png",
+        "file_path": "components/PricingTable.jsx",
+        "text_anchor": "The pricing cards look stretched and misaligned.",
+        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-5.png",
+        "file_path": "components/CTASection.jsx",
+        "text_anchor": "The call-to-action section disappeared from the page.",
+        "positive_node": "<div className=\"cta-container relative overflow-hidden rounded-[3rem] px-8 py-20 md:px-16 md:py-24 text-center opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-6.png",
+        "file_path": "components/Footer.jsx",
+        "text_anchor": "The footer is glued to the bottom of my screen and covers content.",
+        "positive_node": "<footer className=\"bg-slate-900 text-slate-300 pt-20 pb-10 fixed bottom-0 w-full z-40\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-7.png",
+        "file_path": "components/FeatureGrid.jsx",
+        "text_anchor": "The feature icons look off-center and misaligned.",
+        "positive_node": "<div className=\"w-12 h-12 bg-indigo-50 rounded-xl flex items-end justify-center mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-8.png",
+        "file_path": "components/TestimonialSlider.jsx",
+        "text_anchor": "The testimonial quotes are tiny and impossible to read.",
+        "positive_node": "<p className=\"text-2xl md:text-3xl font-medium text-slate-800 leading-snug text-xs\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-9.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The mobile menu looks really weird with tons of empty space.",
+        "positive_node": "<div className=\"md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-96 space-y-2\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-10.png",
+        "file_path": "components/PricingTable.jsx",
+        "text_anchor": "The pricing buttons are floating in weird places on the cards.",
+        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-1.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The navbar's stacking order is incorrect and allows page elements to overlap it.",
+        "positive_node": "<nav className=\"fixed w-full z-0 bg-white/80 backdrop-blur-md border-b border-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-2.png",
+        "file_path": "components/FeatureGrid.jsx",
+        "text_anchor": "The flexbox configuration breaks the intended two-column layout on medium screens.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:flex md:flex-col lg:grid-cols-3 gap-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-3.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The heading text lacks sufficient contrast against the white background.",
+        "positive_node": "<h1 className=\"text-5xl md:text-7xl font-extrabold text-slate-200 tracking-tight mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-4.png",
+        "file_path": "components/PricingTable.jsx",
+        "text_anchor": "Excessive padding inside the pricing cards breaks the overall layout.",
+        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-5.png",
+        "file_path": "components/CTASection.jsx",
+        "text_anchor": "The CTA container is rendered completely transparent with zero opacity.",
+        "positive_node": "<div className=\"cta-container relative overflow-hidden rounded-[3rem] px-8 py-20 md:px-16 md:py-24 text-center opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-6.png",
+        "file_path": "components/Footer.jsx",
+        "text_anchor": "The footer has absolute positioning that overlaps the main content area.",
+        "positive_node": "<footer className=\"bg-slate-900 text-slate-300 pt-20 pb-10 fixed bottom-0 w-full z-40\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-7.png",
+        "file_path": "components/FeatureGrid.jsx",
+        "text_anchor": "The icon alignment is positioned at the bottom instead of the center of the container.",
+        "positive_node": "<div className=\"w-12 h-12 bg-indigo-50 rounded-xl flex items-end justify-center mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-8.png",
+        "file_path": "components/TestimonialSlider.jsx",
+        "text_anchor": "The text sizing is set to extra small, conflicting with the intended responsive sizes.",
+        "positive_node": "<p className=\"text-2xl md:text-3xl font-medium text-slate-800 leading-snug text-xs\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-9.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The bottom padding on the mobile menu is excessively large, creating huge whitespace.",
+        "positive_node": "<div className=\"md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-96 space-y-2\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-10.png",
+        "file_path": "components/PricingTable.jsx",
+        "text_anchor": "The buttons are positioned absolutely at the top of the cards instead of at the bottom.",
+        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-1.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "I cannot access the navigation menu because content scrolls in front of it.",
+        "positive_node": "<nav className=\"fixed w-full z-0 bg-white/80 backdrop-blur-md border-b border-gray-100\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-2.png",
+        "file_path": "components/FeatureGrid.jsx",
+        "text_anchor": "The features take up too much vertical space, forcing excessive scrolling to see all items.",
+        "positive_node": "<div className=\"grid grid-cols-1 md:flex md:flex-col lg:grid-cols-3 gap-10\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-3.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot read the main headline because the text is too light.",
+        "positive_node": "<h1 className=\"text-5xl md:text-7xl font-extrabold text-slate-200 tracking-tight mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-4.png",
+        "file_path": "components/PricingTable.jsx",
+        "text_anchor": "The pricing information is spaced out too much and looks broken.",
+        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-5.png",
+        "file_path": "components/CTASection.jsx",
+        "text_anchor": "I cannot see or interact with the primary call-to-action, making it impossible to sign up or start a trial.",
+        "positive_node": "<div className=\"cta-container relative overflow-hidden rounded-[3rem] px-8 py-20 md:px-16 md:py-24 text-center opacity-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-6.png",
+        "file_path": "components/Footer.jsx",
+        "text_anchor": "I cannot scroll to the bottom of the page because the footer is always blocking content.",
+        "positive_node": "<footer className=\"bg-slate-900 text-slate-300 pt-20 pb-10 fixed bottom-0 w-full z-40\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-7.png",
+        "file_path": "components/FeatureGrid.jsx",
+        "text_anchor": "The feature icons look poorly aligned compared to the text, creating a visually broken appearance.",
+        "positive_node": "<div className=\"w-12 h-12 bg-indigo-50 rounded-xl flex items-end justify-center mb-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-8.png",
+        "file_path": "components/TestimonialSlider.jsx",
+        "text_anchor": "I cannot read the customer testimonials because the text is too small.",
+        "positive_node": "<p className=\"text-2xl md:text-3xl font-medium text-slate-800 leading-snug text-xs\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-9.png",
+        "file_path": "components/Navbar.jsx",
+        "text_anchor": "The mobile menu stretches the page vertically and pushes everything down when opened.",
+        "positive_node": "<div className=\"md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-96 space-y-2\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/NexusAI.git",
+        "image_anchor": "NexusAI_bug-10.png",
+        "file_path": "components/PricingTable.jsx",
+        "text_anchor": "The buttons are out of reach and overlap important pricing information.",
+        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-1.png",
+        "file_path": "components/BoardHeader.jsx",
+        "text_anchor": "The top header keeps disappearing behind the board when I scroll down.",
+        "positive_node": "<header className=\"board-header bg-white border-b border-gray-200 px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-2.png",
+        "file_path": "components/ActivitySidebar.jsx",
+        "text_anchor": "The activity sidebar is getting hidden behind other stuff on mobile.",
+        "positive_node": "<aside className=\"activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-3.png",
+        "file_path": "components/KanbanBoard.jsx",
+        "text_anchor": "All the columns are stacked on top of each other instead of side by side.",
+        "positive_node": "<div className=\"h-full flex-col p-6 gap-6 min-w-max\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-4.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "The task info at the bottom is all smooshed together.",
+        "positive_node": "<div className=\"flex items-center mt-3 pt-3 border-t border-gray-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-5.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "The user profile pictures are bleeding off the edge of the card.",
+        "positive_node": "<div className=\"flex -space-x-2 overflow-hidden -m-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-6.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "The task titles are getting cut off and are too small.",
+        "positive_node": "<h3 className=\"text-sm font-semibold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors overflow-hidden whitespace-nowrap max-w-28\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-7.png",
+        "file_path": "components/KanbanBoard.jsx",
+        "text_anchor": "The task cards are overlapping with huge gaps between them.",
+        "positive_node": "<div className=\"flex-1 bg-gray-100/50 rounded-xl p-2 border border-gray-100/50 flex flex-col gap-9 overflow-y-auto custom-scrollbar\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-8.png",
+        "file_path": "components/BoardHeader.jsx",
+        "text_anchor": "The search box is way too tiny; I can hardly see it.",
+        "positive_node": "<input type=\"text\" placeholder=\"Search tasks...\" className=\"pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 w-16 transition-all\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-9.png",
+        "file_path": "components/ActivitySidebar.jsx",
+        "text_anchor": "The sidebar on the right is just a tiny sliver; nothing fits.",
+        "positive_node": "<aside className=\"activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-10.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The overlay that should dim the background when the sidebar opens isn't showing up.",
+        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}></div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-1.png",
+        "file_path": "components/BoardHeader.jsx",
+        "text_anchor": "The header stacking order is too low; it renders below the main content area instead of staying on top.",
+        "positive_node": "<header className=\"board-header bg-white border-b border-gray-200 px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-2.png",
+        "file_path": "components/ActivitySidebar.jsx",
+        "text_anchor": "The sidebar's layering order causes it to render under the board; it should be in front.",
+        "positive_node": "<aside className=\"activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-3.png",
+        "file_path": "components/KanbanBoard.jsx",
+        "text_anchor": "The columns are using vertical stacking instead of horizontal layout; they should be in a row.",
+        "positive_node": "<div className=\"h-full flex-col p-6 gap-6 min-w-max\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-4.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "The footer elements are aligned to the left instead of being distributed between left and right sides.",
+        "positive_node": "<div className=\"flex items-center mt-3 pt-3 border-t border-gray-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-5.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "The assignee stack has excessive negative margin causing overflow beyond the card boundary.",
+        "positive_node": "<div className=\"flex -space-x-2 overflow-hidden -m-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-6.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "The task title has forced single-line text truncation with a narrow maximum width, cutting off content.",
+        "positive_node": "<h3 className=\"text-sm font-semibold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors overflow-hidden whitespace-nowrap max-w-28\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-7.png",
+        "file_path": "components/KanbanBoard.jsx",
+        "text_anchor": "The vertical spacing between cards is excessively large, causing overlapping elements and layout issues.",
+        "positive_node": "<div className=\"flex-1 bg-gray-100/50 rounded-xl p-2 border border-gray-100/50 flex flex-col gap-9 overflow-y-auto custom-scrollbar\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-8.png",
+        "file_path": "components/BoardHeader.jsx",
+        "text_anchor": "The search input has an extremely narrow width constraint, making the placeholder text and input area barely visible.",
+        "positive_node": "<input type=\"text\" placeholder=\"Search tasks...\" className=\"pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 w-16 transition-all\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-9.png",
+        "file_path": "components/ActivitySidebar.jsx",
+        "text_anchor": "The sidebar width is severely constrained to a minimal value, causing all content to be hidden or crushed.",
+        "positive_node": "<aside className=\"activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-10.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The mobile overlay backdrop is completely transparent instead of semi-transparent, making it invisible.",
+        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}></div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-1.png",
+        "file_path": "components/BoardHeader.jsx",
+        "text_anchor": "I can't see the search bar or controls because they get covered by the kanban board when scrolling.",
+        "positive_node": "<header className=\"board-header bg-white border-b border-gray-200 px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-2.png",
+        "file_path": "components/ActivitySidebar.jsx",
+        "text_anchor": "I cannot access the activity feed on my phone because it's blocked by the main content.",
+        "positive_node": "<aside className=\"activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-3.png",
+        "file_path": "components/KanbanBoard.jsx",
+        "text_anchor": "I have to scroll down repeatedly to see each task column, making it impossible to compare tasks across boards.",
+        "positive_node": "<div className=\"h-full flex-col p-6 gap-6 min-w-max\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-4.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "The assignee avatars are stuck next to the comments count, making the card look cluttered and hard to read.",
+        "positive_node": "<div className=\"flex items-center mt-3 pt-3 border-t border-gray-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-5.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "I can't see the profile images clearly as they're cut off or partially hidden outside the task card.",
+        "positive_node": "<div className=\"flex -space-x-2 overflow-hidden -m-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-6.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "I cannot read the full task names because they're truncated to just a few characters.",
+        "positive_node": "<h3 className=\"text-sm font-semibold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors overflow-hidden whitespace-nowrap max-w-28\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-7.png",
+        "file_path": "components/KanbanBoard.jsx",
+        "text_anchor": "The cards are stacking awkwardly with too much space, making some cards invisible or overlapped.",
+        "positive_node": "<div className=\"flex-1 bg-gray-100/50 rounded-xl p-2 border border-gray-100/50 flex flex-col gap-9 overflow-y-auto custom-scrollbar\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-8.png",
+        "file_path": "components/BoardHeader.jsx",
+        "text_anchor": "I cannot see or use the search field effectively because it's shrunk to an unusable size.",
+        "positive_node": "<input type=\"text\" placeholder=\"Search tasks...\" className=\"pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 w-16 transition-all\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-9.png",
+        "file_path": "components/ActivitySidebar.jsx",
+        "text_anchor": "The activity feed sidebar is unusable because it's too narrow to display any text or information.",
+        "positive_node": "<aside className=\"activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-10.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I can't tell if the sidebar modal is actually open because there's no visual feedback or dimming of the background.",
+        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}></div>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The header keeps sliding behind the banner when scrolling down.",
+        "positive_node": "<header className=\"sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-terra-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-2.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "The plant name tags are hidden under the image.",
+        "positive_node": "<div className=\"absolute top-3 left-3 flex flex-col gap-2 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-3.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "The plants are showing in one long column instead of multiple columns.",
+        "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-4.png",
+        "file_path": "components/SustainabilityBadges.jsx",
+        "text_anchor": "The sustainability badges are stacking vertically on the screen.",
+        "positive_node": "<div className=\"flex flex-col justify-center gap-8 md:gap-16 text-terra-800\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The company name in the footer is enormous and doesn't fit.",
+        "positive_node": "<h3 className=\"font-serif text-4xl text-white mb-4\">Terra Flora</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-6.png",
+        "file_path": "components/CareGuideSidebar.jsx",
+        "text_anchor": "The care tips are impossible to read—they're too small and faded.",
+        "positive_node": "<h3 className=\"font-medium text-terra-700 text-[10px] mb-1\">{tip.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-7.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The main content section is overlapping the banner area.",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-8.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "Plant card text is cramped against the edges.",
+        "positive_node": "<div className=\"p-1 flex flex-col flex-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-9.png",
+        "file_path": "components/SeasonSpecialBanner.jsx",
+        "text_anchor": "The banner text is hard to read—it blends into the background image.",
+        "positive_node": "<div className=\"absolute inset-0 bg-gradient-to-r from-terra-900/20 via-terra-800/10 to-transparent\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-10.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "There's a floating button below the plant cards that shouldn't be there.",
+        "positive_node": "<button className=\"absolute -bottom-8 right-4 bg-white text-terra-900 p-3 rounded-full shadow-lg opacity-100 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-moss-600 hover:text-white\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The navigation bar is rendering behind the main content instead of staying on top.",
+        "positive_node": "<header className=\"sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-terra-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-2.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "The featured badge labels are not appearing on top of plant photos as intended.",
+        "positive_node": "<div className=\"absolute top-3 left-3 flex flex-col gap-2 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-3.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "Plants are stacking vertically even on desktop screens instead of displaying side by side.",
+        "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-4.png",
+        "file_path": "components/SustainabilityBadges.jsx",
+        "text_anchor": "The eco-friendly badges are no longer displaying horizontally across the page width.",
+        "positive_node": "<div className=\"flex flex-col justify-center gap-8 md:gap-16 text-terra-800\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The footer heading text is much too large and breaks the layout.",
+        "positive_node": "<h3 className=\"font-serif text-4xl text-white mb-4\">Terra Flora</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-6.png",
+        "file_path": "components/CareGuideSidebar.jsx",
+        "text_anchor": "Care guide text has reduced contrast and is much smaller than before.",
+        "positive_node": "<h3 className=\"font-medium text-terra-700 text-[10px] mb-1\">{tip.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-7.png",
+        "file_path": "App.jsx",
+        "text_anchor": "Content is positioned too high and overlapping with the section above it.",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-8.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "The plant card content has almost no padding, making it feel cramped.",
+        "positive_node": "<div className=\"p-1 flex flex-col flex-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-9.png",
+        "file_path": "components/SeasonSpecialBanner.jsx",
+        "text_anchor": "The text overlay gradient is too transparent, making the heading almost invisible.",
+        "positive_node": "<div className=\"absolute inset-0 bg-gradient-to-r from-terra-900/20 via-terra-800/10 to-transparent\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-10.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "A white button is appearing outside the card boundaries at an odd position.",
+        "positive_node": "<button className=\"absolute -bottom-8 right-4 bg-white text-terra-900 p-3 rounded-full shadow-lg opacity-100 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-moss-600 hover:text-white\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-1.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot click on navigation links because the page content is covering them.",
+        "positive_node": "<header className=\"sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-terra-200\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-2.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "Users cannot see the product tags to identify featured items.",
+        "positive_node": "<div className=\"absolute top-3 left-3 flex flex-col gap-2 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-3.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "On large screens, I have to scroll endlessly through plants one at a time instead of seeing multiple plants at once.",
+        "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-6\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-4.png",
+        "file_path": "components/SustainabilityBadges.jsx",
+        "text_anchor": "Users see a tall vertical stack of sustainability badges instead of a clean horizontal row.",
+        "positive_node": "<div className=\"flex flex-col justify-center gap-8 md:gap-16 text-terra-800\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-5.png",
+        "file_path": "App.jsx",
+        "text_anchor": "The giant footer title makes it hard to read the rest of the footer content.",
+        "positive_node": "<h3 className=\"font-serif text-4xl text-white mb-4\">Terra Flora</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-6.png",
+        "file_path": "components/CareGuideSidebar.jsx",
+        "text_anchor": "I cannot read the plant care information because the text is tiny and the color is too light.",
+        "positive_node": "<h3 className=\"font-medium text-terra-700 text-[10px] mb-1\">{tip.title}</h3>"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-7.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I cannot see the full banner content because products are stacked on top of it.",
+        "positive_node": "<div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-20\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-8.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "Text and information on plant cards is squeezed together with barely any breathing room.",
+        "positive_node": "<div className=\"p-1 flex flex-col flex-1\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-9.png",
+        "file_path": "components/SeasonSpecialBanner.jsx",
+        "text_anchor": "I cannot read the banner headline because it disappears into the background photo.",
+        "positive_node": "<div className=\"absolute inset-0 bg-gradient-to-r from-terra-900/20 via-terra-800/10 to-transparent\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/TerraFlora.git",
+        "image_anchor": "TerraFlora_bug-10.png",
+        "file_path": "components/PlantGrid.jsx",
+        "text_anchor": "An action button is sticking out of the bottom of plant cards where it shouldn't be visible.",
+        "positive_node": "<button className=\"absolute -bottom-8 right-4 bg-white text-terra-900 p-3 rounded-full shadow-lg opacity-100 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-moss-600 hover:text-white\">"
+    }
+]
