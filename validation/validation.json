@@ -1,52 +1,52 @@
 [
     {
-        "github_repo": "https://github.com/EdrianHernandez/PrimeBid.git",
+        "github_repo": "https://github.com/EdrianHernandez/PrimeBid",
         "image_anchor": "PrimeBid_bug-1.png",
         "file_path": "components/AuctionHeader.jsx",
         "text_anchor": "The notification indicator next to the bell icon is not showing up",
         "positive_node": "<span className=\"absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-red-500 opacity-0 rounded-full border-2 border-white\"></span>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/PrimeBid.git",
+        "github_repo": "https://github.com/EdrianHernandez/PrimeBid",
         "image_anchor": "PrimeBid_bug-2.png",
         "file_path": "components/ActiveBidsGrid.jsx",
         "text_anchor": "The auction cards are squished together without any space between them",
         "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/PrimeBid.git",
+        "github_repo": "https://github.com/EdrianHernandez/PrimeBid",
         "image_anchor": "PrimeBid_bug-3.png",
         "file_path": "components/CategorySidebar.jsx",
         "text_anchor": "The category filter buttons look cramped with very little space around the text",
-        "positive_node": "className={`w-full flex items-center gap-3 px-3 py-0.5 text-sm font-medium rounded-lg transition-all duration-200 ${selectedCategory === category ? 'bg-indigo-50 text-indigo-700 shadow-sm ring-1 ring-indigo-200' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'}`}"
+        "positive_node": "<button className=\"w-full flex items-center gap-3 px-3 py-0.5 text-sm font-medium rounded-lg transition-all duration-200 bg-indigo-50 text-indigo-700 shadow-sm ring-1 ring-indigo-200\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/PrimeBid.git",
+        "github_repo": "https://github.com/EdrianHernandez/PrimeBid",
         "image_anchor": "PrimeBid_bug-1.png",
         "file_path": "components/AuctionHeader.jsx",
         "text_anchor": "The red notification badge is not visible because the opacity has been set to zero",
         "positive_node": "<span className=\"absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-red-500 opacity-0 rounded-full border-2 border-white\"></span>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/PrimeBid.git",
+        "github_repo": "https://github.com/EdrianHernandez/PrimeBid",
         "image_anchor": "PrimeBid_bug-2.png",
         "file_path": "components/ActiveBidsGrid.jsx",
         "text_anchor": "The grid container has zero gap spacing, causing auction cards to render directly adjacent to one another",
         "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/PrimeBid.git",
+        "github_repo": "https://github.com/EdrianHernandez/PrimeBid",
         "image_anchor": "PrimeBid_bug-3.png",
         "file_path": "components/CategorySidebar.jsx",
         "text_anchor": "The category button labels have minimal vertical padding, causing text to appear crowded and compressed vertically",
-        "positive_node": "className={`w-full flex items-center gap-3 px-3 py-0.5 text-sm font-medium rounded-lg transition-all duration-200 ${selectedCategory === category ? 'bg-indigo-50 text-indigo-700 shadow-sm ring-1 ring-indigo-200' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'}`}"
+        "positive_node": "<button className=\"w-full flex items-center gap-3 px-3 py-0.5 text-sm font-medium rounded-lg transition-all duration-200 bg-indigo-50 text-indigo-700 shadow-sm ring-1 ring-indigo-200\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/SaaS-Insight-Analytics",
         "image_anchor": "SaaS-Insight-Analytics_bug-1.png",
         "file_path": "components/Sidebar.jsx",
         "text_anchor": "The mobile sidebar slides behind the main content instead of appearing on top.",
-        "positive_node": "className={`sidebar-container fixed top-0 left-0 h-full bg-slate-900 text-slate-300 transition-all duration-300 ease-in-out z-10 flex flex-col ${"
+        "positive_node": "<div className={`sidebar-container fixed top-0 left-0 h-full bg-slate-900 text-slate-300 transition-all duration-300 ease-in-out z-10 flex flex-col ${"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/SaaS-Insight-Analytics",
@@ -60,7 +60,7 @@
         "image_anchor": "SaaS-Insight-Analytics_bug-3.png",
         "file_path": "components/DashboardHeader.jsx",
         "text_anchor": "The search field text is too faint and hard to read.",
-        "positive_node": "className=\"bg-transparent border-none focus:outline-none text-sm w-full text-slate-300 placeholder:text-slate-400\""
+        "positive_node": "<input className=\"bg-transparent border-none focus:outline-none text-sm w-full text-slate-300 placeholder:text-slate-400\"/>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/SaaS-Insight-Analytics",
@@ -74,7 +74,7 @@
         "image_anchor": "SaaS-Insight-Analytics_bug-1.png",
         "file_path": "components/Sidebar.jsx",
         "text_anchor": "The sidebar overlay is positioned behind other page elements in the stacking order.",
-        "positive_node": "className={`sidebar-container fixed top-0 left-0 h-full bg-slate-900 text-slate-300 transition-all duration-300 ease-in-out z-10 flex flex-col ${"
+        "positive_node": "<div className={`sidebar-container fixed top-0 left-0 h-full bg-slate-900 text-slate-300 transition-all duration-300 ease-in-out z-10 flex flex-col ${"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/SaaS-Insight-Analytics",
@@ -91,819 +91,828 @@
         "positive_node": "<div className=\"flex items-center justify-between mb-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash",
         "image_anchor": "Sentinel-Cyberdash_bug-1.png",
         "file_path": "components/AlertBanner.jsx",
         "text_anchor": "The alert banner at the top is disappearing behind the main content instead of staying visible.",
         "positive_node": "<div className={`w-full px-4 py-2 border-b-2 flex items-center justify-between shadow-[0_0_15px_rgba(0,0,0,0.5)] z-0 relative backdrop-blur-sm ${bgColors[alert.level]}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash",
         "image_anchor": "Sentinel-Cyberdash_bug-2.png",
         "file_path": "components/SystemHealthGauges.jsx",
         "text_anchor": "The three system gauges are stacking vertically on top of each other instead of spreading across the screen.",
         "positive_node": "<div className=\"flex flex-col items-center justify-around h-full px-4\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash",
         "image_anchor": "Sentinel-Cyberdash_bug-3.png",
         "file_path": "components/IncidentLog.jsx",
         "text_anchor": "The severity labels in the incident table are way too small and nearly unreadable.",
         "positive_node": "<div className={`inline-flex items-center gap-1.5 px-2 py-1 rounded border text-[4px] font-bold uppercase w-full justify-center ${config.styles}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash",
         "image_anchor": "Sentinel-Cyberdash_bug-4.png",
         "file_path": "App.jsx",
         "text_anchor": "There is excessive empty space at the bottom of the page causing content to be pushed upward and partially cut off from view.",
         "positive_node": "<main className=\"flex-1 grid grid-cols-12 gap-4 p-4 overflow-hidden relative mb-96\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash",
         "image_anchor": "Sentinel-Cyberdash_bug-1.png",
         "file_path": "components/AlertBanner.jsx",
         "text_anchor": "The alert notification is rendering below the dashboard content due to insufficient stacking order.",
         "positive_node": "<div className={`w-full px-4 py-2 border-b-2 flex items-center justify-between shadow-[0_0_15px_rgba(0,0,0,0.5)] z-0 relative backdrop-blur-sm ${bgColors[alert.level]}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash",
         "image_anchor": "Sentinel-Cyberdash_bug-2.png",
         "file_path": "components/SystemHealthGauges.jsx",
         "text_anchor": "The gauge container is using column-based layout instead of a horizontal row arrangement, causing elements to stack instead of display side by side.",
         "positive_node": "<div className=\"flex flex-col items-center justify-around h-full px-4\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sentinel-Cyberdash",
         "image_anchor": "Sentinel-Cyberdash_bug-3.png",
         "file_path": "components/IncidentLog.jsx",
         "text_anchor": "The severity badge text is rendered at an extremely small size, making the incident classification identifiers illegible.",
         "positive_node": "<div className={`inline-flex items-center gap-1.5 px-2 py-1 rounded border text-[4px] font-bold uppercase w-full justify-center ${config.styles}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space.git",
+        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space",
         "image_anchor": "Serenity-Space_bug-1.png",
         "file_path": "components/WellnessHeader.jsx",
         "text_anchor": "The navigation header scrolls behind the content instead of staying on top.",
         "positive_node": "<header className=\"wellness-nav sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space.git",
+        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space",
         "image_anchor": "Serenity-Space_bug-2.png",
         "file_path": "components/MoodTracker.jsx",
         "text_anchor": "The mood selection buttons are overlapping each other and difficult to click individually.",
         "positive_node": "<div className=\"flex flex-wrap justify-center gap-0 mb-8\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space.git",
+        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space",
         "image_anchor": "Serenity-Space_bug-3.png",
         "file_path": "components/TherapistGrid.jsx",
         "text_anchor": "The therapist cards are stacking in a single column even on larger screens.",
         "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space.git",
+        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space",
         "image_anchor": "Serenity-Space_bug-4.png",
         "file_path": "components/SupportCommunity.jsx",
         "text_anchor": "The community discussion topics appear faded and difficult to read.",
         "positive_node": "<div key={topic.id} className=\"group bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100 cursor-pointer opacity-30\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space.git",
+        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space",
         "image_anchor": "Serenity-Space_bug-1.png",
         "file_path": "components/WellnessHeader.jsx",
         "text_anchor": "Content elements appear on top of the sticky navigation bar when scrolling down the page.",
         "positive_node": "<header className=\"wellness-nav sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space.git",
+        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space",
         "image_anchor": "Serenity-Space_bug-2.png",
         "file_path": "components/MoodTracker.jsx",
         "text_anchor": "The gap between mood buttons has collapsed, causing the labels to run together.",
         "positive_node": "<div className=\"flex flex-wrap justify-center gap-0 mb-8\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space.git",
+        "github_repo": "https://github.com/EdrianHernandez/Serenity-Space",
         "image_anchor": "Serenity-Space_bug-4.png",
         "file_path": "components/SupportCommunity.jsx",
         "text_anchor": "The discussion topic cards have such low visibility they are nearly transparent.",
         "positive_node": "<div key={topic.id} className=\"group bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100 cursor-pointer opacity-30\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SonicWave.git",
+        "github_repo": "https://github.com/EdrianHernandez/SonicWave",
         "image_anchor": "SonicWave_bug-1.png",
         "file_path": "components/AlbumGrid.jsx",
         "text_anchor": "The play button on album covers disappears behind the album image when hovering over it.",
         "positive_node": "<button className=\"absolute bottom-2 right-2 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center text-black opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl z-0 hover:scale-105\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SonicWave.git",
+        "github_repo": "https://github.com/EdrianHernandez/SonicWave",
         "image_anchor": "SonicWave_bug-2.png",
         "file_path": "components/TopTracksList.jsx",
         "text_anchor": "The popular tracks list is displaying incorrectly with all track information stacked vertically instead of arranged side-by-side.",
         "positive_node": "<div key={track.id} className=\"track-row group flex-col flex items-center py-2 px-2 md:px-4 rounded-md hover:bg-neutral-800 transition-colors cursor-pointer\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SonicWave.git",
+        "github_repo": "https://github.com/EdrianHernandez/SonicWave",
         "image_anchor": "SonicWave_bug-3.png",
         "file_path": "components/AlbumGrid.jsx",
         "text_anchor": "Album cards are pinched and overlapping together in the grid sections.",
         "positive_node": "<div key={album.id} className=\"group bg-neutral-900/40 hover:bg-neutral-800 p-0 rounded-md transition-all duration-300 ease-in-out cursor-pointer relative\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SonicWave.git",
+        "github_repo": "https://github.com/EdrianHernandez/SonicWave",
         "image_anchor": "SonicWave_bug-4.png",
         "file_path": "components/MusicSidebar.jsx",
         "text_anchor": "Playlist names are not visible in the sidebar - they appear to be hidden or invisible.",
         "positive_node": "<p className=\"text-neutral-900 font-medium truncate\">{playlist.name}</p>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SonicWave.git",
+        "github_repo": "https://github.com/EdrianHernandez/SonicWave",
         "image_anchor": "SonicWave_bug-1.png",
         "file_path": "components/AlbumGrid.jsx",
         "text_anchor": "The play button appears to be stacked beneath the album cover image rather than floating above it on hover.",
         "positive_node": "<button className=\"absolute bottom-2 right-2 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center text-black opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl z-0 hover:scale-105\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SonicWave.git",
+        "github_repo": "https://github.com/EdrianHernandez/SonicWave",
         "image_anchor": "SonicWave_bug-2.png",
         "file_path": "components/TopTracksList.jsx",
         "text_anchor": "Track entries are rendering in a single column layout instead of displaying as horizontal rows with track number, title, album, and duration in separate columns.",
         "positive_node": "<div key={track.id} className=\"track-row group flex-col flex items-center py-2 px-2 md:px-4 rounded-md hover:bg-neutral-800 transition-colors cursor-pointer\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SonicWave.git",
+        "github_repo": "https://github.com/EdrianHernandez/SonicWave",
         "image_anchor": "SonicWave_bug-3.png",
         "file_path": "components/AlbumGrid.jsx",
         "text_anchor": "Album cards lack spacing between them and content inside the cards is compressed against the edges.",
         "positive_node": "<div key={album.id} className=\"group bg-neutral-900/40 hover:bg-neutral-800 p-0 rounded-md transition-all duration-300 ease-in-out cursor-pointer relative\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners",
         "image_anchor": "Sterling-Vance-Legal-Partners_bug-1.png",
         "file_path": "components/PracticeAreaGrid.jsx",
         "text_anchor": "The practice cards are cramped and running off the edge of the screen.",
         "positive_node": "<div className=\"grid grid-cols-3 gap-8\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners",
         "image_anchor": "Sterling-Vance-Legal-Partners_bug-2.png",
         "file_path": "components/LegalNavbar.jsx",
         "text_anchor": "The navigation bar scrolls behind the main content instead of staying visible.",
         "positive_node": "<header className=\"sticky top-0 z-0 bg-white shadow-md border-b border-slate-100\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners",
         "image_anchor": "Sterling-Vance-Legal-Partners_bug-3.png",
         "file_path": "components/AttorneyProfiles.jsx",
         "text_anchor": "The attorney profile descriptions cannot be read in the cards.",
         "positive_node": "<p className=\"text-slate-600 text-sm leading-relaxed line-clamp-4 opacity-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners",
         "image_anchor": "Sterling-Vance-Legal-Partners_bug-4.png",
         "file_path": "components/ContactForm.jsx",
         "text_anchor": "The form labels are leaving excessive gaps that push the input fields further down the page.",
         "positive_node": "<label htmlFor=\"firstName\" className=\"block text-sm font-bold text-navy-900 mb-2 pb-12\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners",
         "image_anchor": "Sterling-Vance-Legal-Partners_bug-1.png",
         "file_path": "components/PracticeAreaGrid.jsx",
         "text_anchor": "The card grid is forcing three-column layout on mobile instead of stacking vertically.",
         "positive_node": "<div className=\"grid grid-cols-3 gap-8\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners",
         "image_anchor": "Sterling-Vance-Legal-Partners_bug-2.png",
         "file_path": "components/LegalNavbar.jsx",
         "text_anchor": "The header stacking order is incorrect, rendering it beneath the page content.",
         "positive_node": "<header className=\"sticky top-0 z-0 bg-white shadow-md border-b border-slate-100\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners.git",
+        "github_repo": "https://github.com/EdrianHernandez/Sterling-Vance-Legal-Partners",
         "image_anchor": "Sterling-Vance-Legal-Partners_bug-3.png",
         "file_path": "components/AttorneyProfiles.jsx",
         "text_anchor": "The biographical text is rendered as transparent, making it invisible to users.",
         "positive_node": "<p className=\"text-slate-600 text-sm leading-relaxed line-clamp-4 opacity-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/StrataDocs.git",
+        "github_repo": "https://github.com/EdrianHernandez/StrataDocs",
         "image_anchor": "StrataDocs_bug-1.png",
         "file_path": "components/CodeBlock.jsx",
         "text_anchor": "The copy button looks misplaced at the top of the code block.",
-        "positive_node": "<button\n              onClick={handleCopy}\n              className=\"ml-2 p-1.5 rounded-md hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus:outline-none mt-2\"\n              aria-label=\"Copy code\"\n            >"
+        "positive_node": "<button onClick={handleCopy} className=\"ml-2 p-1.5 rounded-md hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus:outline-none mt-2\" aria-label=\"Copy code\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/StrataDocs.git",
+        "github_repo": "https://github.com/EdrianHernandez/StrataDocs",
         "image_anchor": "StrataDocs_bug-2.png",
         "file_path": "components/DocSidebar.jsx",
         "text_anchor": "The sidebar disappears behind the main content when scrolling.",
-        "positive_node": "<aside \n        className={`fixed top-0 left-0 z-10 h-full w-72 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-r border-slate-200 dark:border-slate-800 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:sticky lg:top-16 lg:z-10 lg:h-[calc(100vh-4rem)] lg:bg-transparent lg:border-r-0 lg:w-64 lg:block shrink-0 ${\n          isOpenMobile ? 'translate-x-0' : '-translate-x-full'\n        }`}\n      >"
+        "positive_node": "<aside className={`fixed top-0 left-0 z-10 h-full w-72 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-r border-slate-200 dark:border-slate-800 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:sticky lg:top-16 lg:z-10 lg:h-[calc(100vh-4rem)] lg:bg-transparent lg:border-r-0 lg:w-64 lg:block shrink-0 ${isOpenMobile ? 'translate-x-0' : '-translate-x-full'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/StrataDocs.git",
+        "github_repo": "https://github.com/EdrianHernandez/StrataDocs",
         "image_anchor": "StrataDocs_bug-3.png",
         "file_path": "components/SearchOverlay.jsx",
         "text_anchor": "The search results text is huge and breaks the layout.",
         "positive_node": "<div className=\"space-y-1 text-2xl\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/StrataDocs.git",
+        "github_repo": "https://github.com/EdrianHernandez/StrataDocs",
         "image_anchor": "StrataDocs_bug-4.png",
         "file_path": "components/TableOfContents.jsx",
         "text_anchor": "The 'On this page' heading overlaps with the first link below it.",
         "positive_node": "<h5 className=\"text-sm font-semibold text-slate-900 dark:text-slate-200 mb-4 tracking-tight -mb-3\">On this page</h5>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/StrataDocs.git",
+        "github_repo": "https://github.com/EdrianHernandez/StrataDocs",
         "image_anchor": "StrataDocs_bug-1.png",
         "file_path": "components/CodeBlock.jsx",
         "text_anchor": "The button is not vertically centered with the other header elements.",
-        "positive_node": "<button\n              onClick={handleCopy}\n              className=\"ml-2 p-1.5 rounded-md hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus:outline-none mt-2\"\n              aria-label=\"Copy code\"\n            >"
+        "positive_node": "<button onClick={handleCopy} className=\"ml-2 p-1.5 rounded-md hover:bg-slate-800 text-slate-400 hover:text-white transition-colors focus:outline-none mt-2\" aria-label=\"Copy code\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/StrataDocs.git",
+        "github_repo": "https://github.com/EdrianHernandez/StrataDocs",
         "image_anchor": "StrataDocs_bug-2.png",
         "file_path": "components/DocSidebar.jsx",
         "text_anchor": "The sidebar's stacking order is too low and hides behind other page elements.",
-        "positive_node": "<aside \n        className={`fixed top-0 left-0 z-10 h-full w-72 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-r border-slate-200 dark:border-slate-800 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:sticky lg:top-16 lg:z-10 lg:h-[calc(100vh-4rem)] lg:bg-transparent lg:border-r-0 lg:w-64 lg:block shrink-0 ${\n          isOpenMobile ? 'translate-x-0' : '-translate-x-full'\n        }`}\n      >"
+        "positive_node": "<aside className={`fixed top-0 left-0 z-10 h-full w-72 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl border-r border-slate-200 dark:border-slate-800 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:sticky lg:top-16 lg:z-10 lg:h-[calc(100vh-4rem)] lg:bg-transparent lg:border-r-0 lg:w-64 lg:block shrink-0 ${isOpenMobile ? 'translate-x-0' : '-translate-x-full'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/StrataDocs.git",
+        "github_repo": "https://github.com/EdrianHernandez/StrataDocs",
         "image_anchor": "StrataDocs_bug-3.png",
         "file_path": "components/SearchOverlay.jsx",
         "text_anchor": "The search result entries have oversized text that disrupts the visual hierarchy.",
         "positive_node": "<div className=\"space-y-1 text-2xl\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SyncSphere.git",
+        "github_repo": "https://github.com/EdrianHernandez/SyncSphere",
         "image_anchor": "SyncSphere_bug-1.png",
         "file_path": "components/ChatPreview.jsx",
         "text_anchor": "Chat messages are displaying side-by-side instead of stacked, making the chat hard to read.",
         "positive_node": "<div key={msg.id} className={`flex gap-3 flex-row ${isMe ? 'flex-row-reverse' : ''}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SyncSphere.git",
+        "github_repo": "https://github.com/EdrianHernandez/SyncSphere",
         "image_anchor": "SyncSphere_bug-2.png",
         "file_path": "components/RoomGrid.jsx",
         "text_anchor": "The 'Joined' status badge is invisible on the rooms I'm currently in.",
         "positive_node": "<span className=\"text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full opacity-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SyncSphere.git",
+        "github_repo": "https://github.com/EdrianHernandez/SyncSphere",
         "image_anchor": "SyncSphere_bug-3.png",
         "file_path": "components/ActiveRoom.jsx",
         "text_anchor": "The minimized call window is hidden beneath other screen elements.",
         "positive_node": "<div className=\"fixed bottom-20 right-4 sm:right-8 w-72 bg-slate-900 rounded-xl shadow-2xl border border-slate-700 z-10 overflow-hidden transition-all duration-300\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SyncSphere.git",
+        "github_repo": "https://github.com/EdrianHernandez/SyncSphere",
         "image_anchor": "SyncSphere_bug-4.png",
         "file_path": "components/GlobalAnnouncement.jsx",
         "text_anchor": "The announcement text is cramped against the edges with no blank space around it.",
         "positive_node": "<div className=\"bg-indigo-600 text-white px-0 py-0 shadow-md flex items-center justify-between relative z-20\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SyncSphere.git",
+        "github_repo": "https://github.com/EdrianHernandez/SyncSphere",
         "image_anchor": "SyncSphere_bug-1.png",
         "file_path": "components/ChatPreview.jsx",
         "text_anchor": "The message elements are aligned horizontally when they should be stacked vertically.",
         "positive_node": "<div key={msg.id} className={`flex gap-3 flex-row ${isMe ? 'flex-row-reverse' : ''}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SyncSphere.git",
+        "github_repo": "https://github.com/EdrianHernandez/SyncSphere",
         "image_anchor": "SyncSphere_bug-2.png",
         "file_path": "components/RoomGrid.jsx",
         "text_anchor": "The joined indicator has been made completely transparent and is not visible to users.",
         "positive_node": "<span className=\"text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full opacity-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/SyncSphere.git",
+        "github_repo": "https://github.com/EdrianHernandez/SyncSphere",
         "image_anchor": "SyncSphere_bug-3.png",
         "file_path": "components/ActiveRoom.jsx",
         "text_anchor": "The Picture-in-Picture widget's stacking order is too low and it renders behind modal overlays.",
         "positive_node": "<div className=\"fixed bottom-20 right-4 sm:right-8 w-72 bg-slate-900 rounded-xl shadow-2xl border border-slate-700 z-10 overflow-hidden transition-all duration-300\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist",
         "image_anchor": "The-Minimalist_bug-1.png",
         "file_path": "components/BlogHeader.jsx",
         "text_anchor": "The navigation menu shows blank space where category links should be displayed.",
-        "positive_node": "className={`text-transparent text-sm font-medium transition-colors ${activeCategory === cat ? 'text-zinc-900' : 'text-zinc-400 hover:text-zinc-700'}`}"
+        "positive_node": "<span class=\"text-transparent text-sm font-medium transition-colors text-zinc-900 text-zinc-400 hover:text-zinc-700\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist",
         "image_anchor": "The-Minimalist_bug-2.png",
         "file_path": "components/FeaturedPost.jsx",
         "text_anchor": "The featured post layout looks too compressed and doesn't display the image and text properly.",
-        "positive_node": "<div className=\"grid md:grid-cols-4 items-center\">"
+        "positive_node": "<div class=\"grid md:grid-cols-4 items-center\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist",
         "image_anchor": "The-Minimalist_bug-3.png",
         "file_path": "components/NewsletterSidebar.jsx",
         "text_anchor": "The email input field has excessive internal spacing making it look disproportionately tall.",
-        "positive_node": "className=\"w-full px-4 py-12 bg-white border border-zinc-200 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-zinc-400 transition-all\""
+        "positive_node": "<input class=\"w-full px-4 py-12 bg-white border border-zinc-200 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-zinc-400 transition-all\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist",
         "image_anchor": "The-Minimalist_bug-4.png",
         "file_path": "components/PostList.jsx",
         "text_anchor": "The post list images are appearing on top of and overlapping the post titles.",
-        "positive_node": "<div className=\"w-full sm:w-1/3 aspect-[4/3] overflow-hidden rounded-lg bg-zinc-100 flex-shrink-0 absolute\">"
+        "positive_node": "<div class=\"w-full sm:w-1/3 aspect-[4/3] overflow-hidden rounded-lg bg-zinc-100 flex-shrink-0 absolute\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist",
         "image_anchor": "The-Minimalist_bug-1.png",
         "file_path": "components/BlogHeader.jsx",
         "text_anchor": "The category buttons in the header navigation are rendering with invisible text.",
-        "positive_node": "className={`text-transparent text-sm font-medium transition-colors ${activeCategory === cat ? 'text-zinc-900' : 'text-zinc-400 hover:text-zinc-700'}`}"
+        "positive_node": "<span class=\"text-transparent text-sm font-medium transition-colors text-zinc-900 text-zinc-400 hover:text-zinc-700\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist",
         "image_anchor": "The-Minimalist_bug-2.png",
         "file_path": "components/FeaturedPost.jsx",
         "text_anchor": "The featured post grid column split is incorrect, making the image and content misaligned.",
-        "positive_node": "<div className=\"grid md:grid-cols-4 items-center\">"
+        "positive_node": "<div class=\"grid md:grid-cols-4 items-center\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Minimalist",
         "image_anchor": "The-Minimalist_bug-4.png",
         "file_path": "components/PostList.jsx",
         "text_anchor": "The images are stacked above the post titles instead of appearing beside the text content.",
-        "positive_node": "<div className=\"w-full sm:w-1/3 aspect-[4/3] overflow-hidden rounded-lg bg-zinc-100 flex-shrink-0 absolute\">"
+        "positive_node": "<div class=\"w-full sm:w-1/3 aspect-[4/3] overflow-hidden rounded-lg bg-zinc-100 flex-shrink-0 absolute\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights",
         "image_anchor": "The-Obsidian-Heights_bug-1.png",
         "file_path": "components/Navbar.jsx",
         "text_anchor": "The mobile menu appears to be hidden behind the page content when opened.",
         "positive_node": "<div className=\"absolute top-full left-0 w-full bg-white shadow-lg py-6 flex flex-col items-center space-y-4 md:hidden animate-fade-in-down z-10\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights",
         "image_anchor": "The-Obsidian-Heights_bug-2.png",
         "file_path": "components/RoomSuiteGrid.jsx",
         "text_anchor": "The room prices are displayed in a very small size and hard to read.",
         "positive_node": "<span className=\"text-xs font-serif text-obsidian-900\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights",
         "image_anchor": "The-Obsidian-Heights_bug-3.png",
         "file_path": "components/AmenitiesIcons.jsx",
         "text_anchor": "The amenity icons are spaced too far apart and the layout looks scattered.",
         "positive_node": "<div className=\"grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-32\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights",
         "image_anchor": "The-Obsidian-Heights_bug-4.png",
         "file_path": "components/Footer.jsx",
         "text_anchor": "The footer links in the Policies section are nearly invisible and almost impossible to read.",
         "positive_node": "<ul className=\"space-y-4 text-sm text-gray-400 font-light opacity-20\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights",
         "image_anchor": "The-Obsidian-Heights_bug-1.png",
         "file_path": "components/Navbar.jsx",
         "text_anchor": "The mobile menu dropdown is positioned below other elements instead of appearing on top of the page.",
         "positive_node": "<div className=\"absolute top-full left-0 w-full bg-white shadow-lg py-6 flex flex-col items-center space-y-4 md:hidden animate-fade-in-down z-10\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights",
         "image_anchor": "The-Obsidian-Heights_bug-2.png",
         "file_path": "components/RoomSuiteGrid.jsx",
         "text_anchor": "The pricing text is scaled down too small, making it difficult to read compared to other content.",
         "positive_node": "<span className=\"text-xs font-serif text-obsidian-900\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Obsidian-Heights",
         "image_anchor": "The-Obsidian-Heights_bug-3.png",
         "file_path": "components/AmenitiesIcons.jsx",
         "text_anchor": "The vertical gap between amenity cards is excessive, causing the layout to appear disjointed.",
         "positive_node": "<div className=\"grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-32\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald",
         "image_anchor": "The-Standard-Herald_bug-1.png",
         "file_path": "components/TopicNavigation.jsx",
         "text_anchor": "The navigation menu scrolls away when reading long articles instead of staying at the top.",
         "positive_node": "<nav className=\"bg-white border-b border-gray-200 static z-0 shadow-sm overflow-hidden\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald",
         "image_anchor": "The-Standard-Herald_bug-2.png",
         "file_path": "components/Footer.jsx",
         "text_anchor": "The footer links are all stacked in a single column instead of spreading across the page.",
         "positive_node": "<div className=\"grid grid-cols-1 gap-10 mb-16\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald",
         "image_anchor": "The-Standard-Herald_bug-3.png",
         "file_path": "components/Header.jsx",
         "text_anchor": "The newspaper headline is so small it's barely readable.",
         "positive_node": "<h1 className=\"font-serif text-xs md:text-sm font-black tracking-tighter text-gray-900 select-none leading-none\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald",
         "image_anchor": "The-Standard-Herald_bug-4.png",
         "file_path": "components/NewsGrid.jsx",
         "text_anchor": "The article content area is pushed directly to the top edge with no breathing room.",
         "positive_node": "<div className=\"container mx-auto px-4 py-0 md:py-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald",
         "image_anchor": "The-Standard-Herald_bug-1.png",
         "file_path": "components/TopicNavigation.jsx",
         "text_anchor": "The navigation is not fixed to the viewport, causing content to flow behind it instead of pushing down.",
         "positive_node": "<nav className=\"bg-white border-b border-gray-200 static z-0 shadow-sm overflow-hidden\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald",
         "image_anchor": "The-Standard-Herald_bug-2.png",
         "file_path": "components/Footer.jsx",
         "text_anchor": "The footer grid layout is collapsed to a single column, losing the multi-column arrangement.",
         "positive_node": "<div className=\"grid grid-cols-1 gap-10 mb-16\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald.git",
+        "github_repo": "https://github.com/EdrianHernandez/The-Standard-Herald",
         "image_anchor": "The-Standard-Herald_bug-3.png",
         "file_path": "components/Header.jsx",
         "text_anchor": "The headline font size is drastically reduced, making it almost impossible to read.",
         "positive_node": "<h1 className=\"font-serif text-xs md:text-sm font-black tracking-tighter text-gray-900 select-none leading-none\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vanguard.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vanguard",
         "image_anchor": "Vanguard_bug-1.png",
         "file_path": "components/LeadTable.jsx",
         "text_anchor": "The contact button on table rows is hidden behind other content when you hover over them.",
         "positive_node": "<button className=\"px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-indigo-600 bg-indigo-50/50 rounded-lg hover:bg-indigo-600 hover:text-white transition-all opacity-0 group-hover:opacity-100 relative -z-10\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vanguard.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vanguard",
         "image_anchor": "Vanguard_bug-2.png",
         "file_path": "components/MetricCards.jsx",
         "text_anchor": "The metric cards are stacked vertically in a single column instead of displaying side-by-side on desktop.",
         "positive_node": "<div className=\"grid grid-cols-1 gap-4 sm:gap-6\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vanguard.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vanguard",
         "image_anchor": "Vanguard_bug-3.png",
         "file_path": "components/SalesPipeline.jsx",
         "text_anchor": "The stage numbers in the pipeline funnel are too small and hard to read.",
         "positive_node": "<div className={`text-[10px] font-black leading-none ${idx > 3 ? 'text-white' : 'text-slate-900'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vanguard.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vanguard",
         "image_anchor": "Vanguard_bug-4.png",
         "file_path": "App.jsx",
         "text_anchor": "The logo area in the sidebar has excessive white space between it and the navigation menu below.",
         "positive_node": "<div className={`p-12 transition-all duration-300 ${isCollapsed ? 'px-4' : 'px-6'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vanguard.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vanguard",
         "image_anchor": "Vanguard_bug-1.png",
         "file_path": "components/LeadTable.jsx",
         "text_anchor": "The action button has a stacking order issue, placing it below the table background instead of on top.",
         "positive_node": "<button className=\"px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-indigo-600 bg-indigo-50/50 rounded-lg hover:bg-indigo-600 hover:text-white transition-all opacity-0 group-hover:opacity-100 relative -z-10\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vanguard.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vanguard",
         "image_anchor": "Vanguard_bug-2.png",
         "file_path": "components/MetricCards.jsx",
         "text_anchor": "The grid layout is constrained to one column across all screen sizes instead of adapting responsively to desktop widths.",
         "positive_node": "<div className=\"grid grid-cols-1 gap-4 sm:gap-6\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vanguard.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vanguard",
         "image_anchor": "Vanguard_bug-3.png",
         "file_path": "components/SalesPipeline.jsx",
         "text_anchor": "The count text is using extremely small font size, significantly reducing visibility and readability of the numeric pipeline values.",
         "positive_node": "<div className={`text-[10px] font-black leading-none ${idx > 3 ? 'text-white' : 'text-slate-900'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital.git",
+        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital",
         "image_anchor": "VelocityDigital_bug-1.png",
         "file_path": "components/ContactSidebar.jsx",
         "text_anchor": "The contact button is hidden behind the form panel and cannot be interacted with.",
-        "positive_node": "className={`fixed right-0 top-1/2 -translate-y-1/2 z-20 flex flex-col items-center gap-2 bg-brand-primary p-3 rounded-l-2xl shadow-2xl hover:bg-brand-primary/90 transition-all duration-300 ${isOpen ? 'translate-x-full' : 'translate-x-0'}`}"
+        "positive_node": "button.fixed.right-0.top-1/2.-translate-y-1/2.z-20.flex.flex-col.items-center.gap-2.bg-brand-primary.p-3.rounded-l-2xl.shadow-2xl.hover:bg-brand-primary/90.transition-all.duration-300"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital.git",
+        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital",
         "image_anchor": "VelocityDigital_bug-2.png",
         "file_path": "components/ServiceBubbles.jsx",
         "text_anchor": "All the service cards are stacking in a single tall column instead of spreading across.",
-        "positive_node": "className=\"grid grid-cols-1 gap-6 lg:gap-8\""
+        "positive_node": "div.grid.grid-cols-1.gap-6.lg:gap-8"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital.git",
+        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital",
         "image_anchor": "VelocityDigital_bug-3.png",
         "file_path": "components/MarketingHero.jsx",
         "text_anchor": "The main headline is far too small and appears in a dark gray color that is hard to read against the dark background.",
-        "positive_node": "className=\"text-sm md:text-xs lg:text-lg font-extrabold tracking-tight leading-tight mb-6 text-slate-600\""
+        "positive_node": "h1.text-sm.md:text-xs.lg:text-lg.font-extrabold.tracking-tight.leading-tight.mb-6.text-slate-600"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital.git",
+        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital",
         "image_anchor": "VelocityDigital_bug-4.png",
         "file_path": "components/CaseStudySlider.jsx",
         "text_anchor": "The case study card content is overlapping with the image section, obscuring important information.",
-        "positive_node": "className=\"p-8 relative -mt-16\""
+        "positive_node": "div.p-8.relative.-mt-16"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital.git",
+        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital",
         "image_anchor": "VelocityDigital_bug-1.png",
         "file_path": "components/ContactSidebar.jsx",
         "text_anchor": "The toggle button stacking order is lower than the sidebar overlay, causing it to render beneath the panel.",
-        "positive_node": "className={`fixed right-0 top-1/2 -translate-y-1/2 z-20 flex flex-col items-center gap-2 bg-brand-primary p-3 rounded-l-2xl shadow-2xl hover:bg-brand-primary/90 transition-all duration-300 ${isOpen ? 'translate-x-full' : 'translate-x-0'}`}"
+        "positive_node": "button.fixed.right-0.top-1/2.-translate-y-1/2.z-20.flex.flex-col.items-center.gap-2.bg-brand-primary.p-3.rounded-l-2xl.shadow-2xl.hover:bg-brand-primary/90.transition-all.duration-300"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital.git",
+        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital",
         "image_anchor": "VelocityDigital_bug-2.png",
         "file_path": "components/ServiceBubbles.jsx",
         "text_anchor": "The service cards are arranged in a single column layout on all screen sizes instead of a multi-column responsive grid.",
-        "positive_node": "className=\"grid grid-cols-1 gap-6 lg:gap-8\""
+        "positive_node": "div.grid.grid-cols-1.gap-6.lg:gap-8"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital.git",
+        "github_repo": "https://github.com/EdrianHernandez/VelocityDigital",
         "image_anchor": "VelocityDigital_bug-3.png",
         "file_path": "components/MarketingHero.jsx",
         "text_anchor": "The headline font size is significantly reduced and text color has low contrast against the background, making it nearly unreadable.",
-        "positive_node": "className=\"text-sm md:text-xs lg:text-lg font-extrabold tracking-tight leading-tight mb-6 text-slate-600\""
+        "positive_node": "h1.text-sm.md:text-xs.lg:text-lg.font-extrabold.tracking-tight.leading-tight.mb-6.text-slate-600"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-1.png",
         "file_path": "components/CartCounter.jsx",
         "text_anchor": "The cart progress bar and shopping bag icon are showing up below the price and checkout button instead of above it, making the interface feel backwards.",
         "positive_node": "<div className=\"max-w-7xl mx-auto flex flex-col-reverse sm:flex-row items-center justify-between gap-4\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-2.png",
         "file_path": "components/DeliveryCalendar.jsx",
         "text_anchor": "There's a missing icon on the right side of the delivery date picker, making it look incomplete.",
         "positive_node": "<CalendarIcon className=\"w-5 h-5 text-stone-300 opacity-0\" />"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-3.png",
         "file_path": "components/PlanSelector.jsx",
         "text_anchor": "The plan names on the cards are way too small to read properly.",
         "positive_node": "<h3 className=\"text-white font-bold text-[6px]\">{plan.title}</h3>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-4.png",
         "file_path": "components/WeeklyMenu.jsx",
         "text_anchor": "The meal cards are crammed together and overlapping each other with no breathing room.",
         "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-0 gap-y-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-1.png",
         "file_path": "components/CartCounter.jsx",
         "text_anchor": "The cart interface elements are rendering in reverse order, causing the progress information to appear after the checkout button instead of before it.",
         "positive_node": "<div className=\"max-w-7xl mx-auto flex flex-col-reverse sm:flex-row items-center justify-between gap-4\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-2.png",
         "file_path": "components/DeliveryCalendar.jsx",
         "text_anchor": "The calendar icon is not visible because it has been rendered as transparent or hidden from view.",
         "positive_node": "<CalendarIcon className=\"w-5 h-5 text-stone-300 opacity-0\" />"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-3.png",
         "file_path": "components/PlanSelector.jsx",
         "text_anchor": "The plan title text is rendered at an extremely small size, making it impossible to read or identify which meal plan you're viewing.",
         "positive_node": "<h3 className=\"text-white font-bold text-[6px]\">{plan.title}</h3>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-4.png",
         "file_path": "components/WeeklyMenu.jsx",
         "text_anchor": "The meal card grid has zero spacing between columns and rows, causing the cards to appear visually merged or stacked directly on top of each other.",
         "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-0 gap-y-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping",
         "image_anchor": "Verdant-Visions-Landscaping_bug-1.png",
         "file_path": "components/ServiceHeader.jsx",
         "text_anchor": "The navigation bar disappears behind the page content when scrolling.",
         "positive_node": "<nav className={`fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-md py-4' : 'bg-transparent py-6'}`}"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping",
         "image_anchor": "Verdant-Visions-Landscaping_bug-2.png",
         "file_path": "components/GardenShowcase.jsx",
         "text_anchor": "The project cards are squished together with no spacing between them.",
         "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 garden-gallery\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping",
         "image_anchor": "Verdant-Visions-Landscaping_bug-3.png",
         "file_path": "components/ReviewTally.jsx",
         "text_anchor": "The rating number is barely readable.",
         "positive_node": "<span className=\"text-xs font-serif font-bold text-stone-300\">4.9</span>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping",
         "image_anchor": "Verdant-Visions-Landscaping_bug-4.png",
         "file_path": "components/AppointmentForm.jsx",
         "text_anchor": "There's way too much space between the form labels and the input fields.",
         "positive_node": "<label className=\"block text-sm font-bold text-stone-600 mb-8\">Full Name</label>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping",
         "image_anchor": "Verdant-Visions-Landscaping_bug-1.png",
         "file_path": "components/ServiceHeader.jsx",
         "text_anchor": "The header is obscured by elements below due to incorrect stacking order.",
         "positive_node": "<nav className={`fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-md py-4' : 'bg-transparent py-6'}`}"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping",
         "image_anchor": "Verdant-Visions-Landscaping_bug-2.png",
         "file_path": "components/GardenShowcase.jsx",
         "text_anchor": "The gallery layout is broken with cards overlapping and touching each other.",
         "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 garden-gallery\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping",
         "image_anchor": "Verdant-Visions-Landscaping_bug-3.png",
         "file_path": "components/ReviewTally.jsx",
         "text_anchor": "The aggregate rating score is too small and has insufficient contrast against the background, making it difficult to see.",
         "positive_node": "<span className=\"text-xs font-serif font-bold text-stone-300\">4.9</span>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Visions-Landscaping",
         "image_anchor": "Verdant-Visions-Landscaping_bug-4.png",
         "file_path": "components/AppointmentForm.jsx",
         "text_anchor": "The form label has excessive bottom margin, creating large gaps between the label and its corresponding input field.",
         "positive_node": "<label className=\"block text-sm font-bold text-stone-600 mb-8\">Full Name</label>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy",
         "image_anchor": "Vertex-Academy_bug-1.png",
         "file_path": "components/AcademyHeader.jsx",
         "text_anchor": "The header is stuck behind the page content when scrolling.",
-        "positive_node": "className={`fixed top-0 w-full z-0 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}"
+        "positive_node": "<div className={`fixed top-0 w-full z-0 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy.git",
-        "image_anchor": "Vertex-Academy_bug-2.png",
+        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy",
         "file_path": "components/CourseCurriculum.jsx",
-        "text_anchor": "The expand/collapse arrow is crammed next to the module title instead of appearing on the right side.",
-        "positive_node": "className=\"w-full flex items-center justify-start p-6 text-left focus:outline-none\""
+        "image_anchor": "Vertex-Academy_bug-2.png",
+        "text_anchors": [
+            "The expand/collapse arrow is crammed next to the module title instead of appearing on the right side.",
+            "The module section title and icon are left-aligned with the expand button immediately following, causing the button to be positioned next to the content rather than on the right side."
+        ],
+        "positive_node": "<button className=\"w-full flex items-center justify-start p-6 text-left focus:outline-none\">",
+        "playwright_selector": "button.module-accordion",
+        "action_selector": [
+            "button:has-text('View Curriculum')",
+            "a[href*='course']",
+            "section#curriculum"
+        ]
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy",
         "image_anchor": "Vertex-Academy_bug-3.png",
         "file_path": "components/EnrollmentForm.jsx",
         "text_anchor": "I can barely see the form labels when filling out the application.",
         "positive_node": "<label htmlFor=\"firstName\" className=\"text-sm font-semibold opacity-10\">First Name</label>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy",
         "image_anchor": "Vertex-Academy_bug-4.png",
         "file_path": "components/SuccessStats.jsx",
         "text_anchor": "The content inside the stats cards is squished and touching the edges.",
         "positive_node": "<div className=\"stat-card p-1 bg-slate-800 rounded-2xl border border-slate-700 hover:border-brand-500 transition-colors\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy",
         "image_anchor": "Vertex-Academy_bug-1.png",
         "file_path": "components/AcademyHeader.jsx",
         "text_anchor": "The header no longer stays on top of the page and scrolls behind the main content instead of remaining fixed.",
-        "positive_node": "className={`fixed top-0 w-full z-0 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}"
+        "positive_node": "<div className={`fixed top-0 w-full z-0 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy",
         "image_anchor": "Vertex-Academy_bug-2.png",
         "file_path": "components/CourseCurriculum.jsx",
         "text_anchor": "The module section title and icon are left-aligned with the expand button immediately following, causing the button to be positioned next to the content rather than on the right side.",
-        "positive_node": "className=\"w-full flex items-center justify-start p-6 text-left focus:outline-none\""
+        "positive_node": "<button className=\"w-full flex items-center justify-start p-6 text-left focus:outline-none\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy",
         "image_anchor": "Vertex-Academy_bug-3.png",
         "file_path": "components/EnrollmentForm.jsx",
         "text_anchor": "The form label text is too light and nearly invisible against the white background, making it impossible to read which field is which.",
         "positive_node": "<label htmlFor=\"firstName\" className=\"text-sm font-semibold opacity-10\">First Name</label>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy.git",
+        "github_repo": "https://github.com/EdrianHernandez/Vertex-Academy",
         "image_anchor": "Vertex-Academy_bug-4.png",
         "file_path": "components/SuccessStats.jsx",
         "text_anchor": "The padding inside the statistics card has been minimized to nearly nothing, causing the icon and text to overlap with the card borders and reducing the visual hierarchy.",
         "positive_node": "<div className=\"stat-card p-1 bg-slate-800 rounded-2xl border border-slate-700 hover:border-brand-500 transition-colors\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalLink.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalLink",
         "image_anchor": "VitalLink_bug-1.png",
         "file_path": "components/SecureMessaging.jsx",
         "text_anchor": "The header with the doctor name scrolls behind the chat messages when I try to scroll.",
         "positive_node": "<div className=\"bg-white p-4 border-b border-slate-100 flex justify-between items-center shadow-sm z-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalLink.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalLink",
         "image_anchor": "VitalLink_bug-2.png",
         "file_path": "components/AppointmentCalendar.jsx",
         "text_anchor": "The appointment times and doctor names are stacked vertically on top of each other.",
-        "positive_node": "<div \n                key={app.id} \n                className={`appointment-slot flex flex-col p-4 rounded-xl border-l-4 transition-all hover:shadow-md ${"
+        "positive_node": "<div key={app.id} className={`appointment-slot flex flex-col p-4 rounded-xl border-l-4 transition-all hover:shadow-md ${"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalLink.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalLink",
         "image_anchor": "VitalLink_bug-3.png",
         "file_path": "components/MedicalHistory.jsx",
         "text_anchor": "The medication names are way too tiny to read on the medical records.",
         "positive_node": "<p className=\"text-[8px] font-semibold text-slate-400\">{med.name}</p>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalLink.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalLink",
         "image_anchor": "VitalLink_bug-4.png",
         "file_path": "App.jsx",
         "text_anchor": "The sidebar menu items are squished together and overlapping.",
-        "positive_node": "<button\n      onClick={() => setCurrentView(view)}\n      className={`w-full flex items-center space-x-3 px-4 -py-3 rounded-xl transition-all duration-200 group ${"
+        "positive_node": "<button onClick={() => setCurrentView(view)} className={`w-full flex items-center space-x-3 px-4 -py-3 rounded-xl transition-all duration-200 group ${"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalLink.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalLink",
         "image_anchor": "VitalLink_bug-1.png",
         "file_path": "components/SecureMessaging.jsx",
         "text_anchor": "The messaging header is hidden beneath the messages area when scrolling down through the conversation.",
         "positive_node": "<div className=\"bg-white p-4 border-b border-slate-100 flex justify-between items-center shadow-sm z-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalLink.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalLink",
         "image_anchor": "VitalLink_bug-2.png",
         "file_path": "components/AppointmentCalendar.jsx",
         "text_anchor": "The appointment information is arranged vertically instead of horizontally, making it difficult to scan the schedule.",
-        "positive_node": "<div \n                key={app.id} \n                className={`appointment-slot flex flex-col p-4 rounded-xl border-l-4 transition-all hover:shadow-md ${"
+        "positive_node": "<div key={app.id} className={`appointment-slot flex flex-col p-4 rounded-xl border-l-4 transition-all hover:shadow-md ${"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalLink.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalLink",
         "image_anchor": "VitalLink_bug-3.png",
         "file_path": "components/MedicalHistory.jsx",
         "text_anchor": "The prescription medication text is too small and has poor contrast, making it unreadable.",
         "positive_node": "<p className=\"text-[8px] font-semibold text-slate-400\">{med.name}</p>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalLink.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalLink",
         "image_anchor": "VitalLink_bug-4.png",
         "file_path": "App.jsx",
         "text_anchor": "The navigation menu items have incorrect vertical spacing, causing them to become unreadable.",
-        "positive_node": "<button\n      onClick={() => setCurrentView(view)}\n      className={`w-full flex items-center space-x-3 px-4 -py-3 rounded-xl transition-all duration-200 group ${"
+        "positive_node": "<button onClick={() => setCurrentView(view)} className={`w-full flex items-center space-x-3 px-4 -py-3 rounded-xl transition-all duration-200 group ${"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalTrack.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalTrack",
         "image_anchor": "VitalTrack_bug-1.png",
         "file_path": "components/ActivitySummary.jsx",
         "text_anchor": "User profile icons are missing from the top right corner of the activity section.",
         "positive_node": "<div className=\"flex -space-x-2 opacity-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalTrack.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalTrack",
         "image_anchor": "VitalTrack_bug-2.png",
         "file_path": "components/MealLogger.jsx",
         "text_anchor": "The nutrition labels are stacked vertically instead of showing side by side.",
         "positive_node": "<div className=\"flex flex-col space-x-3\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalTrack.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalTrack",
         "image_anchor": "VitalTrack_bug-3.png",
         "file_path": "components/WaterIntake.jsx",
         "text_anchor": "The water intake buttons are too far down the screen.",
         "positive_node": "<div className=\"grid grid-cols-2 gap-3 relative z-10 mt-12\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalTrack.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalTrack",
         "image_anchor": "VitalTrack_bug-4.png",
         "file_path": "components/WorkoutCalendar.jsx",
         "text_anchor": "The Start button for workouts is barely visible and hard to click.",
         "positive_node": "<button onClick={handleStartWorkout} className=\"text-blue-500 text-xs font-bold uppercase hover:bg-blue-50 px-2 py-1 rounded-lg transition-colors absolute right-4 top-4 opacity-20\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalTrack.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalTrack",
         "image_anchor": "VitalTrack_bug-1.png",
         "file_path": "components/ActivitySummary.jsx",
         "text_anchor": "The user avatar elements are rendered but completely transparent and cannot be seen.",
         "positive_node": "<div className=\"flex -space-x-2 opacity-0\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalTrack.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalTrack",
         "image_anchor": "VitalTrack_bug-2.png",
         "file_path": "components/MealLogger.jsx",
         "text_anchor": "The macro badges have changed from horizontal layout to vertical stacking arrangement.",
         "positive_node": "<div className=\"flex flex-col space-x-3\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalTrack.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalTrack",
         "image_anchor": "VitalTrack_bug-3.png",
         "file_path": "components/WaterIntake.jsx",
         "text_anchor": "Excessive top margin is pushing the water tracking buttons lower than intended.",
         "positive_node": "<div className=\"grid grid-cols-2 gap-3 relative z-10 mt-12\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/VitalTrack.git",
+        "github_repo": "https://github.com/EdrianHernandez/VitalTrack",
         "image_anchor": "VitalTrack_bug-4.png",
         "file_path": "components/WorkoutCalendar.jsx",
         "text_anchor": "The Start button is faded out with extreme transparency and positioned absolutely, making it nearly impossible to interact with.",
@@ -966,84 +975,84 @@
         "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-1.png",
         "file_path": "components/BadgeCollection.jsx",
         "text_anchor": "The badge collection window is hidden behind other screen elements.",
         "positive_node": "<div className=\"fixed inset-0 z-20 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-2.png",
         "file_path": "components/AvatarProfile.jsx",
         "text_anchor": "The level badge is floating in the wrong position outside the avatar box.",
         "positive_node": "<div className=\"absolute -bottom-8 -right-8 bg-brand-blue text-white text-xs font-black px-1.5 py-0.5 rounded-md border-2 border-white shadow-sm\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-3.png",
         "file_path": "components/QuizInterface.jsx",
         "text_anchor": "The quiz answer options are stacking in a single column on desktop when they should display side by side.",
         "positive_node": "<div className=\"grid grid-cols-1 gap-4\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-4.png",
         "file_path": "components/BadgeCollection.jsx",
         "text_anchor": "The badge names are too small to read comfortably.",
         "positive_node": "<h3 className={`font-black text-center text-xs mb-1 ${badge.unlocked ? 'text-gray-700' : 'text-gray-400'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-5.png",
         "file_path": "components/SubjectPath.jsx",
         "text_anchor": "The lesson buttons are stretched too tall and overlapping with each other.",
-        "positive_node": "className={`w-20 h-32 rounded-[2rem] border-b-4 flex items-center justify-center`"
+        "positive_node": "<button className=\"w-20 h-32 rounded-[2rem] border-b-4 flex items-center justify-center\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-6.png",
         "file_path": "components/AvatarProfile.jsx",
         "text_anchor": "The player stats and icons are barely visible, appearing washed out.",
         "positive_node": "<div className=\"flex items-center gap-2 sm:gap-4 opacity-30\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-1.png",
         "file_path": "components/BadgeCollection.jsx",
         "text_anchor": "The trophy case modal fails to display on top when opened, appearing beneath background layers.",
         "positive_node": "<div className=\"fixed inset-0 z-20 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-2.png",
         "file_path": "components/AvatarProfile.jsx",
         "text_anchor": "The level indicator is misaligned and appears detached from the profile picture frame.",
         "positive_node": "<div className=\"absolute -bottom-8 -right-8 bg-brand-blue text-white text-xs font-black px-1.5 py-0.5 rounded-md border-2 border-white shadow-sm\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-3.png",
         "file_path": "components/QuizInterface.jsx",
         "text_anchor": "The answer choice buttons are not arranged horizontally on larger screens as intended.",
         "positive_node": "<div className=\"grid grid-cols-1 gap-4\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-4.png",
         "file_path": "components/BadgeCollection.jsx",
         "text_anchor": "The trophy names appear with inadequate font size, reducing readability.",
         "positive_node": "<h3 className={`font-black text-center text-xs mb-1 ${badge.unlocked ? 'text-gray-700' : 'text-gray-400'}`}>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-5.png",
         "file_path": "components/SubjectPath.jsx",
         "text_anchor": "The path node buttons have excessive vertical height, causing visual collision between elements.",
-        "positive_node": "className={`w-20 h-32 rounded-[2rem] border-b-4 flex items-center justify-center`"
+        "positive_node": "<button className=\"w-20 h-32 rounded-[2rem] border-b-4 flex items-center justify-center\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/WonderQuest.git",
+        "github_repo": "https://github.com/EdrianHernandez/WonderQuest",
         "image_anchor": "WonderQuest_bug-6.png",
         "file_path": "components/AvatarProfile.jsx",
         "text_anchor": "The streak, crowns, and XP information is too transparent and hard to read against the background.",
