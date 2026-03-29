@@ -11,7 +11,7 @@
         "image_anchor": "Aura_bug-2.png",
         "file_path": "components/AgencyHero.jsx",
         "text_anchor": "The 'View Work' button text is getting squished and cramped inside the button",
-        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\">"
+        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\" onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -25,14 +25,14 @@
         "image_anchor": "Aura_bug-4.png",
         "file_path": "components/Navbar.jsx",
         "text_anchor": "The 'AURA' title in the top left is too dark and hard to see against the dark background",
-        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">AURA</h1>"
+        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
         "image_anchor": "Aura_bug-5.png",
         "file_path": "components/ServiceGrid.jsx",
         "text_anchor": "The service cards have all their content squished against the edges with no margins",
-        "positive_node": "<div className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
+        "positive_node": "<div key={service.id} className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -53,7 +53,7 @@
         "image_anchor": "Aura_bug-8.png",
         "file_path": "components/PortfolioShowcase.jsx",
         "text_anchor": "The portfolio project titles are so tiny you can barely read them",
-        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">{item.title}</h5>"
+        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -81,7 +81,7 @@
         "image_anchor": "Aura_bug-2.png",
         "file_path": "components/AgencyHero.jsx",
         "text_anchor": "Horizontal padding reduced from 40px to 8px causes text compression and improper spacing within button",
-        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\">"
+        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\" onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -95,14 +95,14 @@
         "image_anchor": "Aura_bug-4.png",
         "file_path": "components/Navbar.jsx",
         "text_anchor": "Text color changed to dark gray significantly reducing contrast ratio against dark background, causing readability issues",
-        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">AURA</h1>"
+        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
         "image_anchor": "Aura_bug-5.png",
         "file_path": "components/ServiceGrid.jsx",
         "text_anchor": "Padding property removed causing card content to have no internal spacing and overlap with borders",
-        "positive_node": "<div className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
+        "positive_node": "<div key={service.id} className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -123,7 +123,7 @@
         "image_anchor": "Aura_bug-8.png",
         "file_path": "components/PortfolioShowcase.jsx",
         "text_anchor": "Font size reduced from 20px to 12px significantly decreasing readability and visual hierarchy of titles",
-        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">{item.title}</h5>"
+        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -151,7 +151,7 @@
         "image_anchor": "Aura_bug-2.png",
         "file_path": "components/AgencyHero.jsx",
         "text_anchor": "The button has insufficient horizontal padding causing the text to be cramped and squeezed",
-        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\">"
+        "positive_node": "<button className=\"group relative inline-flex items-center justify-center px-2 py-1 bg-white text-black font-semibold text-lg overflow-hidden transition-all duration-300 hover:pr-14\" onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -165,14 +165,14 @@
         "image_anchor": "Aura_bug-4.png",
         "file_path": "components/Navbar.jsx",
         "text_anchor": "The logo uses a dark text color with insufficient contrast against the dark background making it difficult to read",
-        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">AURA</h1>"
+        "positive_node": "<h1 className=\"text-zinc-900 text-2xl font-bold tracking-tighter\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
         "image_anchor": "Aura_bug-5.png",
         "file_path": "components/ServiceGrid.jsx",
         "text_anchor": "The service card has no internal padding causing content to be flush against the borders",
-        "positive_node": "<div className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
+        "positive_node": "<div key={service.id} className=\"service-card group bg-black p-0 lg:p-0 flex flex-col transition-all duration-500 hover:bg-zinc-900\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -193,7 +193,7 @@
         "image_anchor": "Aura_bug-8.png",
         "file_path": "components/PortfolioShowcase.jsx",
         "text_anchor": "The project title uses an extremely small font size reducing readability and visual hierarchy",
-        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">{item.title}</h5>"
+        "positive_node": "<h5 className=\"text-xs font-medium tracking-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Aura",
@@ -221,7 +221,7 @@
         "image_anchor": "Helios-Solar_bug-2.png",
         "file_path": "components/SavingsCalculator.jsx",
         "text_anchor": "The state dropdown is way too tall and overlaps with other form fields",
-        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\" />"
+        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -235,7 +235,7 @@
         "image_anchor": "Helios-Solar_bug-4.png",
         "file_path": "components/ResultsDisplay.jsx",
         "text_anchor": "The dollar amounts and numbers in the result cards are almost invisible",
-        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">{value}</h3>"
+        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -270,7 +270,7 @@
         "image_anchor": "Helios-Solar_bug-9.png",
         "file_path": "components/ConsultationCTA.jsx",
         "text_anchor": "The text you type in the email field gets squished against the sides and hides partially",
-        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\" />"
+        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\"/>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -291,7 +291,7 @@
         "image_anchor": "Helios-Solar_bug-2.png",
         "file_path": "components/SavingsCalculator.jsx",
         "text_anchor": "Select element has excessive vertical padding creating tall dropdown that extends beyond its container boundaries",
-        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\" />"
+        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -305,7 +305,7 @@
         "image_anchor": "Helios-Solar_bug-4.png",
         "file_path": "components/ResultsDisplay.jsx",
         "text_anchor": "Result value text uses insufficient color contrast with light gray on white background failing accessibility standards",
-        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">{value}</h3>"
+        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -340,7 +340,7 @@
         "image_anchor": "Helios-Solar_bug-9.png",
         "file_path": "components/ConsultationCTA.jsx",
         "text_anchor": "Input element horizontal padding significantly reduced while vertical padding increased causing text layout problems",
-        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\" />"
+        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\"/>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -361,7 +361,7 @@
         "image_anchor": "Helios-Solar_bug-2.png",
         "file_path": "components/SavingsCalculator.jsx",
         "text_anchor": "The dropdown field is so large it covers other form fields and I cannot access them",
-        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\" />"
+        "positive_node": "<select id=\"state-select\" value={selectedState} onChange={handleStateSelect} className=\"calculator-input block w-full pl-4 pr-10 py-16 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-lg bg-slate-50 transition-all shadow-sm cursor-pointer hover:bg-slate-100\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -375,7 +375,7 @@
         "image_anchor": "Helios-Solar_bug-4.png",
         "file_path": "components/ResultsDisplay.jsx",
         "text_anchor": "I cannot read the savings amounts in the cards because the text blends into the background",
-        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">{value}</h3>"
+        "positive_node": "<h3 className=\"text-4xl font-extrabold text-slate-400 mb-2 tracking-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -410,7 +410,7 @@
         "image_anchor": "Helios-Solar_bug-9.png",
         "file_path": "components/ConsultationCTA.jsx",
         "text_anchor": "When I type into the email field, my text gets hidden because there is not enough space",
-        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\" />"
+        "positive_node": "<input type=\"email\" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder=\"Enter your email address\" className=\"flex-1 appearance-none rounded-lg py-8 px-2 text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-lg shadow-xl\"/>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Helios-Solar",
@@ -452,14 +452,14 @@
         "image_anchor": "L-Atelier-d-Art_bug-5.png",
         "file_path": "App.jsx",
         "text_anchor": "The main heading is way too small and hard to read.",
-        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">The Shape of Silence</h2>"
+        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art",
         "image_anchor": "L-Atelier-d-Art_bug-6.png",
         "file_path": "components/ArtGrid.jsx",
         "text_anchor": "The artwork titles are barely visible against the white background.",
-        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">{artwork.title}</h3>"
+        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art",
@@ -522,14 +522,14 @@
         "image_anchor": "L-Atelier-d-Art_bug-5.png",
         "file_path": "App.jsx",
         "text_anchor": "The exhibition title has extremely small font size compared to the page layout.",
-        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">The Shape of Silence</h2>"
+        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art",
         "image_anchor": "L-Atelier-d-Art_bug-6.png",
         "file_path": "components/ArtGrid.jsx",
         "text_anchor": "The text color is too light and doesn't have enough contrast with the background.",
-        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">{artwork.title}</h3>"
+        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art",
@@ -592,14 +592,14 @@
         "image_anchor": "L-Atelier-d-Art_bug-5.png",
         "file_path": "App.jsx",
         "text_anchor": "Visitors cannot easily see the exhibition name because the text is tiny.",
-        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">The Shape of Silence</h2>"
+        "positive_node": "<h2 className=\"serif text-sm md:text-sm lg:text-sm mb-4 leading-tight\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art",
         "image_anchor": "L-Atelier-d-Art_bug-6.png",
         "file_path": "components/ArtGrid.jsx",
         "text_anchor": "I can hardly read the names of the artworks displayed in the gallery.",
-        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">{artwork.title}</h3>"
+        "positive_node": "<h3 className=\"serif text-2xl text-gray-300 group-hover:italic transition-all duration-500\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/L-Atelier-d-Art",
@@ -648,7 +648,7 @@
         "image_anchor": "LinguaSphere_bug-3.png",
         "file_path": "components/FeaturesList.jsx",
         "text_anchor": "The features on desktop are stacking vertically in a single column instead of spreading across the screen.",
-        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8\">"
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LinguaSphere",
@@ -662,7 +662,7 @@
         "image_anchor": "LinguaSphere_bug-5.png",
         "file_path": "components/GrammarAIDemo.jsx",
         "text_anchor": "The Grammar AI title is microscopic and hard to spot in the demo box.",
-        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">Grammar AI</h3>"
+        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LinguaSphere",
@@ -718,7 +718,7 @@
         "image_anchor": "LinguaSphere_bug-3.png",
         "file_path": "components/FeaturesList.jsx",
         "text_anchor": "The grid is configured to only display one column on large screens instead of four, causing poor use of horizontal space.",
-        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8\">"
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LinguaSphere",
@@ -732,7 +732,7 @@
         "image_anchor": "LinguaSphere_bug-5.png",
         "file_path": "components/GrammarAIDemo.jsx",
         "text_anchor": "The heading is rendered with an excessively small font size, reducing visual hierarchy and making it difficult to identify the feature.",
-        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">Grammar AI</h3>"
+        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LinguaSphere",
@@ -788,7 +788,7 @@
         "image_anchor": "LinguaSphere_bug-3.png",
         "file_path": "components/FeaturesList.jsx",
         "text_anchor": "Users see a cramped, cluttered view of features because they are all stacked on top of each other.",
-        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8\">"
+        "positive_node": "<div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LinguaSphere",
@@ -802,7 +802,7 @@
         "image_anchor": "LinguaSphere_bug-5.png",
         "file_path": "components/GrammarAIDemo.jsx",
         "text_anchor": "Users struggle to understand which section they are looking at because the title is nearly invisible at this scale.",
-        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">Grammar AI</h3>"
+        "positive_node": "<h3 className=\"text-xs font-extrabold text-gray-800\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LinguaSphere",
@@ -844,7 +844,7 @@
         "image_anchor": "Lumiere_bug-1.png",
         "file_path": "components/LuxuryHero.jsx",
         "text_anchor": "The button text on the hero section looks faded and hard to read.",
-        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">Explore The Atelier</span>"
+        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumiere",
@@ -914,7 +914,7 @@
         "image_anchor": "Lumiere_bug-1.png",
         "file_path": "components/LuxuryHero.jsx",
         "text_anchor": "The button text layer is rendering with lower stacking order than the overlay, making it appear behind the button border.",
-        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">Explore The Atelier</span>"
+        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumiere",
@@ -984,7 +984,7 @@
         "image_anchor": "Lumiere_bug-1.png",
         "file_path": "components/LuxuryHero.jsx",
         "text_anchor": "I cannot read the call-to-action button text on the hero section because it lacks sufficient visual priority.",
-        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">Explore The Atelier</span>"
+        "positive_node": "<span className=\"relative z-0 tracking-widest text-sm uppercase font-semibold\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumiere",
@@ -1285,7 +1285,7 @@
         "image_anchor": "MONOLITH_bug-4.png",
         "file_path": "components/FirmPhilosophy.jsx",
         "text_anchor": "Some text in the philosophy section is too tiny to read.",
-        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH",
@@ -1355,7 +1355,7 @@
         "image_anchor": "MONOLITH_bug-4.png",
         "file_path": "components/FirmPhilosophy.jsx",
         "text_anchor": "The italic subtitle word has been resized to extra-small creating a visual hierarchy issue.",
-        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH",
@@ -1425,7 +1425,7 @@
         "image_anchor": "MONOLITH_bug-4.png",
         "file_path": "components/FirmPhilosophy.jsx",
         "text_anchor": "I cannot read the inline word in the philosophy heading because it is too small.",
-        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">as</span>"
+        "positive_node": "<span className=\"italic font-light opacity-60 text-xs\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MONOLITH",
@@ -1495,7 +1495,7 @@
         "image_anchor": "NexusAI_bug-4.png",
         "file_path": "components/PricingTable.jsx",
         "text_anchor": "The pricing cards look stretched and misaligned.",
-        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${"
+        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${plan.isPopular ? 'bg-white border-indigo-200 shadow-xl ring-2 ring-indigo-500' : 'bg-white border-gray-100 shadow-sm'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/NexusAI",
@@ -1537,7 +1537,7 @@
         "image_anchor": "NexusAI_bug-10.png",
         "file_path": "components/PricingTable.jsx",
         "text_anchor": "The pricing buttons are floating in weird places on the cards.",
-        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${"
+        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${plan.isPopular ? 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-200' : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/NexusAI",
@@ -1565,7 +1565,7 @@
         "image_anchor": "NexusAI_bug-4.png",
         "file_path": "components/PricingTable.jsx",
         "text_anchor": "Excessive padding inside the pricing cards breaks the overall layout.",
-        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${"
+        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${plan.isPopular ? 'bg-white border-indigo-200 shadow-xl ring-2 ring-indigo-500' : 'bg-white border-gray-100 shadow-sm'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/NexusAI",
@@ -1607,7 +1607,7 @@
         "image_anchor": "NexusAI_bug-10.png",
         "file_path": "components/PricingTable.jsx",
         "text_anchor": "The buttons are positioned absolutely at the top of the cards instead of at the bottom.",
-        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${"
+        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${plan.isPopular ? 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-200' : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/NexusAI",
@@ -1635,7 +1635,7 @@
         "image_anchor": "NexusAI_bug-4.png",
         "file_path": "components/PricingTable.jsx",
         "text_anchor": "The pricing information is spaced out too much and looks broken.",
-        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${"
+        "positive_node": "<div key={plan.name} className={`pricing-card relative flex flex-col p-32 rounded-3xl border ${plan.isPopular ? 'bg-white border-indigo-200 shadow-xl ring-2 ring-indigo-500' : 'bg-white border-gray-100 shadow-sm'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/NexusAI",
@@ -1677,7 +1677,7 @@
         "image_anchor": "NexusAI_bug-10.png",
         "file_path": "components/PricingTable.jsx",
         "text_anchor": "The buttons are out of reach and overlap important pricing information.",
-        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${"
+        "positive_node": "<button className={`w-full py-4 rounded-xl font-bold transition-all absolute top-20 ${plan.isPopular ? 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-200' : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Orbit",
@@ -1747,7 +1747,7 @@
         "image_anchor": "Orbit_bug-10.png",
         "file_path": "App.jsx",
         "text_anchor": "The overlay that should dim the background when the sidebar opens isn't showing up.",
-        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}></div>"
+        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Orbit",
@@ -1817,7 +1817,7 @@
         "image_anchor": "Orbit_bug-10.png",
         "file_path": "App.jsx",
         "text_anchor": "The mobile overlay backdrop is completely transparent instead of semi-transparent, making it invisible.",
-        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}></div>"
+        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Orbit",
@@ -1887,7 +1887,7 @@
         "image_anchor": "Orbit_bug-10.png",
         "file_path": "App.jsx",
         "text_anchor": "I can't tell if the sidebar modal is actually open because there's no visual feedback or dimming of the background.",
-        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}></div>"
+        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/TerraFlora",
