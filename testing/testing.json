@@ -235,7 +235,7 @@
         "image_anchor": "AstroNova_bug-4.png",
         "file_path": "components/MissionCountdown.jsx",
         "text_anchor": "The timer unit labels (Days, Hours, Minutes, Seconds) are invisible due to insufficient color contrast against the dark background",
-        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">{label}</span>"
+        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/AstroNova",
@@ -270,7 +270,7 @@
         "image_anchor": "AstroNova_bug-9.png",
         "file_path": "components/PlanetComparison.jsx",
         "text_anchor": "The planetary database table headers are too dim and hard to read due to low-contrast text color",
-        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">Celestial Body</th>"
+        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/AstroNova",
@@ -305,7 +305,7 @@
         "image_anchor": "AstroNova_bug-4.png",
         "file_path": "components/MissionCountdown.jsx",
         "text_anchor": "Label text color is too dark, resulting in insufficient contrast against the dark background",
-        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">{label}</span>"
+        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/AstroNova",
@@ -340,7 +340,7 @@
         "image_anchor": "AstroNova_bug-9.png",
         "file_path": "components/PlanetComparison.jsx",
         "text_anchor": "Table header text color has low contrast against the background color",
-        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">Celestial Body</th>"
+        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/AstroNova",
@@ -375,7 +375,7 @@
         "image_anchor": "AstroNova_bug-4.png",
         "file_path": "components/MissionCountdown.jsx",
         "text_anchor": "Day/Hour/Minute/Second text cannot be seen against the dark background",
-        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">{label}</span>"
+        "positive_node": "<span className=\"mt-4 font-mono text-xs md:text-sm text-black tracking-[0.2em] uppercase\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/AstroNova",
@@ -410,7 +410,7 @@
         "image_anchor": "AstroNova_bug-9.png",
         "file_path": "components/PlanetComparison.jsx",
         "text_anchor": "Column headers in the planet comparison table are barely visible",
-        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">Celestial Body</th>"
+        "positive_node": "<th className=\"p-6 font-mono text-xs font-bold text-gray-600 uppercase tracking-wider sticky left-0 bg-space-800 z-10\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/AstroNova",
@@ -431,21 +431,21 @@
         "image_anchor": "Culina_bug-2.png",
         "file_path": "App.jsx",
         "text_anchor": "The search bar seems to be stuck behind the header",
-        "positive_node": "<input className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\" />"
+        "positive_node": "<input type=\"text\" placeholder=\"What are we cooking today?\" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-3.png",
         "file_path": "components/IngredientList.jsx",
         "text_anchor": "The ingredient amounts are stacked below the ingredient names instead of on the right",
-        "positive_node": "<div className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\" />"
+        "positive_node": "<label key={ingredient.id} className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-4.png",
         "file_path": "components/StepByStepInstructions.jsx",
         "text_anchor": "The step numbers are crammed into the top-left corner of their boxes",
-        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${`"
+        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${step.isCompleted ? 'bg-stone-900 text-white rotate-12 scale-90' : 'bg-stone-100 text-stone-400 group-hover:bg-stone-200 group-hover:text-stone-600'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
@@ -459,35 +459,35 @@
         "image_anchor": "Culina_bug-6.png",
         "file_path": "components/NutritionFacts.jsx",
         "text_anchor": "The nutrition values are all crammed on top of each other",
-        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\" />"
+        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-7.png",
         "file_path": "components/IngredientList.jsx",
         "text_anchor": "The ingredients are crammed really tightly together and hard to click on",
-        "positive_node": "<div className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\" />"
+        "positive_node": "<label key={ingredient.id} className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-8.png",
         "file_path": "components/StepByStepInstructions.jsx",
         "text_anchor": "The recipe step cards are overlapping and running into each other",
-        "positive_node": "<div className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${`} />"
+        "positive_node": "<div key={index} onClick={() => toggleStep(index)} className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${step.isCompleted ? 'bg-stone-50 border-stone-200' : 'bg-white border-transparent hover:border-stone-100'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-9.png",
         "file_path": "components/RecipeHero.jsx",
         "text_anchor": "You can barely see the cooking time - it's almost invisible",
-        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\" />"
+        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-10.png",
         "file_path": "components/NutritionFacts.jsx",
         "text_anchor": "The nutrition information table is so faint you can barely read it",
-        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\" />"
+        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
@@ -501,21 +501,21 @@
         "image_anchor": "Culina_bug-2.png",
         "file_path": "App.jsx",
         "text_anchor": "Z-index layering issue causes the search input to render below the sticky header background",
-        "positive_node": "<input className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\" />"
+        "positive_node": "<input type=\"text\" placeholder=\"What are we cooking today?\" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-3.png",
         "file_path": "components/IngredientList.jsx",
         "text_anchor": "Flexbox layout breaks the horizontal alignment, stacking content vertically without proper spacing",
-        "positive_node": "<div className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\" />"
+        "positive_node": "<label key={ingredient.id} className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-4.png",
         "file_path": "components/StepByStepInstructions.jsx",
         "text_anchor": "Flexbox centering is broken - items-start alignment pushes step numbers to the top instead of center",
-        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${`"
+        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${step.isCompleted ? 'bg-stone-900 text-white rotate-12 scale-90' : 'bg-stone-100 text-stone-400 group-hover:bg-stone-200 group-hover:text-stone-600'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
@@ -529,35 +529,35 @@
         "image_anchor": "Culina_bug-6.png",
         "file_path": "components/NutritionFacts.jsx",
         "text_anchor": "Line height is set to none, causing vertical text overlap and improper spacing between table row content",
-        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\" />"
+        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-7.png",
         "file_path": "components/IngredientList.jsx",
         "text_anchor": "Vertical padding is reduced and horizontal padding removed, compressing the ingredient items together",
-        "positive_node": "<div className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\" />"
+        "positive_node": "<label key={ingredient.id} className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-8.png",
         "file_path": "components/StepByStepInstructions.jsx",
         "text_anchor": "Negative vertical margin creates overlapping layers between consecutive step containers",
-        "positive_node": "<div className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${`} />"
+        "positive_node": "<div key={index} onClick={() => toggleStep(index)} className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${step.isCompleted ? 'bg-stone-50 border-stone-200' : 'bg-white border-transparent hover:border-stone-100'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-9.png",
         "file_path": "components/RecipeHero.jsx",
         "text_anchor": "Opacity is set to 20%, making the time badge nearly transparent with insufficient visibility and readability",
-        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\" />"
+        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-10.png",
         "file_path": "components/NutritionFacts.jsx",
         "text_anchor": "Opacity is applied to the entire table element, reducing all content visibility to 30% and making information difficult to perceive",
-        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\" />"
+        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
@@ -571,21 +571,21 @@
         "image_anchor": "Culina_bug-2.png",
         "file_path": "App.jsx",
         "text_anchor": "The search bar seems to be stuck behind the header",
-        "positive_node": "<input className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\" />"
+        "positive_node": "<input type=\"text\" placeholder=\"What are we cooking today?\" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className=\"w-full bg-stone-100/80 border-transparent focus:bg-white focus:ring-4 focus:ring-stone-100 focus:border-stone-200 transition-all rounded-full px-8 py-4 text-stone-800 placeholder-stone-400 pl-14 relative z-0\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-3.png",
         "file_path": "components/IngredientList.jsx",
         "text_anchor": "The ingredient amounts are stacked below the ingredient names instead of on the right",
-        "positive_node": "<div className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\" />"
+        "positive_node": "<label key={ingredient.id} className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-4.png",
         "file_path": "components/StepByStepInstructions.jsx",
         "text_anchor": "The step numbers are crammed into the top-left corner of their boxes",
-        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${`"
+        "positive_node": "<span className={`step-number flex items-start w-14 h-14 rounded-2xl font-serif text-2xl font-bold transition-all shadow-sm ${step.isCompleted ? 'bg-stone-900 text-white rotate-12 scale-90' : 'bg-stone-100 text-stone-400 group-hover:bg-stone-200 group-hover:text-stone-600'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
@@ -599,140 +599,140 @@
         "image_anchor": "Culina_bug-6.png",
         "file_path": "components/NutritionFacts.jsx",
         "text_anchor": "The nutrition values are all crammed on top of each other",
-        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\" />"
+        "positive_node": "<tr key={fact.label} className=\"nutrition-row group hover:bg-white/[0.03] transition-colors leading-none\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-7.png",
         "file_path": "components/IngredientList.jsx",
         "text_anchor": "The ingredients are crammed really tightly together and hard to click on",
-        "positive_node": "<div className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\" />"
+        "positive_node": "<label key={ingredient.id} className=\"ingredient-row flex items-center flex-col group cursor-pointer py-1 px-0 -mx-3 rounded-xl hover:bg-stone-50 transition-all border-b border-stone-50 last:border-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-8.png",
         "file_path": "components/StepByStepInstructions.jsx",
         "text_anchor": "The recipe step cards are overlapping and running into each other",
-        "positive_node": "<div className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${`} />"
+        "positive_node": "<div key={index} onClick={() => toggleStep(index)} className={`recipe-step group relative flex gap-8 p-8 md:p-10 rounded-3xl border-2 transition-all cursor-pointer hover:shadow-xl hover:shadow-stone-100/50 -my-8 ${step.isCompleted ? 'bg-stone-50 border-stone-200' : 'bg-white border-transparent hover:border-stone-100'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-9.png",
         "file_path": "components/RecipeHero.jsx",
         "text_anchor": "You can barely see the cooking time - it's almost invisible",
-        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\" />"
+        "positive_node": "<span className=\"badge-time px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl text-sm font-semibold border border-white/20 flex items-center gap-2.5 opacity-20\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Culina",
         "image_anchor": "Culina_bug-10.png",
         "file_path": "components/NutritionFacts.jsx",
         "text_anchor": "The nutrition information table is so faint you can barely read it",
-        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\" />"
+        "positive_node": "<table className=\"nutrition-table w-full text-left opacity-30\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-1.png",
         "file_path": "components/Navbar.jsx",
         "text_anchor": "When I scroll down the page, the main content covers up the navigation menu at the top.",
-        "positive_node": "className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}"
+        "positive_node": "<nav className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-2.png",
         "file_path": "components/Hero.jsx",
         "text_anchor": "The big buttons under the hero image are stacked on top of each other instead of sitting side by side.",
-        "positive_node": "className=\"flex flex-col items-center justify-center gap-4\""
+        "positive_node": "<div className=\"flex flex-col items-center justify-center gap-4\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-3.png",
         "file_path": "components/Contact.jsx",
         "text_anchor": "The form labels like 'Full Name' and 'Email' are so tiny and faint that I can barely see them.",
-        "positive_node": "className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\""
+        "positive_node": "<label className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-4.png",
         "file_path": "components/Projects.jsx",
         "text_anchor": "The category labels on each project card are squished against the title text with no space between them.",
-        "positive_node": "className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\""
+        "positive_node": "<span key={tag} className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-5.png",
         "file_path": "components/Hero.jsx",
         "text_anchor": "The little green dot that shows I'm online next to my profile picture is completely invisible.",
-        "positive_node": "className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\""
+        "positive_node": "<div className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-1.png",
         "file_path": "components/Navbar.jsx",
         "text_anchor": "The navigation bar has incorrect stacking order and is positioned behind other page elements instead of on top.",
-        "positive_node": "className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}"
+        "positive_node": "<nav className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-2.png",
         "file_path": "components/Hero.jsx",
         "text_anchor": "The button container uses only vertical flexbox direction without responsive horizontal layout on desktop screens.",
-        "positive_node": "className=\"flex flex-col items-center justify-center gap-4\""
+        "positive_node": "<div className=\"flex flex-col items-center justify-center gap-4\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-3.png",
         "file_path": "components/Contact.jsx",
         "text_anchor": "Form input labels have excessively reduced font size and insufficient color contrast against the background.",
-        "positive_node": "className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\""
+        "positive_node": "<label className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-4.png",
         "file_path": "components/Projects.jsx",
         "text_anchor": "Project tag elements have zero internal padding causing their content to overlap with adjacent elements.",
-        "positive_node": "className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\""
+        "positive_node": "<span key={tag} className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-5.png",
         "file_path": "components/Hero.jsx",
         "text_anchor": "The status indicator badge is rendered with zero opacity making it imperceptible to users.",
-        "positive_node": "className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\""
+        "positive_node": "<div className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-1.png",
         "file_path": "components/Navbar.jsx",
         "text_anchor": "The navigation menu is not visible or is positioned behind other content when scrolling.",
-        "positive_node": "className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}"
+        "positive_node": "<nav className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-2.png",
         "file_path": "components/Hero.jsx",
         "text_anchor": "Action buttons are displayed vertically instead of horizontally on larger screens.",
-        "positive_node": "className=\"flex flex-col items-center justify-center gap-4\""
+        "positive_node": "<div className=\"flex flex-col items-center justify-center gap-4\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-3.png",
         "file_path": "components/Contact.jsx",
         "text_anchor": "Form field labels have poor clarity and readability.",
-        "positive_node": "className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\""
+        "positive_node": "<label className=\"block text-[6px] font-black uppercase text-slate-500 tracking-wider mb-2\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-4.png",
         "file_path": "components/Projects.jsx",
         "text_anchor": "Project category badges lack proper spacing and overlap with surrounding content.",
-        "positive_node": "className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\""
+        "positive_node": "<span key={tag} className=\"text-[10px] font-black tracking-tighter uppercase text-slate-400 px-0 py-0 bg-white rounded border border-slate-100\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Elite",
         "image_anchor": "elite-portfolio-pro_bug-5.png",
         "file_path": "components/Hero.jsx",
         "text_anchor": "The online status indicator is not visible next to the user's profile image.",
-        "positive_node": "className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\""
+        "positive_node": "<div className=\"absolute bottom-1 right-1 md:bottom-3 md:right-3 w-6 h-6 md:w-8 md:h-8 bg-green-400 border-4 border-white rounded-full animate-pulse opacity-0\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/FreshHarvest-Market",
@@ -1068,7 +1068,7 @@
         "image_anchor": "InsureAI_bug-3.png",
         "file_path": "components/FormWizard.jsx",
         "text_anchor": "The Age input label is overlapping with the text box.",
-        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">Age</label>"
+        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/InsureAI",
@@ -1089,7 +1089,7 @@
         "image_anchor": "InsureAI_bug-3.png",
         "file_path": "components/FormWizard.jsx",
         "text_anchor": "The label element lacks proper vertical spacing above the input field.",
-        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">Age</label>"
+        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/InsureAI",
@@ -1110,7 +1110,7 @@
         "image_anchor": "InsureAI_bug-3.png",
         "file_path": "components/FormWizard.jsx",
         "text_anchor": "I cannot clearly see the Age field label because it overlaps with the input box.",
-        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">Age</label>"
+        "positive_node": "<label className=\"block text-sm font-medium text-slate-700 -mb-4\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Books",
@@ -1159,7 +1159,7 @@
         "image_anchor": "Lumina-Smart-Home_bug-1.png",
         "file_path": "components/SecurityStatus.jsx",
         "text_anchor": "There's a white blob covering the security status on the locked/unlocked screen.",
-        "positive_node": "<div className={`\n            absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10\n            ${isLocked ? 'bg-white' : 'bg-red-500'}\n         `}></div>"
+        "positive_node": "<div className={` absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10 ${isLocked ? 'bg-white' : 'bg-red-500'} `}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home",
@@ -1173,7 +1173,7 @@
         "image_anchor": "Lumina-Smart-Home_bug-3.png",
         "file_path": "components/QuickSceneToggle.jsx",
         "text_anchor": "The scene names in the selection buttons are way too small and almost invisible.",
-        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">{scene.label}</span>"
+        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home",
@@ -1187,14 +1187,14 @@
         "image_anchor": "Lumina-Smart-Home_bug-5.png",
         "file_path": "components/SecurityStatus.jsx",
         "text_anchor": "The lock/unlock icon is missing from the security status display.",
-        "positive_node": "<div className={`\n                w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0\n                ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'}\n            `}>"
+        "positive_node": "<div className={` w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0 ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'} `}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home",
         "image_anchor": "Lumina-Smart-Home_bug-1.png",
         "file_path": "components/SecurityStatus.jsx",
         "text_anchor": "The decorative background circle is rendered in front of the status message instead of behind it, obscuring the security state text and status icon.",
-        "positive_node": "<div className={`\n            absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10\n            ${isLocked ? 'bg-white' : 'bg-red-500'}\n         `}></div>"
+        "positive_node": "<div className={` absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10 ${isLocked ? 'bg-white' : 'bg-red-500'} `}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home",
@@ -1208,7 +1208,7 @@
         "image_anchor": "Lumina-Smart-Home_bug-3.png",
         "file_path": "components/QuickSceneToggle.jsx",
         "text_anchor": "The scene label text is rendered at an extremely small size with very low opacity, making it nearly impossible to read the scene options.",
-        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">{scene.label}</span>"
+        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home",
@@ -1222,14 +1222,14 @@
         "image_anchor": "Lumina-Smart-Home_bug-5.png",
         "file_path": "components/SecurityStatus.jsx",
         "text_anchor": "The status icon element is completely transparent due to zero opacity, rendering it invisible even though the container remains in the layout.",
-        "positive_node": "<div className={`\n                w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0\n                ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'}\n            `}>"
+        "positive_node": "<div className={` w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0 ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'} `}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home",
         "image_anchor": "Lumina-Smart-Home_bug-1.png",
         "file_path": "components/SecurityStatus.jsx",
         "text_anchor": "I cannot determine if my house is secured or unlocked because the status display is blocked by the background element.",
-        "positive_node": "<div className={`\n            absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10\n            ${isLocked ? 'bg-white' : 'bg-red-500'}\n         `}></div>"
+        "positive_node": "<div className={` absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-100 z-10 ${isLocked ? 'bg-white' : 'bg-red-500'} `}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home",
@@ -1243,7 +1243,7 @@
         "image_anchor": "Lumina-Smart-Home_bug-3.png",
         "file_path": "components/QuickSceneToggle.jsx",
         "text_anchor": "I cannot read which scene (Home, Away, Sleep, Movie) I'm selecting before clicking the button because the labels are not visible.",
-        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">{scene.label}</span>"
+        "positive_node": "<span className=\"block text-xs opacity-20 font-semibold\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/Lumina-Smart-Home",
@@ -1257,7 +1257,7 @@
         "image_anchor": "Lumina-Smart-Home_bug-5.png",
         "file_path": "components/SecurityStatus.jsx",
         "text_anchor": "I cannot see the visual indicator (lock or unlock icon) for my security status, losing an important visual cue for home safety.",
-        "positive_node": "<div className={`\n                w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0\n                ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'}\n            `}>"
+        "positive_node": "<div className={` w-16 h-16 rounded-full flex items-center justify-center mb-3 text-3xl opacity-0 ${isLocked ? 'bg-white/10 text-white' : 'bg-red-100 text-red-500'} `}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuminaDine",
@@ -1425,7 +1425,7 @@
         "image_anchor": "LuxeDrive_bug-3.png",
         "file_path": "components/FeaturesList.jsx",
         "text_anchor": "The text in those service boxes is way too tiny to read.",
-        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">{feature.title}</h4>"
+        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
@@ -1439,7 +1439,7 @@
         "image_anchor": "LuxeDrive_bug-5.png",
         "file_path": "components/FleetCarousel.jsx",
         "text_anchor": "The car prices are missing from the cards.",
-        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">\\${car.pricePerDay}<span className=\"text-sm font-normal text-gray-500 ml-1 italic\">/day</span></p>"
+        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
@@ -1460,7 +1460,7 @@
         "image_anchor": "LuxeDrive_bug-3.png",
         "file_path": "components/FeaturesList.jsx",
         "text_anchor": "The feature card headings are rendered in extremely small font size, causing poor readability.",
-        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">{feature.title}</h4>"
+        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
@@ -1474,7 +1474,7 @@
         "image_anchor": "LuxeDrive_bug-5.png",
         "file_path": "components/FleetCarousel.jsx",
         "text_anchor": "The pricing text is rendered with complete transparency, making it invisible even though the label is visible.",
-        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">\\${car.pricePerDay}<span className=\"text-sm font-normal text-gray-500 ml-1 italic\">/day</span></p>"
+        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
@@ -1495,7 +1495,7 @@
         "image_anchor": "LuxeDrive_bug-3.png",
         "file_path": "components/FeaturesList.jsx",
         "text_anchor": "Users cannot read the service titles because the text is so small, making it difficult to understand what features are offered.",
-        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">{feature.title}</h4>"
+        "positive_node": "<h4 className=\"text-xs font-black mb-6 tracking-tight uppercase italic\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeDrive",
@@ -1509,7 +1509,7 @@
         "image_anchor": "LuxeDrive_bug-5.png",
         "file_path": "components/FleetCarousel.jsx",
         "text_anchor": "Customers cannot see the daily rental rates for any vehicles because the price numbers are completely transparent and invisible.",
-        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">\\${car.pricePerDay}<span className=\"text-sm font-normal text-gray-500 ml-1 italic\">/day</span></p>"
+        "positive_node": "<p className=\"text-3xl font-black text-[#d4af37] opacity-0\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1523,7 +1523,7 @@
         "image_anchor": "LuxeEstate_bug-2.png",
         "file_path": "App.jsx",
         "text_anchor": "The app name disappears on tablet but the icon stays.",
-        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">LuxeEstate</span>"
+        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1537,14 +1537,14 @@
         "image_anchor": "LuxeEstate_bug-4.png",
         "file_path": "components/SearchBar.jsx",
         "text_anchor": "I can barely see the example text in the search box.",
-        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" className=\"...placeholder:text-slate-300...\" />"
+        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" value={filters.location} onChange={handleChange} className=\"w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all text-slate-800 text-sm font-semibold placeholder:text-slate-300 placeholder:font-medium shadow-inner\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
         "image_anchor": "LuxeEstate_bug-5.png",
         "file_path": "components/ListingGrid.jsx",
         "text_anchor": "The property title is overlapping and disappearing into the picture above.",
-        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">{property.title}</h3>"
+        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1558,7 +1558,7 @@
         "image_anchor": "LuxeEstate_bug-7.png",
         "file_path": "components/PropertyMapPreview.jsx",
         "text_anchor": "The price numbers on the map are invisible.",
-        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">${(prop.price / 1000).toFixed(0)}k</div>"
+        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1593,7 +1593,7 @@
         "image_anchor": "LuxeEstate_bug-2.png",
         "file_path": "App.jsx",
         "text_anchor": "The LuxeEstate brand text visibility breakpoint is misconfigured to hide on medium screens too.",
-        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">LuxeEstate</span>"
+        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1607,14 +1607,14 @@
         "image_anchor": "LuxeEstate_bug-4.png",
         "file_path": "components/SearchBar.jsx",
         "text_anchor": "Placeholder text uses a color that lacks sufficient contrast with the input field background.",
-        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" className=\"...placeholder:text-slate-300...\" />"
+        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" value={filters.location} onChange={handleChange} className=\"w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all text-slate-800 text-sm font-semibold placeholder:text-slate-300 placeholder:font-medium shadow-inner\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
         "image_anchor": "LuxeEstate_bug-5.png",
         "file_path": "components/ListingGrid.jsx",
         "text_anchor": "The property card title has a large negative bottom margin causing it to overlap the image.",
-        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">{property.title}</h3>"
+        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1628,7 +1628,7 @@
         "image_anchor": "LuxeEstate_bug-7.png",
         "file_path": "components/PropertyMapPreview.jsx",
         "text_anchor": "The map price bubble text color is extremely light, making it nearly invisible against the white background.",
-        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">${(prop.price / 1000).toFixed(0)}k</div>"
+        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1663,7 +1663,7 @@
         "image_anchor": "LuxeEstate_bug-2.png",
         "file_path": "App.jsx",
         "text_anchor": "On my tablet, I only see an icon and cannot tell what app this is.",
-        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">LuxeEstate</span>"
+        "positive_node": "<span className=\"text-xl font-extrabold tracking-tight text-slate-900 hidden lg:block\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1677,14 +1677,14 @@
         "image_anchor": "LuxeEstate_bug-4.png",
         "file_path": "components/SearchBar.jsx",
         "text_anchor": "The placeholder hint text is too faint to read what format the location should be.",
-        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" className=\"...placeholder:text-slate-300...\" />"
+        "positive_node": "<input type=\"text\" name=\"location\" placeholder=\"Enter an address, city, or ZIP code\" value={filters.location} onChange={handleChange} className=\"w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all text-slate-800 text-sm font-semibold placeholder:text-slate-300 placeholder:font-medium shadow-inner\" />"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
         "image_anchor": "LuxeEstate_bug-5.png",
         "file_path": "components/ListingGrid.jsx",
         "text_anchor": "I cannot read the property title because it is hidden behind the property image.",
-        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">{property.title}</h3>"
+        "positive_node": "<h3 className=\"text-xl font-bold text-slate-900 -mb-5 group-hover:text-blue-600 transition-colors line-clamp-1\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1698,7 +1698,7 @@
         "image_anchor": "LuxeEstate_bug-7.png",
         "file_path": "components/PropertyMapPreview.jsx",
         "text_anchor": "I cannot read the property prices displayed on the map markers.",
-        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">${(prop.price / 1000).toFixed(0)}k</div>"
+        "positive_node": "<div className=\"bg-white px-2 py-1 rounded shadow-lg border border-slate-200 text-[10px] font-bold text-slate-100 group-hover:bg-blue-600 group-hover:text-white transition-all transform group-hover:scale-110\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/LuxeEstate",
@@ -1733,7 +1733,7 @@
         "image_anchor": "MasterClass_bug-2.png",
         "file_path": "components/CourseSidebar.jsx",
         "text_anchor": "The sidebar items look weird and crushed together on the right side.",
-        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group`}>"
+        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group ${isActive ? 'bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200' : 'hover:bg-slate-50 text-slate-600 hover:text-slate-900'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MasterClass",
@@ -1754,7 +1754,7 @@
         "image_anchor": "MasterClass_bug-2.png",
         "file_path": "components/CourseSidebar.jsx",
         "text_anchor": "The lesson list items are stacked vertically with right-aligned text instead of horizontal layout, making them hard to read.",
-        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group`}>"
+        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group ${isActive ? 'bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200' : 'hover:bg-slate-50 text-slate-600 hover:text-slate-900'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MasterClass",
@@ -1775,7 +1775,7 @@
         "image_anchor": "MasterClass_bug-2.png",
         "file_path": "components/CourseSidebar.jsx",
         "text_anchor": "I cannot easily browse lessons because the sidebar layout is broken and items are misaligned.",
-        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group`}>"
+        "positive_node": "<button key={lesson.id} onClick={() => onLessonSelect(lesson)} className={`lesson-item w-full flex flex-col items-end gap-1 px-2 py-1 rounded-xl transition-all duration-200 text-right group ${isActive ? 'bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200' : 'hover:bg-slate-50 text-slate-600 hover:text-slate-900'}`}>"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/MasterClass",
@@ -1936,7 +1936,7 @@
         "image_anchor": "PawPal_bug-1.png",
         "file_path": "components/AnimalGrid.jsx",
         "text_anchor": "The heart icon button appears as a giant white box covering the entire pet photo.",
-        "positive_node": "<button className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\" aria-label=\"Add to favorites\"> <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\"> <path fillRule=\"evenodd\" d=\"M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z\" clipRule=\"evenodd\" /> </svg> </button>"
+        "positive_node": "<button className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\" aria-label=\"Add to favorites\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/PawPal",
@@ -1950,7 +1950,7 @@
         "image_anchor": "PawPal_bug-1.png",
         "file_path": "components/AnimalGrid.jsx",
         "text_anchor": "The favorite button element is rendering as a full-screen overlay instead of a small icon in the bottom-right corner, obscuring the pet image completely.",
-        "positive_node": "<button className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\" aria-label=\"Add to favorites\"> <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\"> <path fillRule=\"evenodd\" d=\"M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z\" clipRule=\"evenodd\" /> </svg> </button>"
+        "positive_node": "<button className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\" aria-label=\"Add to favorites\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/PawPal",
@@ -1964,7 +1964,7 @@
         "image_anchor": "PawPal_bug-1.png",
         "file_path": "components/AnimalGrid.jsx",
         "text_anchor": "I cannot view the pet's photo because a large semi-transparent button is blocking the entire image.",
-        "positive_node": "<button className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\" aria-label=\"Add to favorites\"> <svg className=\"w-5 h-5\" fill=\"currentColor\" viewBox=\"0 0 20 20\"> <path fillRule=\"evenodd\" d=\"M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z\" clipRule=\"evenodd\" /> </svg> </button>"
+        "positive_node": "<button className=\"absolute inset-0 bg-white/90 p-2.5 rounded-full shadow-lg text-slate-400 hover:text-red-500 hover:scale-110 transition-all active:scale-95\" aria-label=\"Add to favorites\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/PawPal",
@@ -1992,7 +1992,7 @@
         "image_anchor": "PeerMarket_bug-3.png",
         "file_path": "App.jsx",
         "text_anchor": "The banner headline text looks way too small, making it hard to read the main message.",
-        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">Buy and sell in your neighborhood</h2>"
+        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/PeerMarket",
@@ -2034,7 +2034,7 @@
         "image_anchor": "PeerMarket_bug-3.png",
         "file_path": "App.jsx",
         "text_anchor": "The heading font size is set to an extremely small value that breaks the visual hierarchy and makes content unreadable at normal viewing distance.",
-        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">Buy and sell in your neighborhood</h2>"
+        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/PeerMarket",
@@ -2076,7 +2076,7 @@
         "image_anchor": "PeerMarket_bug-3.png",
         "file_path": "App.jsx",
         "text_anchor": "I cannot read the banner message to understand what the marketplace offers or what action I should take.",
-        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">Buy and sell in your neighborhood</h2>"
+        "positive_node": "<h2 className=\"text-[8px] md:text-xs font-bold text-white mb-2\">"
     },
     {
         "github_repo": "https://github.com/EdrianHernandez/PeerMarket",
